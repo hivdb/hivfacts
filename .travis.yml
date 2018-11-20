@@ -1,0 +1,27 @@
+env:
+  global:
+    - CODECOV_TOKEN="6b5d618c-9a0f-44ac-a5d9-4a2177c70930"
+matrix:
+  include:
+    - language: java
+      before_cache:
+        - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+        - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+      cache:
+        directories:
+          - $HOME/.gradle/caches/
+          - $HOME/.gradle/wrapper/
+      before_install:
+        - cd hiv-aapcnt-java/
+      matrix:
+        include:
+          - jdk: oraclejdk8
+            script:
+              - ./gradlew check
+              - ./gradlew jacocoTestReport
+            after_success:
+              - bash <(curl -s https://codecov.io/bash) -cF java
+          - jdk: openjdk8
+          - jdk: openjdk9
+          - jdk: openjdk10
+          - jdk: openjdk11

@@ -1,6 +1,7 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    id 'jacoco'
 }
 
 group = 'edu.stanford.hivdb.aapcnt'
@@ -21,6 +22,13 @@ repositories {
 task copyAAPcntData(type: Copy, group: 'build') {
 	from '../data'
 	into 'src/main/resources/'
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
 }
 
 build.dependsOn copyAAPcntData
