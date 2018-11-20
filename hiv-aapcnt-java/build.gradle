@@ -31,4 +31,4 @@ jacocoTestReport {
     }
 }
 
-build.dependsOn copyAAPcntData
+assemble.dependsOn copyAAPcntData

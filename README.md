@@ -1,5 +1,8 @@
 # HIV-AAPcnt
 
+[![Travis CI](https://api.travis-ci.org/hivdb/hiv-aapcnt.svg?branch=master)](https://travis-ci.org/hivdb/hiv-aapcnt)
+[![codecov](https://codecov.io/gh/hivdb/hiv-aapcnt/branch/master/graph/badge.svg)](https://codecov.io/gh/hivdb/hiv-aapcnt)
+
 Amino acid prevalence data of HIV-1 pol.
 
 ## Steps and Criteria for Classifying Unusual Mutations

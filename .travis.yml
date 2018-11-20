@@ -17,8 +17,7 @@ matrix:
         include:
           - jdk: oraclejdk8
             script:
-              - ./gradlew check
-              - ./gradlew jacocoTestReport
+              - ./gradlew check jacocoTestReport
             after_success:
               - bash <(curl -s https://codecov.io/bash) -cF java
           - jdk: openjdk8
