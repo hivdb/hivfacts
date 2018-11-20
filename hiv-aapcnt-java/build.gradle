@@ -1,0 +1,26 @@
+plugins {
+    // Apply the java-library plugin to add support for Java Library
+    id 'java-library'
+}
+
+group = 'edu.stanford.hivdb.aapcnt'
+
+description = 'Amino acid prevalence data of HIV-1 pol'
+
+dependencies {
+	implementation 'org.apache.commons:commons-lang3:3.8.1'
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    testImplementation 'junit:junit:4.12'
+}
+
+repositories {
+    jcenter()
+}
+
+task copyAAPcntData(type: Copy, group: 'build') {
+	from '../data'
+	into 'src/main/resources/'
+}
+
+build.dependsOn copyAAPcntData
