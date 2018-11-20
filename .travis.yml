@@ -1,6 +1,3 @@
-env:
-  global:
-    - CODECOV_TOKEN="6b5d618c-9a0f-44ac-a5d9-4a2177c70930"
 matrix:
   include:
     - language: java
@@ -15,12 +12,17 @@ matrix:
         - cd hiv-aapcnt-java/
       matrix:
         include:
-          - jdk: oraclejdk8
+          - name: "oraclejdk8 and codecov"
+            jdk: oraclejdk8
             script:
               - ./gradlew check jacocoTestReport
             after_success:
               - bash <(curl -s https://codecov.io/bash) -cF java
-          - jdk: openjdk8
-          - jdk: openjdk9
-          - jdk: openjdk10
-          - jdk: openjdk11
+          - name: "openjdks"
+            jdk:
+            - openjdk8
+            - openjdk9
+            - openjdk10
+            - openjdk11
+            script:
+              - ./gradlew check
