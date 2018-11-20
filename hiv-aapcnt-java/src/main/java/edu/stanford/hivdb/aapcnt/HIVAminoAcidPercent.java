@@ -11,7 +11,7 @@ public class HIVAminoAcidPercent {
 	final public Boolean isAPOBEC;
 	final public Boolean isUnusual;
 
-	public HIVAminoAcidPercent(
+	protected HIVAminoAcidPercent(
 			String gene, int position, char aa, double percent, int count,
 			int total, String reason, boolean isAPOBEC, boolean isUnusual) {
 		this.gene = gene;

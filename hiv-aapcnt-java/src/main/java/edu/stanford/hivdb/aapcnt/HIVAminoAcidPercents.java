@@ -77,7 +77,7 @@ public class HIVAminoAcidPercents {
 	
 	public List<HIVAminoAcidPercent> get(String gene) {
 		return (aminoAcidPcnts
-				.stream().filter(aap -> aap.gene == gene)
+				.stream().filter(aap -> aap.gene.equals(gene))
 				.collect(Collectors.toList()));
 	}
 
@@ -106,7 +106,7 @@ public class HIVAminoAcidPercents {
 
 	/**
 	 * Returns the highest amino acid prevalence associated with each of
-	 * the AA in a mixture. Consensus AAs and stop codon are both ignored.
+	 * the AA in a mixture.
 	 *
 	 * @param gene
 	 * @param pos
@@ -116,16 +116,16 @@ public class HIVAminoAcidPercents {
 	 * @return Double highest amino acid prevalence
 	 */
 	public Double getHighestAAPercentValue(
-		String gene, int pos, char cons, String mixture
+		String gene, int pos, /* char cons,*/ String mixture
 	) {
 		Double pcntVal = 0.0;
 		GenePosition gpos = new GenePosition(gene, pos);
 
 		for (char aa : mixture.toCharArray()) {
-			if (aa == cons || aa == '*') {
+			/* if (aa == cons || aa == '*') {
 				// ignore consensus and stop codon
 				continue;
-			}
+			} */
 			double aaPcntVal = aminoAcidPcntMap.get(gpos).get(aa).percent;
 			pcntVal = Math.max(pcntVal, aaPcntVal);
 		}
@@ -133,10 +133,10 @@ public class HIVAminoAcidPercents {
 	}
 	
 	public Double getHighestAAPercentValue(
-		Enum<?> geneEnum, int pos, char cons, String mixture
+		Enum<?> geneEnum, int pos, /* char cons,*/ String mixture
 	) {
 		String gene = geneEnum.toString();
-		return getHighestAAPercentValue(gene, pos, cons, mixture);
+		return getHighestAAPercentValue(gene, pos, /*cons,*/ mixture);
 	}
 	
 	/**
@@ -151,7 +151,7 @@ public class HIVAminoAcidPercents {
 		GenePosition gpos = new GenePosition(gene, pos);
 		for (char aa : aas.toCharArray()) {
 			HIVAminoAcidPercent aaPcnt = aminoAcidPcntMap.get(gpos).get(aa);
-			if (aaPcnt != null && aaPcnt.isUnusual) {
+			if (aaPcnt.isUnusual) {
 				return true;
 			}
 		}
