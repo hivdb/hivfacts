@@ -1,6 +1,7 @@
-matrix:
+jobs:
   include:
     - language: java
+      jdk: oraclejdk8
       before_cache:
         - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
         - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
@@ -10,19 +11,8 @@ matrix:
           - $HOME/.gradle/wrapper/
       before_install:
         - cd hiv-aapcnt-java/
-      matrix:
-        include:
-          - name: "oraclejdk8 and codecov"
-            jdk: oraclejdk8
-            script:
-              - ./gradlew check jacocoTestReport
-            after_success:
-              - bash <(curl -s https://codecov.io/bash) -cF java
-          - name: "openjdks"
-            jdk:
-            - openjdk8
-            - openjdk9
-            - openjdk10
-            - openjdk11
-            script:
-              - ./gradlew check
+      script:
+        - ./gradlew check
+        - ./gradlew jacocoTestReport
+      after_success:
+        - bash <(curl -s https://codecov.io/bash) -cF java
