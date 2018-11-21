@@ -115,9 +115,17 @@ public class HIVAminoAcidPercentsTest {
 			expectedHighestVal = Math.max(expectedHighestVal, pcntVal);
 		}
 		assertEquals(expectedHighestVal, highestVal, 1e-18);
-		// This is intended to fail for every version update.
-		// You must manually check and correct this number.
-		assertEquals(0.002121155805622665, highestVal, 1e-18);
+
+		// These are intended to fail for every version update.
+		// You must manually check and correct these numbers.
+		assertEquals(0.00212115, highestVal, 1e-8);
+		assertEquals(0.09014744, naiveAll.getHighestAAPercentValue("RT", 67, "N"), 1e-8);
+		assertEquals(0.00803623, naiveAll.getHighestAAPercentValue("RT", 69, "KS"), 1e-8);
+		assertEquals(0.04702669, naiveAll.getHighestAAPercentValue("PR", 82, "IA"), 1e-8);
+		assertEquals(0.0, naiveAll.getHighestAAPercentValue(Gene.RT, 67, "W"), 1e-8);
+		assertEquals(0.09014744, naiveAll.getHighestAAPercentValue("RT", 67, "N*"), 1e-8);
+		assertEquals(0.0, naiveAll.getHighestAAPercentValue("RT", 67, "*"), 1e-8);
+		assertEquals(0.0, naiveAll.getHighestAAPercentValue("IN", 1, ""), 1e-8);
 	}
 	
 	@Test
@@ -125,6 +133,14 @@ public class HIVAminoAcidPercentsTest {
 		HIVAminoAcidPercents naiveAll = HIVAminoAcidPercents.getInstance("naive", "All");
 		assertTrue(naiveAll.containsUnusualAA("RT", 5, "I*"));
 		assertFalse(naiveAll.containsUnusualAA(Gene.PR, 6, "W*")); // APOBEC stop codon
+		assertFalse(naiveAll.containsUnusualAA("RT", 67, "N"));
+		assertFalse(naiveAll.containsUnusualAA(Gene.RT, 69, "KS"));
+		assertTrue(naiveAll.containsUnusualAA("PR", 82, "VIAD"));
+		assertTrue(naiveAll.containsUnusualAA(Gene.RT, 67, "W"));
+		assertFalse(naiveAll.containsUnusualAA("RT", 69, "_"));
+		assertTrue(naiveAll.containsUnusualAA(Gene.PR, 69, "_"));
+		assertFalse(naiveAll.containsUnusualAA(Gene.RT, 67, "-"));
+		assertTrue(naiveAll.containsUnusualAA("PR", 67, "-"));
 	}
 
 }

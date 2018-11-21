@@ -1,22 +1,28 @@
 plugins {
-    // Apply the java-library plugin to add support for Java Library
-    id 'java-library'
-    id 'jacoco'
+	// Apply the java-library plugin to add support for Java Library
+	id 'java-library'
+	id 'jacoco'
+	id 'com.jfrog.bintray' version '1.8.4'
+	id 'maven-publish'
 }
 
 group = 'edu.stanford.hivdb.aapcnt'
+version = '2018.11a2'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 description = 'Amino acid prevalence data of HIV-1 pol'
 
 dependencies {
 	implementation 'org.apache.commons:commons-lang3:3.8.1'
-    implementation 'commons-io:commons-io:2.6'
-    implementation 'com.google.code.gson:gson:2.8.5'
-    testImplementation 'junit:junit:4.12'
+	implementation 'commons-io:commons-io:2.6'
+	implementation 'com.google.code.gson:gson:2.8.5'
+	testImplementation 'junit:junit:4.12'
 }
 
 repositories {
-    jcenter()
+	jcenter()
 }
 
 task copyAAPcntData(type: Copy, group: 'build') {
@@ -25,10 +31,104 @@ task copyAAPcntData(type: Copy, group: 'build') {
 }
 
 jacocoTestReport {
-    reports {
-        xml.enabled true
-        html.enabled true
-    }
+	reports {
+		xml.enabled true
+		html.enabled true
+	}
 }
 
 assemble.dependsOn copyAAPcntData
+
+task sourcesJar(type: Jar) {
+	dependsOn classes
+	classifier 'sources'
+	from sourceSets.main.allSource
+}
+
+artifacts {
+	archives sourcesJar
+}
+
+publishing {
+
+	publications {
+
+		HIVAAPcntJava(MavenPublication) {
+			/* shamelessly copied from GraphQL-Java */
+			version version
+			from components.java
+
+			artifact sourcesJar {
+				classifier "sources"
+			}
+			pom.withXml {
+				Node pomNode = asNode()
+				pomNode.dependencies.'*'.findAll() {
+					it.artifactId.text() == 'antlr4'
+				}.each() {
+					it.parent().remove(it)
+				}
+				pomNode.children().last() + {
+					resolveStrategy = Closure.DELEGATE_FIRST
+					name 'hiv-aapcnt'
+					description 'Amino Acid Prevalence Data of HIV-1 pol'
+					url "https://github.com/hivdb/hiv-aapcnt"
+					scm {
+						url "https://github.com/hivdb/hiv-aapcnt"
+						connection "https://github.com/hivdb/hiv-aapcnt"
+						developerConnection "https://github.com/hivdb/hiv-aapcnt"
+					}
+					licenses {
+						license {
+							name 'Unlicense'
+							url 'https://github.com/hivdb/hiv-aapcnt/blob/master/LICENSE'
+							distribution 'repo'
+						}
+					}
+					developers {
+						developer {
+							id 'philiptzou'
+							name 'Philip Tzou'
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+bintray {
+	user = project.findProperty('BINTRAY_USER')
+	key = project.findProperty('BINTRAY_KEY')
+	publications = ['HIVAAPcntJava']
+	publish = true
+	pkg {
+		repo = 'hivdb'
+		name = 'hiv-aapcnt'
+		userOrg = 'hivdb'
+		desc = 'Amino Acid Prevalence Data of HIV-1 pol'
+		licenses = ['Unlicense']
+		vcsUrl = 'https://github.com/hivdb/hiv-aapcnt.git'
+	
+		version {
+			name = project.version
+			desc = project.description
+			released = new Date()
+			vcsTag = 'v' + project.version
+			gpg {
+				sign = true
+			}
+			mavenCentralSync {
+				sync = true
+				user = project.findProperty('MAVEN_USER')
+				password = project.findProperty('MAVEN_PASSWORD')
+				close = '1'
+			}
+		}
+   	}
+}
+
+// all publish tasks depend on the build task
+tasks.withType(PublishToMavenRepository) {
+    dependsOn build
+}
