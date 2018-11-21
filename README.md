@@ -3,6 +3,7 @@
 [![Travis CI](https://api.travis-ci.org/hivdb/hiv-aapcnt.svg?branch=master)](https://travis-ci.org/hivdb/hiv-aapcnt)
 [![codecov](https://codecov.io/gh/hivdb/hiv-aapcnt/branch/master/graph/badge.svg)](https://codecov.io/gh/hivdb/hiv-aapcnt)
 [![Download Java](https://api.bintray.com/packages/hivdb/hivdb/hiv-aapcnt/images/download.svg)](https://bintray.com/hivdb/hivdb/hiv-aapcnt/_latestVersion)
+[![donation](https://img.shields.io/badge/Donate-Stanford_Giving-green.svg)](https://giving.stanford.edu/goto/shafergift)
 
 Amino acid prevalence data of HIV-1 pol.
 
