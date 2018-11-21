@@ -1,4 +1,4 @@
 release-java:
-	cd hiv-aapcnt; ./gradlew bintrayUpload
+	@cd hiv-aapcnt-java; ./gradlew bintrayUpload
 
 .PHONY: release-java

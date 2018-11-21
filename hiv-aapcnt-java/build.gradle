@@ -7,7 +7,7 @@ plugins {
 }
 
 group = 'edu.stanford.hivdb.aapcnt'
-version = '2018.11a2'
+version = '2018.11'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
