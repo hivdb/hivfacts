@@ -17,16 +17,16 @@ public class HIVAminoAcidPercentsTest {
 
 	@Test
 	public void testGetInstanceSuccess() {
-		HIVAminoAcidPercents naiveAll01 = HIVAminoAcidPercents.getInstance("naive", "All");
-		HIVAminoAcidPercents naiveAll02 = HIVAminoAcidPercents.getInstance("naive", "All");
-		assertEquals("same singleton instance", naiveAll01, naiveAll02);
+		HIVAminoAcidPercents allAll01 = HIVAminoAcidPercents.getInstance("all", "All");
+		HIVAminoAcidPercents allAll02 = HIVAminoAcidPercents.getInstance("all", "All");
+		assertEquals("same singleton instance", allAll01, allAll02);
 	}
 	
 	@Test
 	public void testGetInstanceFailCase1() {
 		expectedEx.expect(ExceptionInInitializerError.class);
-		expectedEx.expectMessage("Invalid resource name (naiveE.json)");
-		HIVAminoAcidPercents.getInstance("naive", "E");
+		expectedEx.expectMessage("Invalid resource name (allE.json)");
+		HIVAminoAcidPercents.getInstance("all", "E");
 	}
 
 	@Test
@@ -38,9 +38,9 @@ public class HIVAminoAcidPercentsTest {
 	
 	@Test
 	public void testGsonLoad() {
-		HIVAminoAcidPercents naiveAll = HIVAminoAcidPercents.getInstance("naive", "All");
-		assertEquals((99 + 560 + 288) * 23, naiveAll.aminoAcidPcnts.size());
-		HIVAminoAcidPercent mutPR1A = naiveAll.aminoAcidPcnts.get(0);
+		HIVAminoAcidPercents allAll = HIVAminoAcidPercents.getInstance("all", "All");
+		assertEquals((99 + 560 + 288) * 23, allAll.aminoAcidPcnts.size());
+		HIVAminoAcidPercent mutPR1A = allAll.aminoAcidPcnts.get(0);
 		assertEquals("PR", mutPR1A.gene);
 		assertEquals(1, (int) mutPR1A.position);
 		assertEquals('A', (char) mutPR1A.aa);
@@ -48,18 +48,18 @@ public class HIVAminoAcidPercentsTest {
 	
 	@Test
 	public void testGetAll() {
-		HIVAminoAcidPercents naiveAll = HIVAminoAcidPercents.getInstance("naive", "All");
-		List<HIVAminoAcidPercent> allAAPcnts = naiveAll.get();
-		assertEquals(naiveAll.aminoAcidPcnts, allAAPcnts); // equal values
-		assertFalse(naiveAll.aminoAcidPcnts == allAAPcnts); // different references
+		HIVAminoAcidPercents allAll = HIVAminoAcidPercents.getInstance("all", "All");
+		List<HIVAminoAcidPercent> allAAPcnts = allAll.get();
+		assertEquals(allAll.aminoAcidPcnts, allAAPcnts); // equal values
+		assertFalse(allAll.aminoAcidPcnts == allAAPcnts); // different references
 		assertEquals((99 + 560 + 288) * 23, allAAPcnts.size());
 	}
 	
 	@Test
 	public void testGetByGene() {
-		HIVAminoAcidPercents naiveAll = HIVAminoAcidPercents.getInstance("naive", "All");
-		List<HIVAminoAcidPercent> gRTAAPcnts = naiveAll.get("RT");
-		List<HIVAminoAcidPercent> gRTAAPcntsByEnum = naiveAll.get(Gene.RT);
+		HIVAminoAcidPercents allAll = HIVAminoAcidPercents.getInstance("all", "All");
+		List<HIVAminoAcidPercent> gRTAAPcnts = allAll.get("RT");
+		List<HIVAminoAcidPercent> gRTAAPcntsByEnum = allAll.get(Gene.RT);
 		assertEquals(gRTAAPcnts, gRTAAPcntsByEnum); // equal values
 		assertFalse(gRTAAPcnts == gRTAAPcntsByEnum); // different references
 		assertEquals(560 * 23, gRTAAPcnts.size());
@@ -76,9 +76,9 @@ public class HIVAminoAcidPercentsTest {
 	
 	@Test
 	public void testGetByGenePos() {
-		HIVAminoAcidPercents naiveAll = HIVAminoAcidPercents.getInstance("naive", "All");
-		List<HIVAminoAcidPercent> gpIN263AAPcnts = naiveAll.get("IN", 263);
-		List<HIVAminoAcidPercent> gpIN263AAPcntsByEnum = naiveAll.get(Gene.IN, 263);
+		HIVAminoAcidPercents allAll = HIVAminoAcidPercents.getInstance("all", "All");
+		List<HIVAminoAcidPercent> gpIN263AAPcnts = allAll.get("IN", 263);
+		List<HIVAminoAcidPercent> gpIN263AAPcntsByEnum = allAll.get(Gene.IN, 263);
 		assertEquals(gpIN263AAPcnts, gpIN263AAPcntsByEnum); // equal value
 		assertFalse(gpIN263AAPcnts == gpIN263AAPcntsByEnum); // different references
 		assertEquals(23, gpIN263AAPcntsByEnum.size());
@@ -93,9 +93,9 @@ public class HIVAminoAcidPercentsTest {
 	
 	@Test
 	public void testGetByMut() {
-		HIVAminoAcidPercents naiveAll = HIVAminoAcidPercents.getInstance("naive", "All");
-		HIVAminoAcidPercent mutIN263R = naiveAll.get("IN", 263, 'R');
-		HIVAminoAcidPercent mutIN263RByEnum = naiveAll.get(Gene.IN, 263, 'R');
+		HIVAminoAcidPercents allAll = HIVAminoAcidPercents.getInstance("all", "All");
+		HIVAminoAcidPercent mutIN263R = allAll.get("IN", 263, 'R');
+		HIVAminoAcidPercent mutIN263RByEnum = allAll.get(Gene.IN, 263, 'R');
 		assertEquals(mutIN263R, mutIN263RByEnum); // equal value
 		assertTrue(mutIN263R == mutIN263RByEnum); // same references
 		assertEquals("IN", mutIN263R.gene);
@@ -105,13 +105,13 @@ public class HIVAminoAcidPercentsTest {
 	
 	@Test
 	public void testGetHighestPercentValue() {
-		HIVAminoAcidPercents naiveAll = HIVAminoAcidPercents.getInstance("naive", "All");
-		double highestVal = naiveAll.getHighestAAPercentValue("PR", 23, "AHI");
-		double highestValByEnum = naiveAll.getHighestAAPercentValue(Gene.PR, 23, "AHI");
+		HIVAminoAcidPercents allAll = HIVAminoAcidPercents.getInstance("all", "All");
+		double highestVal = allAll.getHighestAAPercentValue("PR", 23, "AHI");
+		double highestValByEnum = allAll.getHighestAAPercentValue(Gene.PR, 23, "AHI");
 		assertEquals(highestVal, highestValByEnum, 1e-18);
 		double expectedHighestVal = .0;
 		for (char aa : "AHI".toCharArray()) {
-			double pcntVal = naiveAll.get("PR", 23, aa).percent;
+			double pcntVal = allAll.get("PR", 23, aa).percent;
 			expectedHighestVal = Math.max(expectedHighestVal, pcntVal);
 		}
 		assertEquals(expectedHighestVal, highestVal, 1e-18);
@@ -119,28 +119,28 @@ public class HIVAminoAcidPercentsTest {
 		// These are intended to fail for every version update.
 		// You must manually check and correct these numbers.
 		assertEquals(0.00212115, highestVal, 1e-8);
-		assertEquals(0.09014744, naiveAll.getHighestAAPercentValue("RT", 67, "N"), 1e-8);
-		assertEquals(0.00803623, naiveAll.getHighestAAPercentValue("RT", 69, "KS"), 1e-8);
-		assertEquals(0.04702669, naiveAll.getHighestAAPercentValue("PR", 82, "IA"), 1e-8);
-		assertEquals(0.0, naiveAll.getHighestAAPercentValue(Gene.RT, 67, "W"), 1e-8);
-		assertEquals(0.09014744, naiveAll.getHighestAAPercentValue("RT", 67, "N*"), 1e-8);
-		assertEquals(0.0, naiveAll.getHighestAAPercentValue("RT", 67, "*"), 1e-8);
-		assertEquals(0.0, naiveAll.getHighestAAPercentValue("IN", 1, ""), 1e-8);
+		assertEquals(0.09014744, allAll.getHighestAAPercentValue("RT", 67, "N"), 1e-8);
+		assertEquals(0.00803623, allAll.getHighestAAPercentValue("RT", 69, "KS"), 1e-8);
+		assertEquals(0.04702669, allAll.getHighestAAPercentValue("PR", 82, "IA"), 1e-8);
+		assertEquals(0.0, allAll.getHighestAAPercentValue(Gene.RT, 67, "W"), 1e-8);
+		assertEquals(0.09014744, allAll.getHighestAAPercentValue("RT", 67, "N*"), 1e-8);
+		assertEquals(0.0, allAll.getHighestAAPercentValue("RT", 67, "*"), 1e-8);
+		assertEquals(0.0, allAll.getHighestAAPercentValue("IN", 1, ""), 1e-8);
 	}
 	
 	@Test
 	public void testContainsUnusualAA() {
-		HIVAminoAcidPercents naiveAll = HIVAminoAcidPercents.getInstance("naive", "All");
-		assertTrue(naiveAll.containsUnusualAA("RT", 5, "I*"));
-		assertFalse(naiveAll.containsUnusualAA(Gene.PR, 6, "W*")); // APOBEC stop codon
-		assertFalse(naiveAll.containsUnusualAA("RT", 67, "N"));
-		assertFalse(naiveAll.containsUnusualAA(Gene.RT, 69, "KS"));
-		assertTrue(naiveAll.containsUnusualAA("PR", 82, "VIAD"));
-		assertTrue(naiveAll.containsUnusualAA(Gene.RT, 67, "W"));
-		assertFalse(naiveAll.containsUnusualAA("RT", 69, "_"));
-		assertTrue(naiveAll.containsUnusualAA(Gene.PR, 69, "_"));
-		assertFalse(naiveAll.containsUnusualAA(Gene.RT, 67, "-"));
-		assertTrue(naiveAll.containsUnusualAA("PR", 67, "-"));
+		HIVAminoAcidPercents allAll = HIVAminoAcidPercents.getInstance("all", "All");
+		assertTrue(allAll.containsUnusualAA("RT", 5, "I*"));
+		assertFalse(allAll.containsUnusualAA(Gene.PR, 6, "W*")); // APOBEC stop codon
+		assertFalse(allAll.containsUnusualAA("RT", 67, "N"));
+		assertFalse(allAll.containsUnusualAA(Gene.RT, 69, "KS"));
+		assertTrue(allAll.containsUnusualAA("PR", 82, "VIAD"));
+		assertTrue(allAll.containsUnusualAA(Gene.RT, 67, "W"));
+		assertFalse(allAll.containsUnusualAA("RT", 69, "_"));
+		assertTrue(allAll.containsUnusualAA(Gene.PR, 69, "_"));
+		assertFalse(allAll.containsUnusualAA(Gene.RT, 67, "-"));
+		assertTrue(allAll.containsUnusualAA("PR", 67, "-"));
 	}
 
 }
