@@ -21,5 +21,4 @@ First we calculate the prevalence of an amino acid at a position:
 In general, an amino acid at a position with its prevalence < 0.01% is
 considered unusual, with the following exceptions:
 
-1. It is possessed with drug resistance score in HIVDB algorithm;
-2. It is considered as a signature APOBEC-mediated hypermutation.
+- It is possessed with drug resistance score in HIVDB algorithm.
