@@ -118,12 +118,12 @@ public class HIVAminoAcidPercentsTest {
 
 		// These are intended to fail for every version update.
 		// You must manually check and correct these numbers.
-		assertEquals(0.00212115, highestVal, 1e-8);
-		assertEquals(0.09014744, allAll.getHighestAAPercentValue("RT", 67, "N"), 1e-8);
-		assertEquals(0.00803623, allAll.getHighestAAPercentValue("RT", 69, "KS"), 1e-8);
-		assertEquals(0.04702669, allAll.getHighestAAPercentValue("PR", 82, "IA"), 1e-8);
+		assertEquals(0.00188219, highestVal, 1e-8);
+		assertEquals(0.08008744, allAll.getHighestAAPercentValue("RT", 67, "N"), 1e-8);
+		assertEquals(0.00825590, allAll.getHighestAAPercentValue("RT", 69, "KS"), 1e-8);
+		assertEquals(0.04722477, allAll.getHighestAAPercentValue("PR", 82, "IA"), 1e-8);
 		assertEquals(0.0, allAll.getHighestAAPercentValue(Gene.RT, 67, "W"), 1e-8);
-		assertEquals(0.09014744, allAll.getHighestAAPercentValue("RT", 67, "N*"), 1e-8);
+		assertEquals(0.08008744, allAll.getHighestAAPercentValue("RT", 67, "N*"), 1e-8);
 		assertEquals(0.0, allAll.getHighestAAPercentValue("RT", 67, "*"), 1e-8);
 		assertEquals(0.0, allAll.getHighestAAPercentValue("IN", 1, ""), 1e-8);
 	}
@@ -132,7 +132,7 @@ public class HIVAminoAcidPercentsTest {
 	public void testContainsUnusualAA() {
 		HIVAminoAcidPercents allAll = HIVAminoAcidPercents.getInstance("all", "All");
 		assertTrue(allAll.containsUnusualAA("RT", 5, "I*"));
-		assertFalse(allAll.containsUnusualAA(Gene.PR, 6, "W*")); // APOBEC stop codon
+		assertTrue(allAll.containsUnusualAA(Gene.PR, 6, "W*")); // APOBEC stop codon
 		assertFalse(allAll.containsUnusualAA("RT", 67, "N"));
 		assertFalse(allAll.containsUnusualAA(Gene.RT, 69, "KS"));
 		assertTrue(allAll.containsUnusualAA("PR", 82, "VIAD"));
