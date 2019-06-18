@@ -10,7 +10,7 @@ jobs:
           - $HOME/.gradle/caches/
           - $HOME/.gradle/wrapper/
       before_install:
-        - cd hiv-aapcnt-java/
+        - cd hivfacts-java/
       script:
         - ./gradlew check
         - ./gradlew jacocoTestReport
