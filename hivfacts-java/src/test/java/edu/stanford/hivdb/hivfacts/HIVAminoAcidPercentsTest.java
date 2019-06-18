@@ -118,12 +118,12 @@ public class HIVAminoAcidPercentsTest {
 
 		// These are intended to fail for every version update.
 		// You must manually check and correct these numbers.
-		assertEquals(0.00193532, highestVal, 1e-8);
-		assertEquals(0.08129534, allall.getHighestAAPercentValue("RT", 67, "N"), 1e-8);
-		assertEquals(0.00824530, allall.getHighestAAPercentValue("RT", 69, "KS"), 1e-8);
-		assertEquals(0.04716652, allall.getHighestAAPercentValue("PR", 82, "IA"), 1e-8);
+		assertEquals(0.00193544, highestVal, 1e-8);
+		assertEquals(0.08129564, allall.getHighestAAPercentValue("RT", 67, "N"), 1e-8);
+		assertEquals(0.00824052, allall.getHighestAAPercentValue("RT", 69, "KS"), 1e-8);
+		assertEquals(0.04716390, allall.getHighestAAPercentValue("PR", 82, "IA"), 1e-8);
 		assertEquals(0.0, allall.getHighestAAPercentValue(Gene.RT, 67, "W"), 1e-8);
-		assertEquals(0.08129534, allall.getHighestAAPercentValue("RT", 67, "N*"), 1e-8);
+		assertEquals(0.08129564, allall.getHighestAAPercentValue("RT", 67, "N*"), 1e-8);
 		assertEquals(0.0, allall.getHighestAAPercentValue("RT", 67, "*"), 1e-8);
 		assertEquals(0.0, allall.getHighestAAPercentValue("IN", 1, ""), 1e-8);
 	}
