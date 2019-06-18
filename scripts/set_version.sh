@@ -9,7 +9,7 @@ if [ -z "$1" ]; then
 fi
 
 echo $1 > VERSION
-sed -i "" "s/^version = '.*'$/version = '$1'/g" hiv-aapcnt-java/build.gradle
-sed -i "" "s/^version = '.*'$/version = '$1'/g" hiv-aapcnt-python/setup.py
-sed -i "" "s/^version = '.*'$/version = '$1'/g" hiv-aapcnt-python/hivaapcnt/__init__.py
+sed -i "" "s/^version = '.*'$/version = '$1'/g" hivfacts-java/build.gradle
+sed -i "" "s/^version = '.*'$/version = '$1'/g" hivfacts-python/setup.py
+sed -i "" "s/^version = '.*'$/version = '$1'/g" hivfacts-python/hivaapcnt/__init__.py
 cat VERSION
