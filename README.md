@@ -39,3 +39,12 @@ A sequence falls in either of the conditions below is filtered.
 
 Score cutoff: the "score" here is defined as the total number of problematic mutations.
 A problematic mutation is defined either an APOBEC mutation or an unusual mutation.
+
+## Subtype and treatment distribution
+
+|           | PR     | RT     | IN    |
+|-----------|--------|--------|-------|
+| # Total   | 186116 | 189748 | 22868 |
+| # B       | 102435 | 100064 | 12615 |
+| # Non-B   | 83681  | 89684  | 10253 |
+| % Treated | 15.86% | 58.14% | 6.69% |

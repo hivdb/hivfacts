@@ -89,4 +89,4 @@ ENV/
 .ropeproject
 
 # exclude all duplicate data
-hivaapcnt/data
+hivfacts/data

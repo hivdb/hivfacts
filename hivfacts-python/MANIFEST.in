@@ -1,1 +1,2 @@
-include hivaapcnt/data/*.json
+include hivfacts/data/aapcnt/*.json
+include hivfacts/data/codonpcnt/*.json

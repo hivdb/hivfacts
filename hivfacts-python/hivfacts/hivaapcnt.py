@@ -14,7 +14,8 @@ class HIVAAPcnt:
     singletons = {}
 
     def __new__(cls, treatment, subtype):
-        resource_name = '{}{}.json'.format(treatment, subtype)
+        lrx = treatment.lower()
+        resource_name = 'rx-{}_subtype-{}.json'.format(lrx, subtype)
         if resource_name in cls.singletons:
             return cls.singletons[resource_name]
         self = super(HIVAAPcnt, cls).__new__(cls)
@@ -23,7 +24,7 @@ class HIVAAPcnt:
         return self
 
     def __init_resource(self, resource_name):
-        with open(os.path.join(RES_DIRECTORY, resource_name)) as fp:
+        with open(os.path.join(RES_DIRECTORY, 'aapcnt', resource_name)) as fp:
             aapcnts = self.__aapcnts = json.load(fp)
 
         aapcnts_dict = {}

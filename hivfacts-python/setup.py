@@ -10,25 +10,27 @@ from setuptools.command.build_py import build_py
 version = '2019.6a1'
 
 
-class CopyAAPcntDataCmd(build_py):
+class CopyHIVFactsDataCmd(build_py):
 
     def run(self):
-        for fname in glob('../data/*.json'):
-            copy2(fname, 'hivaapcnt/data/')
-        super(CopyAAPcntDataCmd, self).run()
+        for fname in glob('../data/aapcnt/*.json'):
+            copy2(fname, 'hivfacts/data/aapcnt/')
+        for fname in glob('../data/codonpcnt/*.json'):
+            copy2(fname, 'hivfacts/data/codonpcnt/')
+        super(CopyHIVFactsDataCmd, self).run()
 
 
 setup_params = dict(
-    name='hiv-aapcnt',
+    name='hivfacts',
     version=version,
-    url='https://github.com/hivdb/hiv-aapcnt/tree/master/hiv-aapcnt-python',
+    url='https://github.com/hivdb/hivfacts/tree/master/hivfacts-python',
     author='Philip Tzou',
     author_email='philiptz@stanford.edu',
     description='Amino acid prevalence data of HIV-1 pol',
-    packages=['hivaapcnt', 'hivaapcnt/data'],
+    packages=['hivfacts', 'hivfacts/data'],
     include_package_data=True,
     cmdclass={
-        'copy_aapcnt': CopyAAPcntDataCmd
+        'copy_data': CopyHIVFactsDataCmd
     },
     classifiers=[
         'Development Status :: 4 - Beta',
