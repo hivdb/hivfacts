@@ -47,11 +47,11 @@ class HIVAAPcnt:
             result = self.__aapcnts_dict[(gene, position)][aa]
         return deepcopy(result)
 
-    """
-    Returns the highest amino acid prevalence associated with each of
-    the AA in a mixture.
-    """
     def get_highest_aa_percent_value(self, gene, position, mixture):
+        """
+        Returns the highest amino acid prevalence associated with each of
+        the AA in a mixture.
+        """
         pcntval = .0
         gpos = (gene, position)
         for aa in mixture:
@@ -59,8 +59,8 @@ class HIVAAPcnt:
             pcntval = max(pcntval, aa_pcntval)
         return pcntval
 
-    """Returns True if the given mutation contains any unusual AA"""
     def contains_unusual_aa(self, gene, position, aas):
+        """Returns True if the given mutation contains any unusual AA"""
         gpos = (gene, position)
         for aa in aas:
             aapcnt = self.__aapcnts_dict[gpos][aa]

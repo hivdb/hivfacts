@@ -7,7 +7,7 @@ from shutil import copy2
 import setuptools
 from setuptools.command.build_py import build_py
 
-version = '2019.6a1'
+version = '2019.8'
 
 
 class CopyHIVFactsDataCmd(build_py):
@@ -17,6 +17,8 @@ class CopyHIVFactsDataCmd(build_py):
             copy2(fname, 'hivfacts/data/aapcnt/')
         for fname in glob('../data/codonpcnt/*.json'):
             copy2(fname, 'hivfacts/data/codonpcnt/')
+        for fname in glob('../data/apobecs/*.json'):
+            copy2(fname, 'hivfacts/data/apobecs/')
         super(CopyHIVFactsDataCmd, self).run()
 
 

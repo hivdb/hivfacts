@@ -103,11 +103,18 @@ public class HIVCodonPercents {
 			return posCodons.get(codon);
 		}
 		else if (posCodons.isEmpty()) {
-			return null;
+			throw new IllegalArgumentException(
+				String.format("Argument 'pos' is out of range: %d", pos));
+		}
+		else if (codon.matches("^[ACGT]{3}$")) {
+			int total = posCodons.values().iterator().next().total;
+			HIVCodonPercent posCodon = new HIVCodonPercent(gene, pos, codon, 'X', .0, 0, total);
+			posCodons.put(codon, posCodon);
+			return posCodon;
 		}
 		else {
-			int total = posCodons.values().iterator().next().total;
-			return new HIVCodonPercent(gene, pos, codon, 'X', .0, 0, total);
+			throw new IllegalArgumentException(
+				String.format("Invalid argument 'codon' value: %s", codon));
 		}
 	}
 
@@ -126,8 +133,8 @@ public class HIVCodonPercents {
 	 *
 	 * @return Double highest amino acid prevalence
 	 */
-	public Double getHighestAAPercentValue(
-		String gene, int pos, String[] codonMixture
+	public Double getHighestCodonPercentValue(
+		String gene, int pos, String... codonMixture
 	) {
 		Double pcntVal = 0.0;
 
@@ -138,11 +145,11 @@ public class HIVCodonPercents {
 		return pcntVal;
 	}
 	
-	public Double getHighestAAPercentValue(
-		Enum<?> geneEnum, int pos, String[] codonMixture
+	public Double getHighestCodonPercentValue(
+		Enum<?> geneEnum, int pos, String... codonMixture
 	) {
 		String gene = geneEnum.toString();
-		return getHighestAAPercentValue(gene, pos, codonMixture);
+		return getHighestCodonPercentValue(gene, pos, codonMixture);
 	}
 	
 }

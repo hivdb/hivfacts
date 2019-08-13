@@ -14,7 +14,6 @@ public class HIVAminoAcidPercentTest {
 			/* count     = */ 1,
 			/* total     = */ 147934,
 			/* reason    = */ "PCNT",
-			/* isAPOBEC  = */ false,
 			/* isUnusual = */ true
 		);
 		assertEquals("PR", mPR5A.gene);
@@ -24,7 +23,6 @@ public class HIVAminoAcidPercentTest {
 		assertEquals(1, (int) mPR5A.count);
 		assertEquals(147934, (int) mPR5A.total);
 		assertEquals("PCNT", mPR5A.reason);
-		assertFalse(mPR5A.isAPOBEC);
 		assertTrue(mPR5A.isUnusual);
 	}
 
