@@ -9,7 +9,6 @@ def main():
         "  `Gene` enum('PR','RT','IN') NOT NULL,",
         '  `Position` smallint(3) unsigned NOT NULL,',
         '  `AA` char(1) NOT NULL,',
-        "  `DRM` enum('Yes','No') NOT NULL,",
         '  PRIMARY KEY (`Gene`,`Position`,`AA`)',
         ') ENGINE=MyISAM DEFAULT CHARSET=utf8;',
         '',
@@ -20,14 +19,8 @@ def main():
 
     for mut in apobec.get_apobec_list():
         sql.append(
-            "INSERT INTO `tblLUAPOBEC2` (Gene, Position, AA, DRM) VALUES "
-            "('{gene}', {position}, '{aa}', 'No');"
-            .format(**mut))
-
-    for mut in apobec.get_apobec_drm_list():
-        sql.append(
-            "INSERT INTO `tblLUAPOBEC2` (Gene, Position, AA, DRM) VALUES "
-            "('{gene}', {position}, '{aa}', 'Yes');"
+            "INSERT INTO `tblLUAPOBEC2` (Gene, Position, AA) VALUES "
+            "('{gene}', {position}, '{aa}');"
             .format(**mut))
 
     print('\n'.join(sql))
