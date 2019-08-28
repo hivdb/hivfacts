@@ -106,6 +106,13 @@ public class HIVCodonPercents {
 			throw new IllegalArgumentException(
 				String.format("Argument 'pos' is out of range: %d", pos));
 		}
+		else if (codon.matches("^ins|del$")) {
+			int total = posCodons.values().iterator().next().total;
+			char aa = codon.equals("ins") ? '_' : '-';
+			HIVCodonPercent posCodon = new HIVCodonPercent(gene, pos, codon, aa, .0, 0, total);
+			posCodons.put(codon, posCodon);
+			return posCodon;
+		}
 		else if (codon.matches("^[ACGT]{3}$")) {
 			int total = posCodons.values().iterator().next().total;
 			HIVCodonPercent posCodon = new HIVCodonPercent(gene, pos, codon, 'X', .0, 0, total);
@@ -114,7 +121,7 @@ public class HIVCodonPercents {
 		}
 		else {
 			throw new IllegalArgumentException(
-				String.format("Invalid argument 'codon' value: %s", codon));
+				String.format("Invalid argument codon \"%s\" at %s%d", codon, gene, pos));
 		}
 	}
 

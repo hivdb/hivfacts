@@ -42,10 +42,13 @@ class HIVCodonPcnt:
             return position_result[codon]
         else:
             template_result = next(iter(position_result.values()))
+            aa = 'X'
+            if codon in ('ins', 'del'):
+                aa = '_' if codon == 'ins' else '-'
             return {
                 **template_result,
                 'codon': codon,
-                'aa': 'X',
+                'aa': aa,
                 'percent': .0,
                 'count': 0
             }
