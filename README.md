@@ -8,8 +8,9 @@
 
 Amino acid / codon prevalence and classification data of HIV-1 pol.
 
-## Steps and Criteria for Classifying Unusual Mutations
+## Unusual Mutations
 
+### Steps and Criteria
 First we calculate the prevalence of an amino acid at a position:
 
 1. Same amino acid at the same position from a single person is only
@@ -26,7 +27,7 @@ considered unusual, with the following exception:
 
 - The amino acid is a known drug resistance mutation according to latest HIVDB algorithm.
 
-## QA Criteria
+### Sequence QA Criteria
 
 A sequence falls in either of the conditions below is filtered.
 
@@ -40,7 +41,7 @@ A sequence falls in either of the conditions below is filtered.
 Score cutoff: the "score" here is defined as the total number of problematic mutations.
 A problematic mutation is defined either an APOBEC mutation or an unusual mutation.
 
-## Subtype and treatment distribution
+### Subtype and treatment distribution
 
 |           | PR     | RT     | IN    |
 |-----------|--------|--------|-------|
@@ -48,3 +49,7 @@ A problematic mutation is defined either an APOBEC mutation or an unusual mutati
 | # B       | 102435 | 100064 | 12615 |
 | # Non-B   | 83681  | 89684  | 10253 |
 | % Treated | 15.86% | 58.14% | 6.69% |
+
+## Signature APOBEC Mutations and APOBEC-context DRMs
+
+Please visit [this page](https://hivdb.stanford.edu/page/apobecs/).
