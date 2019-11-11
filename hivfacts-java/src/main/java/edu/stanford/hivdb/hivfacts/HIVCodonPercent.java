@@ -1,7 +1,8 @@
 package edu.stanford.hivdb.hivfacts;
 
 public class HIVCodonPercent {
-	final public String gene;
+	final private String strain = "HIV1";
+	final private String gene;
 	final public Integer position;
 	final public String codon;
 	final public Character aa;
@@ -20,8 +21,12 @@ public class HIVCodonPercent {
 		this.count = count;
 		this.total = total;
 	}
-	
+
+	public Gene getGene() {
+		return Gene.valueOf(strain, gene);
+	}
+
 	public GenePosition getGenePosition() {
-		return new GenePosition(gene, position);
+		return new GenePosition(getGene(), position);
 	}
 }

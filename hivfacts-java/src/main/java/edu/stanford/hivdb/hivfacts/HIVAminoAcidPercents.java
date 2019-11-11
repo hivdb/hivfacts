@@ -21,16 +21,16 @@ import com.google.gson.reflect.TypeToken;
  *
  */
 public class HIVAminoAcidPercents {
-	
+
 	final static protected Gson gson = new Gson();
 	final static protected Map<String, HIVAminoAcidPercents> singletons = new HashMap<>();
-	
+
 	final protected List<HIVAminoAcidPercent> aminoAcidPcnts;
 	final private Map<GenePosition, Map<Character, HIVAminoAcidPercent>> aminoAcidPcntMap = new HashMap<>();
 
 	/**
 	 * Get an HIVAminoAcidPercents instance
-	 * 
+	 *
 	 * @param treatment "naive" or "art"
 	 * @param subtype "all", "A", "B", "C", "D", "F", "G", "CRF01_AE", "CRF02_AG", "other"
 	 */
@@ -41,15 +41,15 @@ public class HIVAminoAcidPercents {
 		}
 		return singletons.get(resourceName);
 	}
-	
+
 
 	/**
 	 * HIVAminoAcidPercents initializer
-	 * 
+	 *
 	 * @param resourceName
 	 */
 	protected HIVAminoAcidPercents(String resourceName) {
-		
+
 		try (
 			InputStream stream = this
 				.getClass().getClassLoader()
@@ -74,34 +74,21 @@ public class HIVAminoAcidPercents {
 		// make a copy in case of any modification
 		return new ArrayList<>(aminoAcidPcnts);
 	}
-	
-	public List<HIVAminoAcidPercent> get(String gene) {
+
+	public List<HIVAminoAcidPercent> get(Gene gene) {
 		return (aminoAcidPcnts
-				.stream().filter(aap -> aap.gene.equals(gene))
+				.stream().filter(aap -> aap.getGene().equals(gene))
 				.collect(Collectors.toList()));
 	}
 
-	public List<HIVAminoAcidPercent> get(Enum<?> geneEnum) {
-		String gene = geneEnum.toString();
-		return get(gene);
+	public List<HIVAminoAcidPercent> get(Gene gene, int pos) {
+		return new ArrayList<>(
+			aminoAcidPcntMap.get(new GenePosition(gene, pos))
+			.values());
 	}
 
-	public List<HIVAminoAcidPercent> get(String gene, int pos) {
-		return new ArrayList<>(aminoAcidPcntMap.get(new GenePosition(gene, pos)).values());
-	}
-
-	public List<HIVAminoAcidPercent> get(Enum<?> geneEnum, int pos) {
-		String gene = geneEnum.toString();
-		return get(gene, pos);
-	}
-
-	public HIVAminoAcidPercent get(String gene, int pos, char aa) {
+	public HIVAminoAcidPercent get(Gene gene, int pos, char aa) {
 		return aminoAcidPcntMap.get(new GenePosition(gene, pos)).get(aa);
-	}
-
-	public HIVAminoAcidPercent get(Enum<?> geneEnum, int pos, char aa) {
-		String gene = geneEnum.toString();
-		return get(gene, pos, aa);
 	}
 
 	/**
@@ -116,7 +103,7 @@ public class HIVAminoAcidPercents {
 	 * @return Double highest amino acid prevalence
 	 */
 	public Double getHighestAAPercentValue(
-		String gene, int pos, /* char cons,*/ String mixture
+		Gene gene, int pos, /* char cons,*/ String mixture
 	) {
 		Double pcntVal = 0.0;
 		GenePosition gpos = new GenePosition(gene, pos);
@@ -131,23 +118,16 @@ public class HIVAminoAcidPercents {
 		}
 		return pcntVal;
 	}
-	
-	public Double getHighestAAPercentValue(
-		Enum<?> geneEnum, int pos, /* char cons,*/ String mixture
-	) {
-		String gene = geneEnum.toString();
-		return getHighestAAPercentValue(gene, pos, /*cons,*/ mixture);
-	}
-	
+
 	/**
 	 * Returns true if the given mutation contains any unusual AA
-	 * 
+	 *
 	 * @param gene
 	 * @param pos
 	 * @param aas
 	 * @return true if contains unusual AA
 	 */
-	public Boolean containsUnusualAA(String gene, int pos, String aas) {
+	public Boolean containsUnusualAA(Gene gene, int pos, String aas) {
 		GenePosition gpos = new GenePosition(gene, pos);
 		for (char aa : aas.toCharArray()) {
 			HIVAminoAcidPercent aaPcnt = aminoAcidPcntMap.get(gpos).get(aa);
@@ -156,11 +136,6 @@ public class HIVAminoAcidPercents {
 			}
 		}
 		return false;
-	}
-	
-	public Boolean containsUnusualAA(Enum<?> geneEnum, int pos, String aas) {
-		String gene = geneEnum.toString();
-		return containsUnusualAA(gene, pos, aas);
 	}
 
 }

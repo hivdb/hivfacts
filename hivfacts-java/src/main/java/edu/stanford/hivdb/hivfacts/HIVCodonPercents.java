@@ -22,16 +22,16 @@ import com.google.gson.reflect.TypeToken;
  *
  */
 public class HIVCodonPercents {
-	
+
 	final static protected Gson gson = new Gson();
 	final static protected Map<String, HIVCodonPercents> singletons = new HashMap<>();
-	
+
 	final protected List<HIVCodonPercent> codonPcnts;
 	final private Map<GenePosition, Map<String, HIVCodonPercent>> codonPcntMap = new HashMap<>();
 
 	/**
 	 * Get an HIVCodonPercents instance
-	 * 
+	 *
 	 * @param treatment "naive" or "art"
 	 * @param subtype "all", "A", "B", "C", "D", "F", "G", "CRF01_AE", "CRF02_AG"
 	 */
@@ -42,15 +42,15 @@ public class HIVCodonPercents {
 		}
 		return singletons.get(resourceName);
 	}
-	
+
 
 	/**
 	 * HIVAminoAcidPercents initializer
-	 * 
+	 *
 	 * @param resourceName
 	 */
 	protected HIVCodonPercents(String resourceName) {
-		
+
 		try (
 			InputStream stream = this
 				.getClass().getClassLoader()
@@ -75,28 +75,20 @@ public class HIVCodonPercents {
 		// make a copy in case of any modification
 		return new ArrayList<>(codonPcnts);
 	}
-	
-	public List<HIVCodonPercent> get(String gene) {
+
+	public List<HIVCodonPercent> get(Gene gene) {
 		return (codonPcnts
-				.stream().filter(cdp -> cdp.gene.equals(gene))
+				.stream().filter(cdp -> cdp.getGene().equals(gene))
 				.collect(Collectors.toList()));
 	}
 
-	public List<HIVCodonPercent> get(Enum<?> geneEnum) {
-		String gene = geneEnum.toString();
-		return get(gene);
+	public List<HIVCodonPercent> get(Gene gene, int pos) {
+		return new ArrayList<>(
+			codonPcntMap.getOrDefault(new GenePosition(gene, pos), Collections.emptyMap())
+			.values());
 	}
 
-	public List<HIVCodonPercent> get(String gene, int pos) {
-		return new ArrayList<>(codonPcntMap.getOrDefault(new GenePosition(gene, pos), Collections.emptyMap()).values());
-	}
-
-	public List<HIVCodonPercent> get(Enum<?> geneEnum, int pos) {
-		String gene = geneEnum.toString();
-		return get(gene, pos);
-	}
-
-	public HIVCodonPercent get(String gene, int pos, String codon) {
+	public HIVCodonPercent get(Gene gene, int pos, String codon) {
 		Map<String, HIVCodonPercent> posCodons =
 			codonPcntMap.getOrDefault(new GenePosition(gene, pos), Collections.emptyMap());
 		if (posCodons.containsKey(codon)) {
@@ -106,16 +98,16 @@ public class HIVCodonPercents {
 			throw new IllegalArgumentException(
 				String.format("Argument 'pos' is out of range: %d", pos));
 		}
-		else if (codon.matches("^ins|del$")) {
+		else if (codon.matches("^(ins|del)$")) {
 			int total = posCodons.values().iterator().next().total;
 			char aa = codon.equals("ins") ? '_' : '-';
-			HIVCodonPercent posCodon = new HIVCodonPercent(gene, pos, codon, aa, .0, 0, total);
+			HIVCodonPercent posCodon = new HIVCodonPercent(gene.getName(), pos, codon, aa, .0, 0, total);
 			posCodons.put(codon, posCodon);
 			return posCodon;
 		}
 		else if (codon.matches("^[ACGT]{3}$")) {
 			int total = posCodons.values().iterator().next().total;
-			HIVCodonPercent posCodon = new HIVCodonPercent(gene, pos, codon, 'X', .0, 0, total);
+			HIVCodonPercent posCodon = new HIVCodonPercent(gene.getName(), pos, codon, 'X', .0, 0, total);
 			posCodons.put(codon, posCodon);
 			return posCodon;
 		}
@@ -123,11 +115,6 @@ public class HIVCodonPercents {
 			throw new IllegalArgumentException(
 				String.format("Invalid argument codon \"%s\" at %s%d", codon, gene, pos));
 		}
-	}
-
-	public HIVCodonPercent get(Enum<?> geneEnum, int pos, String codon) {
-		String gene = geneEnum.toString();
-		return get(gene, pos, codon);
 	}
 
 	/**
@@ -141,7 +128,7 @@ public class HIVCodonPercents {
 	 * @return Double highest amino acid prevalence
 	 */
 	public Double getHighestCodonPercentValue(
-		String gene, int pos, String... codonMixture
+		Gene gene, int pos, String... codonMixture
 	) {
 		Double pcntVal = 0.0;
 
@@ -151,12 +138,5 @@ public class HIVCodonPercents {
 		}
 		return pcntVal;
 	}
-	
-	public Double getHighestCodonPercentValue(
-		Enum<?> geneEnum, int pos, String... codonMixture
-	) {
-		String gene = geneEnum.toString();
-		return getHighestCodonPercentValue(gene, pos, codonMixture);
-	}
-	
+
 }

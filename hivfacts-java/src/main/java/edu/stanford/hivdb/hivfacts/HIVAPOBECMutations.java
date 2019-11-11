@@ -18,14 +18,14 @@ public class HIVAPOBECMutations {
 
 	final static protected Gson gson = new Gson();
 	final static protected HIVAPOBECMutations singleton;
-	
+
 	static {
 		singleton = new HIVAPOBECMutations(
 			"apobecs/apobecs.json",
 			"apobecs/apobec_drms.json"
 		);
 	}
-	
+
 	final protected List<HIVAPOBECMutation> apobecs;
 	final protected List<HIVAPOBECMutation> apobecDRMs;
 	final private Map<GenePosition, Set<Character>> apobecMap;
@@ -34,7 +34,7 @@ public class HIVAPOBECMutations {
 	public static HIVAPOBECMutations getInstance() {
 		return singleton;
 	}
-	
+
 	protected static List<HIVAPOBECMutation> loadAPOBECRes(String resPath) {
 		try (
 			InputStream stream = HIVAPOBECMutations.class
@@ -49,12 +49,12 @@ public class HIVAPOBECMutations {
 			);
 		}
 	}
-	
+
 	protected static Map<GenePosition, Set<Character>>
 			buildLookupMap(List<HIVAPOBECMutation> mutations) {
 		Map<GenePosition, Set<Character>> lookup = new HashMap<>();
 		for (HIVAPOBECMutation mut : mutations) {
-			GenePosition gp = new GenePosition(mut.gene, mut.position);
+			GenePosition gp = new GenePosition(mut.getGene(), mut.position);
 			lookup.putIfAbsent(gp, new HashSet<>());
 			lookup.get(gp).add(mut.aa);
 		}
@@ -63,7 +63,7 @@ public class HIVAPOBECMutations {
 
 	/**
 	 * HIVAminoAcidPercents initializer
-	 * 
+	 *
 	 * @param resourceName
 	 */
 	protected HIVAPOBECMutations(String resApobecsPath, String resApobecDRMsPath) {
@@ -73,30 +73,22 @@ public class HIVAPOBECMutations {
 		apobecDRMMap = buildLookupMap(apobecDRMs);
 	}
 
-	public boolean isApobecMutation(String gene, int pos, char aa) {
+	public boolean isApobecMutation(Gene gene, int pos, char aa) {
 		Set<Character> aas = apobecMap.get(new GenePosition(gene, pos));
 		if (aas != null) {
 			return aas.contains(aa);
 		}
 		return false;
 	}
-	
-	public boolean isApobecMutation(Enum<?> geneEnum, int pos, char aa) {
-		return isApobecMutation(geneEnum.toString(), pos, aa);
-	}
 
-	public boolean isApobecDRM(String gene, int pos, char aa) {
+	public boolean isApobecDRM(Gene gene, int pos, char aa) {
 		Set<Character> aas = apobecDRMMap.get(new GenePosition(gene, pos));
 		if (aas != null) {
 			return aas.contains(aa);
 		}
 		return false;
 	}
-	
-	public boolean isApobecDRM(Enum<?> geneEnum, int pos, char aa) {
-		return isApobecDRM(geneEnum.toString(), pos, aa);
-	}
-	
+
 	public List<HIVAPOBECMutation> getApobecMutations() { return apobecs; }
 	public List<HIVAPOBECMutation> getApobecDRMs() { return apobecDRMs; }
 

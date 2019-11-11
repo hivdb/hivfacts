@@ -1,9 +1,10 @@
 package edu.stanford.hivdb.hivfacts;
 
 public class HIVAPOBECMutation {
-	protected String gene;
-	protected Integer position;
-	protected Character aa;
+	final private String strain = "HIV1";
+	final private String gene;
+	final protected Integer position;
+	final protected Character aa;
 
 	protected HIVAPOBECMutation(
 			String gene, int position, char aa) {
@@ -11,17 +12,17 @@ public class HIVAPOBECMutation {
 		this.position = position;
 		this.aa = aa;
 	}
-	
+
 	public GenePosition getGenePosition() {
-		return new GenePosition(gene, position);
+		return new GenePosition(getGene(), position);
 	}
-	
-	public String getGene() { return gene; }
+
+	public Gene getGene() { return Gene.valueOf(strain, gene); }
 	public Integer getPosition() { return position; }
 	public Character getAA() { return aa; }
-	
+
 	@Override
 	public String toString() {
-		return String.format("%s:%d%s", gene, position, aa);
+		return String.format("%s%s:%d%s", strain, gene, position, aa);
 	}
 }

@@ -16,7 +16,7 @@ public class HIVAminoAcidPercentTest {
 			/* reason    = */ "PCNT",
 			/* isUnusual = */ true
 		);
-		assertEquals("PR", mPR5A.gene);
+		assertEquals(Gene.valueOf("HIV1PR"), mPR5A.getGene());
 		assertEquals(5, (int) mPR5A.position);
 		assertEquals('A', (char) mPR5A.aa);
 		assertEquals(6.7597712493409226e-06, mPR5A.percent, 1e-18);

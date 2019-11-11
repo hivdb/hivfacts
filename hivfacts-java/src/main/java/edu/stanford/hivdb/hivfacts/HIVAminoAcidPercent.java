@@ -1,7 +1,8 @@
 package edu.stanford.hivdb.hivfacts;
 
 public class HIVAminoAcidPercent {
-	final public String gene;
+	final private String strain = "HIV1";
+	final private String gene;
 	final public Integer position;
 	final public Character aa;
 	final public Double percent;
@@ -22,9 +23,13 @@ public class HIVAminoAcidPercent {
 		this.reason = reason;
 		this.isUnusual = isUnusual;
 	}
-	
+
+	public Gene getGene() {
+		return Gene.valueOf(strain, gene);
+	}
+
 	public GenePosition getGenePosition() {
-		return new GenePosition(gene, position);
+		return new GenePosition(getGene(), position);
 	}
 
 }
