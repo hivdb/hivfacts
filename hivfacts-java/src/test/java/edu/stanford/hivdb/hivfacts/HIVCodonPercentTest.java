@@ -14,7 +14,7 @@ public class HIVCodonPercentTest {
 			/* count     = */ 1,
 			/* total     = */ 176536
 		);
-		assertEquals(Gene.valueOf("HIV1PR"), mPR5A.getGene());
+		assertEquals(HIVGene.valueOf("HIV1PR"), mPR5A.getGene());
 		assertEquals(5, (int) mPR5A.position);
 		assertEquals("GCT", (String) mPR5A.codon);
 		assertEquals('A', (char) mPR5A.aa);

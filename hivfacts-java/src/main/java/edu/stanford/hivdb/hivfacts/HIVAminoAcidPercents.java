@@ -26,7 +26,7 @@ public class HIVAminoAcidPercents {
 	final static protected Map<String, HIVAminoAcidPercents> singletons = new HashMap<>();
 
 	final protected List<HIVAminoAcidPercent> aminoAcidPcnts;
-	final private Map<GenePosition, Map<Character, HIVAminoAcidPercent>> aminoAcidPcntMap = new HashMap<>();
+	final private Map<HIVGenePosition, Map<Character, HIVAminoAcidPercent>> aminoAcidPcntMap = new HashMap<>();
 
 	/**
 	 * Get an HIVAminoAcidPercents instance
@@ -64,7 +64,7 @@ public class HIVAminoAcidPercents {
 		}
 
 		for (HIVAminoAcidPercent aaPcnt : aminoAcidPcnts) {
-			GenePosition gp = aaPcnt.getGenePosition();
+			HIVGenePosition gp = aaPcnt.getGenePosition();
 			aminoAcidPcntMap.putIfAbsent(gp, new LinkedHashMap<>());
 			aminoAcidPcntMap.get(gp).put(aaPcnt.aa, aaPcnt);
 		}
@@ -75,20 +75,20 @@ public class HIVAminoAcidPercents {
 		return new ArrayList<>(aminoAcidPcnts);
 	}
 
-	public List<HIVAminoAcidPercent> get(Gene gene) {
+	public List<HIVAminoAcidPercent> get(HIVGene gene) {
 		return (aminoAcidPcnts
 				.stream().filter(aap -> aap.getGene().equals(gene))
 				.collect(Collectors.toList()));
 	}
 
-	public List<HIVAminoAcidPercent> get(Gene gene, int pos) {
+	public List<HIVAminoAcidPercent> get(HIVGene gene, int pos) {
 		return new ArrayList<>(
-			aminoAcidPcntMap.get(new GenePosition(gene, pos))
+			aminoAcidPcntMap.get(new HIVGenePosition(gene, pos))
 			.values());
 	}
 
-	public HIVAminoAcidPercent get(Gene gene, int pos, char aa) {
-		return aminoAcidPcntMap.get(new GenePosition(gene, pos)).get(aa);
+	public HIVAminoAcidPercent get(HIVGene gene, int pos, char aa) {
+		return aminoAcidPcntMap.get(new HIVGenePosition(gene, pos)).get(aa);
 	}
 
 	/**
@@ -103,10 +103,10 @@ public class HIVAminoAcidPercents {
 	 * @return Double highest amino acid prevalence
 	 */
 	public Double getHighestAAPercentValue(
-		Gene gene, int pos, /* char cons,*/ String mixture
+		HIVGene gene, int pos, /* char cons,*/ String mixture
 	) {
 		Double pcntVal = 0.0;
-		GenePosition gpos = new GenePosition(gene, pos);
+		HIVGenePosition gpos = new HIVGenePosition(gene, pos);
 
 		for (char aa : mixture.toCharArray()) {
 			/* if (aa == cons || aa == '*') {
@@ -127,8 +127,8 @@ public class HIVAminoAcidPercents {
 	 * @param aas
 	 * @return true if contains unusual AA
 	 */
-	public Boolean containsUnusualAA(Gene gene, int pos, String aas) {
-		GenePosition gpos = new GenePosition(gene, pos);
+	public Boolean containsUnusualAA(HIVGene gene, int pos, String aas) {
+		HIVGenePosition gpos = new HIVGenePosition(gene, pos);
 		for (char aa : aas.toCharArray()) {
 			HIVAminoAcidPercent aaPcnt = aminoAcidPcntMap.get(gpos).get(aa);
 			if (aaPcnt.isUnusual) {

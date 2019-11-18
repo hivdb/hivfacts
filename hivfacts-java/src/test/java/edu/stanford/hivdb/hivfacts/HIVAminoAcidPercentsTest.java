@@ -39,7 +39,7 @@ public class HIVAminoAcidPercentsTest {
 		HIVAminoAcidPercents allall = HIVAminoAcidPercents.getInstance("all", "all");
 		assertEquals((99 + 560 + 288) * 23, allall.aminoAcidPcnts.size());
 		HIVAminoAcidPercent mutPR1A = allall.aminoAcidPcnts.get(0);
-		assertEquals(Gene.valueOf("HIV1PR"), mutPR1A.getGene());
+		assertEquals(HIVGene.valueOf("HIV1PR"), mutPR1A.getGene());
 		assertEquals(1, (int) mutPR1A.position);
 		assertEquals('A', (char) mutPR1A.aa);
 	}
@@ -56,13 +56,13 @@ public class HIVAminoAcidPercentsTest {
 	@Test
 	public void testGetByGene() {
 		HIVAminoAcidPercents allall = HIVAminoAcidPercents.getInstance("all", "all");
-		List<HIVAminoAcidPercent> gRTAAPcnts = allall.get(Gene.valueOf("HIV1RT"));
+		List<HIVAminoAcidPercent> gRTAAPcnts = allall.get(HIVGene.valueOf("HIV1RT"));
 		assertEquals(560 * 23, gRTAAPcnts.size());
 		int i = 0;
 		for (int p = 1; p <= 560; p ++) {
 			for (char aa : "ACDEFGHIKLMNPQRSTVWY_-*".toCharArray()) {
 				HIVAminoAcidPercent mut = gRTAAPcnts.get(i ++);
-				assertEquals(Gene.valueOf("HIV1RT"), mut.getGene());
+				assertEquals(HIVGene.valueOf("HIV1RT"), mut.getGene());
 				assertEquals(p, (int) mut.position);
 				assertEquals(aa, (char) mut.aa);
 			}
@@ -72,12 +72,12 @@ public class HIVAminoAcidPercentsTest {
 	@Test
 	public void testGetByGenePos() {
 		HIVAminoAcidPercents allall = HIVAminoAcidPercents.getInstance("all", "all");
-		List<HIVAminoAcidPercent> gpIN263AAPcnts = allall.get(Gene.valueOf("HIV1IN"), 263);
+		List<HIVAminoAcidPercent> gpIN263AAPcnts = allall.get(HIVGene.valueOf("HIV1IN"), 263);
 		assertEquals(23, gpIN263AAPcnts.size());
 		int i = 0;
 		for (char aa : "ACDEFGHIKLMNPQRSTVWY_-*".toCharArray()) {
 			HIVAminoAcidPercent mut = gpIN263AAPcnts.get(i ++);
-			assertEquals(Gene.valueOf("HIV1IN"), mut.getGene());
+			assertEquals(HIVGene.valueOf("HIV1IN"), mut.getGene());
 			assertEquals(263, (int) mut.position);
 			assertEquals(aa, (char) mut.aa);
 		}
@@ -86,8 +86,8 @@ public class HIVAminoAcidPercentsTest {
 	@Test
 	public void testGetByMut() {
 		HIVAminoAcidPercents allall = HIVAminoAcidPercents.getInstance("all", "all");
-		HIVAminoAcidPercent mutIN263R = allall.get(Gene.valueOf("HIV1IN"), 263, 'R');
-		assertEquals(Gene.valueOf("HIV1IN"), mutIN263R.getGene());
+		HIVAminoAcidPercent mutIN263R = allall.get(HIVGene.valueOf("HIV1IN"), 263, 'R');
+		assertEquals(HIVGene.valueOf("HIV1IN"), mutIN263R.getGene());
 		assertEquals(263, (int) mutIN263R.position);
 		assertEquals('R', (char) mutIN263R.aa);
 	}
@@ -95,10 +95,10 @@ public class HIVAminoAcidPercentsTest {
 	@Test
 	public void testGetHighestPercentValue() {
 		HIVAminoAcidPercents allall = HIVAminoAcidPercents.getInstance("all", "all");
-		double highestVal = allall.getHighestAAPercentValue(Gene.valueOf("HIV1PR"), 23, "AHI");
+		double highestVal = allall.getHighestAAPercentValue(HIVGene.valueOf("HIV1PR"), 23, "AHI");
 		double expectedHighestVal = .0;
 		for (char aa : "AHI".toCharArray()) {
-			double pcntVal = allall.get(Gene.valueOf("HIV1PR"), 23, aa).percent;
+			double pcntVal = allall.get(HIVGene.valueOf("HIV1PR"), 23, aa).percent;
 			expectedHighestVal = Math.max(expectedHighestVal, pcntVal);
 		}
 		assertEquals(expectedHighestVal, highestVal, 1e-18);
@@ -106,22 +106,22 @@ public class HIVAminoAcidPercentsTest {
 		// These are intended to fail for every version update.
 		// You must manually check and correct these numbers.
 		assertEquals(0.00193290, highestVal, 1e-8);
-		assertEquals(0.08111958, allall.getHighestAAPercentValue(Gene.valueOf("HIV1RT"), 67, "N"), 1e-8);
-		assertEquals(0.00822416, allall.getHighestAAPercentValue(Gene.valueOf("HIV1RT"), 69, "KS"), 1e-8);
-		assertEquals(0.04712358, allall.getHighestAAPercentValue(Gene.valueOf("HIV1PR"), 82, "IA"), 1e-8);
-		assertEquals(0.08111958, allall.getHighestAAPercentValue(Gene.valueOf("HIV1RT"), 67, "N*"), 1e-8);
-		assertEquals(0.0, allall.getHighestAAPercentValue(Gene.valueOf("HIV1RT"), 67, "*"), 1e-8);
-		assertEquals(0.0, allall.getHighestAAPercentValue(Gene.valueOf("HIV1IN"), 1, ""), 1e-8);
+		assertEquals(0.08111958, allall.getHighestAAPercentValue(HIVGene.valueOf("HIV1RT"), 67, "N"), 1e-8);
+		assertEquals(0.00822416, allall.getHighestAAPercentValue(HIVGene.valueOf("HIV1RT"), 69, "KS"), 1e-8);
+		assertEquals(0.04712358, allall.getHighestAAPercentValue(HIVGene.valueOf("HIV1PR"), 82, "IA"), 1e-8);
+		assertEquals(0.08111958, allall.getHighestAAPercentValue(HIVGene.valueOf("HIV1RT"), 67, "N*"), 1e-8);
+		assertEquals(0.0, allall.getHighestAAPercentValue(HIVGene.valueOf("HIV1RT"), 67, "*"), 1e-8);
+		assertEquals(0.0, allall.getHighestAAPercentValue(HIVGene.valueOf("HIV1IN"), 1, ""), 1e-8);
 	}
 
 	@Test
 	public void testContainsUnusualAA() {
 		HIVAminoAcidPercents allall = HIVAminoAcidPercents.getInstance("all", "all");
-		assertTrue(allall.containsUnusualAA(Gene.valueOf("HIV1RT"), 5, "I*"));
-		assertFalse(allall.containsUnusualAA(Gene.valueOf("HIV1RT"), 67, "N"));
-		assertTrue(allall.containsUnusualAA(Gene.valueOf("HIV1PR"), 82, "VIAD"));
-		assertFalse(allall.containsUnusualAA(Gene.valueOf("HIV1RT"), 69, "_"));
-		assertTrue(allall.containsUnusualAA(Gene.valueOf("HIV1PR"), 67, "-"));
+		assertTrue(allall.containsUnusualAA(HIVGene.valueOf("HIV1RT"), 5, "I*"));
+		assertFalse(allall.containsUnusualAA(HIVGene.valueOf("HIV1RT"), 67, "N"));
+		assertTrue(allall.containsUnusualAA(HIVGene.valueOf("HIV1PR"), 82, "VIAD"));
+		assertFalse(allall.containsUnusualAA(HIVGene.valueOf("HIV1RT"), 69, "_"));
+		assertTrue(allall.containsUnusualAA(HIVGene.valueOf("HIV1PR"), 67, "-"));
 	}
 
 }

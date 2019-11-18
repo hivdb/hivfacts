@@ -28,8 +28,8 @@ public class HIVAPOBECMutations {
 
 	final protected List<HIVAPOBECMutation> apobecs;
 	final protected List<HIVAPOBECMutation> apobecDRMs;
-	final private Map<GenePosition, Set<Character>> apobecMap;
-	final private Map<GenePosition, Set<Character>> apobecDRMMap;
+	final private Map<HIVGenePosition, Set<Character>> apobecMap;
+	final private Map<HIVGenePosition, Set<Character>> apobecDRMMap;
 
 	public static HIVAPOBECMutations getInstance() {
 		return singleton;
@@ -50,11 +50,11 @@ public class HIVAPOBECMutations {
 		}
 	}
 
-	protected static Map<GenePosition, Set<Character>>
+	protected static Map<HIVGenePosition, Set<Character>>
 			buildLookupMap(List<HIVAPOBECMutation> mutations) {
-		Map<GenePosition, Set<Character>> lookup = new HashMap<>();
+		Map<HIVGenePosition, Set<Character>> lookup = new HashMap<>();
 		for (HIVAPOBECMutation mut : mutations) {
-			GenePosition gp = new GenePosition(mut.getGene(), mut.position);
+			HIVGenePosition gp = new HIVGenePosition(mut.getGene(), mut.position);
 			lookup.putIfAbsent(gp, new HashSet<>());
 			lookup.get(gp).add(mut.aa);
 		}
@@ -73,16 +73,16 @@ public class HIVAPOBECMutations {
 		apobecDRMMap = buildLookupMap(apobecDRMs);
 	}
 
-	public boolean isApobecMutation(Gene gene, int pos, char aa) {
-		Set<Character> aas = apobecMap.get(new GenePosition(gene, pos));
+	public boolean isApobecMutation(HIVGene gene, int pos, char aa) {
+		Set<Character> aas = apobecMap.get(new HIVGenePosition(gene, pos));
 		if (aas != null) {
 			return aas.contains(aa);
 		}
 		return false;
 	}
 
-	public boolean isApobecDRM(Gene gene, int pos, char aa) {
-		Set<Character> aas = apobecDRMMap.get(new GenePosition(gene, pos));
+	public boolean isApobecDRM(HIVGene gene, int pos, char aa) {
+		Set<Character> aas = apobecDRMMap.get(new HIVGenePosition(gene, pos));
 		if (aas != null) {
 			return aas.contains(aa);
 		}

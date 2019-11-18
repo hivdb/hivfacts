@@ -28,18 +28,18 @@ public class HIVAPOBECMutationsTest {
 	@Test
 	public void testIsApobecMutation() {
 		HIVAPOBECMutations inst = HIVAPOBECMutations.getInstance();
-		assertTrue(inst.isApobecMutation(Gene.valueOf("HIV1PR"), 27, 'E'));
-		assertFalse(inst.isApobecMutation(Gene.valueOf("HIV1PR"), 27, 'G'));
-		assertFalse(inst.isApobecMutation(Gene.valueOf("HIV1IN"), 263, 'K'));
+		assertTrue(inst.isApobecMutation(HIVGene.valueOf("HIV1PR"), 27, 'E'));
+		assertFalse(inst.isApobecMutation(HIVGene.valueOf("HIV1PR"), 27, 'G'));
+		assertFalse(inst.isApobecMutation(HIVGene.valueOf("HIV1IN"), 263, 'K'));
 	}
 
 	@Test
 	public void testIsApobecDRM() {
 		HIVAPOBECMutations inst = HIVAPOBECMutations.getInstance();
-		assertFalse(inst.isApobecDRM(Gene.valueOf("HIV1PR"), 27, 'E'));
-		assertFalse(inst.isApobecDRM(Gene.valueOf("HIV1PR"), 27, 'G'));
-		assertTrue(inst.isApobecDRM(Gene.valueOf("HIV1IN"), 263, 'K'));
-		assertFalse(inst.isApobecDRM(Gene.valueOf("HIV1IN"), 263, 'R'));
+		assertFalse(inst.isApobecDRM(HIVGene.valueOf("HIV1PR"), 27, 'E'));
+		assertFalse(inst.isApobecDRM(HIVGene.valueOf("HIV1PR"), 27, 'G'));
+		assertTrue(inst.isApobecDRM(HIVGene.valueOf("HIV1IN"), 263, 'K'));
+		assertFalse(inst.isApobecDRM(HIVGene.valueOf("HIV1IN"), 263, 'R'));
 	}
 
 	@Test

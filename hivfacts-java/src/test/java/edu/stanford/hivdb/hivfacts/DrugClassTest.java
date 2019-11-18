@@ -29,119 +29,76 @@ public class DrugClassTest {
 
 	@Test
 	public void testGetGene() {
-		assertEquals(DrugClass.PI.gene(), GeneEnum.PR);
-		assertEquals(DrugClass.NRTI.gene(), GeneEnum.RT);
-		assertEquals(DrugClass.NNRTI.gene(), GeneEnum.RT);
-		assertEquals(DrugClass.INSTI.gene(), GeneEnum.IN);
+		assertEquals(HIVDrugClass.PI.gene(), HIVGeneEnum.PR);
+		assertEquals(HIVDrugClass.NRTI.gene(), HIVGeneEnum.RT);
+		assertEquals(HIVDrugClass.NNRTI.gene(), HIVGeneEnum.RT);
+		assertEquals(HIVDrugClass.INSTI.gene(), HIVGeneEnum.IN);
 	}
 
 	@Test
 	public void testGetSynonym() {
-		assertEquals(DrugClass.getSynonym("PI"), DrugClass.PI);
-		assertEquals(DrugClass.getSynonym("NRTI"), DrugClass.NRTI);
-		assertEquals(DrugClass.getSynonym("NNRTI"), DrugClass.NNRTI);
-		assertEquals(DrugClass.getSynonym("INSTI"), DrugClass.INSTI);
-		assertEquals(DrugClass.getSynonym("INI"), DrugClass.INSTI);
-	}
-
-	@Test
-	public void testGetDrugsForHivdbTesting() {
-		List<Drug> piExpecteds = new ArrayList<>();
-		piExpecteds.add(Drug.ATV);
-		piExpecteds.add(Drug.DRV);
-		piExpecteds.add(Drug.FPV);
-		piExpecteds.add(Drug.IDV);
-		piExpecteds.add(Drug.LPV);
-		piExpecteds.add(Drug.NFV);
-		piExpecteds.add(Drug.SQV);
-		piExpecteds.add(Drug.TPV);
-		assertEquals(
-			DrugClass.PI.getDrugsForHivdbTesting(), piExpecteds);
-
-		List<Drug> nrtiExpecteds = new ArrayList<>();
-		nrtiExpecteds.add(Drug.ABC);
-		nrtiExpecteds.add(Drug.AZT);
-		nrtiExpecteds.add(Drug.D4T);
-		nrtiExpecteds.add(Drug.DDI);
-		nrtiExpecteds.add(Drug.FTC);
-		nrtiExpecteds.add(Drug.LMV);
-		nrtiExpecteds.add(Drug.TDF);
-		assertEquals(
-			DrugClass.NRTI.getDrugsForHivdbTesting(), nrtiExpecteds);
-
-		List<Drug> nnrtiExpecteds = new ArrayList<>();
-		nnrtiExpecteds.add(Drug.DOR);
-		nnrtiExpecteds.add(Drug.EFV);
-		nnrtiExpecteds.add(Drug.ETR);
-		nnrtiExpecteds.add(Drug.NVP);
-		nnrtiExpecteds.add(Drug.RPV);
-		assertEquals(
-			DrugClass.NNRTI.getDrugsForHivdbTesting(), nnrtiExpecteds);
-
-		List<Drug> instiExpecteds = new ArrayList<>();
-		instiExpecteds.add(Drug.BIC);
-		instiExpecteds.add(Drug.DTG);
-		instiExpecteds.add(Drug.EVG);
-		instiExpecteds.add(Drug.RAL);
-		assertEquals(
-			DrugClass.INSTI.getDrugsForHivdbTesting(), instiExpecteds);
+		assertEquals(HIVDrugClass.getSynonym("PI"), HIVDrugClass.PI);
+		assertEquals(HIVDrugClass.getSynonym("NRTI"), HIVDrugClass.NRTI);
+		assertEquals(HIVDrugClass.getSynonym("NNRTI"), HIVDrugClass.NNRTI);
+		assertEquals(HIVDrugClass.getSynonym("INSTI"), HIVDrugClass.INSTI);
+		assertEquals(HIVDrugClass.getSynonym("INI"), HIVDrugClass.INSTI);
 	}
 
 	@Test
 	public void testGetAllDrugs() {
-		List<Drug> piExpecteds = new ArrayList<>();
-		piExpecteds.add(Drug.ATV);
-		piExpecteds.add(Drug.DRV);
-		piExpecteds.add(Drug.FPV);
-		piExpecteds.add(Drug.IDV);
-		piExpecteds.add(Drug.LPV);
-		piExpecteds.add(Drug.NFV);
-		piExpecteds.add(Drug.SQV);
-		piExpecteds.add(Drug.TPV);
+		List<HIVDrug> piExpecteds = new ArrayList<>();
+		piExpecteds.add(HIVDrug.ATV);
+		piExpecteds.add(HIVDrug.DRV);
+		piExpecteds.add(HIVDrug.FPV);
+		piExpecteds.add(HIVDrug.IDV);
+		piExpecteds.add(HIVDrug.LPV);
+		piExpecteds.add(HIVDrug.NFV);
+		piExpecteds.add(HIVDrug.SQV);
+		piExpecteds.add(HIVDrug.TPV);
 		assertEquals(
-			DrugClass.PI.getAllDrugs(), piExpecteds);
+			HIVDrugClass.PI.getAllDrugs(), piExpecteds);
 
-		List<Drug> nrtiExpecteds = new ArrayList<>();
-		nrtiExpecteds.add(Drug.ABC);
-		nrtiExpecteds.add(Drug.AZT);
-		nrtiExpecteds.add(Drug.D4T);
-		nrtiExpecteds.add(Drug.DDI);
-		nrtiExpecteds.add(Drug.FTC);
-		nrtiExpecteds.add(Drug.LMV);
-		nrtiExpecteds.add(Drug.TDF);
+		List<HIVDrug> nrtiExpecteds = new ArrayList<>();
+		nrtiExpecteds.add(HIVDrug.ABC);
+		nrtiExpecteds.add(HIVDrug.AZT);
+		nrtiExpecteds.add(HIVDrug.D4T);
+		nrtiExpecteds.add(HIVDrug.DDI);
+		nrtiExpecteds.add(HIVDrug.FTC);
+		nrtiExpecteds.add(HIVDrug.LMV);
+		nrtiExpecteds.add(HIVDrug.TDF);
 		assertEquals(
-			DrugClass.NRTI.getAllDrugs(), nrtiExpecteds);
+			HIVDrugClass.NRTI.getAllDrugs(), nrtiExpecteds);
 
-		List<Drug> nnrtiExpecteds = new ArrayList<>();
-		nnrtiExpecteds.add(Drug.DOR);
-		nnrtiExpecteds.add(Drug.EFV);
-		nnrtiExpecteds.add(Drug.ETR);
-		nnrtiExpecteds.add(Drug.NVP);
-		nnrtiExpecteds.add(Drug.RPV);
+		List<HIVDrug> nnrtiExpecteds = new ArrayList<>();
+		nnrtiExpecteds.add(HIVDrug.DOR);
+		nnrtiExpecteds.add(HIVDrug.EFV);
+		nnrtiExpecteds.add(HIVDrug.ETR);
+		nnrtiExpecteds.add(HIVDrug.NVP);
+		nnrtiExpecteds.add(HIVDrug.RPV);
 		assertEquals(
-			DrugClass.NNRTI.getAllDrugs(), nnrtiExpecteds);
+			HIVDrugClass.NNRTI.getAllDrugs(), nnrtiExpecteds);
 
-		List<Drug> instiExpecteds = new ArrayList<>();
-		instiExpecteds.add(Drug.BIC);
-		instiExpecteds.add(Drug.DTG);
-		instiExpecteds.add(Drug.EVG);
-		instiExpecteds.add(Drug.RAL);
+		List<HIVDrug> instiExpecteds = new ArrayList<>();
+		instiExpecteds.add(HIVDrug.BIC);
+		instiExpecteds.add(HIVDrug.DTG);
+		instiExpecteds.add(HIVDrug.EVG);
+		instiExpecteds.add(HIVDrug.RAL);
 		assertEquals(
-			DrugClass.INSTI.getAllDrugs(), instiExpecteds);
+			HIVDrugClass.INSTI.getAllDrugs(), instiExpecteds);
 	}
 
 	@Test
 	public void testGetFullName() {
 		assertEquals(
 			"Nucleoside Reverse Transcriptase Inhibitor",
-			DrugClass.NRTI.getFullName());
+			HIVDrugClass.NRTI.getFullName());
 		assertEquals(
 			"Non-nucleoside Reverse Transcriptase Inhibitor",
-			DrugClass.NNRTI.getFullName());
+			HIVDrugClass.NNRTI.getFullName());
 		assertEquals(
-			"Protease Inhibitor", DrugClass.PI.getFullName());
+			"Protease Inhibitor", HIVDrugClass.PI.getFullName());
 		assertEquals(
 			"Integrase Strand Transfer Inhibitor",
-			DrugClass.INSTI.getFullName());
+			HIVDrugClass.INSTI.getFullName());
 	}
 }

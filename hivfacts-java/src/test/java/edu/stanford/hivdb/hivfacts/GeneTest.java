@@ -30,17 +30,17 @@ public class GeneTest {
 
 	@Test
 	public void testValues() {
-		assertArrayEquals(Gene.values("HIV1"), new Gene[] {
-			Gene.valueOf("HIV1PR"),
-			Gene.valueOf("HIV1RT"),
-			Gene.valueOf("HIV1IN")
+		assertArrayEquals(HIVGene.values("HIV1"), new HIVGene[] {
+			HIVGene.valueOf("HIV1PR"),
+			HIVGene.valueOf("HIV1RT"),
+			HIVGene.valueOf("HIV1IN")
 		});
-		assertArrayEquals(Gene.values(Strain.HIV2B), new Gene[] {
-			Gene.valueOf("HIV2BPR"),
-			Gene.valueOf("HIV2BRT"),
-			Gene.valueOf("HIV2BIN")
+		assertArrayEquals(HIVGene.values(HIVStrain.HIV2B), new HIVGene[] {
+			HIVGene.valueOf("HIV2BPR"),
+			HIVGene.valueOf("HIV2BRT"),
+			HIVGene.valueOf("HIV2BIN")
 		});
-		assertArrayEquals(Gene.values("HIV-1"), new Gene[] {
+		assertArrayEquals(HIVGene.values("HIV-1"), new HIVGene[] {
 			null,
 			null,
 			null
@@ -50,169 +50,169 @@ public class GeneTest {
 	@Test
 	public void testValueOf() {
 		assertEquals(
-			Gene.valueOf("HIV1", "PR"), Gene.valueOf(Strain.HIV1, GeneEnum.PR));
+			HIVGene.valueOf("HIV1", "PR"), HIVGene.valueOf(HIVStrain.HIV1, HIVGeneEnum.PR));
 		assertEquals(
-			Gene.valueOf("HIV2BRT"), Gene.valueOf(Strain.HIV2B, GeneEnum.RT));
+			HIVGene.valueOf("HIV2BRT"), HIVGene.valueOf(HIVStrain.HIV2B, HIVGeneEnum.RT));
 		assertNotEquals(
-			Gene.valueOf("HIV2ART"), Gene.valueOf(Strain.HIV2B, GeneEnum.RT));
-		assertEquals(Gene.valueOf("HIV2CRT"), null);
-		assertEquals(Gene.valueOf("HIV2A", "Pol"), null);
-		assertEquals(Gene.valueOf(Strain.HIV1, "Pol"), null);
+			HIVGene.valueOf("HIV2ART"), HIVGene.valueOf(HIVStrain.HIV2B, HIVGeneEnum.RT));
+		assertEquals(HIVGene.valueOf("HIV2CRT"), null);
+		assertEquals(HIVGene.valueOf("HIV2A", "Pol"), null);
+		assertEquals(HIVGene.valueOf(HIVStrain.HIV1, "Pol"), null);
 	}
 
 	@Test
 	public void testGetDrugClasses() {
 		assertEquals(
-			Arrays.asList(new DrugClass[] {DrugClass.PI}),
-			Gene.valueOf("HIV1PR").getDrugClasses());
+			Arrays.asList(new HIVDrugClass[] {HIVDrugClass.PI}),
+			HIVGene.valueOf("HIV1PR").getDrugClasses());
 		assertEquals(
-			Arrays.asList(new DrugClass[] {DrugClass.NRTI, DrugClass.NNRTI}),
-			Gene.valueOf("HIV1RT").getDrugClasses());
+			Arrays.asList(new HIVDrugClass[] {HIVDrugClass.NRTI, HIVDrugClass.NNRTI}),
+			HIVGene.valueOf("HIV1RT").getDrugClasses());
 		assertEquals(
-			Arrays.asList(new DrugClass[] {DrugClass.NRTI}),
-			Gene.valueOf("HIV2ART").getDrugClasses());
+			Arrays.asList(new HIVDrugClass[] {HIVDrugClass.NRTI}),
+			HIVGene.valueOf("HIV2ART").getDrugClasses());
 		assertEquals(
-			Arrays.asList(new DrugClass[] {DrugClass.NRTI}),
-			Gene.valueOf("HIV2BRT").getDrugClasses());
+			Arrays.asList(new HIVDrugClass[] {HIVDrugClass.NRTI}),
+			HIVGene.valueOf("HIV2BRT").getDrugClasses());
 		assertEquals(
-			Arrays.asList(new DrugClass[] {DrugClass.INSTI}),
-			Gene.valueOf("HIV1IN").getDrugClasses());
+			Arrays.asList(new HIVDrugClass[] {HIVDrugClass.INSTI}),
+			HIVGene.valueOf("HIV1IN").getDrugClasses());
 	}
 
 	@Test
 	public void testGetMutationTypes() {
 		assertEquals(
 			Arrays.asList(new MutType[] {MutType.Major, MutType.Accessory, MutType.Other}),
-			Gene.valueOf("HIV1PR").getMutationTypes());
+			HIVGene.valueOf("HIV1PR").getMutationTypes());
 		assertEquals(
 			Arrays.asList(new MutType[] {MutType.NRTI, MutType.NNRTI, MutType.Other}),
-			Gene.valueOf("HIV1RT").getMutationTypes());
+			HIVGene.valueOf("HIV1RT").getMutationTypes());
 		assertEquals(
 			Arrays.asList(new MutType[] {MutType.Major, MutType.Accessory, MutType.Other}),
-			Gene.valueOf("HIV2ART").getMutationTypes());
+			HIVGene.valueOf("HIV2ART").getMutationTypes());
 		assertEquals(
 			Arrays.asList(new MutType[] {MutType.Major, MutType.Accessory, MutType.Other}),
-			Gene.valueOf("HIV2BRT").getMutationTypes());
+			HIVGene.valueOf("HIV2BRT").getMutationTypes());
 		assertEquals(
 			Arrays.asList(new MutType[] {MutType.Major, MutType.Accessory, MutType.Other}),
-			Gene.valueOf("HIV1IN").getMutationTypes());
+			HIVGene.valueOf("HIV1IN").getMutationTypes());
 	}
 
 	@Test
 	public void testGetScoredMutTypes() {
 		assertEquals(
 			Arrays.asList(new MutType[] {MutType.Major, MutType.Accessory}),
-			Gene.valueOf("HIV1PR").getScoredMutTypes());
+			HIVGene.valueOf("HIV1PR").getScoredMutTypes());
 		assertEquals(
 			Arrays.asList(new MutType[] {MutType.NRTI, MutType.NNRTI}),
-			Gene.valueOf("HIV1RT").getScoredMutTypes());
+			HIVGene.valueOf("HIV1RT").getScoredMutTypes());
 		assertEquals(
 			Arrays.asList(new MutType[] {MutType.Major, MutType.Accessory}),
-			Gene.valueOf("HIV2ART").getScoredMutTypes());
+			HIVGene.valueOf("HIV2ART").getScoredMutTypes());
 		assertEquals(
 			Arrays.asList(new MutType[] {MutType.Major, MutType.Accessory}),
-			Gene.valueOf("HIV2BRT").getScoredMutTypes());
+			HIVGene.valueOf("HIV2BRT").getScoredMutTypes());
 		assertEquals(
 			Arrays.asList(new MutType[] {MutType.Major, MutType.Accessory}),
-			Gene.valueOf("HIV1IN").getScoredMutTypes());
+			HIVGene.valueOf("HIV1IN").getScoredMutTypes());
 	}
 
 	@Test
 	public void testGetLength() {
-		assertEquals(99, Gene.valueOf("HIV1PR").getLength());
-		assertEquals(560, Gene.valueOf("HIV1RT").getLength());
-		assertEquals(288, Gene.valueOf("HIV1IN").getLength());
+		assertEquals(99, HIVGene.valueOf("HIV1PR").getLength());
+		assertEquals(560, HIVGene.valueOf("HIV1RT").getLength());
+		assertEquals(288, HIVGene.valueOf("HIV1IN").getLength());
 	}
 
 	@Test
 	public void testGetConsensus() {
-		assertEquals("T", Gene.valueOf("HIV1PR").getReference(4));
-		assertEquals("IDK", Gene.valueOf("HIV1IN").getReference(5, 3));
-		assertEquals(560, Gene.valueOf("HIV1RT").getReference().length());
+		assertEquals("T", HIVGene.valueOf("HIV1PR").getReference(4));
+		assertEquals("IDK", HIVGene.valueOf("HIV1IN").getReference(5, 3));
+		assertEquals(560, HIVGene.valueOf("HIV1RT").getReference().length());
 	}
 
 	@Test
 	public void testGetFirstNA() {
-		assertEquals(2253, Gene.valueOf("HIV1PR").getFirstNA());
-		assertEquals(2550, Gene.valueOf("HIV1RT").getFirstNA());
-		assertEquals(4230, Gene.valueOf("HIV1IN").getFirstNA());
+		assertEquals(2253, HIVGene.valueOf("HIV1PR").getFirstNA());
+		assertEquals(2550, HIVGene.valueOf("HIV1RT").getFirstNA());
+		assertEquals(4230, HIVGene.valueOf("HIV1IN").getFirstNA());
 	}
 
 	@Test
 	public void testGetNASize() {
-		assertEquals(297, Gene.valueOf("HIV1PR").getNASize());
-		assertEquals(1680, Gene.valueOf("HIV1RT").getNASize());
-		assertEquals(864, Gene.valueOf("HIV1IN").getNASize());
-		assertEquals(297, Gene.valueOf("HIV2APR").getNASize());
-		assertEquals(1677, Gene.valueOf("HIV2ART").getNASize());
-		assertEquals(879, Gene.valueOf("HIV2AIN").getNASize());
-		assertEquals(297, Gene.valueOf("HIV2BPR").getNASize());
-		assertEquals(1677, Gene.valueOf("HIV2BRT").getNASize());
-		assertEquals(888, Gene.valueOf("HIV2BIN").getNASize());
+		assertEquals(297, HIVGene.valueOf("HIV1PR").getNASize());
+		assertEquals(1680, HIVGene.valueOf("HIV1RT").getNASize());
+		assertEquals(864, HIVGene.valueOf("HIV1IN").getNASize());
+		assertEquals(297, HIVGene.valueOf("HIV2APR").getNASize());
+		assertEquals(1677, HIVGene.valueOf("HIV2ART").getNASize());
+		assertEquals(879, HIVGene.valueOf("HIV2AIN").getNASize());
+		assertEquals(297, HIVGene.valueOf("HIV2BPR").getNASize());
+		assertEquals(1677, HIVGene.valueOf("HIV2BRT").getNASize());
+		assertEquals(888, HIVGene.valueOf("HIV2BIN").getNASize());
 	}
 
 	@Test
 	public void testGetStrain() {
-		assertEquals(Strain.HIV2A, Gene.valueOf("HIV2APR").getStrain());
-		assertEquals(Strain.HIV2B, Gene.valueOf("HIV2BRT").getStrain());
-		assertEquals(Strain.HIV1, Gene.valueOf("HIV1IN").getStrain());
+		assertEquals(HIVStrain.HIV2A, HIVGene.valueOf("HIV2APR").getStrain());
+		assertEquals(HIVStrain.HIV2B, HIVGene.valueOf("HIV2BRT").getStrain());
+		assertEquals(HIVStrain.HIV1, HIVGene.valueOf("HIV1IN").getStrain());
 	}
 
 	@Test
 	public void testGetGeneEnum() {
-		assertEquals(GeneEnum.PR, Gene.valueOf("HIV2APR").getGeneEnum());
-		assertEquals(GeneEnum.RT, Gene.valueOf("HIV2BRT").getGeneEnum());
-		assertEquals(GeneEnum.IN, Gene.valueOf("HIV1IN").getGeneEnum());
+		assertEquals(HIVGeneEnum.PR, HIVGene.valueOf("HIV2APR").getGeneEnum());
+		assertEquals(HIVGeneEnum.RT, HIVGene.valueOf("HIV2BRT").getGeneEnum());
+		assertEquals(HIVGeneEnum.IN, HIVGene.valueOf("HIV1IN").getGeneEnum());
 	}
 
 	@Test
 	public void testGetNameWithStrain() {
-		assertEquals("HIV1PR", Gene.values("HIV1")[0].getNameWithStrain());
-		assertEquals("HIV2ART", Gene.values("HIV2A")[1].getNameWithStrain());
-		assertEquals("HIV2BIN", Gene.values("HIV2B")[2].getNameWithStrain());
+		assertEquals("HIV1PR", HIVGene.values("HIV1")[0].getNameWithStrain());
+		assertEquals("HIV2ART", HIVGene.values("HIV2A")[1].getNameWithStrain());
+		assertEquals("HIV2BIN", HIVGene.values("HIV2B")[2].getNameWithStrain());
 	}
 
 	@Test
 	public void testGetName() {
-		assertEquals("PR", Gene.values("HIV1")[0].getName());
-		assertEquals("RT", Gene.values("HIV2A")[1].getName());
-		assertEquals("IN", Gene.values("HIV2B")[2].getName());
+		assertEquals("PR", HIVGene.values("HIV1")[0].getName());
+		assertEquals("RT", HIVGene.values("HIV2A")[1].getName());
+		assertEquals("IN", HIVGene.values("HIV2B")[2].getName());
 	}
 
 	@Test
 	public void testAdjustAAAlignment() {
 		assertEquals(
 			Strings.repeat(".", 4) + "ABCDEF" + Strings.repeat(".", 89),
-			Gene.valueOf("HIV1PR").adjustAAAlignment("ABCDEF", 5, 10));
+			HIVGene.valueOf("HIV1PR").adjustAAAlignment("ABCDEF", 5, 10));
 		assertEquals(
 			Strings.repeat(".", 342) + "FEDCBA" + Strings.repeat(".", 212),
-			Gene.valueOf("HIV1RT").adjustAAAlignment("FEDCBA", 343, 348));
+			HIVGene.valueOf("HIV1RT").adjustAAAlignment("FEDCBA", 343, 348));
 		assertEquals(
 			// RT346 Deletion
 			Strings.repeat(".", 342) + "FED.CBA" + Strings.repeat(".", 211),
-			Gene.valueOf("HIV2ART").adjustAAAlignment("FEDCBA", 343, 348));
+			HIVGene.valueOf("HIV2ART").adjustAAAlignment("FEDCBA", 343, 348));
 		assertEquals(
 			// RT346 Deletion
 			Strings.repeat(".", 342) + "FED.CBA" + Strings.repeat(".", 211),
-			Gene.valueOf("HIV2BRT").adjustAAAlignment("FEDCBA", 343, 348));
+			HIVGene.valueOf("HIV2BRT").adjustAAAlignment("FEDCBA", 343, 348));
 		assertEquals(
 			// IN272 Insertion
 			Strings.repeat(".", 270) + "ABEF" + Strings.repeat(".", 14),
-			Gene.valueOf("HIV2AIN").adjustAAAlignment("ABCDEF", 271, 276));
+			HIVGene.valueOf("HIV2AIN").adjustAAAlignment("ABCDEF", 271, 276));
 		assertEquals(
 			// IN283 Insertion + IN272 two AAs shift
 			Strings.repeat(".", 278) + "ABCDEG....",
-			Gene.valueOf("HIV2AIN").adjustAAAlignment("ABCDEFG", 281, 287));
+			HIVGene.valueOf("HIV2AIN").adjustAAAlignment("ABCDEFG", 281, 287));
 		assertEquals(
 			// IN after 288 (IN272 + IN283 three AAs shift)
 			Strings.repeat(".", 283) + "ABCDE",
-			Gene.valueOf("HIV2AIN").adjustAAAlignment("ABCDEFG", 287, 293));
+			HIVGene.valueOf("HIV2AIN").adjustAAAlignment("ABCDEFG", 287, 293));
 	}
 
 	@Test(expected = RuntimeException.class)
 	public void testAdjustAAAlignmentWithException1() {
-		Gene fakePRGene = new Gene(
-			Strain.HIV2A, GeneEnum.PR,
+		HIVGene fakePRGene = new HIVGene(
+			HIVStrain.HIV2A, HIVGeneEnum.PR,
 			"PQFSLWRRPVVKATIEGQSVEVLLDTGADDSIVAGIELGSNYTPKIVGGI" +
 			"GGFINTNEYKNVEIEVVGKRVRATVMTGDTPINIFGRNILNSLGMTLNF",
 			new Integer[] {
@@ -223,8 +223,8 @@ public class GeneTest {
 
 	@Test(expected = RuntimeException.class)
 	public void testAdjustAAAlignmentWithException2() {
-		Gene fakePRGene = new Gene(
-			Strain.HIV2A, GeneEnum.PR,
+		HIVGene fakePRGene = new HIVGene(
+			HIVStrain.HIV2A, HIVGeneEnum.PR,
 			"PQFSLWRRPVVKATIEGQSVEVLLDTGADDSIVAGIELGSNYTPKIVGGI" +
 			"GGFINTNEYKNVEIEVVGKRVRATVMTGDTPINIFGRNILNSLGMTLNF",
 			new Integer[] {
@@ -237,36 +237,36 @@ public class GeneTest {
 	public void testAdjustNAAlignment() {
 		assertEquals(
 			Strings.repeat("...", 4) + "AAABBBCCCDDDEEEFFF" + Strings.repeat("...", 89),
-			Gene.valueOf("HIV1PR").adjustNAAlignment("AAABBBCCCDDDEEEFFF", 5, 10));
+			HIVGene.valueOf("HIV1PR").adjustNAAlignment("AAABBBCCCDDDEEEFFF", 5, 10));
 		assertEquals(
 			Strings.repeat("...", 342) + "FFFEEEDDDCCCBBBAAA" + Strings.repeat("...", 212),
-			Gene.valueOf("HIV1RT").adjustNAAlignment("FFFEEEDDDCCCBBBAAA", 343, 348));
+			HIVGene.valueOf("HIV1RT").adjustNAAlignment("FFFEEEDDDCCCBBBAAA", 343, 348));
 		assertEquals(
 			// RT346 Deletion
 			Strings.repeat("...", 342) + "FFFEEEDDD...CCCBBBAAA" + Strings.repeat("...", 211),
-			Gene.valueOf("HIV2ART").adjustNAAlignment("FFFEEEDDDCCCBBBAAA", 343, 348));
+			HIVGene.valueOf("HIV2ART").adjustNAAlignment("FFFEEEDDDCCCBBBAAA", 343, 348));
 		assertEquals(
 			// RT346 Deletion
 			Strings.repeat("...", 342) + "FFFEEEDDD...CCCBBBAAA" + Strings.repeat("...", 211),
-			Gene.valueOf("HIV2BRT").adjustNAAlignment("FFFEEEDDDCCCBBBAAA", 343, 348));
+			HIVGene.valueOf("HIV2BRT").adjustNAAlignment("FFFEEEDDDCCCBBBAAA", 343, 348));
 		assertEquals(
 			// IN272 Insertion
 			Strings.repeat("...", 270) + "AAABBBEEEFFF" + Strings.repeat("...", 14),
-			Gene.valueOf("HIV2AIN").adjustNAAlignment("AAABBBCCCDDDEEEFFF", 271, 276));
+			HIVGene.valueOf("HIV2AIN").adjustNAAlignment("AAABBBCCCDDDEEEFFF", 271, 276));
 		assertEquals(
 			// IN283 Insertion + IN272 two AAs shift
 			Strings.repeat("...", 278) + "AAABBBCCCDDDEEEGGG............",
-			Gene.valueOf("HIV2AIN").adjustNAAlignment("AAABBBCCCDDDEEEFFFGGG", 281, 287));
+			HIVGene.valueOf("HIV2AIN").adjustNAAlignment("AAABBBCCCDDDEEEFFFGGG", 281, 287));
 		assertEquals(
 			// IN after 288 (IN272 + IN283 three AAs shift)
 			Strings.repeat("...", 283) + "AAABBBCCCDDDEEE",
-			Gene.valueOf("HIV2AIN").adjustNAAlignment("AAABBBCCCDDDEEEFFFGGG", 287, 293));
+			HIVGene.valueOf("HIV2AIN").adjustNAAlignment("AAABBBCCCDDDEEEFFFGGG", 287, 293));
 	}
 
 	@Test(expected = RuntimeException.class)
 	public void testAdjustNAAlignmentWithException1() {
-		Gene fakePRGene = new Gene(
-			Strain.HIV2A, GeneEnum.PR,
+		HIVGene fakePRGene = new HIVGene(
+			HIVStrain.HIV2A, HIVGeneEnum.PR,
 			"PQFSLWRRPVVKATIEGQSVEVLLDTGADDSIVAGIELGSNYTPKIVGGI" +
 			"GGFINTNEYKNVEIEVVGKRVRATVMTGDTPINIFGRNILNSLGMTLNF",
 			new Integer[] {
@@ -277,8 +277,8 @@ public class GeneTest {
 
 	@Test(expected = RuntimeException.class)
 	public void testAdjustNAAlignmentWithException2() {
-		Gene fakePRGene = new Gene(
-			Strain.HIV2A, GeneEnum.PR,
+		HIVGene fakePRGene = new HIVGene(
+			HIVStrain.HIV2A, HIVGeneEnum.PR,
 			"PQFSLWRRPVVKATIEGQSVEVLLDTGADDSIVAGIELGSNYTPKIVGGI" +
 			"GGFINTNEYKNVEIEVVGKRVRATVMTGDTPINIFGRNILNSLGMTLNF",
 			new Integer[] {
@@ -289,25 +289,25 @@ public class GeneTest {
 
 	@Test
 	public void testCompareTo() {
-		assertEquals(0, Gene.valueOf("HIV1", "PR").compareTo(Gene.valueOf("HIV1PR")));
-		assertEquals(-1, Gene.valueOf("HIV1", "PR").compareTo(Gene.valueOf("HIV1RT")));
-		assertEquals(2, Gene.valueOf("HIV2AIN").compareTo(Gene.valueOf("HIV2APR")));
-		assertEquals(-1, Gene.valueOf("HIV1IN").compareTo(Gene.valueOf("HIV2APR")));
-		assertEquals(-2, Gene.valueOf("HIV1IN").compareTo(Gene.valueOf("HIV2ART")));
-		assertEquals(-3, Gene.valueOf("HIV1IN").compareTo(Gene.valueOf("HIV2AIN")));
-		assertEquals(-4, Gene.valueOf("HIV1IN").compareTo(Gene.valueOf("HIV2BPR")));
-		assertEquals(-5, Gene.valueOf("HIV1RT").compareTo(Gene.valueOf("HIV2BPR")));
-		assertEquals(4, Gene.valueOf("HIV2ART").compareTo(Gene.valueOf("HIV1PR")));
+		assertEquals(0, HIVGene.valueOf("HIV1", "PR").compareTo(HIVGene.valueOf("HIV1PR")));
+		assertEquals(-1, HIVGene.valueOf("HIV1", "PR").compareTo(HIVGene.valueOf("HIV1RT")));
+		assertEquals(2, HIVGene.valueOf("HIV2AIN").compareTo(HIVGene.valueOf("HIV2APR")));
+		assertEquals(-1, HIVGene.valueOf("HIV1IN").compareTo(HIVGene.valueOf("HIV2APR")));
+		assertEquals(-2, HIVGene.valueOf("HIV1IN").compareTo(HIVGene.valueOf("HIV2ART")));
+		assertEquals(-3, HIVGene.valueOf("HIV1IN").compareTo(HIVGene.valueOf("HIV2AIN")));
+		assertEquals(-4, HIVGene.valueOf("HIV1IN").compareTo(HIVGene.valueOf("HIV2BPR")));
+		assertEquals(-5, HIVGene.valueOf("HIV1RT").compareTo(HIVGene.valueOf("HIV2BPR")));
+		assertEquals(4, HIVGene.valueOf("HIV2ART").compareTo(HIVGene.valueOf("HIV1PR")));
 	}
 
 	@Test(expected = NullPointerException.class)
 	public void testCompareToNull() {
-		Gene.valueOf("HIV1RT").compareTo(null);
+		HIVGene.valueOf("HIV1RT").compareTo(null);
 	}
 
 	@Test
 	public void testHashCode() {
-		assertEquals(Gene.values("HIV1")[0].hashCode(), Gene.valueOf("HIV1PR").hashCode());
+		assertEquals(HIVGene.values("HIV1")[0].hashCode(), HIVGene.valueOf("HIV1PR").hashCode());
 	}
 
 }

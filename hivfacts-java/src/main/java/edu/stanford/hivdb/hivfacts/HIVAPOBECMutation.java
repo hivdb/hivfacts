@@ -1,6 +1,6 @@
 package edu.stanford.hivdb.hivfacts;
 
-public class HIVAPOBECMutation {
+public class HIVAPOBECMutation implements WithGene<HIVGene> {
 	final private String strain = "HIV1";
 	final private String gene;
 	final protected Integer position;
@@ -13,11 +13,12 @@ public class HIVAPOBECMutation {
 		this.aa = aa;
 	}
 
-	public GenePosition getGenePosition() {
-		return new GenePosition(getGene(), position);
+	public HIVGenePosition getGenePosition() {
+		return new HIVGenePosition(getGene(), position);
 	}
 
-	public Gene getGene() { return Gene.valueOf(strain, gene); }
+	@Override
+	public HIVGene getGene() { return HIVGene.valueOf(strain, gene); }
 	public Integer getPosition() { return position; }
 	public Character getAA() { return aa; }
 

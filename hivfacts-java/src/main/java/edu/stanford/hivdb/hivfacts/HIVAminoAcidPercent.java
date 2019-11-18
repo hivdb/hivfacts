@@ -1,6 +1,6 @@
 package edu.stanford.hivdb.hivfacts;
 
-public class HIVAminoAcidPercent {
+public class HIVAminoAcidPercent implements WithGene<HIVGene> {
 	final private String strain = "HIV1";
 	final private String gene;
 	final public Integer position;
@@ -24,12 +24,13 @@ public class HIVAminoAcidPercent {
 		this.isUnusual = isUnusual;
 	}
 
-	public Gene getGene() {
-		return Gene.valueOf(strain, gene);
+	@Override
+	public HIVGene getGene() {
+		return HIVGene.valueOf(strain, gene);
 	}
 
-	public GenePosition getGenePosition() {
-		return new GenePosition(getGene(), position);
+	public HIVGenePosition getGenePosition() {
+		return new HIVGenePosition(getGene(), position);
 	}
 
 }

@@ -27,7 +27,7 @@ public class HIVCodonPercents {
 	final static protected Map<String, HIVCodonPercents> singletons = new HashMap<>();
 
 	final protected List<HIVCodonPercent> codonPcnts;
-	final private Map<GenePosition, Map<String, HIVCodonPercent>> codonPcntMap = new HashMap<>();
+	final private Map<HIVGenePosition, Map<String, HIVCodonPercent>> codonPcntMap = new HashMap<>();
 
 	/**
 	 * Get an HIVCodonPercents instance
@@ -65,7 +65,7 @@ public class HIVCodonPercents {
 		}
 
 		for (HIVCodonPercent cdPcnt : codonPcnts) {
-			GenePosition gp = cdPcnt.getGenePosition();
+			HIVGenePosition gp = cdPcnt.getGenePosition();
 			codonPcntMap.putIfAbsent(gp, new LinkedHashMap<>());
 			codonPcntMap.get(gp).put(cdPcnt.codon, cdPcnt);
 		}
@@ -76,21 +76,21 @@ public class HIVCodonPercents {
 		return new ArrayList<>(codonPcnts);
 	}
 
-	public List<HIVCodonPercent> get(Gene gene) {
+	public List<HIVCodonPercent> get(HIVGene gene) {
 		return (codonPcnts
 				.stream().filter(cdp -> cdp.getGene().equals(gene))
 				.collect(Collectors.toList()));
 	}
 
-	public List<HIVCodonPercent> get(Gene gene, int pos) {
+	public List<HIVCodonPercent> get(HIVGene gene, int pos) {
 		return new ArrayList<>(
-			codonPcntMap.getOrDefault(new GenePosition(gene, pos), Collections.emptyMap())
+			codonPcntMap.getOrDefault(new HIVGenePosition(gene, pos), Collections.emptyMap())
 			.values());
 	}
 
-	public HIVCodonPercent get(Gene gene, int pos, String codon) {
+	public HIVCodonPercent get(HIVGene gene, int pos, String codon) {
 		Map<String, HIVCodonPercent> posCodons =
-			codonPcntMap.getOrDefault(new GenePosition(gene, pos), Collections.emptyMap());
+			codonPcntMap.getOrDefault(new HIVGenePosition(gene, pos), Collections.emptyMap());
 		if (posCodons.containsKey(codon)) {
 			return posCodons.get(codon);
 		}
@@ -128,7 +128,7 @@ public class HIVCodonPercents {
 	 * @return Double highest amino acid prevalence
 	 */
 	public Double getHighestCodonPercentValue(
-		Gene gene, int pos, String... codonMixture
+		HIVGene gene, int pos, String... codonMixture
 	) {
 		Double pcntVal = 0.0;
 

@@ -29,170 +29,170 @@ public class DrugTest {
 		// This test will fail every time we add a new drug.
 		// WARNING: Don't just fix this test case. Add the new drug
 		// to all following cases too.
-		assertEquals(Drug.values().length, 24);
+		assertEquals(HIVDrug.values().length, 24);
 	}
 
 	@Test
 	public void testGetDrugClass() {
-		final DrugClass PI = DrugClass.PI;
-		final DrugClass NRTI = DrugClass.NRTI;
-		final DrugClass NNRTI = DrugClass.NNRTI;
-		final DrugClass INSTI = DrugClass.INSTI;
+		final HIVDrugClass PI = HIVDrugClass.PI;
+		final HIVDrugClass NRTI = HIVDrugClass.NRTI;
+		final HIVDrugClass NNRTI = HIVDrugClass.NNRTI;
+		final HIVDrugClass INSTI = HIVDrugClass.INSTI;
 
-		assertEquals(Drug.ABC.getDrugClass(), NRTI);
-		assertEquals(Drug.AZT.getDrugClass(), NRTI);
-		assertEquals(Drug.D4T.getDrugClass(), NRTI);
-		assertEquals(Drug.DDI.getDrugClass(), NRTI);
-		assertEquals(Drug.FTC.getDrugClass(), NRTI);
-		assertEquals(Drug.LMV.getDrugClass(), NRTI);
-		assertEquals(Drug.TDF.getDrugClass(), NRTI);
+		assertEquals(HIVDrug.ABC.getDrugClass(), NRTI);
+		assertEquals(HIVDrug.AZT.getDrugClass(), NRTI);
+		assertEquals(HIVDrug.D4T.getDrugClass(), NRTI);
+		assertEquals(HIVDrug.DDI.getDrugClass(), NRTI);
+		assertEquals(HIVDrug.FTC.getDrugClass(), NRTI);
+		assertEquals(HIVDrug.LMV.getDrugClass(), NRTI);
+		assertEquals(HIVDrug.TDF.getDrugClass(), NRTI);
 
-		assertEquals(Drug.ATV.getDrugClass(), PI);
-		assertEquals(Drug.DRV.getDrugClass(), PI);
-		assertEquals(Drug.FPV.getDrugClass(), PI);
-		assertEquals(Drug.IDV.getDrugClass(), PI);
-		assertEquals(Drug.LPV.getDrugClass(), PI);
-		assertEquals(Drug.NFV.getDrugClass(), PI);
-		assertEquals(Drug.SQV.getDrugClass(), PI);
-		assertEquals(Drug.TPV.getDrugClass(), PI);
+		assertEquals(HIVDrug.ATV.getDrugClass(), PI);
+		assertEquals(HIVDrug.DRV.getDrugClass(), PI);
+		assertEquals(HIVDrug.FPV.getDrugClass(), PI);
+		assertEquals(HIVDrug.IDV.getDrugClass(), PI);
+		assertEquals(HIVDrug.LPV.getDrugClass(), PI);
+		assertEquals(HIVDrug.NFV.getDrugClass(), PI);
+		assertEquals(HIVDrug.SQV.getDrugClass(), PI);
+		assertEquals(HIVDrug.TPV.getDrugClass(), PI);
 
-		assertEquals(Drug.EFV.getDrugClass(), NNRTI);
-		assertEquals(Drug.ETR.getDrugClass(), NNRTI);
-		assertEquals(Drug.NVP.getDrugClass(), NNRTI);
-		assertEquals(Drug.RPV.getDrugClass(), NNRTI);
+		assertEquals(HIVDrug.EFV.getDrugClass(), NNRTI);
+		assertEquals(HIVDrug.ETR.getDrugClass(), NNRTI);
+		assertEquals(HIVDrug.NVP.getDrugClass(), NNRTI);
+		assertEquals(HIVDrug.RPV.getDrugClass(), NNRTI);
 
-		assertEquals(Drug.DTG.getDrugClass(), INSTI);
-		assertEquals(Drug.EVG.getDrugClass(), INSTI);
-		assertEquals(Drug.RAL.getDrugClass(), INSTI);
+		assertEquals(HIVDrug.DTG.getDrugClass(), INSTI);
+		assertEquals(HIVDrug.EVG.getDrugClass(), INSTI);
+		assertEquals(HIVDrug.RAL.getDrugClass(), INSTI);
 	}
 
 	@Test
 	public void testGetFullName() {
-		assertEquals(Drug.ABC.getFullName(), "abacavir");
-		assertEquals(Drug.AZT.getFullName(), "zidovudine");
-		assertEquals(Drug.D4T.getFullName(), "stavudine");
-		assertEquals(Drug.DDI.getFullName(), "didanosine");
-		assertEquals(Drug.FTC.getFullName(), "emtricitabine");
-		assertEquals(Drug.LMV.getFullName(), "lamivudine");
-		assertEquals(Drug.TDF.getFullName(), "tenofovir");
+		assertEquals(HIVDrug.ABC.getFullName(), "abacavir");
+		assertEquals(HIVDrug.AZT.getFullName(), "zidovudine");
+		assertEquals(HIVDrug.D4T.getFullName(), "stavudine");
+		assertEquals(HIVDrug.DDI.getFullName(), "didanosine");
+		assertEquals(HIVDrug.FTC.getFullName(), "emtricitabine");
+		assertEquals(HIVDrug.LMV.getFullName(), "lamivudine");
+		assertEquals(HIVDrug.TDF.getFullName(), "tenofovir");
 
-		assertEquals(Drug.ATV.getFullName(), "atazanavir/r");
-		assertEquals(Drug.DRV.getFullName(), "darunavir/r");
-		assertEquals(Drug.FPV.getFullName(), "fosamprenavir/r");
-		assertEquals(Drug.IDV.getFullName(), "indinavir/r");
-		assertEquals(Drug.LPV.getFullName(), "lopinavir/r");
-		assertEquals(Drug.NFV.getFullName(), "nelfinavir");
-		assertEquals(Drug.SQV.getFullName(), "saquinavir/r");
-		assertEquals(Drug.TPV.getFullName(), "tipranavir/r");
+		assertEquals(HIVDrug.ATV.getFullName(), "atazanavir/r");
+		assertEquals(HIVDrug.DRV.getFullName(), "darunavir/r");
+		assertEquals(HIVDrug.FPV.getFullName(), "fosamprenavir/r");
+		assertEquals(HIVDrug.IDV.getFullName(), "indinavir/r");
+		assertEquals(HIVDrug.LPV.getFullName(), "lopinavir/r");
+		assertEquals(HIVDrug.NFV.getFullName(), "nelfinavir");
+		assertEquals(HIVDrug.SQV.getFullName(), "saquinavir/r");
+		assertEquals(HIVDrug.TPV.getFullName(), "tipranavir/r");
 
-		assertEquals(Drug.EFV.getFullName(), "efavirenz");
-		assertEquals(Drug.ETR.getFullName(), "etravirine");
-		assertEquals(Drug.NVP.getFullName(), "nevirapine");
-		assertEquals(Drug.RPV.getFullName(), "rilpivirine");
+		assertEquals(HIVDrug.EFV.getFullName(), "efavirenz");
+		assertEquals(HIVDrug.ETR.getFullName(), "etravirine");
+		assertEquals(HIVDrug.NVP.getFullName(), "nevirapine");
+		assertEquals(HIVDrug.RPV.getFullName(), "rilpivirine");
 
-		assertEquals(Drug.DTG.getFullName(), "dolutegravir");
-		assertEquals(Drug.EVG.getFullName(), "elvitegravir");
-		assertEquals(Drug.RAL.getFullName(), "raltegravir");
+		assertEquals(HIVDrug.DTG.getFullName(), "dolutegravir");
+		assertEquals(HIVDrug.EVG.getFullName(), "elvitegravir");
+		assertEquals(HIVDrug.RAL.getFullName(), "raltegravir");
 	}
 
 	@Test
 	public void testGetDisplayAbbr() {
-		assertEquals(Drug.ABC.getDisplayAbbr(), "ABC");
-		assertEquals(Drug.AZT.getDisplayAbbr(), "AZT");
-		assertEquals(Drug.D4T.getDisplayAbbr(), "D4T");
-		assertEquals(Drug.DDI.getDisplayAbbr(), "DDI");
-		assertEquals(Drug.FTC.getDisplayAbbr(), "FTC");
-		assertEquals(Drug.LMV.getDisplayAbbr(), "3TC");
-		assertEquals(Drug.TDF.getDisplayAbbr(), "TDF");
+		assertEquals(HIVDrug.ABC.getDisplayAbbr(), "ABC");
+		assertEquals(HIVDrug.AZT.getDisplayAbbr(), "AZT");
+		assertEquals(HIVDrug.D4T.getDisplayAbbr(), "D4T");
+		assertEquals(HIVDrug.DDI.getDisplayAbbr(), "DDI");
+		assertEquals(HIVDrug.FTC.getDisplayAbbr(), "FTC");
+		assertEquals(HIVDrug.LMV.getDisplayAbbr(), "3TC");
+		assertEquals(HIVDrug.TDF.getDisplayAbbr(), "TDF");
 
-		assertEquals(Drug.ATV.getDisplayAbbr(), "ATV/r");
-		assertEquals(Drug.DRV.getDisplayAbbr(), "DRV/r");
-		assertEquals(Drug.FPV.getDisplayAbbr(), "FPV/r");
-		assertEquals(Drug.IDV.getDisplayAbbr(), "IDV/r");
-		assertEquals(Drug.LPV.getDisplayAbbr(), "LPV/r");
-		assertEquals(Drug.NFV.getDisplayAbbr(), "NFV");
-		assertEquals(Drug.SQV.getDisplayAbbr(), "SQV/r");
-		assertEquals(Drug.TPV.getDisplayAbbr(), "TPV/r");
+		assertEquals(HIVDrug.ATV.getDisplayAbbr(), "ATV/r");
+		assertEquals(HIVDrug.DRV.getDisplayAbbr(), "DRV/r");
+		assertEquals(HIVDrug.FPV.getDisplayAbbr(), "FPV/r");
+		assertEquals(HIVDrug.IDV.getDisplayAbbr(), "IDV/r");
+		assertEquals(HIVDrug.LPV.getDisplayAbbr(), "LPV/r");
+		assertEquals(HIVDrug.NFV.getDisplayAbbr(), "NFV");
+		assertEquals(HIVDrug.SQV.getDisplayAbbr(), "SQV/r");
+		assertEquals(HIVDrug.TPV.getDisplayAbbr(), "TPV/r");
 
-		assertEquals(Drug.EFV.getDisplayAbbr(), "EFV");
-		assertEquals(Drug.ETR.getDisplayAbbr(), "ETR");
-		assertEquals(Drug.NVP.getDisplayAbbr(), "NVP");
-		assertEquals(Drug.RPV.getDisplayAbbr(), "RPV");
+		assertEquals(HIVDrug.EFV.getDisplayAbbr(), "EFV");
+		assertEquals(HIVDrug.ETR.getDisplayAbbr(), "ETR");
+		assertEquals(HIVDrug.NVP.getDisplayAbbr(), "NVP");
+		assertEquals(HIVDrug.RPV.getDisplayAbbr(), "RPV");
 
-		assertEquals(Drug.DTG.getDisplayAbbr(), "DTG");
-		assertEquals(Drug.EVG.getDisplayAbbr(), "EVG");
-		assertEquals(Drug.RAL.getDisplayAbbr(), "RAL");
+		assertEquals(HIVDrug.DTG.getDisplayAbbr(), "DTG");
+		assertEquals(HIVDrug.EVG.getDisplayAbbr(), "EVG");
+		assertEquals(HIVDrug.RAL.getDisplayAbbr(), "RAL");
 	}
 
 	@Test
 	public void testGetSynonym() {
-		assertEquals(Drug.getSynonym("ABC"), Drug.ABC);
-		assertEquals(Drug.getSynonym("AZT"), Drug.AZT);
-		assertEquals(Drug.getSynonym("D4T"), Drug.D4T);
-		assertEquals(Drug.getSynonym("DDI"), Drug.DDI);
-		assertEquals(Drug.getSynonym("FTC"), Drug.FTC);
-		assertEquals(Drug.getSynonym("3TC"), Drug.LMV);
-		assertEquals(Drug.getSynonym("LMV"), Drug.LMV);
-		assertEquals(Drug.getSynonym("TDF"), Drug.TDF);
+		assertEquals(HIVDrug.getSynonym("ABC"), HIVDrug.ABC);
+		assertEquals(HIVDrug.getSynonym("AZT"), HIVDrug.AZT);
+		assertEquals(HIVDrug.getSynonym("D4T"), HIVDrug.D4T);
+		assertEquals(HIVDrug.getSynonym("DDI"), HIVDrug.DDI);
+		assertEquals(HIVDrug.getSynonym("FTC"), HIVDrug.FTC);
+		assertEquals(HIVDrug.getSynonym("3TC"), HIVDrug.LMV);
+		assertEquals(HIVDrug.getSynonym("LMV"), HIVDrug.LMV);
+		assertEquals(HIVDrug.getSynonym("TDF"), HIVDrug.TDF);
 
-		assertEquals(Drug.getSynonym("ATV/r"), Drug.ATV);
-		assertEquals(Drug.getSynonym("DRV/r"), Drug.DRV);
-		assertEquals(Drug.getSynonym("FPV/r"), Drug.FPV);
-		assertEquals(Drug.getSynonym("IDV/r"), Drug.IDV);
-		assertEquals(Drug.getSynonym("LPV/r"), Drug.LPV);
-		assertEquals(Drug.getSynonym("ATV"), Drug.ATV);
-		assertEquals(Drug.getSynonym("DRV"), Drug.DRV);
-		assertEquals(Drug.getSynonym("FPV"), Drug.FPV);
-		assertEquals(Drug.getSynonym("IDV"), Drug.IDV);
-		assertEquals(Drug.getSynonym("LPV"), Drug.LPV);
-		assertEquals(Drug.getSynonym("NFV"), Drug.NFV);
-		assertEquals(Drug.getSynonym("SQV/r"), Drug.SQV);
-		assertEquals(Drug.getSynonym("TPV/r"), Drug.TPV);
-		assertEquals(Drug.getSynonym("SQV"), Drug.SQV);
-		assertEquals(Drug.getSynonym("TPV"), Drug.TPV);
+		assertEquals(HIVDrug.getSynonym("ATV/r"), HIVDrug.ATV);
+		assertEquals(HIVDrug.getSynonym("DRV/r"), HIVDrug.DRV);
+		assertEquals(HIVDrug.getSynonym("FPV/r"), HIVDrug.FPV);
+		assertEquals(HIVDrug.getSynonym("IDV/r"), HIVDrug.IDV);
+		assertEquals(HIVDrug.getSynonym("LPV/r"), HIVDrug.LPV);
+		assertEquals(HIVDrug.getSynonym("ATV"), HIVDrug.ATV);
+		assertEquals(HIVDrug.getSynonym("DRV"), HIVDrug.DRV);
+		assertEquals(HIVDrug.getSynonym("FPV"), HIVDrug.FPV);
+		assertEquals(HIVDrug.getSynonym("IDV"), HIVDrug.IDV);
+		assertEquals(HIVDrug.getSynonym("LPV"), HIVDrug.LPV);
+		assertEquals(HIVDrug.getSynonym("NFV"), HIVDrug.NFV);
+		assertEquals(HIVDrug.getSynonym("SQV/r"), HIVDrug.SQV);
+		assertEquals(HIVDrug.getSynonym("TPV/r"), HIVDrug.TPV);
+		assertEquals(HIVDrug.getSynonym("SQV"), HIVDrug.SQV);
+		assertEquals(HIVDrug.getSynonym("TPV"), HIVDrug.TPV);
 
-		assertEquals(Drug.getSynonym("EFV"), Drug.EFV);
-		assertEquals(Drug.getSynonym("ETR"), Drug.ETR);
-		assertEquals(Drug.getSynonym("NVP"), Drug.NVP);
-		assertEquals(Drug.getSynonym("RPV"), Drug.RPV);
+		assertEquals(HIVDrug.getSynonym("EFV"), HIVDrug.EFV);
+		assertEquals(HIVDrug.getSynonym("ETR"), HIVDrug.ETR);
+		assertEquals(HIVDrug.getSynonym("NVP"), HIVDrug.NVP);
+		assertEquals(HIVDrug.getSynonym("RPV"), HIVDrug.RPV);
 
-		assertEquals(Drug.getSynonym("DTG"), Drug.DTG);
-		assertEquals(Drug.getSynonym("EVG"), Drug.EVG);
-		assertEquals(Drug.getSynonym("RAL"), Drug.RAL);
+		assertEquals(HIVDrug.getSynonym("DTG"), HIVDrug.DTG);
+		assertEquals(HIVDrug.getSynonym("EVG"), HIVDrug.EVG);
+		assertEquals(HIVDrug.getSynonym("RAL"), HIVDrug.RAL);
 	}
 
 	@Test
 	public void testGetSynonymWithException() {
-		assertNull(Drug.getSynonym(""));
-		assertNull(Drug.getSynonym("EVH"));
+		assertNull(HIVDrug.getSynonym(""));
+		assertNull(HIVDrug.getSynonym("EVH"));
 	}
 
 	@Test
 	public void testValueOf() {
-		assertEquals(Drug.valueOf("ABC"), Drug.ABC);
-		assertEquals(Drug.valueOf("AZT"), Drug.AZT);
-		assertEquals(Drug.valueOf("D4T"), Drug.D4T);
-		assertEquals(Drug.valueOf("DDI"), Drug.DDI);
-		assertEquals(Drug.valueOf("FTC"), Drug.FTC);
-		assertEquals(Drug.valueOf("LMV"), Drug.LMV);
-		assertEquals(Drug.valueOf("TDF"), Drug.TDF);
+		assertEquals(HIVDrug.valueOf("ABC"), HIVDrug.ABC);
+		assertEquals(HIVDrug.valueOf("AZT"), HIVDrug.AZT);
+		assertEquals(HIVDrug.valueOf("D4T"), HIVDrug.D4T);
+		assertEquals(HIVDrug.valueOf("DDI"), HIVDrug.DDI);
+		assertEquals(HIVDrug.valueOf("FTC"), HIVDrug.FTC);
+		assertEquals(HIVDrug.valueOf("LMV"), HIVDrug.LMV);
+		assertEquals(HIVDrug.valueOf("TDF"), HIVDrug.TDF);
 
-		assertEquals(Drug.valueOf("ATV"), Drug.ATV);
-		assertEquals(Drug.valueOf("DRV"), Drug.DRV);
-		assertEquals(Drug.valueOf("FPV"), Drug.FPV);
-		assertEquals(Drug.valueOf("IDV"), Drug.IDV);
-		assertEquals(Drug.valueOf("LPV"), Drug.LPV);
-		assertEquals(Drug.valueOf("NFV"), Drug.NFV);
-		assertEquals(Drug.valueOf("SQV"), Drug.SQV);
-		assertEquals(Drug.valueOf("TPV"), Drug.TPV);
+		assertEquals(HIVDrug.valueOf("ATV"), HIVDrug.ATV);
+		assertEquals(HIVDrug.valueOf("DRV"), HIVDrug.DRV);
+		assertEquals(HIVDrug.valueOf("FPV"), HIVDrug.FPV);
+		assertEquals(HIVDrug.valueOf("IDV"), HIVDrug.IDV);
+		assertEquals(HIVDrug.valueOf("LPV"), HIVDrug.LPV);
+		assertEquals(HIVDrug.valueOf("NFV"), HIVDrug.NFV);
+		assertEquals(HIVDrug.valueOf("SQV"), HIVDrug.SQV);
+		assertEquals(HIVDrug.valueOf("TPV"), HIVDrug.TPV);
 
-		assertEquals(Drug.valueOf("EFV"), Drug.EFV);
-		assertEquals(Drug.valueOf("ETR"), Drug.ETR);
-		assertEquals(Drug.valueOf("NVP"), Drug.NVP);
-		assertEquals(Drug.valueOf("RPV"), Drug.RPV);
+		assertEquals(HIVDrug.valueOf("EFV"), HIVDrug.EFV);
+		assertEquals(HIVDrug.valueOf("ETR"), HIVDrug.ETR);
+		assertEquals(HIVDrug.valueOf("NVP"), HIVDrug.NVP);
+		assertEquals(HIVDrug.valueOf("RPV"), HIVDrug.RPV);
 
-		assertEquals(Drug.valueOf("DTG"), Drug.DTG);
-		assertEquals(Drug.valueOf("EVG"), Drug.EVG);
-		assertEquals(Drug.valueOf("RAL"), Drug.RAL);
+		assertEquals(HIVDrug.valueOf("DTG"), HIVDrug.DTG);
+		assertEquals(HIVDrug.valueOf("EVG"), HIVDrug.EVG);
+		assertEquals(HIVDrug.valueOf("RAL"), HIVDrug.RAL);
 	}
 }

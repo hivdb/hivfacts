@@ -1,6 +1,6 @@
 package edu.stanford.hivdb.hivfacts;
 
-public class HIVCodonPercent {
+public class HIVCodonPercent implements WithGene<HIVGene> {
 	final private String strain = "HIV1";
 	final private String gene;
 	final public Integer position;
@@ -22,11 +22,12 @@ public class HIVCodonPercent {
 		this.total = total;
 	}
 
-	public Gene getGene() {
-		return Gene.valueOf(strain, gene);
+	@Override
+	public HIVGene getGene() {
+		return HIVGene.valueOf(strain, gene);
 	}
 
-	public GenePosition getGenePosition() {
-		return new GenePosition(getGene(), position);
+	public HIVGenePosition getGenePosition() {
+		return new HIVGenePosition(getGene(), position);
 	}
 }
