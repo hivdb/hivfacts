@@ -1,0 +1,3458 @@
+[
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 40,
+    "aas": "F",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 41,
+    "aas": "L",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 41,
+    "aas": "I",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 44,
+    "aas": "AD",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 62,
+    "aas": "V",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 65,
+    "aas": "ACDFGHILMPQSTVWY_-",
+    "mutationType": "NRTI",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 65,
+    "aas": "E",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 65,
+    "aas": "N",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 65,
+    "aas": "R",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 67,
+    "aas": "-",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 67,
+    "aas": "ACFIKLMPQRVWY_",
+    "mutationType": "NRTI",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 67,
+    "aas": "GESTH",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 67,
+    "aas": "N",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 68,
+    "aas": "-",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 68,
+    "aas": "G",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 69,
+    "aas": "-",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 69,
+    "aas": "D",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 69,
+    "aas": "G",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 69,
+    "aas": "_",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 69,
+    "aas": "CFHKLMPQRVWY",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 69,
+    "aas": "N",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 69,
+    "aas": "SAIE",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 70,
+    "aas": "-",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 70,
+    "aas": "ACDFHILMPVWY_",
+    "mutationType": "NRTI",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 70,
+    "aas": "EG",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 70,
+    "aas": "QNST",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 70,
+    "aas": "R",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 74,
+    "aas": "ACDEFGHKMNPQRSTWY_-",
+    "mutationType": "NRTI",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 74,
+    "aas": "VI",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 75,
+    "aas": "I",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 75,
+    "aas": "M",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 75,
+    "aas": "SA",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 75,
+    "aas": "T",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 75,
+    "aas": "CDEFGHKNPQRWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 77,
+    "aas": "L",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 77,
+    "aas": "ACDEGHIKMNPQRSTVWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 115,
+    "aas": "F",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 115,
+    "aas": "ACDEGHIKLMNPQRSTVW_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 116,
+    "aas": "Y",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 116,
+    "aas": "ACDEGHIKLMNPQRSTVW_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 118,
+    "aas": "I",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 151,
+    "aas": "L",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 151,
+    "aas": "M",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 151,
+    "aas": "ACDEFGHIKNPRSTVWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 184,
+    "aas": "ACDEFGHKLNPQRSTWY_-",
+    "mutationType": "NRTI",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 184,
+    "aas": "VI",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 210,
+    "aas": "W",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 215,
+    "aas": "F",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 215,
+    "aas": "GHKMPQRW_-",
+    "mutationType": "NRTI",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 215,
+    "aas": "SCDEIVALN",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 215,
+    "aas": "Y",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 219,
+    "aas": "NR",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 219,
+    "aas": "QE",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 219,
+    "aas": "W",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 219,
+    "aas": "ACDFGHILMPSTVY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 90,
+    "aas": "I",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 98,
+    "aas": "G",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 100,
+    "aas": "ACDEFGHKMNPQRSTWY_-",
+    "mutationType": "NNRTI",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 100,
+    "aas": "I",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 100,
+    "aas": "V",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 101,
+    "aas": "E",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 101,
+    "aas": "H",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 101,
+    "aas": "P",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 101,
+    "aas": "CDFGILMSVWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 101,
+    "aas": "NAT",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 101,
+    "aas": "Q",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 103,
+    "aas": "ACDFGILMPVWY_-",
+    "mutationType": "NNRTI",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 103,
+    "aas": "EQ",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 103,
+    "aas": "H",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 103,
+    "aas": "N",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 103,
+    "aas": "S",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 103,
+    "aas": "T",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 103,
+    "aas": "R",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 106,
+    "aas": "A",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 106,
+    "aas": "I",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 106,
+    "aas": "M",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 106,
+    "aas": "CDEFGHKLNPQRSTWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 108,
+    "aas": "I",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 108,
+    "aas": "ACDEFGHKLMNPQRSTWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 132,
+    "aas": "ML",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 138,
+    "aas": "A",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 138,
+    "aas": "K",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 138,
+    "aas": "QG",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 138,
+    "aas": "R",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 138,
+    "aas": "CDFHILMNPSTVWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 179,
+    "aas": "DE",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 179,
+    "aas": "F",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 179,
+    "aas": "L",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 179,
+    "aas": "T",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 179,
+    "aas": "ACGHKMNPQRSWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 179,
+    "aas": "I",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 181,
+    "aas": "ADEHKLMNPQRTW_-",
+    "mutationType": "NNRTI",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 181,
+    "aas": "C",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 181,
+    "aas": "FSG",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 181,
+    "aas": "IV",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 188,
+    "aas": "ADEGIKMNPQRSTVW_-",
+    "mutationType": "NNRTI",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 188,
+    "aas": "C",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 188,
+    "aas": "F",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 188,
+    "aas": "H",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 188,
+    "aas": "L",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 190,
+    "aas": "A",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 190,
+    "aas": "CTV",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 190,
+    "aas": "DFHIKLMNPWY_-",
+    "mutationType": "NNRTI",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 190,
+    "aas": "EQ",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 190,
+    "aas": "S",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 190,
+    "aas": "R",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 221,
+    "aas": "Y",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 225,
+    "aas": "H",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 225,
+    "aas": "ACDEFGIKLMNQRSTVWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 227,
+    "aas": "C",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 227,
+    "aas": "ILV",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 227,
+    "aas": "ADEGHKMNPQRSTWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 230,
+    "aas": "I",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 230,
+    "aas": "L",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 230,
+    "aas": "ACDEFGHKNPQRSTVWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 234,
+    "aas": "I",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 234,
+    "aas": "ACDEFGHKMNPQRSTWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 236,
+    "aas": "L",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 236,
+    "aas": "ACDEFGHIKMNQRSTVWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 238,
+    "aas": "TN",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 238,
+    "aas": "ACDEFGHILMPQSVWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 238,
+    "aas": "R",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 318,
+    "aas": "F",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 318,
+    "aas": "ACDEGHIKLMNPQRSTVW_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 348,
+    "aas": "I",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 348,
+    "aas": "ACDEFGHKLMPQRSTVWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 10,
+    "aas": "F",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 10,
+    "aas": "ACDEGHKMNPQSTW_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 10,
+    "aas": "IV",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 10,
+    "aas": "RY",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 11,
+    "aas": "IL",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 20,
+    "aas": "T",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 20,
+    "aas": "I",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 20,
+    "aas": "MV",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 20,
+    "aas": "R",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 23,
+    "aas": "I",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 24,
+    "aas": "FM",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 24,
+    "aas": "I",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 24,
+    "aas": "ACDEGHKNPQRSTVWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 30,
+    "aas": "N",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 30,
+    "aas": "ACEFGHIKLMPQRSTVWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 32,
+    "aas": "I",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 32,
+    "aas": "ACDEFGHKLMNPQRSTWY_-",
+    "mutationType": "Accessory",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 33,
+    "aas": "F",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 33,
+    "aas": "_",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 34,
+    "aas": "_",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 35,
+    "aas": "_",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 36,
+    "aas": "_",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 37,
+    "aas": "_",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 38,
+    "aas": "_",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 39,
+    "aas": "_",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 40,
+    "aas": "_",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 41,
+    "aas": "_",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 43,
+    "aas": "T",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 46,
+    "aas": "IL",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 46,
+    "aas": "ACDEFGHKNPQRSTWY_-",
+    "mutationType": "Accessory",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 46,
+    "aas": "V",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 47,
+    "aas": "A",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 47,
+    "aas": "V",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 47,
+    "aas": "CDEFGHKLMNPQRSTWY_-",
+    "mutationType": "Accessory",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 48,
+    "aas": "ASTQL",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 48,
+    "aas": "M",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 48,
+    "aas": "V",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 48,
+    "aas": "CDEFHIKNPRWY_-",
+    "mutationType": "Accessory",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 50,
+    "aas": "L",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 50,
+    "aas": "V",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 50,
+    "aas": "ACDEFGHKMNPQRSTWY_-",
+    "mutationType": "Accessory",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 53,
+    "aas": "L",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 53,
+    "aas": "Y",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 54,
+    "aas": "ATS",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 54,
+    "aas": "LM",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 54,
+    "aas": "V",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 54,
+    "aas": "CDEFGHKNPQRWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 58,
+    "aas": "E",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 71,
+    "aas": "IL",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 71,
+    "aas": "TV",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 73,
+    "aas": "EFHIKLMNPQRWY_-",
+    "mutationType": "Accessory",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 73,
+    "aas": "STCADV",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 74,
+    "aas": "P",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 74,
+    "aas": "S",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 76,
+    "aas": "V",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 76,
+    "aas": "ACDEFGHIKMNPQRSTWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 82,
+    "aas": "A",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 82,
+    "aas": "C",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 82,
+    "aas": "F",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 82,
+    "aas": "L",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 82,
+    "aas": "M",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 82,
+    "aas": "TS",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 82,
+    "aas": "DEGHKNPQRWY_-",
+    "mutationType": "Accessory",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 82,
+    "aas": "I",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 83,
+    "aas": "D",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 84,
+    "aas": "AC",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 84,
+    "aas": "V",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 84,
+    "aas": "DEFGHKLMNPQRSTWY_-",
+    "mutationType": "Accessory",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 85,
+    "aas": "V",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 88,
+    "aas": "S",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 88,
+    "aas": "TG",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 88,
+    "aas": "D",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 88,
+    "aas": "ACEFHIKLMPQRVWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 89,
+    "aas": "VT",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 90,
+    "aas": "M",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 90,
+    "aas": "ACDEFGHIKNPQRSTVWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 49,
+    "aas": "G",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 50,
+    "aas": "I",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 51,
+    "aas": "Y",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 51,
+    "aas": "ACDEFGIKLMNPQRSTVW_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 66,
+    "aas": "A",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 66,
+    "aas": "CDEFGHLMNPQRSVWY_-",
+    "mutationType": "Major",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 66,
+    "aas": "I",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 66,
+    "aas": "K",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 74,
+    "aas": "MIF",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 92,
+    "aas": "ACDFHIKLMNPRSTWY_-",
+    "mutationType": "Major",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 92,
+    "aas": "G",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 92,
+    "aas": "Q",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 92,
+    "aas": "V",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 95,
+    "aas": "K",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 97,
+    "aas": "A",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 118,
+    "aas": "R",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 118,
+    "aas": "ACDEFHIKLMNPQSTVWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 119,
+    "aas": "R",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 121,
+    "aas": "Y",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 121,
+    "aas": "ACDEGHIKLMNPQRSTVW_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 128,
+    "aas": "T",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 138,
+    "aas": "KAT",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 138,
+    "aas": "CFGHILMNPQRSVWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 138,
+    "aas": "D",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 140,
+    "aas": "R",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 140,
+    "aas": "SAC",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 140,
+    "aas": "DEFHIKLMNPQTVWY_-",
+    "mutationType": "Accessory",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 142,
+    "aas": "T",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 143,
+    "aas": "CR",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 143,
+    "aas": "DEFILMNPQTVW_-",
+    "mutationType": "Major",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 143,
+    "aas": "H",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 143,
+    "aas": "KGSA",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 145,
+    "aas": "S",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 145,
+    "aas": "ACDEFGHIKLMNQRTVWY_-",
+    "mutationType": "Accessory",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 146,
+    "aas": "P",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 146,
+    "aas": "ACDEFGHIKLMNRSTVWY_-",
+    "mutationType": "Accessory",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 147,
+    "aas": "ACDEFHIKLMNPQRTVWY_-",
+    "mutationType": "Major",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 147,
+    "aas": "G",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 148,
+    "aas": "ACDEFGILMPSTVWY_-",
+    "mutationType": "Major",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 148,
+    "aas": "HKR",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 148,
+    "aas": "N",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 149,
+    "aas": "A",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 151,
+    "aas": "L",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 151,
+    "aas": "A",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 151,
+    "aas": "CDEFGHKMNPQRSTWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 151,
+    "aas": "I",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 153,
+    "aas": "YF",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 153,
+    "aas": "ACDEGHIKLMNPQRTVW_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 155,
+    "aas": "ACDEFGIKLMPQRVWY_-",
+    "mutationType": "Major",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 155,
+    "aas": "H",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 155,
+    "aas": "ST",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 157,
+    "aas": "Q",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 163,
+    "aas": "RK",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 230,
+    "aas": "R",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 230,
+    "aas": "N",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 232,
+    "aas": "N",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 263,
+    "aas": "K",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 263,
+    "aas": "ACDEFGHILMNPQSTVWY_-",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 40,
+    "aas": "R",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 40,
+    "aas": "R",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 41,
+    "aas": "L",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 41,
+    "aas": "L",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 62,
+    "aas": "V",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 62,
+    "aas": "V",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 65,
+    "aas": "EN",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 65,
+    "aas": "EN",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 65,
+    "aas": "R",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 65,
+    "aas": "R",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 67,
+    "aas": "NGESTH",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 67,
+    "aas": "NGESTH",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 69,
+    "aas": "-",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 69,
+    "aas": "-",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 69,
+    "aas": "_",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 69,
+    "aas": "_",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 69,
+    "aas": "S",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 69,
+    "aas": "S",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 70,
+    "aas": "N",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 70,
+    "aas": "N",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 70,
+    "aas": "R",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 70,
+    "aas": "R",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 74,
+    "aas": "VI",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 74,
+    "aas": "VI",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 75,
+    "aas": "V",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 75,
+    "aas": "V",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 77,
+    "aas": "L",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 77,
+    "aas": "L",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 111,
+    "aas": "I",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 111,
+    "aas": "I",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 115,
+    "aas": "F",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 115,
+    "aas": "F",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 116,
+    "aas": "Y",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 116,
+    "aas": "Y",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 151,
+    "aas": "M",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 151,
+    "aas": "M",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 184,
+    "aas": "VI",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 184,
+    "aas": "VI",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 195,
+    "aas": "N",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 195,
+    "aas": "N",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 210,
+    "aas": "ACDEFGHIKLMPQRSTVWY_",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 210,
+    "aas": "ACDEFGHIKLMPQRSTVWY_",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 214,
+    "aas": "L",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 214,
+    "aas": "L",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 215,
+    "aas": "YF",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 215,
+    "aas": "YF",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 219,
+    "aas": "ACDFGHIKLMNPQRSTVWY_",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 219,
+    "aas": "ACDFGHIKLMNPQRSTVWY_",
+    "mutationType": "Other",
+    "isUnusual": true
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 10,
+    "aas": "I",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 10,
+    "aas": "I",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 23,
+    "aas": "I",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 23,
+    "aas": "I",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 30,
+    "aas": "N",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 30,
+    "aas": "N",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 33,
+    "aas": "I",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 33,
+    "aas": "I",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 45,
+    "aas": "R",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 45,
+    "aas": "R",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 47,
+    "aas": "A",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 47,
+    "aas": "A",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 48,
+    "aas": "VA",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 48,
+    "aas": "VA",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 50,
+    "aas": "L",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 50,
+    "aas": "L",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 50,
+    "aas": "V",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 50,
+    "aas": "V",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 53,
+    "aas": "Y",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 53,
+    "aas": "Y",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 54,
+    "aas": "L",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 54,
+    "aas": "L",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 54,
+    "aas": "M",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 54,
+    "aas": "M",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 56,
+    "aas": "V",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 56,
+    "aas": "V",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 71,
+    "aas": "I",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 71,
+    "aas": "I",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 73,
+    "aas": "G",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 73,
+    "aas": "G",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 82,
+    "aas": "F",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 82,
+    "aas": "F",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 82,
+    "aas": "LM",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 82,
+    "aas": "LM",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 84,
+    "aas": "V",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 84,
+    "aas": "V",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 85,
+    "aas": "L",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 85,
+    "aas": "L",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 88,
+    "aas": "D",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 88,
+    "aas": "D",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 90,
+    "aas": "M",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 90,
+    "aas": "M",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 95,
+    "aas": "V",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 95,
+    "aas": "V",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 99,
+    "aas": "F",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 99,
+    "aas": "F",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 51,
+    "aas": "Y",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 51,
+    "aas": "Y",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 66,
+    "aas": "AIK",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 66,
+    "aas": "AIK",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 84,
+    "aas": "V",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 84,
+    "aas": "V",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 92,
+    "aas": "GAQ",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 92,
+    "aas": "GAQ",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 97,
+    "aas": "A",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 97,
+    "aas": "A",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 118,
+    "aas": "R",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 118,
+    "aas": "R",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 121,
+    "aas": "Y",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 121,
+    "aas": "Y",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 140,
+    "aas": "SAC",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 140,
+    "aas": "SAC",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 143,
+    "aas": "CR",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 143,
+    "aas": "CR",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 147,
+    "aas": "G",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 147,
+    "aas": "G",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 148,
+    "aas": "HKR",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 148,
+    "aas": "HKR",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 153,
+    "aas": "G",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 153,
+    "aas": "G",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 155,
+    "aas": "H",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 155,
+    "aas": "H",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 231,
+    "aas": "_",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 231,
+    "aas": "_",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2A",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 263,
+    "aas": "K",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV2B",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 263,
+    "aas": "K",
+    "mutationType": "Major",
+    "isUnusual": false
+  }
+]

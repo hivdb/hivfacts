@@ -1,0 +1,146 @@
+[
+  {
+    "name": "ABC",
+    "fullName": "abacavir",
+    "displayAbbr": "ABC",
+    "drugClass": "NRTI"
+  },
+  {
+    "name": "AZT",
+    "fullName": "zidovudine",
+    "displayAbbr": "AZT",
+    "drugClass": "NRTI"
+  },
+  {
+    "name": "D4T",
+    "fullName": "stavudine",
+    "displayAbbr": "D4T",
+    "drugClass": "NRTI"
+  },
+  {
+    "name": "DDI",
+    "fullName": "didanosine",
+    "displayAbbr": "DDI",
+    "drugClass": "NRTI"
+  },
+  {
+    "name": "FTC",
+    "fullName": "emtricitabine",
+    "displayAbbr": "FTC",
+    "drugClass": "NRTI"
+  },
+  {
+    "name": "LMV",
+    "fullName": "lamivudine",
+    "displayAbbr": "3TC",
+    "drugClass": "NRTI"
+  },
+  {
+    "name": "TDF",
+    "fullName": "tenofovir",
+    "displayAbbr": "TDF",
+    "drugClass": "NRTI"
+  },
+  {
+    "name": "ATV",
+    "fullName": "atazanavir/r",
+    "displayAbbr": "ATV/r",
+    "drugClass": "PI"
+  },
+  {
+    "name": "DRV",
+    "fullName": "darunavir/r",
+    "displayAbbr": "DRV/r",
+    "drugClass": "PI"
+  },
+  {
+    "name": "FPV",
+    "fullName": "fosamprenavir/r",
+    "displayAbbr": "FPV/r",
+    "drugClass": "PI"
+  },
+  {
+    "name": "IDV",
+    "fullName": "indinavir/r",
+    "displayAbbr": "IDV/r",
+    "drugClass": "PI"
+  },
+  {
+    "name": "LPV",
+    "fullName": "lopinavir/r",
+    "displayAbbr": "LPV/r",
+    "drugClass": "PI"
+  },
+  {
+    "name": "NFV",
+    "fullName": "nelfinavir",
+    "displayAbbr": "NFV",
+    "drugClass": "PI"
+  },
+  {
+    "name": "SQV",
+    "fullName": "saquinavir/r",
+    "displayAbbr": "SQV/r",
+    "drugClass": "PI"
+  },
+  {
+    "name": "TPV",
+    "fullName": "tipranavir/r",
+    "displayAbbr": "TPV/r",
+    "drugClass": "PI"
+  },
+  {
+    "name": "DOR",
+    "fullName": "doravirine",
+    "displayAbbr": "DOR",
+    "drugClass": "NNRTI"
+  },
+  {
+    "name": "EFV",
+    "fullName": "efavirenz",
+    "displayAbbr": "EFV",
+    "drugClass": "NNRTI"
+  },
+  {
+    "name": "ETR",
+    "fullName": "etravirine",
+    "displayAbbr": "ETR",
+    "drugClass": "NNRTI"
+  },
+  {
+    "name": "NVP",
+    "fullName": "nevirapine",
+    "displayAbbr": "NVP",
+    "drugClass": "NNRTI"
+  },
+  {
+    "name": "RPV",
+    "fullName": "rilpivirine",
+    "displayAbbr": "RPV",
+    "drugClass": "NNRTI"
+  },
+  {
+    "name": "BIC",
+    "fullName": "bictegravir",
+    "displayAbbr": "BIC",
+    "drugClass": "INSTI"
+  },
+  {
+    "name": "DTG",
+    "fullName": "dolutegravir",
+    "displayAbbr": "DTG",
+    "drugClass": "INSTI"
+  },
+  {
+    "name": "EVG",
+    "fullName": "elvitegravir",
+    "displayAbbr": "EVG",
+    "drugClass": "INSTI"
+  },
+  {
+    "name": "RAL",
+    "fullName": "raltegravir",
+    "displayAbbr": "RAL",
+    "drugClass": "INSTI"
+  }
+]

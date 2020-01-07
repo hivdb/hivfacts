@@ -4,11 +4,13 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import edu.stanford.hivdb.mutations.AminoAcidPercent;
+
 public class HIVAminoAcidPercentTest {
 
 	@Test
 	public void test() {
-		HIVAminoAcidPercent mPR5A = new HIVAminoAcidPercent(
+		AminoAcidPercent mPR5A = new AminoAcidPercent(
 			"PR", 5, 'A',
 			/* percent   = */ 6.7597712493409226e-06,
 			/* count     = */ 1,

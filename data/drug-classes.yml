@@ -1,0 +1,53 @@
+- name: PI
+  ordinal: 1
+  abstractGene: PR
+  fullName: Protease Inhibitor
+  strains:
+    - HIV1
+    - HIV2A
+    - HIV2B
+  synonyms: []
+  mutationTypes:
+    - Major
+    - Accessory
+    - Other
+- name: NRTI
+  ordinal: 2
+  abstractGene: RT
+  fullName: Nucleoside Reverse Transcriptase Inhibitor
+  strains:
+    - HIV1
+    - HIV2A
+    - HIV2B
+  synonyms: []
+  mutationTypes:
+    - NRTI
+    - Major
+    - Accessory
+    - Other
+- name: NNRTI
+  ordinal: 3
+  abstractGene: RT
+  fullName: Non-nucleoside Reverse Transcriptase Inhibitor
+  strains:
+    - HIV1
+  synonyms: []
+  mutationTypes:
+    - NNRTI
+    - Major
+    - Accessory
+    - Other
+- name: INSTI
+  ordinal: 4
+  abstractGene: IN
+  fullName: Integrase Strand Transfer Inhibitor
+  strains:
+    - HIV1
+    - HIV2A
+    - HIV2B
+  synonyms:
+    - INI
+  mutationTypes:
+    - Major
+    - Accessory
+    - Other

@@ -29,10 +29,10 @@ public class DrugClassTest {
 
 	@Test
 	public void testGetGene() {
-		assertEquals(HIVDrugClass.PI.gene(), HIVGeneEnum.PR);
-		assertEquals(HIVDrugClass.NRTI.gene(), HIVGeneEnum.RT);
-		assertEquals(HIVDrugClass.NNRTI.gene(), HIVGeneEnum.RT);
-		assertEquals(HIVDrugClass.INSTI.gene(), HIVGeneEnum.IN);
+		assertEquals(HIVDrugClass.PI.gene(), HIVAbstractGene.PR);
+		assertEquals(HIVDrugClass.NRTI.gene(), HIVAbstractGene.RT);
+		assertEquals(HIVDrugClass.NNRTI.gene(), HIVAbstractGene.RT);
+		assertEquals(HIVDrugClass.INSTI.gene(), HIVAbstractGene.IN);
 	}
 
 	@Test
@@ -56,7 +56,7 @@ public class DrugClassTest {
 		piExpecteds.add(HIVDrug.SQV);
 		piExpecteds.add(HIVDrug.TPV);
 		assertEquals(
-			HIVDrugClass.PI.getAllDrugs(), piExpecteds);
+			HIVDrugClass.PI.getDrugs(), piExpecteds);
 
 		List<HIVDrug> nrtiExpecteds = new ArrayList<>();
 		nrtiExpecteds.add(HIVDrug.ABC);
@@ -67,7 +67,7 @@ public class DrugClassTest {
 		nrtiExpecteds.add(HIVDrug.LMV);
 		nrtiExpecteds.add(HIVDrug.TDF);
 		assertEquals(
-			HIVDrugClass.NRTI.getAllDrugs(), nrtiExpecteds);
+			HIVDrugClass.NRTI.getDrugs(), nrtiExpecteds);
 
 		List<HIVDrug> nnrtiExpecteds = new ArrayList<>();
 		nnrtiExpecteds.add(HIVDrug.DOR);
@@ -76,7 +76,7 @@ public class DrugClassTest {
 		nnrtiExpecteds.add(HIVDrug.NVP);
 		nnrtiExpecteds.add(HIVDrug.RPV);
 		assertEquals(
-			HIVDrugClass.NNRTI.getAllDrugs(), nnrtiExpecteds);
+			HIVDrugClass.NNRTI.getDrugs(), nnrtiExpecteds);
 
 		List<HIVDrug> instiExpecteds = new ArrayList<>();
 		instiExpecteds.add(HIVDrug.BIC);
@@ -84,7 +84,7 @@ public class DrugClassTest {
 		instiExpecteds.add(HIVDrug.EVG);
 		instiExpecteds.add(HIVDrug.RAL);
 		assertEquals(
-			HIVDrugClass.INSTI.getAllDrugs(), instiExpecteds);
+			HIVDrugClass.INSTI.getDrugs(), instiExpecteds);
 	}
 
 	@Test

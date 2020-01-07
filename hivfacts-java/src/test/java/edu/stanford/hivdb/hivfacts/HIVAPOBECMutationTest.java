@@ -8,7 +8,7 @@ public class HIVAPOBECMutationTest {
 
 	@Test
 	public void test() {
-		HIVAPOBECMutation mut = new HIVAPOBECMutation("RT", 93, 'K');
+		HIVMutationResLoader mut = new HIVMutationResLoader("RT", 93, 'K');
 		assertEquals(HIVGene.valueOf("HIV1RT"), mut.getGene());
 		assertEquals(new Integer(93), mut.getPosition());
 		assertEquals(new Character('K'), mut.getAA());

@@ -5,9 +5,11 @@ DATADIR="$BASEDIR/data/aapcnt"
 
 set -e
 
+cd $BASEDIR
+
 for rx in all naive art; do
     for subtype in all A B C D F G CRF01_AE CRF02_AG other; do
-        hivdbql export-aapcnt \
+        pipenv run hivdbql export-aapcnt \
             --subtype $subtype \
             --rx-type $rx \
             --format "json" \

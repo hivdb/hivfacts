@@ -8,6 +8,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
+import edu.stanford.hivdb.mutations.CodonPercent;
+import edu.stanford.hivdb.mutations.CodonPercents;
+
 public class HIVCodonPercentsTest {
 
 	@Rule
@@ -15,8 +18,8 @@ public class HIVCodonPercentsTest {
 
 	@Test
 	public void testGetInstanceSuccess() {
-		HIVCodonPercents allall01 = HIVCodonPercents.getInstance("all", "all");
-		HIVCodonPercents allall02 = HIVCodonPercents.getInstance("all", "all");
+		CodonPercents allall01 = CodonPercents.getInstance("all", "all");
+		CodonPercents allall02 = CodonPercents.getInstance("all", "all");
 		assertEquals("same singleton instance", allall01, allall02);
 	}
 
@@ -24,21 +27,21 @@ public class HIVCodonPercentsTest {
 	public void testGetInstanceFailCase1() {
 		expectedEx.expect(ExceptionInInitializerError.class);
 		expectedEx.expectMessage("Invalid resource name (codonpcnt/rx-all_subtype-E.json)");
-		HIVCodonPercents.getInstance("all", "E");
+		CodonPercents.getInstance("all", "E");
 	}
 
 	@Test
 	public void testGetInstanceFailCase2() {
 		expectedEx.expect(ExceptionInInitializerError.class);
 		expectedEx.expectMessage("Invalid resource name (codonpcnt/rx-aaaaaaa_subtype-all.json)");
-		HIVCodonPercents.getInstance("aaaaaaa", "all");
+		CodonPercents.getInstance("aaaaaaa", "all");
 	}
 
 	@Test
 	public void testGsonLoad() {
-		HIVCodonPercents allall = HIVCodonPercents.getInstance("all", "all");
+		CodonPercents allall = CodonPercents.getInstance("all", "all");
 		assertNotNull(allall.codonPcnts);
-		HIVCodonPercent mutPR1ACA = allall.codonPcnts.get(0);
+		CodonPercent mutPR1ACA = allall.codonPcnts.get(0);
 		assertEquals(HIVGene.valueOf("HIV1PR"), mutPR1ACA.getGene());
 		assertEquals(new Integer(1), mutPR1ACA.position);
 		assertEquals(new Character('T'), mutPR1ACA.aa);
@@ -47,16 +50,16 @@ public class HIVCodonPercentsTest {
 
 	@Test
 	public void testGetall() {
-		HIVCodonPercents allall = HIVCodonPercents.getInstance("all", "all");
-		List<HIVCodonPercent> allCdPcnts = allall.get();
+		CodonPercents allall = CodonPercents.getInstance("all", "all");
+		List<CodonPercent> allCdPcnts = allall.get();
 		assertEquals(allall.codonPcnts, allCdPcnts); // equal values
 		assertFalse(allall.codonPcnts == allCdPcnts); // different references
 	}
 
 	@Test
 	public void testGetByGene() {
-		HIVCodonPercents allall = HIVCodonPercents.getInstance("all", "all");
-		List<HIVCodonPercent> gRTCdPcnts = allall.get(HIVGene.valueOf("HIV1RT"));
+		CodonPercents allall = CodonPercents.getInstance("all", "all");
+		List<CodonPercent> gRTCdPcnts = allall.get(HIVGene.valueOf("HIV1RT"));
 		int i = 0;
 		int pos = 1;
 		char[] acgt = "ACGT".toCharArray();
@@ -68,7 +71,7 @@ public class HIVCodonPercentsTest {
 					if (i >= gRTCdPcnts.size()) {
 						return;
 					}
-					HIVCodonPercent mut = gRTCdPcnts.get(i ++);
+					CodonPercent mut = gRTCdPcnts.get(i ++);
 					assertEquals(HIVGene.valueOf("HIV1RT"), mut.getGene());
 					assertEquals(pos, (int) mut.position);
 					String expectedCodon = "" + na1 + na2 + na3;
@@ -86,8 +89,8 @@ public class HIVCodonPercentsTest {
 
 	@Test
 	public void testGetByGenePos() {
-		HIVCodonPercents allall = HIVCodonPercents.getInstance("all", "all");
-		List<HIVCodonPercent> gpIN263CdPcnts = allall.get(HIVGene.valueOf("HIV1IN"), 263);
+		CodonPercents allall = CodonPercents.getInstance("all", "all");
+		List<CodonPercent> gpIN263CdPcnts = allall.get(HIVGene.valueOf("HIV1IN"), 263);
 		int i = 0;
 		char[] acgt = "ACGT".toCharArray();
 		// Some of the codons might never occur. However the list
@@ -98,7 +101,7 @@ public class HIVCodonPercentsTest {
 					if (i >= gpIN263CdPcnts.size()) {
 						return;
 					}
-					HIVCodonPercent mut = gpIN263CdPcnts.get(i ++);
+					CodonPercent mut = gpIN263CdPcnts.get(i ++);
 					assertEquals(HIVGene.valueOf("HIV1IN"), mut.getGene());
 					assertEquals(263, (int) mut.position);
 					assertTrue(mut.codon.compareTo("" + na1 + na2 + na3) >= 0);
@@ -112,18 +115,18 @@ public class HIVCodonPercentsTest {
 
 	@Test
 	public void testGetByMut() {
-		HIVCodonPercents allall = HIVCodonPercents.getInstance("all", "all");
-		HIVCodonPercent mutIN263AGG = allall.get(HIVGene.valueOf("HIV1IN"), 263, "AGG");
+		CodonPercents allall = CodonPercents.getInstance("all", "all");
+		CodonPercent mutIN263AGG = allall.get(HIVGene.valueOf("HIV1IN"), 263, "AGG");
 		assertEquals(HIVGene.valueOf("HIV1IN"), mutIN263AGG.getGene());
 		assertEquals(263, (int) mutIN263AGG.position);
 		assertEquals('R', (char) mutIN263AGG.aa);
 		assertEquals("AGG", mutIN263AGG.codon);
-		HIVCodonPercent mutIN5ins = allall.get(HIVGene.valueOf("HIV1IN"), 5, "ins");
+		CodonPercent mutIN5ins = allall.get(HIVGene.valueOf("HIV1IN"), 5, "ins");
 		assertEquals(HIVGene.valueOf("HIV1IN"), mutIN5ins.getGene());
 		assertEquals(5, (int) mutIN5ins.position);
 		assertEquals('_', (int) mutIN5ins.aa);
 		assertEquals("ins", mutIN5ins.codon);
-		HIVCodonPercent mutIN5del = allall.get(HIVGene.valueOf("HIV1IN"), 5, "del");
+		CodonPercent mutIN5del = allall.get(HIVGene.valueOf("HIV1IN"), 5, "del");
 		assertEquals(HIVGene.valueOf("HIV1IN"), mutIN5del.getGene());
 		assertEquals(5, (int) mutIN5del.position);
 		assertEquals('-', (int) mutIN5del.aa);
@@ -132,8 +135,8 @@ public class HIVCodonPercentsTest {
 
 	@Test
 	public void testGetByMutNotOccur() {
-		HIVCodonPercents allall = HIVCodonPercents.getInstance("all", "all");
-		HIVCodonPercent mutIN263GTG = allall.get(HIVGene.valueOf("HIV1IN"), 263, "GTG");
+		CodonPercents allall = CodonPercents.getInstance("all", "all");
+		CodonPercent mutIN263GTG = allall.get(HIVGene.valueOf("HIV1IN"), 263, "GTG");
 		assertEquals(HIVGene.valueOf("HIV1IN"), mutIN263GTG.getGene());
 		assertEquals(263, (int) mutIN263GTG.position);
 		// TODO: don't know the translation. Probably should introduce codon translator
@@ -143,7 +146,7 @@ public class HIVCodonPercentsTest {
 
 	@Test
 	public void testGetByInvalidMut() {
-		HIVCodonPercents allall = HIVCodonPercents.getInstance("all", "all");
+		CodonPercents allall = CodonPercents.getInstance("all", "all");
 		expectedEx.expect(IllegalArgumentException.class);
 		expectedEx.expectMessage("Invalid argument codon \"EEE\" at HIV1IN1");
 		allall.get(HIVGene.valueOf("HIV1IN"), 1, "EEE");
@@ -151,7 +154,7 @@ public class HIVCodonPercentsTest {
 	
 	@Test
 	public void testGetByInvalidMut2() {
-		HIVCodonPercents allall = HIVCodonPercents.getInstance("all", "all");
+		CodonPercents allall = CodonPercents.getInstance("all", "all");
 		expectedEx.expect(IllegalArgumentException.class);
 		expectedEx.expectMessage("Invalid argument codon \"\" at HIV1IN1");
 		allall.get(HIVGene.valueOf("HIV1IN"), 1, "");
@@ -159,7 +162,7 @@ public class HIVCodonPercentsTest {
 
 	@Test
 	public void testGetOutOfRange() {
-		HIVCodonPercents allall = HIVCodonPercents.getInstance("all", "all");
+		CodonPercents allall = CodonPercents.getInstance("all", "all");
 		expectedEx.expect(IllegalArgumentException.class);
 		expectedEx.expectMessage("Argument 'pos' is out of range: 100");
 		allall.get(HIVGene.valueOf("HIV1PR"), 100, "AAA");
@@ -168,7 +171,7 @@ public class HIVCodonPercentsTest {
 
 	@Test
 	public void testGetHighestPercentValue() {
-		HIVCodonPercents allall = HIVCodonPercents.getInstance("all", "all");
+		CodonPercents allall = CodonPercents.getInstance("all", "all");
 		double highestVal = allall.getHighestCodonPercentValue(HIVGene.valueOf("HIV1PR"), 23, "AAA", "AAG", "ATA", "ATC");
 		double expectedHighestVal = .0;
 		for (String codon : new String[] {"AAA", "AAG", "ATA", "ATC"}) {

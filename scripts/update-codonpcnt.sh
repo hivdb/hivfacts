@@ -4,10 +4,11 @@ BASEDIR=`realpath $(dirname $0)/..`
 DATADIR="$BASEDIR/data/codonpcnt"
 
 set -e
+cd $BASEDIR
 
 for rx in all naive art; do
     for subtype in all A B C D F G CRF01_AE CRF02_AG; do
-        hivdbql export-codonpcnt \
+        pipenv run hivdbql export-codonpcnt \
             --species HIV1 \
             --subtype $subtype \
             --rx-type $rx \

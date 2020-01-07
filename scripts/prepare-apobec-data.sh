@@ -10,8 +10,9 @@ APOBEC_JSON_PATH="$BASEDIR/local/apobecs/apobecs_all.json"
 APOBEC_CSV_PATH="$BASEDIR/local/apobecs/apobecs_all.csv"
 
 set -e
+cd $BASEDIR
 
-hivdbql export-codonpcnt \
+pipenv run hivdbql export-codonpcnt \
     --species HIV1 \
     --subtype all \
     --rx-type all \
@@ -23,7 +24,7 @@ hivdbql export-codonpcnt \
     --filter NO_CLONES \
     $CODONPCNT_PATH
 
-hivdbql export-cooccur-stops \
+pipenv run hivdbql export-cooccur-stops \
     --species HIV1 \
     --subtype all \
     --rx-type all \
@@ -32,7 +33,7 @@ hivdbql export-cooccur-stops \
     --filter NO_CLONES \
     $STOPS_PBMC_PATH
 
-hivdbql export-cooccur-stops \
+pipenv run hivdbql export-cooccur-stops \
     --species HIV1 \
     --subtype all \
     --rx-type all \
@@ -41,7 +42,7 @@ hivdbql export-cooccur-stops \
     --filter NO_CLONES \
     $STOPS_PLASMA_PATH
 
-hivdbql export-cooccur-stops \
+pipenv run hivdbql export-cooccur-stops \
     --species HIV1 \
     --subtype all \
     --rx-type all \
@@ -49,7 +50,7 @@ hivdbql export-cooccur-stops \
     --filter NO_CLONES \
     $STOPS_ALLSRC_PATH
 
-hivdbql discover-apobecs \
+pipenv run hivdbql discover-apobecs \
     --codonpcnt-json $CODONPCNT_PATH \
     --cooccur-stops-plasma-json $STOPS_PLASMA_PATH \
     --cooccur-stops-pbmc-json $STOPS_PBMC_PATH \
@@ -59,7 +60,7 @@ hivdbql discover-apobecs \
     --format json \
     $APOBEC_JSON_PATH
 
-hivdbql discover-apobecs \
+pipenv run hivdbql discover-apobecs \
     --codonpcnt-json $CODONPCNT_PATH \
     --cooccur-stops-plasma-json $STOPS_PLASMA_PATH \
     --cooccur-stops-pbmc-json $STOPS_PBMC_PATH \

@@ -4,11 +4,13 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import edu.stanford.hivdb.mutations.CodonPercent;
+
 public class HIVCodonPercentTest {
 
 	@Test
 	public void test() {
-		HIVCodonPercent mPR5A = new HIVCodonPercent(
+		CodonPercent mPR5A = new CodonPercent(
 			"PR", 5, "GCT", 'A',
 			/* percent   = */ 5.664567000498482e-06,
 			/* count     = */ 1,
