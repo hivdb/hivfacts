@@ -21,7 +21,7 @@ dependencies {
 	implementation 'com.google.guava:guava:28.1-jre'
     implementation 'com.codepoetics:protonpack:1.15'
 	testImplementation 'junit:junit:4.12'
-    compile project(':utilities')
+    compile project(':sierra-core')
 }
 
 repositories {
