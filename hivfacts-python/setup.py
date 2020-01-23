@@ -19,6 +19,8 @@ class CopyHIVFactsDataCmd(build_py):
             copy2(fname, 'hivfacts/data/codonpcnt/')
         for fname in glob('../data/apobecs/*.json'):
             copy2(fname, 'hivfacts/data/apobecs/')
+        for fname in glob('../data/*.json'):
+            copy2(fname, 'hivfacts/data/')
         super(CopyHIVFactsDataCmd, self).run()
 
 
