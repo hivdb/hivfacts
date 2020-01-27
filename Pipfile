@@ -8,7 +8,8 @@ verify_ssl = true
 [packages]
 pyyaml = "*"
 pymysql = "*"
-hivdb-graphql = {editable = true,path = "/Users/philip/gitrepo/hivdb-graphql"}
+hivdb-graphql = {editable = true,path = "../hivdb-graphql"}
+lxml = "*"
 
 [requires]
 python_version = "3.7"
