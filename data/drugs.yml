@@ -35,6 +35,8 @@
   fullName: darunavir/r
   displayAbbr: DRV/r
   drugClass: PI
+  synonyms:
+    - DRV/r_QD  ## used by ANRS algorithm
 - name: FPV
   fullName: fosamprenavir/r
   displayAbbr: FPV/r
@@ -89,6 +91,8 @@
   fullName: dolutegravir
   displayAbbr: DTG
   drugClass: INSTI
+  synonyms:
+    - DTG_QD  ## used by ANRS algorithm
 - name: EVG
   fullName: elvitegravir
   displayAbbr: EVG

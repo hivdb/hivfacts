@@ -51,7 +51,10 @@
     "name": "DRV",
     "fullName": "darunavir/r",
     "displayAbbr": "DRV/r",
-    "drugClass": "PI"
+    "drugClass": "PI",
+    "synonyms": [
+      "DRV/r_QD"
+    ]
   },
   {
     "name": "FPV",
@@ -129,7 +132,10 @@
     "name": "DTG",
     "fullName": "dolutegravir",
     "displayAbbr": "DTG",
-    "drugClass": "INSTI"
+    "drugClass": "INSTI",
+    "synonyms": [
+      "DTG_QD"
+    ]
   },
   {
     "name": "EVG",
