@@ -70,7 +70,7 @@
       {
         "position": 345,
         "insertAfter": 1,
-        "targetGene": "HIV1RT"
+        "targetStrain": "HIV1"
       }
     ],
     "nucaminoMinNumOfAA": 60
@@ -90,17 +90,17 @@
       {
         "position": 272,
         "deleteAfter": 2,
-        "targetGene": "HIV1IN"
+        "targetStrain": "HIV1"
       },
       {
         "position": 283,
         "deleteAfter": 1,
-        "targetGene": "HIV1IN"
+        "targetStrain": "HIV1"
       },
       {
         "position": 288,
         "deleteAfter": 0,
-        "targetGene": "HIV1IN"
+        "targetStrain": "HIV1"
       }
     ],
     "nucaminoMinNumOfAA": 30
@@ -134,7 +134,7 @@
       {
         "position": 345,
         "insertAfter": 1,
-        "targetGene": "HIV1RT"
+        "targetStrain": "HIV1"
       }
     ],
     "nucaminoMinNumOfAA": 60
@@ -154,17 +154,17 @@
       {
         "position": 272,
         "deleteAfter": 2,
-        "targetGene": "HIV1IN"
+        "targetStrain": "HIV1"
       },
       {
         "position": 283,
         "deleteAfter": 1,
-        "targetGene": "HIV1IN"
+        "targetStrain": "HIV1"
       },
       {
         "position": 288,
         "deleteAfter": 0,
-        "targetGene": "HIV1IN"
+        "targetStrain": "HIV1"
       }
     ],
     "nucaminoMinNumOfAA": 30

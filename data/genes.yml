@@ -88,7 +88,7 @@
   codonModifiers:
     - position: 345
       insertAfter: 1
-      targetGene: HIV1RT
+      targetStrain: HIV1
   nucaminoMinNumOfAA: 60
 - name: HIV2AIN  # ROD
   ordinal: 6
@@ -108,13 +108,13 @@
   codonModifiers:
     - position: 272
       deleteAfter: 2
-      targetGene: HIV1IN
+      targetStrain: HIV1
     - position: 283
       deleteAfter: 1
-      targetGene: HIV1IN
+      targetStrain: HIV1
     - position: 288
       deleteAfter: 0  # all
-      targetGene: HIV1IN
+      targetStrain: HIV1
   nucaminoMinNumOfAA: 30
 - name: HIV2BPR  # EHO
   ordinal: 7
@@ -153,7 +153,7 @@
   codonModifiers:
     - position: 345
       insertAfter: 1
-      targetGene: HIV1RT
+      targetStrain: HIV1
   nucaminoMinNumOfAA: 60
 - name: HIV2BIN  # EHO
   ordinal: 9
@@ -173,11 +173,11 @@
   codonModifiers:
     - position: 272
       deleteAfter: 2
-      targetGene: HIV1IN
+      targetStrain: HIV1
     - position: 283
       deleteAfter: 1
-      targetGene: HIV1IN
+      targetStrain: HIV1
     - position: 288
       deleteAfter: 0  # all
-      targetGene: HIV1IN
+      targetStrain: HIV1
   nucaminoMinNumOfAA: 30
