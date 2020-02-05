@@ -666,7 +666,7 @@ public class HIV2 implements Virus<HIV2> {
 	}
 	
 	@Override
-	public Strain<HIV2> getGenotypingCompatibleStrain() {
+	public Strain<HIV2> getMainStrain() {
 		return getStrain("HIV2A");
 	}
 
