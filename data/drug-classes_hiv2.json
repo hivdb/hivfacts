@@ -5,7 +5,6 @@
     "abstractGene": "PR",
     "fullName": "Protease Inhibitor",
     "strains": [
-      "HIV1",
       "HIV2A",
       "HIV2B"
     ],
@@ -22,29 +21,11 @@
     "abstractGene": "RT",
     "fullName": "Nucleoside Reverse Transcriptase Inhibitor",
     "strains": [
-      "HIV1",
       "HIV2A",
       "HIV2B"
     ],
     "synonyms": [],
     "mutationTypes": [
-      "NRTI",
-      "Major",
-      "Accessory",
-      "Other"
-    ]
-  },
-  {
-    "name": "NNRTI",
-    "ordinal": 3,
-    "abstractGene": "RT",
-    "fullName": "Non-nucleoside Reverse Transcriptase Inhibitor",
-    "strains": [
-      "HIV1"
-    ],
-    "synonyms": [],
-    "mutationTypes": [
-      "NNRTI",
       "Major",
       "Accessory",
       "Other"
@@ -56,7 +37,6 @@
     "abstractGene": "IN",
     "fullName": "Integrase Strand Transfer Inhibitor",
     "strains": [
-      "HIV1",
       "HIV2A",
       "HIV2B"
     ],

@@ -23,7 +23,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.apache.commons.lang3.StringUtils;
+import java.util.stream.Collectors;
 
 import edu.stanford.hivdb.utilities.TSV;
 import edu.stanford.hivdb.drugs.DrugClass;
@@ -66,8 +66,12 @@ public class TabularSequenceSummary {
 			String seqName = alignedSeq.getInputSequence().getHeader();
 
 			tabularResults.put(seqName, new HashMap<String, String>());
-			String genes = StringUtils.join(
-				geneList.stream().map(g -> g.getName()).toArray(), ",");
+			String genes = (
+				geneList
+				.stream()
+				.map(g -> g.getAbstractGene())
+				.collect(Collectors.joining(","))
+			);
 
 			// sequenceName
 			sequenceRecord.add(seqName);

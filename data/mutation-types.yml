@@ -1,8 +1,8 @@
-- name: Major
-  ordinal: 1
 - name: NRTI
-  ordinal: 2
+  ordinal: 1
 - name: NNRTI
+  ordinal: 2
+- name: Major
   ordinal: 3
 - name: Accessory
   ordinal: 4

@@ -78,7 +78,10 @@ public class TabularResistanceSummary {
 	private List<List<String>> sequenceRows = new ArrayList<>();
 	private Map<String, Map<String, String>> tabularResults = new TreeMap<>();
 
-	public TabularResistanceSummary(List<AlignedSequence<HIV>> alignedSeqs, List<Map<Gene<HIV>, GeneDR<HIV>>> allResistanceResults) {
+	public TabularResistanceSummary(
+		List<AlignedSequence<HIV>> alignedSeqs, List<Map<Gene<HIV>,
+		GeneDR<HIV>>> allResistanceResults, DrugResistanceAlgorithm<HIV> algorithm
+	) {
 		HIV hiv = HIV.getInstance();
 		int numSeqs = alignedSeqs.size();
 		for (int i=0; i < numSeqs; i ++) {
@@ -102,15 +105,17 @@ public class TabularResistanceSummary {
 			sequenceRecord.add(strain.getName());
 			sequenceRecord.add(genes);
 			for (String absGene : hiv.getAbstractGenes()) {
-				GeneDR<HIV> result = resistanceResults.getOrDefault(strain.getGene(absGene), null);
-				sequenceRecord.addAll(getScoredMutations(absGene, result));
-				sequenceRecord.addAll(getScores(absGene, result));
+				Gene<HIV> gene = strain.getGene(absGene);
+				GeneDR<HIV> result = resistanceResults.getOrDefault(gene, null);
+				for (DrugClass<HIV> drugClass : gene.getDrugClasses()) {
+					sequenceRecord.addAll(getScoredMutations(drugClass, result));
+					sequenceRecord.addAll(getScores(drugClass, result));
+				}
 			}
 
-			DrugResistanceAlgorithm<HIV> latest = hiv.getLatestDrugResistAlgorithm("HIVDB");
-			sequenceRecord.add(latest.getFamily());
-			sequenceRecord.add(latest.getVersion());
-			sequenceRecord.add(latest.getPublishDate());
+			sequenceRecord.add(algorithm.getFamily());
+			sequenceRecord.add(algorithm.getVersion());
+			sequenceRecord.add(algorithm.getPublishDate());
 			sequenceRows.add(sequenceRecord);
 
 			for (int j=0; j<headerFields.size(); j++) {
@@ -129,32 +134,26 @@ public class TabularResistanceSummary {
 	public Map<String, Map<String, String>> getTable() { return tabularResults; }
 	public List<String> getHeaderFields() { return headerFields; }
 
-	private static List<String> getScores(String absGene, GeneDR<HIV> geneDR) {
-		HIV hiv = HIV.getInstance();
+	private static List<String> getScores(DrugClass<HIV> drugClass, GeneDR<HIV> geneDR) {
 		List<String> resistanceScoresAndLevels = new ArrayList<>();
-		for (DrugClass<HIV> drugClass : hiv.getDrugClasses()) {
-			if (!drugClass.getAbstractGene().equals(absGene)) {
-				continue;
+		
+		for (Drug<HIV> drug : drugClass.getDrugs()) {
+			if (geneDR == null) {
+				resistanceScoresAndLevels.add("NA");
+				resistanceScoresAndLevels.add("NA");
 			}
-			for (Drug<HIV> drug : drugClass.getDrugs()) {
-				if (geneDR == null) {
-					resistanceScoresAndLevels.add("NA");
-					resistanceScoresAndLevels.add("NA");
-				}
-				else {
-					int score = geneDR.getTotalDrugScore(drug).intValue();
-					int level = geneDR.getDrugLevel(drug);
-					resistanceScoresAndLevels.add(Integer.toString(score));
-					resistanceScoresAndLevels.add(Integer.toString(level));
-				}
+			else {
+				int score = geneDR.getTotalDrugScore(drug).intValue();
+				int level = geneDR.getDrugLevel(drug);
+				resistanceScoresAndLevels.add(Integer.toString(score));
+				resistanceScoresAndLevels.add(Integer.toString(level));
 			}
 		}
 		return resistanceScoresAndLevels;
 	}
 
 
-	private static List<String> getScoredMutations(String absGene, GeneDR<HIV> geneDR) {
-		HIV hiv = HIV.getInstance();
+	private static List<String> getScoredMutations(DrugClass<HIV> drugClass, GeneDR<HIV> geneDR) {
 		List<String> scoredMutations = new ArrayList<>();
 		Map<MutationType<HIV>, MutationSet<HIV>> mutationsByTypes;
 		if (geneDR == null) {
@@ -163,23 +162,22 @@ public class TabularResistanceSummary {
 		else {
 			mutationsByTypes = geneDR.groupMutationsByTypes();
 		}
-		for (DrugClass<HIV> drugClass : hiv.getDrugClasses()) {
-			if (!drugClass.getAbstractGene().equals(absGene)) {
+		
+		for (MutationType<HIV> mtype : drugClass.getMutationTypes()) {
+			if (mtype.toString().equals("Other")) {
 				continue;
 			}
-			for (MutationType<HIV> mtype : drugClass.getMutationTypes()) {
-				String mutationsText = "NA";
-				if (mutationsByTypes.containsKey(mtype)) {
-					MutationSet<HIV> muts = mutationsByTypes.get(mtype);
-					if (muts.size() > 0) {
-						mutationsText = muts.join();
-					}
-					else {
-						mutationsText = "None";
-					}
+			String mutationsText = "NA";
+			if (mutationsByTypes.containsKey(mtype)) {
+				MutationSet<HIV> muts = mutationsByTypes.get(mtype);
+				if (muts.size() > 0) {
+					mutationsText = muts.join();
 				}
-				scoredMutations.add(mutationsText);
+				else {
+					mutationsText = "None";
+				}
 			}
+			scoredMutations.add(mutationsText);
 		}
 		return scoredMutations;
 	}

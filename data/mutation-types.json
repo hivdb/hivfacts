@@ -1,14 +1,14 @@
 [
   {
-    "name": "Major",
+    "name": "NRTI",
     "ordinal": 1
   },
   {
-    "name": "NRTI",
+    "name": "NNRTI",
     "ordinal": 2
   },
   {
-    "name": "NNRTI",
+    "name": "Major",
     "ordinal": 3
   },
   {

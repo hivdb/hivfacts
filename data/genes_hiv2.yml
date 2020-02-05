@@ -1,56 +1,3 @@
-- name: HIV1PR
-  ordinal: 1
-  strain: HIV1
-  abstractGene: PR
-  refSequence:
-    "PQITLWQRPLVTIKIGGQLKEALLDTGADDTVLEEMNLPGRWKPKMIGGI\
-     GGFIKVRQYDQILIEICGHKAIGTVLVGPTPVNIIGRNLLTQIGCTLNF"
-  mutationTypes:
-    - Major
-    - Accessory
-    - Other
-  codonModifiers: []
-  nucaminoMinNumOfAA: 40
-- name: HIV1RT
-  ordinal: 2
-  strain: HIV1
-  abstractGene: RT
-  refSequence:
-    "PISPIETVPVKLKPGMDGPKVKQWPLTEEKIKALVEICTEMEKEGKISKI\
-     GPENPYNTPVFAIKKKDSTKWRKLVDFRELNKRTQDFWEVQLGIPHPAGL\
-     KKKKSVTVLDVGDAYFSVPLDKDFRKYTAFTIPSINNETPGIRYQYNVLP\
-     QGWKGSPAIFQSSMTKILEPFRKQNPDIVIYQYMDDLYVGSDLEIGQHRT\
-     KIEELRQHLLRWGFTTPDKKHQKEPPFLWMGYELHPDKWTVQPIVLPEKD\
-     SWTVNDIQKLVGKLNWASQIYAGIKVKQLCKLLRGTKALTEVIPLTEEAE\
-     LELAENREILKEPVHGVYYDPSKDLIAEIQKQGQGQWTYQIYQEPFKNLK\
-     TGKYARMRGAHTNDVKQLTEAVQKIATESIVIWGKTPKFKLPIQKETWEA\
-     WWTEYWQATWIPEWEFVNTPPLVKLWYQLEKEPIVGAETFYVDGAANRET\
-     KLGKAGYVTDRGRQKVVSLTDTTNQKTELQAIHLALQDSGLEVNIVTDSQ\
-     YALGIIQAQPDKSESELVSQIIEQLIKKEKVYLAWVPAHKGIGGNEQVDK\
-     LVSAGIRKVL"
-  mutationTypes:
-    - NRTI
-    - NNRTI
-    - Other
-  codonModifiers: []
-  nucaminoMinNumOfAA: 60
-- name: HIV1IN
-  ordinal: 3
-  strain: HIV1
-  abstractGene: IN
-  refSequence:
-    "FLDGIDKAQEEHEKYHSNWRAMASDFNLPPVVAKEIVASCDKCQLKGEAM\
-     HGQVDCSPGIWQLDCTHLEGKIILVAVHVASGYIEAEVIPAETGQETAYF\
-     LLKLAGRWPVKTIHTDNGSNFTSTTVKAACWWAGIKQEFGIPYNPQSQGV\
-     VESMNKELKKIIGQVRDQAEHLKTAVQMAVFIHNFKRKGGIGGYSAGERI\
-     VDIIATDIQTKELQKQITKIQNFRVYYRDSRDPLWKGPAKLLWKGEGAVV\
-     IQDNSDIKVVPRRKAKIIRDYGKQMAGDDCVASRQDED"
-  mutationTypes:
-    - Major
-    - Accessory
-    - Other
-  codonModifiers: []
-  nucaminoMinNumOfAA: 30
 - name: HIV2APR  # ROD
   ordinal: 4
   strain: HIV2A
@@ -85,10 +32,10 @@
     - Major
     - Accessory
     - Other
-  codonModifiers:
-    - position: 345
-      insertAfter: 1
-      targetStrain: HIV1
+  codonModifiers: []
+#    - position: 345
+#      insertAfter: 1
+#      targetStrain: HIV1
   nucaminoMinNumOfAA: 60
 - name: HIV2AIN  # ROD
   ordinal: 6
@@ -105,16 +52,16 @@
     - Major
     - Accessory
     - Other
-  codonModifiers:
-    - position: 272
-      deleteAfter: 2
-      targetStrain: HIV1
-    - position: 283
-      deleteAfter: 1
-      targetStrain: HIV1
-    - position: 288
-      deleteAfter: 0  # all
-      targetStrain: HIV1
+  codonModifiers: []
+#    - position: 272
+#      deleteAfter: 2
+#      targetStrain: HIV1
+#    - position: 283
+#      deleteAfter: 1
+#      targetStrain: HIV1
+#    - position: 288
+#      deleteAfter: 0  # all
+#      targetStrain: HIV1
   nucaminoMinNumOfAA: 30
 - name: HIV2BPR  # EHO
   ordinal: 7
@@ -150,10 +97,10 @@
     - Major
     - Accessory
     - Other
-  codonModifiers:
-    - position: 345
-      insertAfter: 1
-      targetStrain: HIV1
+  codonModifiers: []
+#    - position: 345
+#      insertAfter: 1
+#      targetStrain: HIV1
   nucaminoMinNumOfAA: 60
 - name: HIV2BIN  # EHO
   ordinal: 9
@@ -171,13 +118,16 @@
     - Accessory
     - Other
   codonModifiers:
-    - position: 272
-      deleteAfter: 2
-      targetStrain: HIV1
-    - position: 283
-      deleteAfter: 1
-      targetStrain: HIV1
-    - position: 288
+#    - position: 272
+#      deleteAfter: 2
+#      targetStrain: HIV1
+#    - position: 283
+#      deleteAfter: 1
+#      targetStrain: HIV1
+#    - position: 288
+#      deleteAfter: 0  # all
+#      targetStrain: HIV1
+    - position: 293
       deleteAfter: 0  # all
-      targetStrain: HIV1
+      targetStrain: HIV2A
   nucaminoMinNumOfAA: 30

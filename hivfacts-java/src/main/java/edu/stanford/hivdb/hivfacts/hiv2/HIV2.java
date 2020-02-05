@@ -1,4 +1,4 @@
-package edu.stanford.hivdb.hivfacts;
+package edu.stanford.hivdb.hivfacts.hiv2;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -42,27 +42,27 @@ import edu.stanford.hivdb.viruses.Gene;
 import edu.stanford.hivdb.viruses.Strain;
 import edu.stanford.hivdb.viruses.Virus;
 
-public class HIV implements Virus<HIV> {
+public class HIV2 implements Virus<HIV2> {
 	
-	private static final String HIV1_STRAINS_RESPATH = "strains_hiv1.json";
-	private static final String HIV1_GENES_RESPATH = "genes_hiv1.json";
-	private static final String HIV1_DRUG_CLASSES_RESPATH = "drug-classes_hiv1.json";
+	private static final String HIV2_STRAINS_RESPATH = "strains_hiv2.json";
+	private static final String HIV2_GENES_RESPATH = "genes_hiv2.json";
+	private static final String HIV2_DRUG_CLASSES_RESPATH = "drug-classes_hiv2.json";
 	private static final String HIV_DRUGS_RESPATH = "drugs.json";
-	private static final String HIV1_DRMS_RESPATH = "drms_hiv1.json";
-	private static final String HIV1_SDRMS_RESPATH = "sdrms_hiv1.json";
-	private static final String HIV1_TSMS_RESPATH = "tsms_hiv1.json";
-	private static final String HIV1_APOBECS_RESPATH = "apobecs/apobecs.json";
-	private static final String HIV1_APOBEC_DRMS_RESPATH = "apobecs/apobec_drms.json";
-	private static final String HIV1_AAPCNTS_RESPATH = "aapcnt/rx-%s_subtype-%s.json";
-	private static final String HIV1_CODONPCNTS_RESPATH = "codonpcnt/rx-%s_subtype-%s.json";
+	private static final String HIV2_DRMS_RESPATH = "drms_hiv2.json";
+	private static final String HIV2_SDRMS_RESPATH = "sdrms_hiv2.json";
+	private static final String HIV2_TSMS_RESPATH = "tsms_hiv2.json";
+	private static final String HIV2_APOBECS_RESPATH = "apobecs/apobecs_hiv2.json";
+	private static final String HIV2_APOBEC_DRMS_RESPATH = "apobecs/apobec_drms_hiv2.json";
+	private static final String HIV2_AAPCNTS_RESPATH = "aapcnt/rx-%s_subtype-%s.json";
+	private static final String HIV2_CODONPCNTS_RESPATH = "codonpcnt/rx-%s_subtype-%s.json";
 	private static final String HIV_MUTTYPES_RESPATH = "mutation-types.json";
-	private static final String HIV1_MUTTYPE_PAIRS_RESPATH = "mutation-type-pairs_hiv1.json";
-	private static final String HIV1_MAIN_SUBTYPES_RESPATH = "main-subtypes_hiv1.json";
-	private static final String HIV1_GENOTYPE_REFERENCES_RESPATH = "genotypes/genotype-references_hiv1.json";
-	private static final String HIV1_GENOTYPES_RESPATH = "genotypes/genotypes_hiv1.json";
+	private static final String HIV2_MUTTYPE_PAIRS_RESPATH = "mutation-type-pairs_hiv2.json";
+	private static final String HIV2_MAIN_SUBTYPES_RESPATH = "main-subtypes_hiv2.json";
+	private static final String HIV2_GENOTYPE_REFERENCES_RESPATH = "genotypes/genotype-references_hiv2.json";
+	private static final String HIV2_GENOTYPES_RESPATH = "genotypes/genotypes_hiv2.json";
 	private static final String HIV_ALGORITHMS_INDEXPATH = "algorithms/versions.json";
 	private static final String HIV_ALGORITHMS_RESPATH = "algorithms/%s_%s.xml";
-	private static final String HIV1_CONDCOMMENTS_RESPATH = "conditional-comments_hiv1.json";
+	private static final String HIV2_CONDCOMMENTS_RESPATH = "conditional-comments_hiv2.json";
 
 	private static final Pattern HIV_MUTATION_PATTERN = Pattern.compile(
 		"^\\s*" +
@@ -74,16 +74,16 @@ public class HIV implements Virus<HIV> {
 		"\\s*$");
 	
 	static {
-		Virus.registerInstance("HIV", new HIV());
+		Virus.registerInstance("HIV2", new HIV2());
 	}
 		
-	public static HIV getInstance() {
-		return Virus.getInstance(HIV.class);
+	public static HIV2 getInstance() {
+		return Virus.getInstance(HIV2.class);
 	}
 
 	protected static String loadResource(String resPath) {
 		try (
-			InputStream stream = HIV.class
+			InputStream stream = HIV2.class
 				.getClassLoader()
 				.getResourceAsStream(resPath);
 		) {
@@ -95,48 +95,48 @@ public class HIV implements Virus<HIV> {
 		}
 	}
 	
-	private transient Map<String, Strain<HIV>> strains;
-	private transient Map<String, Gene<HIV>> genes;
-	private transient Map<String, DrugClass<HIV>> drugClasses;
-	private transient Map<String, Drug<HIV>> drugs;
-	private transient Map<DrugClass<HIV>, MutationSet<HIV>> drugResistMutations;
-	private transient Map<DrugClass<HIV>, MutationSet<HIV>> surveilDrugResistMuts;
-	private transient Map<DrugClass<HIV>, MutationSet<HIV>> rxSelectedMutations;
-	private transient MutationSet<HIV> apobecMutations;
-	private transient MutationSet<HIV> apobecDRMs;
-	private transient Map<String, AminoAcidPercents<HIV>> aminoAcidPcnts = new HashMap<>();
-	private transient Map<String, CodonPercents<HIV>> codonPcnts = new HashMap<>();
-	private transient Map<String, MutationType<HIV>> mutationTypes;
-	private transient List<MutationTypePair<HIV>> mutationTypePairs;
-	private transient Map<Strain<HIV>, List<String>> mainSubtypes;
-	private transient Map<GenePosition<HIV>, List<MutationPrevalence<HIV>>> mutPrevalenceMap = new HashMap<>();
-	private transient Map<Strain<HIV>, Map<Gene<HIV>, Map<String, Integer[]>>> allAAPcntsNumPatients = new HashMap<>();
-	private transient Map<String, Genotype<HIV>> allGenotypes;
-	private transient List<GenotypeReference<HIV>> allGenotypeReferences;
-	private transient Genotyper<HIV> genotyper;
-	private transient List<DrugResistanceAlgorithm<HIV>> drugResistAlgs;
-	private transient Map<String, DrugResistanceAlgorithm<HIV>> drugResistAlgLookup;
-	private transient ConditionalComments<HIV> condComments;
+	private transient Map<String, Strain<HIV2>> strains;
+	private transient Map<String, Gene<HIV2>> genes;
+	private transient Map<String, DrugClass<HIV2>> drugClasses;
+	private transient Map<String, Drug<HIV2>> drugs;
+	private transient Map<DrugClass<HIV2>, MutationSet<HIV2>> drugResistMutations;
+	private transient Map<DrugClass<HIV2>, MutationSet<HIV2>> surveilDrugResistMuts;
+	private transient Map<DrugClass<HIV2>, MutationSet<HIV2>> rxSelectedMutations;
+	private transient MutationSet<HIV2> apobecMutations;
+	private transient MutationSet<HIV2> apobecDRMs;
+	private transient Map<String, AminoAcidPercents<HIV2>> aminoAcidPcnts = new HashMap<>();
+	private transient Map<String, CodonPercents<HIV2>> codonPcnts = new HashMap<>();
+	private transient Map<String, MutationType<HIV2>> mutationTypes;
+	private transient List<MutationTypePair<HIV2>> mutationTypePairs;
+	private transient Map<Strain<HIV2>, List<String>> mainSubtypes;
+	private transient Map<GenePosition<HIV2>, List<MutationPrevalence<HIV2>>> mutPrevalenceMap = new HashMap<>();
+	private transient Map<Strain<HIV2>, Map<Gene<HIV2>, Map<String, Integer[]>>> allAAPcntsNumPatients = new HashMap<>();
+	private transient Map<String, Genotype<HIV2>> allGenotypes;
+	private transient List<GenotypeReference<HIV2>> allGenotypeReferences;
+	private transient Genotyper<HIV2> genotyper;
+	private transient List<DrugResistanceAlgorithm<HIV2>> drugResistAlgs;
+	private transient Map<String, DrugResistanceAlgorithm<HIV2>> drugResistAlgLookup;
+	private transient ConditionalComments<HIV2> condComments;
 	
-	private HIV() {
-		registerSequenceValidator(new HIVDefaultSequenceValidator());
-		registerMutationsValidator(new HIVDefaultMutationsValidator());
-		registerSequenceReadsValidator(new HIVDefaultSequenceReadsValidator());
+	private HIV2() {
+		registerSequenceValidator(new HIV2DefaultSequenceValidator());
+		registerMutationsValidator(new HIV2DefaultMutationsValidator());
+		registerSequenceReadsValidator(new HIV2DefaultSequenceReadsValidator());
 	}
 
-	private MutationSet<HIV> loadMutationSetFromRes(String resPath, Strain<HIV> strain) {
+	private MutationSet<HIV2> loadMutationSetFromRes(String resPath, Strain<HIV2> strain) {
 		String raw = loadResource(resPath);
 		return MutationSet.loadJson(raw, geneText -> getGene(strain.toString() + geneText));
 	}
 	
-	private Map<DrugClass<HIV>, MutationSet<HIV>> loadMutationSetByDrugClassFromRes(String resPath, Strain<HIV> strain) {
-		Map<DrugClass<HIV>, MutationSet<HIV>> mutationsMap = new LinkedHashMap<>();
+	private Map<DrugClass<HIV2>, MutationSet<HIV2>> loadMutationSetByDrugClassFromRes(String resPath, Strain<HIV2> strain) {
+		Map<DrugClass<HIV2>, MutationSet<HIV2>> mutationsMap = new LinkedHashMap<>();
 		String raw = loadResource(resPath);
 		
 		Map<String, List<Map<String, ?>>> muts = Json.loads(
 			raw, new TypeToken<Map<String, List<Map<String, ?>>>>(){});
 		for (String drugClassText : muts.keySet()) {
-			DrugClass<HIV> drugClass = getDrugClass(drugClassText);
+			DrugClass<HIV2> drugClass = getDrugClass(drugClassText);
 			mutationsMap.put(
 				drugClass,
 				MutationSet.loadJsonMap(
@@ -149,14 +149,14 @@ public class HIV implements Virus<HIV> {
 	}
 	
 	private void initCondComments() {
-		String raw = loadResource(HIV1_CONDCOMMENTS_RESPATH);
+		String raw = loadResource(HIV2_CONDCOMMENTS_RESPATH);
 		this.condComments = new ConditionalComments<>(raw, this);
 	}
 	
 	private void initMainSubtypes() {
-		String raw = loadResource(HIV1_MAIN_SUBTYPES_RESPATH);
+		String raw = loadResource(HIV2_MAIN_SUBTYPES_RESPATH);
 		Map<String, List<String>> subtypes = Json.loads(raw, new TypeToken<Map<String, List<String>>>() {});
-		Map<Strain<HIV>, List<String>> mainSubtypes = new LinkedHashMap<>();
+		Map<Strain<HIV2>, List<String>> mainSubtypes = new LinkedHashMap<>();
 		for (Map.Entry<String, List<String>> entry : subtypes.entrySet()) {
 			mainSubtypes.put(
 				getStrain(entry.getKey()),
@@ -171,22 +171,22 @@ public class HIV implements Virus<HIV> {
 	}
 
 	private void initMutationTypePairs() {
-		String raw = loadResource(HIV1_MUTTYPE_PAIRS_RESPATH);
+		String raw = loadResource(HIV2_MUTTYPE_PAIRS_RESPATH);
 		mutationTypePairs = MutationTypePair.loadJson(raw, this);
 	}
 
 	private void initStrains() {
-		String raw = loadResource(HIV1_STRAINS_RESPATH);
+		String raw = loadResource(HIV2_STRAINS_RESPATH);
 		this.strains = Strain.loadJson(raw, this);
 	}
 	
 	private void initGenes() {
-		String raw = loadResource(HIV1_GENES_RESPATH);
+		String raw = loadResource(HIV2_GENES_RESPATH);
 		this.genes = Gene.loadJson(raw, this);
 	}
 	
 	private void initDrugClasses() {
-		String raw = loadResource(HIV1_DRUG_CLASSES_RESPATH);
+		String raw = loadResource(HIV2_DRUG_CLASSES_RESPATH);
 		this.drugClasses = DrugClass.loadJson(raw, this);
 	}
 	
@@ -199,16 +199,16 @@ public class HIV implements Virus<HIV> {
 		String raw = loadResource(HIV_ALGORITHMS_INDEXPATH);
 		Map<String, List<List<String>>> algs = Json.loads(
 			raw, new TypeToken<Map<String, List<List<String>>>>(){}.getType());
-		List<DrugResistanceAlgorithm<HIV>> algList = new ArrayList<>();
-		Map<String, DrugResistanceAlgorithm<HIV>> algMap = new LinkedHashMap<>(); 
+		List<DrugResistanceAlgorithm<HIV2>> algList = new ArrayList<>();
+		Map<String, DrugResistanceAlgorithm<HIV2>> algMap = new LinkedHashMap<>(); 
 		for (String family : algs.keySet()) {
 			for (List<String> algData : algs.get(family)) {
 				String version = algData.get(0);
 				String publishDate = algData.get(1);
 				String name = String.format("%s_%s", family, version);
-				Strain<HIV> strain = getStrain(algData.get(2));
+				Strain<HIV2> strain = getStrain(algData.get(2));
 				String xmlText = loadResource(String.format(HIV_ALGORITHMS_RESPATH, family, version));
-				DrugResistanceAlgorithm<HIV> alg = new DrugResistanceAlgorithm<>(
+				DrugResistanceAlgorithm<HIV2> alg = new DrugResistanceAlgorithm<>(
 					name, family, version, publishDate, strain, xmlText);
 				algList.add(alg);
 				algMap.put(name, alg);
@@ -220,37 +220,37 @@ public class HIV implements Virus<HIV> {
 	}
 	
 	private void initGenotypes() {
-		String raw = loadResource(HIV1_GENOTYPES_RESPATH);
+		String raw = loadResource(HIV2_GENOTYPES_RESPATH);
 		this.allGenotypes = Genotype.loadJson(raw, this);
 	}
 	
 	private void initGenotypeReferences() {
-		String raw = loadResource(HIV1_GENOTYPE_REFERENCES_RESPATH);
+		String raw = loadResource(HIV2_GENOTYPE_REFERENCES_RESPATH);
 		this.allGenotypeReferences = GenotypeReference.loadJson(raw, this);
 	}
 	
 	private void initDrugResistMutations() {
-		drugResistMutations = loadMutationSetByDrugClassFromRes(HIV1_DRMS_RESPATH, getStrain("HIV1"));
+		drugResistMutations = loadMutationSetByDrugClassFromRes(HIV2_DRMS_RESPATH, getStrain("HIV2"));
 	}
 	
 	private void initSurveilDrugResistMuts() {
-		surveilDrugResistMuts = loadMutationSetByDrugClassFromRes(HIV1_SDRMS_RESPATH, getStrain("HIV1"));
+		surveilDrugResistMuts = loadMutationSetByDrugClassFromRes(HIV2_SDRMS_RESPATH, getStrain("HIV2"));
 	}
 	
 	private void initApobecMutations() {
-		apobecMutations = loadMutationSetFromRes(HIV1_APOBECS_RESPATH, getStrain("HIV1"));
+		apobecMutations = loadMutationSetFromRes(HIV2_APOBECS_RESPATH, getStrain("HIV2"));
 	}
 	
 	private void initApobecDRMs() {
-		apobecDRMs = loadMutationSetFromRes(HIV1_APOBEC_DRMS_RESPATH, getStrain("HIV1"));
+		apobecDRMs = loadMutationSetFromRes(HIV2_APOBEC_DRMS_RESPATH, getStrain("HIV2"));
 	}
 	
 	private void initRxSelectedMutations() {
-		this.rxSelectedMutations = loadMutationSetByDrugClassFromRes(HIV1_TSMS_RESPATH, getStrain("HIV1"));
+		this.rxSelectedMutations = loadMutationSetByDrugClassFromRes(HIV2_TSMS_RESPATH, getStrain("HIV2"));
 	}
 	
 	@Override
-	public Collection<Strain<HIV>> getStrains() {
+	public Collection<Strain<HIV2>> getStrains() {
 		if (strains == null) {
 			initStrains();
 		}
@@ -258,7 +258,7 @@ public class HIV implements Virus<HIV> {
 	}
 	
 	@Override
-	public Strain<HIV> getStrain(String name) {
+	public Strain<HIV2> getStrain(String name) {
 		if (strains == null) {
 			initStrains();
 		}
@@ -266,7 +266,7 @@ public class HIV implements Virus<HIV> {
 	}
 
 	@Override
-	public Collection<Gene<HIV>> getGenes(Strain<HIV> strain) {
+	public Collection<Gene<HIV2>> getGenes(Strain<HIV2> strain) {
 		if (genes == null) {
 			initGenes();
 		}
@@ -279,7 +279,7 @@ public class HIV implements Virus<HIV> {
 	}
 	
 	@Override
-	public Gene<HIV> getGene(String name) {
+	public Gene<HIV2> getGene(String name) {
 		if (genes == null) {
 			initGenes();
 		}
@@ -287,7 +287,7 @@ public class HIV implements Virus<HIV> {
 	}
 	
 	@Override
-	public Collection<DrugClass<HIV>> getDrugClasses() {
+	public Collection<DrugClass<HIV2>> getDrugClasses() {
 		if (drugClasses == null) {
 			initDrugClasses();
 		}
@@ -295,7 +295,7 @@ public class HIV implements Virus<HIV> {
 	}
 	
 	@Override
-	public Map<String, DrugClass<HIV>> getDrugClassSynonymMap() {
+	public Map<String, DrugClass<HIV2>> getDrugClassSynonymMap() {
 		if (drugClasses == null) {
 			initDrugClasses();
 		}
@@ -303,7 +303,7 @@ public class HIV implements Virus<HIV> {
 	}
 	
 	@Override
-	public DrugClass<HIV> getDrugClass(String name) {
+	public DrugClass<HIV2> getDrugClass(String name) {
 		if (drugClasses == null) {
 			initDrugClasses();
 		}
@@ -311,7 +311,7 @@ public class HIV implements Virus<HIV> {
 	}
 	
 	@Override
-	public Collection<Drug<HIV>> getDrugs() {
+	public Collection<Drug<HIV2>> getDrugs() {
 		if (drugs == null) {
 			initDrugs();
 		}
@@ -319,7 +319,7 @@ public class HIV implements Virus<HIV> {
 	}
 	
 	@Override
-	public Map<String, Drug<HIV>> getDrugSynonymMap() {
+	public Map<String, Drug<HIV2>> getDrugSynonymMap() {
 		if (drugs == null) {
 			initDrugs();
 		}
@@ -327,7 +327,7 @@ public class HIV implements Virus<HIV> {
 	}
 
 	@Override
-	public Collection<DrugResistanceAlgorithm<HIV>> getDrugResistAlgorithms() {
+	public Collection<DrugResistanceAlgorithm<HIV2>> getDrugResistAlgorithms() {
 		if (drugResistAlgs == null) {
 			initDrugResistAlgs();
 		}
@@ -335,7 +335,7 @@ public class HIV implements Virus<HIV> {
 	}
 
 	@Override
-	public Collection<DrugResistanceAlgorithm<HIV>> getDrugResistAlgorithms(Collection<String> algorithmNames) {
+	public Collection<DrugResistanceAlgorithm<HIV2>> getDrugResistAlgorithms(Collection<String> algorithmNames) {
 		if (drugResistAlgs == null) {
 			initDrugResistAlgs();
 		}
@@ -348,7 +348,7 @@ public class HIV implements Virus<HIV> {
 	
 	
 	@Override
-	public DrugResistanceAlgorithm<HIV> getDrugResistAlgorithm(String name) {
+	public DrugResistanceAlgorithm<HIV2> getDrugResistAlgorithm(String name) {
 		if (drugResistAlgs == null) {
 			initDrugResistAlgs();
 		}
@@ -356,7 +356,7 @@ public class HIV implements Virus<HIV> {
 	}
 
 	@Override
-	public DrugResistanceAlgorithm<HIV> getDrugResistAlgorithm(String family, String version) {
+	public DrugResistanceAlgorithm<HIV2> getDrugResistAlgorithm(String family, String version) {
 		if (drugResistAlgs == null) {
 			initDrugResistAlgs();
 		}
@@ -369,14 +369,14 @@ public class HIV implements Virus<HIV> {
 	 * @return a Gene enum object
 	 */
 	@Override
-	public Gene<HIV> extractMutationGene(String mutText) {
-		Gene<HIV> gene = null;
+	public Gene<HIV2> extractMutationGene(String mutText) {
+		Gene<HIV2> gene = null;
 		Matcher m = HIV_MUTATION_PATTERN.matcher(mutText);
 		if (m.matches()) {
 			try {
-				// TODO: currently we only support parsing HIV1 mutations.
+				// TODO: currently we only support parsing HIV2 mutations.
 				//       need to design a new format for HIV2 mutations.
-				gene = getGene("HIV1" + m.group(1).toUpperCase());
+				gene = getGene("HIV2" + m.group(1).toUpperCase());
 			} catch (NullPointerException e) {
 				throw new Mutation.InvalidMutationException(
 					"Gene is not specified and also not found in the " +
@@ -395,15 +395,15 @@ public class HIV implements Virus<HIV> {
 	 * @return a Mutation object
 	 */
 	@Override
-	public Mutation<HIV> parseMutationString(Gene<HIV> defaultGene, String mutText) {
+	public Mutation<HIV2> parseMutationString(Gene<HIV2> defaultGene, String mutText) {
 		Matcher m = HIV_MUTATION_PATTERN.matcher(mutText);
-		ConsensusMutation<HIV> mut = null;
+		ConsensusMutation<HIV2> mut = null;
 		if (m.matches()) {
-			Gene<HIV> gene;
+			Gene<HIV2> gene;
 			try {
-				// TODO: currently we only support parsing HIV1 mutations.
+				// TODO: currently we only support parsing HIV2 mutations.
 				//       need to design a new format for HIV2 mutations.
-				gene = getGene("HIV1" + m.group(1).toUpperCase());
+				gene = getGene("HIV2" + m.group(1).toUpperCase());
 			} catch (NullPointerException e) {
 				if (defaultGene == null) {
 					throw new Mutation.InvalidMutationException(
@@ -429,17 +429,17 @@ public class HIV implements Virus<HIV> {
 	}
 
 	@Override
-	public Mutation<HIV> parseMutationString(String mutText) {
+	public Mutation<HIV2> parseMutationString(String mutText) {
 		return parseMutationString(null, mutText);
 	}
 	
 	@Override
-	public MutationSet<HIV> newMutationSet(String formattedMuts) {
+	public MutationSet<HIV2> newMutationSet(String formattedMuts) {
 		return newMutationSet(null, formattedMuts);
 	}
 
 	@Override
-	public MutationSet<HIV> newMutationSet(Collection<String> formattedMuts) {
+	public MutationSet<HIV2> newMutationSet(Collection<String> formattedMuts) {
 		return newMutationSet(null, formattedMuts);
 	}
 
@@ -472,7 +472,7 @@ public class HIV implements Virus<HIV> {
 	 * @return A list of Mutation objects
 	 */
 	@Override
-	public MutationSet<HIV> newMutationSet(Gene<HIV> defaultGene, String formattedMuts) {
+	public MutationSet<HIV2> newMutationSet(Gene<HIV2> defaultGene, String formattedMuts) {
 		if (formattedMuts == null) {
 			return new MutationSet<>();
 		}
@@ -483,13 +483,13 @@ public class HIV implements Virus<HIV> {
 	}
 
 	@Override
-	public MutationSet<HIV>	newMutationSet(Gene<HIV> defaultGene, Collection<String> formattedMuts) {
+	public MutationSet<HIV2>	newMutationSet(Gene<HIV2> defaultGene, Collection<String> formattedMuts) {
 		return MutationSet.parseString(
 			defaultGene, formattedMuts, (gene, mStr) -> parseMutationString(gene, mStr));
 	}
 
 	@Override
-	public Map<DrugClass<HIV>, MutationSet<HIV>> getDrugResistMutations() {
+	public Map<DrugClass<HIV2>, MutationSet<HIV2>> getDrugResistMutations() {
 		if (drugResistMutations == null) {
 			initDrugResistMutations();
 		}
@@ -497,7 +497,7 @@ public class HIV implements Virus<HIV> {
 	}
 	
 	@Override
-	public Map<DrugClass<HIV>, MutationSet<HIV>> getSurveilDrugResistMutations() {
+	public Map<DrugClass<HIV2>, MutationSet<HIV2>> getSurveilDrugResistMutations() {
 		if (surveilDrugResistMuts == null) {
 			initSurveilDrugResistMuts();
 		}
@@ -505,7 +505,7 @@ public class HIV implements Virus<HIV> {
 	}
 
 	@Override
-	public Map<DrugClass<HIV>, MutationSet<HIV>> getRxSelectedMutations() {
+	public Map<DrugClass<HIV2>, MutationSet<HIV2>> getRxSelectedMutations() {
 		if (rxSelectedMutations == null) {
 			initRxSelectedMutations();
 		}
@@ -513,7 +513,7 @@ public class HIV implements Virus<HIV> {
 	}
 	
 	@Override
-	public MutationSet<HIV> getApobecMutations() {
+	public MutationSet<HIV2> getApobecMutations() {
 		if (apobecMutations == null) {
 			initApobecMutations();
 		}
@@ -521,7 +521,7 @@ public class HIV implements Virus<HIV> {
 	}
 
 	@Override
-	public MutationSet<HIV> getApobecDRMs() {
+	public MutationSet<HIV2> getApobecDRMs() {
 		if (apobecDRMs == null) {
 			initApobecDRMs();
 		}
@@ -529,7 +529,7 @@ public class HIV implements Virus<HIV> {
 	}
 
 	@Override
-	public Collection<MutationType<HIV>> getMutationTypes() {
+	public Collection<MutationType<HIV2>> getMutationTypes() {
 		if (mutationTypes == null) {
 			initMutationTypes();
 		}
@@ -537,7 +537,7 @@ public class HIV implements Virus<HIV> {
 	}
 	
 	@Override
-	public MutationType<HIV> getMutationType(String mutTypeText) {
+	public MutationType<HIV2> getMutationType(String mutTypeText) {
 		if (mutationTypes == null) {
 			initMutationTypes();
 		}
@@ -545,7 +545,7 @@ public class HIV implements Virus<HIV> {
 	}
 
 	@Override
-	public Collection<MutationTypePair<HIV>> getMutationTypePairs() {
+	public Collection<MutationTypePair<HIV2>> getMutationTypePairs() {
 		if (mutationTypePairs == null) {
 			initMutationTypePairs();
 		}
@@ -559,8 +559,8 @@ public class HIV implements Virus<HIV> {
 	 * @param subtype "all", "A", "B", "C", "D", "F", "G", "CRF01_AE", "CRF02_AG", "other"
 	 */
 	@Override
-	public AminoAcidPercents<HIV> getAminoAcidPercents(Strain<HIV> strain, String treatment, String subtype) {
-		String resourceName = String.format(HIV1_AAPCNTS_RESPATH, treatment, subtype);
+	public AminoAcidPercents<HIV2> getAminoAcidPercents(Strain<HIV2> strain, String treatment, String subtype) {
+		String resourceName = String.format(HIV2_AAPCNTS_RESPATH, treatment, subtype);
 		if (!aminoAcidPcnts.containsKey(resourceName)) {
 			aminoAcidPcnts.put(resourceName, new AminoAcidPercents<>(resourceName, this, strain));
 			// Example of empty Instance:
@@ -576,8 +576,8 @@ public class HIV implements Virus<HIV> {
 	 * @param subtype "all", "A", "B", "C", "D", "F", "G", "CRF01_AE", "CRF02_AG"
 	 */
 	@Override
-	public CodonPercents<HIV> getCodonPercents(Strain<HIV> strain, String treatment, String subtype) {
-		String resourceName = String.format(HIV1_CODONPCNTS_RESPATH, treatment, subtype);
+	public CodonPercents<HIV2> getCodonPercents(Strain<HIV2> strain, String treatment, String subtype) {
+		String resourceName = String.format(HIV2_CODONPCNTS_RESPATH, treatment, subtype);
 		if (!codonPcnts.containsKey(resourceName)) {
 			codonPcnts.put(resourceName, new CodonPercents<>(resourceName, this, strain));
 			// Example of emptyInstance:
@@ -587,7 +587,7 @@ public class HIV implements Virus<HIV> {
 	}
 
 	@Override
-	public List<MutationPrevalence<HIV>> getMutationPrevalence(GenePosition<HIV> genePos) {
+	public List<MutationPrevalence<HIV2>> getMutationPrevalence(GenePosition<HIV2> genePos) {
 		if (!mutPrevalenceMap.containsKey(genePos)) {
 			mutPrevalenceMap.put(genePos, Virus.super.getMutationPrevalence(genePos));
 		}
@@ -595,7 +595,7 @@ public class HIV implements Virus<HIV> {
 	}
 	
 	@Override
-	public ConditionalComments<HIV> getConditionalComments() {
+	public ConditionalComments<HIV2> getConditionalComments() {
 		if (condComments == null) {
 			initCondComments();
 		}
@@ -603,7 +603,7 @@ public class HIV implements Virus<HIV> {
 	}
 	
 	@Override
-	public List<String> getMainSubtypes(Strain<HIV> strain) {
+	public List<String> getMainSubtypes(Strain<HIV2> strain) {
 		if (mainSubtypes == null) {
 			initMainSubtypes();
 		}
@@ -611,7 +611,7 @@ public class HIV implements Virus<HIV> {
 	}
 	
 	@Override
-	public Map<Gene<HIV>, Map<String, Integer[]>> getNumPatientsForAAPercents(Strain<HIV> strain) {
+	public Map<Gene<HIV2>, Map<String, Integer[]>> getNumPatientsForAAPercents(Strain<HIV2> strain) {
 		if (!allAAPcntsNumPatients.containsKey(strain)) {
 			allAAPcntsNumPatients.put(strain, Virus.super.getNumPatientsForAAPercents(strain));
 		}
@@ -619,7 +619,7 @@ public class HIV implements Virus<HIV> {
 	}
 
 	@Override
-	public Collection<Genotype<HIV>> getGenotypes() {
+	public Collection<Genotype<HIV2>> getGenotypes() {
 		if (allGenotypes == null) {
 			initGenotypes();
 		}
@@ -627,7 +627,7 @@ public class HIV implements Virus<HIV> {
 	}
 	
 	@Override
-	public Genotype<HIV> getGenotype(String name) {
+	public Genotype<HIV2> getGenotype(String name) {
 		if (allGenotypes == null) {
 			initGenotypes();
 		}
@@ -635,7 +635,7 @@ public class HIV implements Virus<HIV> {
 	}
 
 	@Override
-	public Genotype<HIV> getGenotypeUnknown() {
+	public Genotype<HIV2> getGenotypeUnknown() {
 		if (allGenotypes == null) {
 			initGenotypes();
 		}
@@ -643,7 +643,7 @@ public class HIV implements Virus<HIV> {
 	}
 
 	@Override
-	public List<GenotypeReference<HIV>> getGenotypeReferences() {
+	public List<GenotypeReference<HIV2>> getGenotypeReferences() {
 		if (allGenotypeReferences == null) {
 			initGenotypeReferences();
 		}
@@ -651,7 +651,7 @@ public class HIV implements Virus<HIV> {
 	}
 	
 	@Override
-	public Genotyper<HIV> getGenotyper() {
+	public Genotyper<HIV2> getGenotyper() {
 		if (genotyper == null) {
 			genotyper = new Genotyper<>(this);
 		}
@@ -659,8 +659,8 @@ public class HIV implements Virus<HIV> {
 	}
 	
 	@Override
-	public Strain<HIV> getGenotypingCompatibleStrain() {
-		return getStrain("HIV1");
+	public Strain<HIV2> getGenotypingCompatibleStrain() {
+		return getStrain("HIV2A");
 	}
 
 	@Override

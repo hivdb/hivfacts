@@ -3,7 +3,6 @@ import os
 import json
 import yaml
 import click
-import itertools
 from yaml import Loader
 from sqlalchemy import create_engine
 
@@ -38,14 +37,16 @@ def get_latest_db_version():
 
 
 @click.command()
+@click.argument('species', type=click.Choice(['HIV1', 'HIV2']))
 @click.argument('output_json', type=click.File('w'))
-def main(output_json):
+def main(species, output_json):
     engine = create_engine(DATABASE_URI)
     engine.connect()
     dbver = get_latest_db_version()
-    results_hiv1 = engine.execute(QUERY_TBL_CMTS_HIV1, dbver)
-    results_hiv2 = engine.execute(QUERY_TBL_CMTS_HIV2)
-    results = itertools.chain(results_hiv1, results_hiv2)
+    if species == 'HIV1':
+        results = engine.execute(QUERY_TBL_CMTS_HIV1, dbver)
+    else:  # species == 'HIV2'
+        results = engine.execute(QUERY_TBL_CMTS_HIV2)
     cmtlist = []
     for row in results:
         condval = json.loads(row['ConditionValue'])

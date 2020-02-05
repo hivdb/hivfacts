@@ -1,20 +1,12 @@
 [
   {
-    "name": "HIV1",
-    "ordinal": 1,
-    "displayText": "HIV-1",
-    "nucaminoProfile": "hiv1b",
-    "nucaminoGene": "pol",
-    "nucaminoGeneOffset": 56,
-    "absoluteFirstNA": 2253
-  },
-  {
     "name": "HIV2A",
     "ordinal": 2,
     "displayText": "HIV-2 Group A",
     "nucaminoProfile": "hiv2a",
     "nucaminoGene": "pol",
-    "nucaminoGeneOffset": 85
+    "nucaminoGeneOffset": 85,
+    "absoluteFirstNA": 2084
   },
   {
     "name": "HIV2B",
@@ -22,6 +14,7 @@
     "displayText": "HIV-2 Group B",
     "nucaminoProfile": "hiv2b",
     "nucaminoGene": "pol",
-    "nucaminoGeneOffset": 84
+    "nucaminoGeneOffset": 84,
+    "absoluteFirstNA": 2609
   }
 ]

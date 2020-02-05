@@ -57,31 +57,34 @@ def mutation_sortkey(mut):
 
 
 @click.command()
+@click.argument('species', type=click.Choice(['HIV1', 'HIV2']))
 @click.argument('output_json', type=click.File('w'))
-def main(output_json):
+def main(species, output_json):
     engine = create_engine(DATABASE_URI)
     engine.connect()
     dbver = get_latest_db_version()
-    results = engine.execute(QUERY_HIV1_MUTTYPES, dbver)
-    muttypepairs = [{
-        'strain': row['Strain'],
-        'gene': row['Gene'],
-        'drugClass': row['DrugClass'],
-        'position': row['Pos'],
-        'aas': row['AAs'].replace('#', '_').replace('~', '-'),
-        'mutationType': row['Type'],
-        'isUnusual': row['IsUnusual'] > 0
-    } for row in results]
-    results = engine.execute(QUERY_HIV2_MUTTYPES)
-    muttypepairs += [{
-        'strain': row['Strain'],
-        'gene': row['Gene'],
-        'drugClass': row['DrugClass'],
-        'position': row['Pos'],
-        'aas': row['AAs'].replace('#', '_').replace('~', '-'),
-        'mutationType': row['Type'],
-        'isUnusual': row['IsUnusual'] > 0
-    } for row in results]
+    if species == 'HIV1':
+        results = engine.execute(QUERY_HIV1_MUTTYPES, dbver)
+        muttypepairs = [{
+            'strain': row['Strain'],
+            'gene': row['Gene'],
+            'drugClass': row['DrugClass'],
+            'position': row['Pos'],
+            'aas': row['AAs'].replace('#', '_').replace('~', '-'),
+            'mutationType': row['Type'],
+            'isUnusual': row['IsUnusual'] > 0
+        } for row in results]
+    else:  # species == 'HIV2'
+        results = engine.execute(QUERY_HIV2_MUTTYPES)
+        muttypepairs = [{
+            'strain': row['Strain'],
+            'gene': row['Gene'],
+            'drugClass': row['DrugClass'],
+            'position': row['Pos'],
+            'aas': row['AAs'].replace('#', '_').replace('~', '-'),
+            'mutationType': row['Type'],
+            'isUnusual': row['IsUnusual'] > 0
+        } for row in results]
     json.dump(muttypepairs, output_json, indent=2)
 
 

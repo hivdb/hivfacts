@@ -1,0 +1,101 @@
+{
+  "HIV2A": {
+    "classificationLevel": "SPECIES",
+    "displayName": "HIV-2 Group A",
+    "distanceUpperLimit": 0.25,
+    "isSimpleCRF": false,
+    "name": "HIV2A",
+    "parentGenotypes": null,
+    "regions": null
+  },
+  "HIV2B": {
+    "classificationLevel": "SPECIES",
+    "displayName": "HIV-2 Group B",
+    "distanceUpperLimit": 0.25,
+    "isSimpleCRF": false,
+    "name": "HIV2B",
+    "parentGenotypes": null,
+    "regions": null
+  },
+  "HIV2C": {
+    "classificationLevel": "SPECIES",
+    "displayName": "HIV-2 Group C",
+    "distanceUpperLimit": 0.25,
+    "isSimpleCRF": false,
+    "name": "HIV2C",
+    "parentGenotypes": null,
+    "regions": null
+  },
+  "HIV2D": {
+    "classificationLevel": "SPECIES",
+    "displayName": "HIV-2 Group D",
+    "distanceUpperLimit": 0.25,
+    "isSimpleCRF": false,
+    "name": "HIV2D",
+    "parentGenotypes": null,
+    "regions": null
+  },
+  "HIV2E": {
+    "classificationLevel": "SPECIES",
+    "displayName": "HIV-2 Group E",
+    "distanceUpperLimit": 0.25,
+    "isSimpleCRF": false,
+    "name": "HIV2E",
+    "parentGenotypes": null,
+    "regions": null
+  },
+  "HIV2F": {
+    "classificationLevel": "SPECIES",
+    "displayName": "HIV-2 Group F",
+    "distanceUpperLimit": 0.25,
+    "isSimpleCRF": false,
+    "name": "HIV2F",
+    "parentGenotypes": null,
+    "regions": null
+  },
+  "HIV2G": {
+    "classificationLevel": "SPECIES",
+    "displayName": "HIV-2 Group G",
+    "distanceUpperLimit": 0.25,
+    "isSimpleCRF": false,
+    "name": "HIV2G",
+    "parentGenotypes": null,
+    "regions": null
+  },
+  "HIV2H": {
+    "classificationLevel": "SPECIES",
+    "displayName": "HIV-2 Group H",
+    "distanceUpperLimit": 0.25,
+    "isSimpleCRF": false,
+    "name": "HIV2H",
+    "parentGenotypes": null,
+    "regions": null
+  },
+  "HIV2I": {
+    "classificationLevel": "SPECIES",
+    "displayName": "HIV-2 Group I",
+    "distanceUpperLimit": 0.25,
+    "isSimpleCRF": false,
+    "name": "HIV2I",
+    "parentGenotypes": null,
+    "regions": null
+  },
+  "HIV2X01": {
+    "classificationLevel": "CRF",
+    "displayName": "HIV-2 CRF01_AB",
+    "distanceUpperLimit": 0.25,
+    "isSimpleCRF": false,
+    "name": "HIV2X01",
+    "parentGenotypes": null,
+    "regions": null
+  },
+  "U": {
+    "classificationLevel": null,
+    "displayName": "Unknown",
+    "distanceUpperLimit": 0.0,
+    "isSimpleCRF": false,
+    "name": "U",
+    "parentGenotypes": null,
+    "regions": null
+  }
+}

@@ -1,19 +1,14 @@
-- name: HIV1
-  ordinal: 1
-  displayText: HIV-1
-  nucaminoProfile: hiv1b
-  nucaminoGene: pol
-  nucaminoGeneOffset: 56
-  absoluteFirstNA: 2253
 - name: HIV2A
   ordinal: 2
   displayText: HIV-2 Group A
   nucaminoProfile: hiv2a
   nucaminoGene: pol
   nucaminoGeneOffset: 85
+  absoluteFirstNA: 2084  # 5' position of PR in ROD
 - name: HIV2B
   ordinal: 3
   displayText: HIV-2 Group B
   nucaminoProfile: hiv2b
   nucaminoGene: pol
   nucaminoGeneOffset: 84
+  absoluteFirstNA: 2609  # 5' position of PR in EHO
