@@ -43,6 +43,8 @@ import edu.stanford.hivdb.viruses.Strain;
 import edu.stanford.hivdb.viruses.Virus;
 
 public class HIV implements Virus<HIV> {
+
+	private static final String VIRUS_NAME = "HIV";
 	
 	private static final String HIV1_STRAINS_RESPATH = "strains_hiv1.json";
 	private static final String HIV1_GENES_RESPATH = "genes_hiv1.json";
@@ -74,7 +76,7 @@ public class HIV implements Virus<HIV> {
 		"\\s*$");
 	
 	static {
-		Virus.registerInstance("HIV", new HIV());
+		Virus.registerInstance(new HIV());
 	}
 		
 	public static HIV getInstance() {
@@ -247,6 +249,11 @@ public class HIV implements Virus<HIV> {
 	
 	private void initRxSelectedMutations() {
 		this.rxSelectedMutations = loadMutationSetByDrugClassFromRes(HIV1_TSMS_RESPATH, getStrain("HIV1"));
+	}
+	
+	@Override
+	public String getName() {
+		return VIRUS_NAME;
 	}
 	
 	@Override
