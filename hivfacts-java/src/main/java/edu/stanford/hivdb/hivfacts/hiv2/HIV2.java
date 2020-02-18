@@ -62,8 +62,8 @@ public class HIV2 implements Virus<HIV2> {
 	private static final String HIV2_MAIN_SUBTYPES_RESPATH = "main-subtypes_hiv2.json";
 	private static final String HIV2_GENOTYPE_REFERENCES_RESPATH = "genotypes/genotype-references_hiv2.json";
 	private static final String HIV2_GENOTYPES_RESPATH = "genotypes/genotypes_hiv2.json";
-	private static final String HIV_ALGORITHMS_INDEXPATH = "algorithms/versions.json";
-	private static final String HIV_ALGORITHMS_RESPATH = "algorithms/%s_%s.xml";
+	private static final String HIV2_ALGORITHMS_INDEXPATH = "algorithms/versions_hiv2.json";
+	private static final String HIV2_ALGORITHMS_RESPATH = "algorithms/%s-HIV2_%s.xml";
 	private static final String HIV2_CONDCOMMENTS_RESPATH = "conditional-comments_hiv2.json";
 
 	private static final Pattern HIV_MUTATION_PATTERN = Pattern.compile(
@@ -198,7 +198,7 @@ public class HIV2 implements Virus<HIV2> {
 	}
 	
 	private void initDrugResistAlgs() {
-		String raw = loadResource(HIV_ALGORITHMS_INDEXPATH);
+		String raw = loadResource(HIV2_ALGORITHMS_INDEXPATH);
 		Map<String, List<List<String>>> algs = Json.loads(
 			raw, new TypeToken<Map<String, List<List<String>>>>(){}.getType());
 		List<DrugResistanceAlgorithm<HIV2>> algList = new ArrayList<>();
@@ -208,10 +208,9 @@ public class HIV2 implements Virus<HIV2> {
 				String version = algData.get(0);
 				String publishDate = algData.get(1);
 				String name = String.format("%s_%s", family, version);
-				Strain<HIV2> strain = getStrain(algData.get(2));
-				String xmlText = loadResource(String.format(HIV_ALGORITHMS_RESPATH, family, version));
+				String xmlText = loadResource(String.format(HIV2_ALGORITHMS_RESPATH, family, version));
 				DrugResistanceAlgorithm<HIV2> alg = new DrugResistanceAlgorithm<>(
-					name, family, version, publishDate, strain, xmlText);
+					name, family, version, publishDate, this, xmlText);
 				algList.add(alg);
 				algMap.put(name, alg);
 				algMap.put(alg.getEnumCompatName(), alg);

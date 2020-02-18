@@ -17,12 +17,15 @@ import click
 # File configuration & ASI file version
 BASEDIR = Path(__file__).parent.parent.absolute()
 DATADIR = BASEDIR / 'data'
-VERSIONS_PATH = BASEDIR / 'data' / 'algorithms' / 'versions.yml'
+VERSIONS_PATHS = {
+    'HIV1': BASEDIR / 'data' / 'algorithms' / 'versions.yml',
+    'HIV2': BASEDIR / 'data' / 'algorithms' / 'versions_hiv2.yml'
+}
 
 
 @lru_cache()
-def get_versions():
-    with VERSIONS_PATH.open() as fp:
+def get_versions(species):
+    with VERSIONS_PATHS[species].open() as fp:
         versions = yaml.load(fp, Loader=Loader)
 
         return versions
@@ -31,28 +34,35 @@ def get_versions():
 _VERSION = None
 
 
-def get_cur_version():
-    if not _VERSION:
-        version = get_versions()['HIVDB'][-1]
+def validate_version(ctx, param, value):
+    species = ctx.params['species']
+    all_versions = get_versions(species)['HIVDB']
+    if value == 'latest':
+        version = all_versions[-1]
     else:
-        match = re.match(r'(\d+)[.\-_](\d+)[.\-_]?(\d+)?', _VERSION)
+        match = re.match(r'^((?:\d+[.\-_]){1,2}\d+(?:[-ap]\d+)?)$', value)
         if not match:
-            raise Exception(
-                'Version {} is not a well-formed version.'.format(version))
-        major, middle, minor = match.groups()
-        search_version = major + '.' + middle
-        if minor:
-            search_version += '-' + minor
+            raise click.ClickException(
+                'Malformed version text {!r}'.format(value))
+        search_version = match.group(1)
 
-        for item in get_versions()['HIVDB']:
+        for item in all_versions:
             if item[0] == search_version:
                 version = item
                 break
         else:
-            raise Exception('Version {} not found.'.format(version))
+            raise click.ClickException(
+                ('Version {} for {} is not defined. '
+                 'Available Choice(s): {}')
+                .format(
+                    value,
+                    species,
+                    ', '.join(v for v, _, _ in reversed(all_versions))
+                )
+            )
 
     return dict(zip(
-        ['version', 'date', 'type'],
+        ['version', 'date', 'species'],
         version
         ))
 
@@ -61,24 +71,29 @@ def get_cur_version():
 class DataSource(type):
 
     def __init__(self, name, bases, attrs):
-        file_name = attrs.get('FILENAME')
-        if not file_name:
+        filenames = attrs.get('FILENAMES')
+        self.DATA = {}
+        if not filenames:
             return
         else:
-            file_path = DATADIR / file_name
+            for species, filename in filenames.items():
+                filepath = DATADIR / filename
 
-            with open(file_path) as fd:
-                self.DATA = json.load(fd)
+                with open(filepath) as fd:
+                    self.DATA[species] = json.load(fd)
 
 
 class DrugClassData(metaclass=DataSource):
 
-    FILENAME = 'drug-classes.json'
+    FILENAMES = {
+        'HIV1': 'drug-classes_hiv1.json',
+        'HIV2': 'drug-classes_hiv2.json'
+    }
 
     @classmethod
-    def gene_definition(cls):
+    def gene_definition(cls, species):
         _gene_definition = defaultdict(list)
-        for drugclass in cls.DATA:
+        for drugclass in cls.DATA[species]:
             gene = drugclass['abstractGene']
             _gene_definition[gene].append(drugclass['name'])
 
@@ -87,43 +102,58 @@ class DrugClassData(metaclass=DataSource):
 
 class DrugData(metaclass=DataSource):
 
-    FILENAME = 'drugs.json'
-    DRUGCLASS_ORDER = [
-        'NRTI',
-        'NNRTI',
-        'PI',
-        'INSTI'
-    ]
+    FILENAMES = {
+        '*': 'drugs.json'
+    }
+
+    DRUGCLASS_ORDER = {
+        'HIV1': [
+            'NRTI',
+            'NNRTI',
+            'PI',
+            'INSTI'
+        ],
+        'HIV2': [
+            'NRTI',
+            'PI',
+            'INSTI'
+        ]
+    }
 
     @classmethod
-    def drugclass(cls):
+    def drugclass(cls, species):
         _drugclass = defaultdict(list)
+        all_drugclasses = cls.DRUGCLASS_ORDER[species]
 
-        for drug in cls.DATA:
+        for drug in cls.DATA['*']:
             drugclass = drug['drugClass']
-
+            if drugclass not in all_drugclasses:
+                continue
             _drugclass[drugclass].append(drug)
 
         return OrderedDict(sorted(
                 _drugclass.items(),
-                key=lambda i: cls.DRUGCLASS_ORDER.index(i[0]))
+                key=lambda i: all_drugclasses.index(i[0]))
             )
 
     @classmethod
-    def get_display_abbr(cls, drugname):
-        for item in cls.DATA:
+    def get_display_abbr(cls, species, drugname):
+        for item in cls.DATA['*']:
             if item['name'] == drugname:
                 return item['displayAbbr']
 
 
 class ConditionalCommentData(metaclass=DataSource):
 
-    FILENAME = 'conditional-comments.json'
+    FILENAMES = {
+        'HIV1': 'conditional-comments_hiv1.json',
+        'HIV2': 'conditional-comments_hiv2.json'
+    }
 
     @classmethod
-    def get_comments_by(cls, condtype):
+    def get_comments_by(cls, species, condtype):
         _data = [
-            item for item in cls.DATA
+            item for item in cls.DATA[species]
             if item['conditionType'] == condtype
         ]
         if condtype == 'DRUGLEVEL':
@@ -137,27 +167,13 @@ class ConditionalCommentData(metaclass=DataSource):
         return comments
 
 
-def filter_out_HIV2(cls):
-    _DATA = []
-    for comment in cls.DATA:
-        if comment['strain'].startswith('HIV2'):
-            continue
-        else:
-            _DATA.append(comment)
-
-    return _DATA
-
-
-ConditionalCommentData.DATA = filter_out_HIV2(ConditionalCommentData)
-
-
 class MutationComments(metaclass=DataSource):
 
     @classmethod
-    def get_by_drugname(cls, drugname):
+    def get_by_drugname(cls, species, drugname):
         rules = cls._filtered_rules = []
 
-        for rule in cls.DATA:
+        for rule in cls.DATA[species]:
             if rule['drug'] == drugname:
                 rules.append(rule)
 
@@ -176,13 +192,19 @@ class MutationComments(metaclass=DataSource):
 
 class MutationIndivComments(MutationComments):
 
-    FILENAME = 'mutation-scores-indiv.json'
+    FILENAMES = {
+        'HIV1': 'mutation-scores-indiv.json',
+        'HIV2': 'mutation-scores-indiv_hiv2.json'
+    }
 
 
 class MutationCombiComments(MutationComments):
 
-    FILENAME = 'mutation-scores-combi.json'
-    MUTATION_PATTERN = r'(\d+)([A-Z]+)'
+    FILENAMES = {
+        'HIV1': 'mutation-scores-combi.json',
+        'HIV2': 'mutation-scores-combi_hiv2.json'
+    }
+    MUTATION_PATTERN = r'(\d+)([A-Z_-]+)'
 
     @classmethod
     def group_and_order_by_position(cls):
@@ -260,49 +282,58 @@ def doc_type(name, pubid, system):
 
 
 # Definitions
-def gene_definition(tree):
-    for gene, drugs in DrugClassData.gene_definition().items():
-        tree.append(
+def gene_definition(species):
+    nodes = []
+    for gene, drugs in DrugClassData.gene_definition(species).items():
+        nodes.append(
             E.GENE_DEFINITION(
                 E.NAME(gene),
                 E.DRUGCLASSLIST(','.join(drugs))
             )
         )
+    return nodes
 
 
-def level_definition(tree):
+def level_definition(species):
+    nodes = []
     for item in LEVEL_DEFINITION:
-        _ = etree.SubElement(tree, 'LEVEL_DEFINITION')
+        nodes.append(
+            E.LEVEL_DEFINITION(
+                E.ORDER(item[2]),
+                E.ORIGINAL(item[0]),
+                E.SIR(item[1])
+            )
+        )
+    return nodes
 
-        etree.SubElement(_, 'ORDER').text = item[-1]
-        etree.SubElement(_, 'ORIGINAL').text = item[0]
-        etree.SubElement(_, 'SIR').text = item[1]
 
-
-def drugclass_definition(tree):
-    for drugclass, drugs in DrugData.drugclass().items():
+def drugclass_definition(species):
+    nodes = []
+    for drugclass, drugs in DrugData.drugclass(species).items():
         drugs = [i['displayAbbr'] for i in drugs]
-        tree.append(
+        nodes.append(
             E.DRUGCLASS(
                 E.NAME(drugclass),
                 E.DRUGLIST(
                     ','.join(drugs)
                 )
             )
-
         )
+    return nodes
 
 
 def global_range_definition():
-    return E.GLOBALRANGE(
+    return [
+        E.GLOBALRANGE(
             etree.CDATA(GLOBALRANGE_CONTENTS)
         )
+    ]
 
 
-def comment_definitions():
+def comment_definitions(species):
     tree = E.COMMENT_DEFINITIONS()
 
-    for comment in ConditionalCommentData.DATA:
+    for comment in ConditionalCommentData.DATA[species]:
         tree.append(
             E.COMMENT_STRING(
                 E.TEXT(etree.CDATA(comment['comment'])),
@@ -311,29 +342,29 @@ def comment_definitions():
             )
         )
 
-    return tree
+    return [tree]
 
 
-def definition():
+def definition(species):
     tree = E('DEFINITIONS')
 
-    gene_definition(tree)
-    level_definition(tree)
-    drugclass_definition(tree)
+    tree.extend(gene_definition(species))
+    tree.extend(level_definition(species))
+    tree.extend(drugclass_definition(species))
 
-    tree.append(global_range_definition())
-    tree.append(comment_definitions())
+    tree.extend(global_range_definition())
+    tree.extend(comment_definitions(species))
 
     return tree
 
 
 # Drug
-def drug_rules(drugname):
+def drug_rules(species, drugname):
     all_rules = []
 
     # individual rule
     rules = MutationIndivComments.get_by_drugname(
-        drugname).group_by_position()
+        species, drugname).group_by_position()
 
     for pos, _ in rules.items():
         _rules = []
@@ -350,7 +381,7 @@ def drug_rules(drugname):
 
     # Combinational rule
     rules = MutationCombiComments.get_by_drugname(
-        drugname).group_and_order_by_position()
+        species, drugname).group_and_order_by_position()
 
     for _, rule_list in rules:
         _rules = []
@@ -369,25 +400,27 @@ def drug_rules(drugname):
 
     ident = ',\n' + DRUG_RULE_INDENTATION
 
-    cc = (
-        "SCORE FROM(" +
-        ident.join(all_rules) +
-        ")"
-    )
-    return cc
+    if all_rules:
+        return (
+            "SCORE FROM(" +
+            ident.join(all_rules) +
+            ")"
+        )
+    else:
+        return None
 
 
-def drug(tree):
+def drug(species):
+    drug_nodes = []
 
-    for drugclass, drugs in DrugData.drugclass().items():
+    for drugclass, drugs in DrugData.drugclass(species).items():
         for drug in drugs:
-            drug_node = E(
-                'DRUG',
-                E.NAME(drug['displayAbbr']),
-                E.FULLNAME(drug['fullName']),
-                E.RULE(
+            rulestext = drug_rules(species, drug['name'])
+            rule_node = []
+            if rulestext:
+                rule_node = [E.RULE(
                     E.CONDITION(
-                        etree.CDATA(drug_rules(drug['name']))
+                        etree.CDATA(rulestext)
                     ),
                     E(
                         'ACTIONS',
@@ -396,18 +429,24 @@ def drug(tree):
                             E('USE_GLOBALRANGE')
                         )
                     )
-                )
+                )]
+            drug_node = E(
+                'DRUG',
+                E.NAME(drug['displayAbbr']),
+                E.FULLNAME(drug['fullName']),
+                *rule_node
             )
 
-            tree.append(drug_node)
+            drug_nodes.append(drug_node)
 
-    return None
+    return drug_nodes
 
 
-def mutation_comment(tree):
+def mutation_comment(species):
     comments_node = E('MUTATION_COMMENTS')
 
-    mutation_comments = ConditionalCommentData.get_comments_by('MUTATION')
+    mutation_comments = ConditionalCommentData.get_comments_by(
+        species, 'MUTATION')
 
     for gene, comments in mutation_comments.items():
         gene_node = E(
@@ -435,13 +474,14 @@ def mutation_comment(tree):
 
         comments_node.append(gene_node)
 
-    tree.append(comments_node)
+    return [comments_node]
 
 
-def result_comments():
+def result_comments(species):
     tree = E('RESULT_COMMENTS')
 
-    for comment in ConditionalCommentData.get_comments_by('DRUGLEVEL'):
+    for comment in ConditionalCommentData.get_comments_by(
+            species, 'DRUGLEVEL'):
         rule_node = E('RESULT_COMMENT_RULE')
         condition = E('DRUG_LEVEL_CONDITIONS')
 
@@ -453,7 +493,7 @@ def result_comments():
 
         for value in cond_value:
             for level in value['levels']:
-                drugname = DrugData.get_display_abbr(value['drug'])
+                drugname = DrugData.get_display_abbr(species, value['drug'])
                 condition.append(E.DRUG_LEVEL_CONDITION(
                     E.DRUG_NAME(drugname),
                     E.EQ(str(level))
@@ -467,58 +507,63 @@ def result_comments():
         )
         tree.append(rule_node)
 
-    return tree
+    return [tree]
 
 
-# Assemble content
-def algorithm():
+def algorithm(species, version):
+    """Assemble content"""
+    species_suffix = '-HIV2' if species == 'HIV2' else ''
 
     tree = E.ALGORITHM(
-        E.ALGNAME(ALG_NAME),
-        E.ALGVERSION(get_cur_version()['version']),
-        E.ALGDATE(get_cur_version()['date']),
-        definition()
+        E.ALGNAME(ALG_NAME + species_suffix),
+        E.ALGVERSION(version['version']),
+        E.ALGDATE(version['date']),
+        definition(species)
     )
 
-    drug(tree)
-    mutation_comment(tree)
-    tree.append(result_comments())
+    tree.extend(drug(species))
+    tree.extend(mutation_comment(species))
+    tree.extend(result_comments(species))
 
     return tree
 
 
 DEFAULT_OUTPUT_FOLDER = BASEDIR / 'data' / 'algorithms'
-DEFAULT_OUTPUT_PATH = 'HIVDB_{}.xml'.format(get_cur_version()['version'])
 
 
-def output(content, output_path=None):
+def output(content, species, output_path, version):
     # First line, change from single quote to double quote
     lines = content.split('\n')
     for _, line in enumerate(lines):
         if _ == 0:
             line = line.replace('\'', '"')
             lines[_] = line
+    species_suffix = '-HIV2' if species == 'HIV2' else ''
 
     if not output_path:
-        output_path = DEFAULT_OUTPUT_PATH
+        output_path = 'HIVDB{suffix}_{version}.xml'.format(
+            suffix=species_suffix, **version)
     else:
         output_path = output_path[0]
 
     output_path = DEFAULT_OUTPUT_FOLDER / output_path
 
+    click.echo('Write to {}'.format(output_path))
     with output_path.open('w') as fd:
         fd.write('\n'.join(lines))
 
 
 @click.command()
-@click.argument('output_path', nargs=-1)
-@click.option('--version')
-def work(output_path, version):
-    global _VERSION
-    _VERSION = version
-
+@click.argument('species', is_eager=True,
+                type=click.Choice(['HIV1', 'HIV2']))
+@click.option('--output-path',
+              type=click.Path(dir_okay=False, writable=True))
+@click.option('--target-version',
+              type=str, required=True,
+              callback=validate_version)
+def work(species, output_path, target_version):
     result = etree.tostring(
-        algorithm(),
+        algorithm(species, target_version),
         pretty_print=True,
         xml_declaration=True,
         encoding='UTF-8',
@@ -530,7 +575,7 @@ def work(output_path, version):
         )
     )
 
-    output(result.decode('utf-8'), output_path)
+    output(result.decode('utf-8'), species, output_path, target_version)
 
 
 if __name__ == "__main__":
