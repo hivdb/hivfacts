@@ -382,7 +382,7 @@ public class HIV2 implements Virus<HIV2> {
 			try {
 				// TODO: currently we only support parsing HIV2 mutations.
 				//       need to design a new format for HIV2 mutations.
-				gene = getGene("HIV2" + m.group(1).toUpperCase());
+				gene = getGene("HIV2A" + m.group(1).toUpperCase());
 			} catch (NullPointerException e) {
 				throw new Mutation.InvalidMutationException(
 					"Gene is not specified and also not found in the " +
@@ -409,7 +409,7 @@ public class HIV2 implements Virus<HIV2> {
 			try {
 				// TODO: currently we only support parsing HIV2 mutations.
 				//       need to design a new format for HIV2 mutations.
-				gene = getGene("HIV2" + m.group(1).toUpperCase());
+				gene = getGene("HIV2A" + m.group(1).toUpperCase());
 			} catch (NullPointerException e) {
 				if (defaultGene == null) {
 					throw new Mutation.InvalidMutationException(

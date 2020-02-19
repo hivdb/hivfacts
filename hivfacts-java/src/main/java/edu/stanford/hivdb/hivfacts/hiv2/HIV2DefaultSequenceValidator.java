@@ -246,7 +246,7 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 		int size;
 		HIV2 hiv = HIV2.getInstance();
 		AlignedGeneSeq<?> geneSeq;
-		geneSeq = alignedSequence.getAlignedGeneSequence(hiv.getGene("HIV1PR"));
+		geneSeq = alignedSequence.getAlignedGeneSequence(hiv.getGene("HIV2APR"));
 		List<ValidationResult> result = new ArrayList<>();
 		if (geneSeq != null) {
 			size = geneSeq.getSize();
@@ -256,7 +256,7 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 				result.add(newValidationResult("sequence-too-short", geneSeq.getGene(), size));
 			}
 		}
-		geneSeq = alignedSequence.getAlignedGeneSequence(hiv.getGene("HIV1RT"));
+		geneSeq = alignedSequence.getAlignedGeneSequence(hiv.getGene("HIV2ART"));
 		if (geneSeq != null) {
 			size = geneSeq.getSize();
 			if (size < 150) {
@@ -265,7 +265,7 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 				result.add(newValidationResult("sequence-too-short",geneSeq.getGene(), size));
 			}
 		}
-		geneSeq = alignedSequence.getAlignedGeneSequence(hiv.getGene("HIV1IN"));
+		geneSeq = alignedSequence.getAlignedGeneSequence(hiv.getGene("HIV2AIN"));
 		if (geneSeq != null) {
 			size = geneSeq.getSize();
 			if (size < 100) {
