@@ -23,6 +23,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import edu.stanford.hivdb.mutations.Mutation;
 import edu.stanford.hivdb.mutations.MutationSet;
@@ -68,13 +69,13 @@ public class HIV2DefaultMutationsValidator implements MutationsValidator<HIV2> {
 		messages.put("additional-unusual-mutations", "There are %d additional unusual mutations: %s");
 
 		levels.put("severe-APOBEC", ValidationLevel.SEVERE_WARNING);
-		messages.put("severe-APOBEC", "%s");
+		messages.put("severe-APOBEC", "The following %d APOBEC muts were present in the sequence.%s");
 
 		levels.put("definite-APOBEC", ValidationLevel.WARNING);
-		messages.put("definite-APOBEC", "%s");
+		messages.put("definite-APOBEC", "The following %d APOBEC muts were present in the sequence.%s");
 
 		levels.put("possible-APOBEC-influence", ValidationLevel.NOTE);
-		messages.put("possible-APOBEC-influence", "%s");
+		messages.put("possible-APOBEC-influence", "The following %d APOBEC muts were present in the sequence.%s");
 
 		levels.put("multiple-apobec-at-DRP", ValidationLevel.SEVERE_WARNING);
 		messages.put("multiple-apobec-at-DRP",
@@ -186,7 +187,7 @@ public class HIV2DefaultMutationsValidator implements MutationsValidator<HIV2> {
 		int numApobecMuts = apobecs.size();
 		int numApobecDRMs = apobecDRMs.size();
 		String extraCmt = "";
-		
+
 		if (numApobecDRMs > 0) {
 			extraCmt = String.format(
 				" The following %d DRMs in this sequence could reflect APOBEC activity: %s.",
@@ -197,7 +198,7 @@ public class HIV2DefaultMutationsValidator implements MutationsValidator<HIV2> {
 				.map(e -> String.format(
 					"%s: %s", e.getKey().getAbstractGene(),
 					e.getValue().join(", ")
-				))
+				)).collect(Collectors.joining(","))
 			);
 		}
 
