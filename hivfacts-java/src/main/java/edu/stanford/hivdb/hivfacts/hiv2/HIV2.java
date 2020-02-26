@@ -232,23 +232,23 @@ public class HIV2 implements Virus<HIV2> {
 	}
 	
 	private void initDrugResistMutations() {
-		drugResistMutations = loadMutationSetByDrugClassFromRes(HIV2_DRMS_RESPATH, getStrain("HIV2"));
+		drugResistMutations = loadMutationSetByDrugClassFromRes(HIV2_DRMS_RESPATH, getStrain("HIV2A"));
 	}
 	
 	private void initSurveilDrugResistMuts() {
-		surveilDrugResistMuts = loadMutationSetByDrugClassFromRes(HIV2_SDRMS_RESPATH, getStrain("HIV2"));
+		surveilDrugResistMuts = loadMutationSetByDrugClassFromRes(HIV2_SDRMS_RESPATH, getStrain("HIV2A"));
 	}
 	
 	private void initApobecMutations() {
-		apobecMutations = loadMutationSetFromRes(HIV2_APOBECS_RESPATH, getStrain("HIV2"));
+		apobecMutations = loadMutationSetFromRes(HIV2_APOBECS_RESPATH, getStrain("HIV2A"));
 	}
 	
 	private void initApobecDRMs() {
-		apobecDRMs = loadMutationSetFromRes(HIV2_APOBEC_DRMS_RESPATH, getStrain("HIV2"));
+		apobecDRMs = loadMutationSetFromRes(HIV2_APOBEC_DRMS_RESPATH, getStrain("HIV2A"));
 	}
 	
 	private void initRxSelectedMutations() {
-		this.rxSelectedMutations = loadMutationSetByDrugClassFromRes(HIV2_TSMS_RESPATH, getStrain("HIV2"));
+		this.rxSelectedMutations = loadMutationSetByDrugClassFromRes(HIV2_TSMS_RESPATH, getStrain("HIV2A"));
 	}
 	
 	@Override
