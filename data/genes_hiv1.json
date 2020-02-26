@@ -10,7 +10,7 @@
       "Accessory",
       "Other"
     ],
-    "codonModifiers": [],
+    "strainModifiers": {},
     "nucaminoMinNumOfAA": 40
   },
   {
@@ -24,7 +24,7 @@
       "NNRTI",
       "Other"
     ],
-    "codonModifiers": [],
+    "strainModifiers": {},
     "nucaminoMinNumOfAA": 60
   },
   {
@@ -38,7 +38,7 @@
       "Accessory",
       "Other"
     ],
-    "codonModifiers": [],
+    "strainModifiers": {},
     "nucaminoMinNumOfAA": 30
   }
 ]

@@ -37,6 +37,7 @@ import edu.stanford.hivdb.mutations.MutationSet;
 import edu.stanford.hivdb.mutations.MutationType;
 import edu.stanford.hivdb.mutations.MutationTypePair;
 import edu.stanford.hivdb.utilities.AAUtils;
+import edu.stanford.hivdb.utilities.AssertUtils;
 import edu.stanford.hivdb.utilities.Json;
 import edu.stanford.hivdb.viruses.Gene;
 import edu.stanford.hivdb.viruses.Strain;
@@ -268,7 +269,10 @@ public class HIV2 implements Virus<HIV2> {
 		if (strains == null) {
 			initStrains();
 		}
-		return strains.get(name);
+		return AssertUtils.notNull(
+			strains.get(name),
+			"Strain \"%s\" not found", name
+		);
 	}
 
 	@Override
@@ -358,7 +362,10 @@ public class HIV2 implements Virus<HIV2> {
 		if (drugResistAlgs == null) {
 			initDrugResistAlgs();
 		}
-		return drugResistAlgLookup.get(name);
+		return AssertUtils.notNull(
+			drugResistAlgLookup.get(name),
+			"Unable to locate algorithm %s", name
+		);
 	}
 
 	@Override
@@ -366,7 +373,10 @@ public class HIV2 implements Virus<HIV2> {
 		if (drugResistAlgs == null) {
 			initDrugResistAlgs();
 		}
-		return drugResistAlgLookup.get(String.format("%s_%s", family, version));
+		return AssertUtils.notNull(
+			drugResistAlgLookup.get(String.format("%s_%s", family, version)),
+			"Unable to locate algorithm %s_%s", family, version
+		);
 	}
 	
 	/**

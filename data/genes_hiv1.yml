@@ -9,7 +9,7 @@
     - Major
     - Accessory
     - Other
-  codonModifiers: []
+  strainModifiers: {}
   nucaminoMinNumOfAA: 40
 - name: HIV1RT
   ordinal: 2
@@ -32,7 +32,7 @@
     - NRTI
     - NNRTI
     - Other
-  codonModifiers: []
+  strainModifiers: {}
   nucaminoMinNumOfAA: 60
 - name: HIV1IN
   ordinal: 3
@@ -49,5 +49,5 @@
     - Major
     - Accessory
     - Other
-  codonModifiers: []
+  strainModifiers: {}
   nucaminoMinNumOfAA: 30

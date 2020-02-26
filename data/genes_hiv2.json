@@ -10,7 +10,10 @@
       "Accessory",
       "Other"
     ],
-    "codonModifiers": [],
+    "strainModifiers": {
+      "HIV1": "99M",
+      "HIV2B": "99M"
+    },
     "nucaminoMinNumOfAA": 40
   },
   {
@@ -24,7 +27,10 @@
       "Accessory",
       "Other"
     ],
-    "codonModifiers": [],
+    "strainModifiers": {
+      "HIV1": "345M1I214M",
+      "HIV2B": "559M"
+    },
     "nucaminoMinNumOfAA": 60
   },
   {
@@ -38,7 +44,10 @@
       "Accessory",
       "Other"
     ],
-    "codonModifiers": [],
+    "strainModifiers": {
+      "HIV1": "272M2D11M1D5M2D",
+      "HIV2B": "293M3I"
+    },
     "nucaminoMinNumOfAA": 30
   },
   {
@@ -52,7 +61,10 @@
       "Accessory",
       "Other"
     ],
-    "codonModifiers": [],
+    "strainModifiers": {
+      "HIV1": "99M",
+      "HIV2A": "99M"
+    },
     "nucaminoMinNumOfAA": 40
   },
   {
@@ -66,7 +78,10 @@
       "Accessory",
       "Other"
     ],
-    "codonModifiers": [],
+    "strainModifiers": {
+      "HIV1": "345M1I214M",
+      "HIV2A": "559M"
+    },
     "nucaminoMinNumOfAA": 60
   },
   {
@@ -80,13 +95,10 @@
       "Accessory",
       "Other"
     ],
-    "codonModifiers": [
-      {
-        "position": 293,
-        "deleteAfter": 0,
-        "targetStrain": "HIV2A"
-      }
-    ],
+    "strainModifiers": {
+      "HIV1": "272M2D11M1D5M5D",
+      "HIV2A": "293M3D"
+    },
     "nucaminoMinNumOfAA": 30
   }
 ]

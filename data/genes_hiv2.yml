@@ -9,7 +9,9 @@
     - Major
     - Accessory
     - Other
-  codonModifiers: []
+  strainModifiers:
+    HIV1: 99M
+    HIV2B: 99M
   nucaminoMinNumOfAA: 40
 - name: HIV2ART  # ROD
   ordinal: 5
@@ -32,10 +34,9 @@
     - Major
     - Accessory
     - Other
-  codonModifiers: []
-#    - position: 345
-#      insertAfter: 1
-#      targetStrain: HIV1
+  strainModifiers:
+    HIV1: 345M1I214M
+    HIV2B: 559M
   nucaminoMinNumOfAA: 60
 - name: HIV2AIN  # ROD
   ordinal: 6
@@ -52,16 +53,9 @@
     - Major
     - Accessory
     - Other
-  codonModifiers: []
-#    - position: 272
-#      deleteAfter: 2
-#      targetStrain: HIV1
-#    - position: 283
-#      deleteAfter: 1
-#      targetStrain: HIV1
-#    - position: 288
-#      deleteAfter: 0  # all
-#      targetStrain: HIV1
+  strainModifiers:
+    HIV1: 272M2D11M1D5M2D
+    HIV2B: 293M3I
   nucaminoMinNumOfAA: 30
 - name: HIV2BPR  # EHO
   ordinal: 7
@@ -74,7 +68,9 @@
     - Major
     - Accessory
     - Other
-  codonModifiers: []
+  strainModifiers:
+    HIV1: 99M
+    HIV2A: 99M
   nucaminoMinNumOfAA: 40
 - name: HIV2BRT  # EHO
   ordinal: 8
@@ -97,10 +93,9 @@
     - Major
     - Accessory
     - Other
-  codonModifiers: []
-#    - position: 345
-#      insertAfter: 1
-#      targetStrain: HIV1
+  strainModifiers:
+    HIV1: 345M1I214M
+    HIV2A: 559M
   nucaminoMinNumOfAA: 60
 - name: HIV2BIN  # EHO
   ordinal: 9
@@ -117,17 +112,7 @@
     - Major
     - Accessory
     - Other
-  codonModifiers:
-#    - position: 272
-#      deleteAfter: 2
-#      targetStrain: HIV1
-#    - position: 283
-#      deleteAfter: 1
-#      targetStrain: HIV1
-#    - position: 288
-#      deleteAfter: 0  # all
-#      targetStrain: HIV1
-    - position: 293
-      deleteAfter: 0  # all
-      targetStrain: HIV2A
+  strainModifiers:
+    HIV1: 272M2D11M1D5M5D
+    HIV2A: 293M3D
   nucaminoMinNumOfAA: 30
