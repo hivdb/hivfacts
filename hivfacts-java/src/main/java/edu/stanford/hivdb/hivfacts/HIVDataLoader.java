@@ -29,7 +29,7 @@ import edu.stanford.hivdb.genotypes.GenotypeReference;
 import edu.stanford.hivdb.genotypes.Genotyper;
 import edu.stanford.hivdb.mutations.AminoAcidPercents;
 import edu.stanford.hivdb.mutations.CodonPercents;
-import edu.stanford.hivdb.mutations.ConsensusMutation;
+import edu.stanford.hivdb.mutations.CodonMutation;
 import edu.stanford.hivdb.mutations.GenePosition;
 import edu.stanford.hivdb.mutations.Mutation;
 import edu.stanford.hivdb.mutations.MutationPrevalence;
@@ -448,7 +448,7 @@ public class HIVDataLoader<T extends Virus<T>> {
 	
 	public Mutation<T> parseMutationString(Gene<T> defaultGene, String mutText) {
 		Matcher m = HIV_MUTATION_PATTERN.matcher(mutText);
-		ConsensusMutation<T> mut = null;
+		CodonMutation<T> mut = null;
 		if (m.matches()) {
 			Gene<T> gene;
 			try {
@@ -469,7 +469,7 @@ public class HIVDataLoader<T extends Virus<T>> {
 			String aas = AAUtils.normalizeAAs(m.group(4));
 			String triplet = m.group(5);
 			if (triplet == null) triplet = "";
-			mut = new ConsensusMutation<>(gene, pos, aas, triplet, "", 0xff);
+			mut = new CodonMutation<>(gene, pos, aas, triplet, "", 0xff);
 		} else {
 			throw new Mutation.InvalidMutationException(
 				"Tried to parse mutation string using invalid parameters: " + mutText);
