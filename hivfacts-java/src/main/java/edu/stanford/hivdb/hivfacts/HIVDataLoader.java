@@ -330,7 +330,10 @@ public class HIVDataLoader<T extends Virus<T>> {
 		if (genes == null) {
 			initGenes();
 		}
-		return genes.get(name);
+		return AssertUtils.notNull(
+			genes.get(name),
+			"Gene \"%s\" not found", name
+		);
 	}
 	
 	
