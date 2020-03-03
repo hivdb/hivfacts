@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.Map;
 
 import edu.stanford.hivdb.comments.ConditionalComments;
+import edu.stanford.hivdb.drugresistance.algorithm.DrugResistanceAlgorithm;
 import edu.stanford.hivdb.drugs.Drug;
 import edu.stanford.hivdb.drugs.DrugClass;
-import edu.stanford.hivdb.drugs.DrugResistanceAlgorithm;
 import edu.stanford.hivdb.genotypes.Genotype;
 import edu.stanford.hivdb.genotypes.GenotypeReference;
 import edu.stanford.hivdb.genotypes.Genotyper;
