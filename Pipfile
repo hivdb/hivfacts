@@ -9,7 +9,7 @@ verify_ssl = true
 pyyaml = "*"
 pymysql = "*"
 lxml = "*"
-hivdb-graphql = {git = "ssh://git@github.com/hivdb/hivdb-graphql.git",ref = "1630c954441e4aede90ca85a2831768f86dfc05b"}
+hivdb-graphql = {git = "ssh://git@github.com/hivdb/hivdb-graphql.git",ref = "0e2355a869c159da4707728ed34b89f124b154df"}
 
 [requires]
 python_version = "3.7"

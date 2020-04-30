@@ -37,7 +37,7 @@ public class HIV2 implements Virus<HIV2> {
 	private static final String TSMS_RESPATH = "tsms_hiv2.json";
 	private static final String APOBECS_RESPATH = "apobecs/apobecs_hiv2.json";
 	private static final String APOBEC_DRMS_RESPATH = "apobecs/apobec_drms_hiv2.json";
-	private static final String AAPCNTS_RESPATH = "aapcnt/rx-%s_subtype-%s.json";
+	private static final String AAPCNTS_RESPATH = "aapcnt-hiv2/rx-%s_subtype-%s.json";
 	private static final String CODONPCNTS_RESPATH = "codonpcnt/rx-%s_subtype-%s.json";
 	private static final String MUTTYPES_RESPATH = "mutation-types.json";
 	private static final String MUTTYPE_PAIRS_RESPATH = "mutation-type-pairs_hiv2.json";
