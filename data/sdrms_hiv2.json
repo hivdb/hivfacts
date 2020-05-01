@@ -1,5 +1,158 @@
 {
-  "PI": [],
-  "NRTI": [],
-  "INSTI": []
+  "PI": [
+    {
+      "gene": "PR",
+      "position": 33,
+      "aa": "I"
+    },
+    {
+      "gene": "PR",
+      "position": 45,
+      "aa": "R"
+    },
+    {
+      "gene": "PR",
+      "position": 47,
+      "aa": "A"
+    },
+    {
+      "gene": "PR",
+      "position": 50,
+      "aa": "V"
+    },
+    {
+      "gene": "PR",
+      "position": 54,
+      "aa": "M"
+    },
+    {
+      "gene": "PR",
+      "position": 56,
+      "aa": "V"
+    },
+    {
+      "gene": "PR",
+      "position": 62,
+      "aa": "A"
+    },
+    {
+      "gene": "PR",
+      "position": 73,
+      "aa": "G"
+    },
+    {
+      "gene": "PR",
+      "position": 82,
+      "aa": "F"
+    },
+    {
+      "gene": "PR",
+      "position": 84,
+      "aa": "V"
+    },
+    {
+      "gene": "PR",
+      "position": 85,
+      "aa": "L"
+    },
+    {
+      "gene": "PR",
+      "position": 90,
+      "aa": "M"
+    }
+  ],
+  "NRTI": [
+    {
+      "gene": "RT",
+      "position": 40,
+      "aa": "R"
+    },
+    {
+      "gene": "RT",
+      "position": 62,
+      "aa": "V"
+    },
+    {
+      "gene": "RT",
+      "position": 65,
+      "aa": "R"
+    },
+    {
+      "gene": "RT",
+      "position": 70,
+      "aa": "R"
+    },
+    {
+      "gene": "RT",
+      "position": 115,
+      "aa": "F"
+    },
+    {
+      "gene": "RT",
+      "position": 151,
+      "aa": "M"
+    },
+    {
+      "gene": "RT",
+      "position": 184,
+      "aa": "IV"
+    },
+    {
+      "gene": "RT",
+      "position": 215,
+      "aa": "Y"
+    }
+  ],
+  "INSTI": [
+    {
+      "gene": "IN",
+      "position": 91,
+      "aa": "R"
+    },
+    {
+      "gene": "IN",
+      "position": 92,
+      "aa": "AQ"
+    },
+    {
+      "gene": "IN",
+      "position": 97,
+      "aa": "A"
+    },
+    {
+      "gene": "IN",
+      "position": 140,
+      "aa": "S"
+    },
+    {
+      "gene": "IN",
+      "position": 143,
+      "aa": "G"
+    },
+    {
+      "gene": "IN",
+      "position": 148,
+      "aa": "R"
+    },
+    {
+      "gene": "IN",
+      "position": 153,
+      "aa": "G"
+    },
+    {
+      "gene": "IN",
+      "position": 155,
+      "aa": "H"
+    },
+    {
+      "gene": "IN",
+      "position": 156,
+      "aa": "R"
+    },
+    {
+      "gene": "IN",
+      "position": 231,
+      "aa": "_"
+    }
+  ]
 }

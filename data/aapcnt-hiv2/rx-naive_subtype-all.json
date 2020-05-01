@@ -1388,8 +1388,8 @@
     "percent": 0.0017513134851138354,
     "count": 1,
     "total": 571,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "PR",
@@ -2144,8 +2144,8 @@
     "percent": 0.0035026269702276708,
     "count": 2,
     "total": 571,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "PR",
@@ -2200,6 +2200,18 @@
     "subtype": "all",
     "rx_type": "naive",
     "position": 47,
+    "aa": "A",
+    "percent": 0.0,
+    "count": 0,
+    "total": 572,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "PR",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 47,
     "aa": "G",
     "percent": 0.0017482517482517483,
     "count": 1,
@@ -2224,6 +2236,18 @@
     "subtype": "all",
     "rx_type": "naive",
     "position": 48,
+    "aa": "A",
+    "percent": 0.0,
+    "count": 0,
+    "total": 572,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "PR",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 48,
     "aa": "E",
     "percent": 0.0017482517482517483,
     "count": 1,
@@ -2241,6 +2265,18 @@
     "count": 571,
     "total": 572,
     "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "PR",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 48,
+    "aa": "V",
+    "percent": 0.0,
+    "count": 0,
+    "total": 572,
+    "reason": "DRM",
     "isUnusual": false
   },
   {
@@ -2300,8 +2336,8 @@
     "percent": 0.0017452006980802793,
     "count": 1,
     "total": 573,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "PR",
@@ -2324,8 +2360,8 @@
     "percent": 0.0034904013961605585,
     "count": 2,
     "total": 573,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "PR",
@@ -2415,6 +2451,18 @@
     "gene": "PR",
     "subtype": "all",
     "rx_type": "naive",
+    "position": 53,
+    "aa": "Y",
+    "percent": 0.0,
+    "count": 0,
+    "total": 572,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "PR",
+    "subtype": "all",
+    "rx_type": "naive",
     "position": 54,
     "aa": "I",
     "percent": 0.9860627177700348,
@@ -2444,8 +2492,8 @@
     "percent": 0.0017421602787456446,
     "count": 1,
     "total": 574,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "PR",
@@ -2588,8 +2636,8 @@
     "percent": 0.003472222222222222,
     "count": 2,
     "total": 576,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "PR",
@@ -3812,8 +3860,8 @@
     "percent": 0.0035149384885764497,
     "count": 2,
     "total": 569,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "PR",
@@ -3825,6 +3873,30 @@
     "count": 566,
     "total": 569,
     "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "PR",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 82,
+    "aa": "L",
+    "percent": 0.0,
+    "count": 0,
+    "total": 569,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "PR",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 82,
+    "aa": "M",
+    "percent": 0.0,
+    "count": 0,
+    "total": 569,
+    "reason": "DRM",
     "isUnusual": false
   },
   {
@@ -3908,8 +3980,8 @@
     "percent": 0.0017605633802816902,
     "count": 1,
     "total": 568,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "PR",
@@ -3932,8 +4004,8 @@
     "percent": 0.0035335689045936395,
     "count": 2,
     "total": 566,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "PR",
@@ -4028,8 +4100,8 @@
     "percent": 0.0017921146953405018,
     "count": 1,
     "total": 558,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "PR",
@@ -4136,8 +4208,8 @@
     "percent": 0.003590664272890485,
     "count": 2,
     "total": 557,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "PR",
@@ -7192,6 +7264,18 @@
     "subtype": "all",
     "rx_type": "naive",
     "position": 65,
+    "aa": "E",
+    "percent": 0.0,
+    "count": 0,
+    "total": 330,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "RT",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 65,
     "aa": "K",
     "percent": 0.9939393939393939,
     "count": 328,
@@ -7204,12 +7288,24 @@
     "subtype": "all",
     "rx_type": "naive",
     "position": 65,
+    "aa": "N",
+    "percent": 0.0,
+    "count": 0,
+    "total": 330,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "RT",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 65,
     "aa": "R",
     "percent": 0.0030303030303030303,
     "count": 1,
     "total": 330,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "RT",
@@ -7360,6 +7456,18 @@
     "subtype": "all",
     "rx_type": "naive",
     "position": 69,
+    "aa": "-",
+    "percent": 0.0,
+    "count": 0,
+    "total": 335,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "RT",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 69,
     "aa": "D",
     "percent": 0.005970149253731343,
     "count": 2,
@@ -7443,6 +7551,18 @@
     "gene": "RT",
     "subtype": "all",
     "rx_type": "naive",
+    "position": 69,
+    "aa": "_",
+    "percent": 0.0,
+    "count": 0,
+    "total": 335,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "RT",
+    "subtype": "all",
+    "rx_type": "naive",
     "position": 70,
     "aa": "K",
     "percent": 0.9879518072289156,
@@ -7456,11 +7576,35 @@
     "subtype": "all",
     "rx_type": "naive",
     "position": 70,
+    "aa": "N",
+    "percent": 0.0,
+    "count": 0,
+    "total": 332,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "RT",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 70,
     "aa": "Q",
     "percent": 0.012048192771084338,
     "count": 4,
     "total": 332,
     "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "RT",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 70,
+    "aa": "R",
+    "percent": 0.0,
+    "count": 0,
+    "total": 332,
+    "reason": "DRM",
     "isUnusual": false
   },
   {
@@ -7588,11 +7732,35 @@
     "subtype": "all",
     "rx_type": "naive",
     "position": 74,
+    "aa": "I",
+    "percent": 0.0,
+    "count": 0,
+    "total": 329,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "RT",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 74,
     "aa": "L",
     "percent": 1.0,
     "count": 329,
     "total": 329,
     "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "RT",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 74,
+    "aa": "V",
+    "percent": 0.0,
+    "count": 0,
+    "total": 329,
+    "reason": "DRM",
     "isUnusual": false
   },
   {
@@ -7640,8 +7808,8 @@
     "percent": 0.0030120481927710845,
     "count": 1,
     "total": 332,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "RT",
@@ -8740,6 +8908,18 @@
     "subtype": "all",
     "rx_type": "naive",
     "position": 115,
+    "aa": "F",
+    "percent": 0.0,
+    "count": 0,
+    "total": 332,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "RT",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 115,
     "aa": "Y",
     "percent": 1.0,
     "count": 332,
@@ -8769,6 +8949,18 @@
     "count": 2,
     "total": 332,
     "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "RT",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 116,
+    "aa": "Y",
+    "percent": 0.0,
+    "count": 0,
+    "total": 332,
+    "reason": "DRM",
     "isUnusual": false
   },
   {
@@ -11156,8 +11348,8 @@
     "percent": 0.003003003003003003,
     "count": 1,
     "total": 333,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "RT",
@@ -12296,8 +12488,8 @@
     "percent": 0.0030211480362537764,
     "count": 1,
     "total": 331,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "RT",
@@ -12321,6 +12513,18 @@
     "count": 5,
     "total": 331,
     "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "RT",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 215,
+    "aa": "Y",
+    "percent": 0.0,
+    "count": 0,
+    "total": 331,
+    "reason": "DRM",
     "isUnusual": false
   },
   {
@@ -23499,6 +23703,18 @@
     "gene": "IN",
     "subtype": "all",
     "rx_type": "naive",
+    "position": 51,
+    "aa": "Y",
+    "percent": 0.0,
+    "count": 0,
+    "total": 237,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "IN",
+    "subtype": "all",
+    "rx_type": "naive",
     "position": 52,
     "aa": "G",
     "percent": 0.9957627118644068,
@@ -23866,6 +24082,42 @@
     "total": 236,
     "reason": "PCNT",
     "isUnusual": true
+  },
+  {
+    "gene": "IN",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 66,
+    "aa": "A",
+    "percent": 0.0,
+    "count": 0,
+    "total": 236,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "IN",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 66,
+    "aa": "I",
+    "percent": 0.0,
+    "count": 0,
+    "total": 236,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "IN",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 66,
+    "aa": "K",
+    "percent": 0.0,
+    "count": 0,
+    "total": 236,
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "IN",
@@ -24448,11 +24700,47 @@
     "subtype": "all",
     "rx_type": "naive",
     "position": 92,
+    "aa": "A",
+    "percent": 0.0,
+    "count": 0,
+    "total": 236,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "IN",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 92,
     "aa": "E",
     "percent": 1.0,
     "count": 236,
     "total": 236,
     "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "IN",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 92,
+    "aa": "G",
+    "percent": 0.0,
+    "count": 0,
+    "total": 236,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "IN",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 92,
+    "aa": "Q",
+    "percent": 0.0,
+    "count": 0,
+    "total": 236,
+    "reason": "DRM",
     "isUnusual": false
   },
   {
@@ -24597,6 +24885,18 @@
     "count": 2,
     "total": 242,
     "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "IN",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 97,
+    "aa": "A",
+    "percent": 0.0,
+    "count": 0,
+    "total": 239,
+    "reason": "DRM",
     "isUnusual": false
   },
   {
@@ -25072,6 +25372,18 @@
     "subtype": "all",
     "rx_type": "naive",
     "position": 118,
+    "aa": "R",
+    "percent": 0.0,
+    "count": 0,
+    "total": 238,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "IN",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 118,
     "aa": "S",
     "percent": 0.012605042016806723,
     "count": 3,
@@ -25209,6 +25521,18 @@
     "count": 236,
     "total": 236,
     "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "IN",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 121,
+    "aa": "Y",
+    "percent": 0.0,
+    "count": 0,
+    "total": 236,
+    "reason": "DRM",
     "isUnusual": false
   },
   {
@@ -25756,6 +26080,30 @@
     "subtype": "all",
     "rx_type": "naive",
     "position": 140,
+    "aa": "A",
+    "percent": 0.0,
+    "count": 0,
+    "total": 238,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "IN",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 140,
+    "aa": "C",
+    "percent": 0.0,
+    "count": 0,
+    "total": 238,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "IN",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 140,
     "aa": "E",
     "percent": 0.004201680672268907,
     "count": 1,
@@ -25785,6 +26133,18 @@
     "count": 2,
     "total": 238,
     "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "IN",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 140,
+    "aa": "S",
+    "percent": 0.0,
+    "count": 0,
+    "total": 238,
+    "reason": "DRM",
     "isUnusual": false
   },
   {
@@ -25832,8 +26192,20 @@
     "percent": 0.00423728813559322,
     "count": 1,
     "total": 236,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "IN",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 143,
+    "aa": "R",
+    "percent": 0.0,
+    "count": 0,
+    "total": 236,
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "IN",
@@ -25900,6 +26272,18 @@
     "subtype": "all",
     "rx_type": "naive",
     "position": 147,
+    "aa": "G",
+    "percent": 0.0,
+    "count": 0,
+    "total": 236,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "IN",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 147,
     "aa": "S",
     "percent": 1.0,
     "count": 236,
@@ -25912,11 +26296,47 @@
     "subtype": "all",
     "rx_type": "naive",
     "position": 148,
+    "aa": "H",
+    "percent": 0.0,
+    "count": 0,
+    "total": 236,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "IN",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 148,
+    "aa": "K",
+    "percent": 0.0,
+    "count": 0,
+    "total": 236,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "IN",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 148,
     "aa": "Q",
     "percent": 1.0,
     "count": 236,
     "total": 236,
     "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "IN",
+    "subtype": "all",
+    "rx_type": "naive",
+    "position": 148,
+    "aa": "R",
+    "percent": 0.0,
+    "count": 0,
+    "total": 236,
+    "reason": "DRM",
     "isUnusual": false
   },
   {
@@ -25988,8 +26408,8 @@
     "percent": 0.004201680672268907,
     "count": 1,
     "total": 238,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "IN",
@@ -26048,8 +26468,8 @@
     "percent": 0.00423728813559322,
     "count": 1,
     "total": 236,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "IN",
@@ -28299,6 +28719,18 @@
     "gene": "IN",
     "subtype": "all",
     "rx_type": "naive",
+    "position": 231,
+    "aa": "_",
+    "percent": 0.0,
+    "count": 0,
+    "total": 236,
+    "reason": "DRM",
+    "isUnusual": false
+  },
+  {
+    "gene": "IN",
+    "subtype": "all",
+    "rx_type": "naive",
     "position": 232,
     "aa": "D",
     "percent": 0.9873417721518988,
@@ -29108,8 +29540,8 @@
     "percent": 0.004219409282700422,
     "count": 1,
     "total": 237,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "IN",

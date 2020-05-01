@@ -17,6 +17,7 @@ for rx in all naive art; do
             --filter NO_QA_ISSUES \
             --format "json" \
             --unusual-threshold 0.005 \
+            --drm-list $BASEDIR/data/drms_hiv2.json \
             "$DATADIR/rx-${rx}_subtype-${subtype}.json"
         ls -lh "$DATADIR/rx-${rx}_subtype-${subtype}.json"
     done

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "fd5955cf614a2a48e836ec833fd3c9adf1e68eba126b015d1f98ef4ace8eed25"
+            "sha256": "51f887708b978b9841c076caba1558f862f2a61ac0d0738aeb3996a92f032458"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -18,7 +18,7 @@
     "default": {
         "hivdb-graphql": {
             "git": "ssh://git@github.com/hivdb/hivdb-graphql.git",
-            "ref": "58c9339b16195b6795cc76f89b67fd22b31c9d6d"
+            "ref": "1561a4bffd8b2fd9080c27ceb8edcb4e1ef0f607"
         },
         "lxml": {
             "hashes": [
