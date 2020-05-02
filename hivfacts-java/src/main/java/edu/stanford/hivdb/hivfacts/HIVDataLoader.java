@@ -162,12 +162,16 @@ public class HIVDataLoader<T extends Virus<T>> {
 		this.CONDCOMMENTS_RESPATH = CONDCOMMENTS_RESPATH;
 	}
 	
-	private MutationSet<T> loadMutationSetFromRes(String resPath, Strain<T> strain) {
+	private MutationSet<T> loadMutationSetFromRes(String resPath, Collection<Strain<T>> strains) {
 		String raw = loadResource(resPath);
-		return MutationSet.loadJson(raw, geneText -> getGene(strain.toString() + geneText));
+		return (
+			strains.stream()
+			.map(strain -> MutationSet.loadJson(raw, geneText -> strain.getGene(geneText)))
+			.reduce(new MutationSet<>(), (acc, other) -> acc.mergesWith(other))
+		);
 	}
 	
-	private Map<DrugClass<T>, MutationSet<T>> loadMutationSetByDrugClassFromRes(String resPath, Strain<T> strain) {
+	private Map<DrugClass<T>, MutationSet<T>> loadMutationSetByDrugClassFromRes(String resPath, Collection<Strain<T>> strains) {
 		Map<DrugClass<T>, MutationSet<T>> mutationsMap = new LinkedHashMap<>();
 		String raw = loadResource(resPath);
 		
@@ -177,10 +181,12 @@ public class HIVDataLoader<T extends Virus<T>> {
 			DrugClass<T> drugClass = getDrugClass(drugClassText);
 			mutationsMap.put(
 				drugClass,
-				MutationSet.loadJsonMap(
+				strains.stream()
+				.map(strain -> MutationSet.loadJsonMap(
 					muts.get(drugClassText),
 					geneText -> strain.getGene(geneText)
-				)
+				))
+				.reduce(new MutationSet<>(), (acc, other) -> acc.mergesWith(other))
 			);
 		}
 		return Collections.unmodifiableMap(mutationsMap);
@@ -267,23 +273,23 @@ public class HIVDataLoader<T extends Virus<T>> {
 	}
 	
 	private void initDrugResistMutations() {
-		drugResistMutations = loadMutationSetByDrugClassFromRes(DRMS_RESPATH, getMainStrain());
+		drugResistMutations = loadMutationSetByDrugClassFromRes(DRMS_RESPATH, getStrains());
 	}
 	
 	private void initSurveilDrugResistMuts() {
-		surveilDrugResistMuts = loadMutationSetByDrugClassFromRes(SDRMS_RESPATH, getMainStrain());
+		surveilDrugResistMuts = loadMutationSetByDrugClassFromRes(SDRMS_RESPATH, getStrains());
 	}
 	
 	private void initApobecMutations() {
-		apobecMutations = loadMutationSetFromRes(APOBECS_RESPATH, getMainStrain());
+		apobecMutations = loadMutationSetFromRes(APOBECS_RESPATH, getStrains());
 	}
 	
 	private void initApobecDRMs() {
-		apobecDRMs = loadMutationSetFromRes(APOBEC_DRMS_RESPATH, getMainStrain());
+		apobecDRMs = loadMutationSetFromRes(APOBEC_DRMS_RESPATH, getStrains());
 	}
 	
 	private void initRxSelectedMutations() {
-		this.rxSelectedMutations = loadMutationSetByDrugClassFromRes(TSMS_RESPATH, getMainStrain());
+		this.rxSelectedMutations = loadMutationSetByDrugClassFromRes(TSMS_RESPATH, getStrains());
 	}
 	
 	public String getName() {
@@ -613,12 +619,13 @@ public class HIVDataLoader<T extends Virus<T>> {
 	
 	public AminoAcidPercents<T> getAminoAcidPercents(Strain<T> strain, String treatment, String subtype) {
 		String resourceName = String.format(AAPCNTS_RESPATH, treatment, subtype);
-		if (!aminoAcidPcnts.containsKey(resourceName)) {
-			aminoAcidPcnts.put(resourceName, new AminoAcidPercents<>(resourceName, virus, strain));
+		String resourceKey = String.format("%s::%s", resourceName, strain.getName());
+		if (!aminoAcidPcnts.containsKey(resourceKey)) {
+			aminoAcidPcnts.put(resourceKey, new AminoAcidPercents<>(resourceName, virus, strain));
 			// Example of empty Instance:
 			// aminoAcidPcnts.put(resourceName, AminoAcidPercents.newEmptyInstance());
 		}
-		return aminoAcidPcnts.get(resourceName);
+		return aminoAcidPcnts.get(resourceKey);
 	}
 
 	/**

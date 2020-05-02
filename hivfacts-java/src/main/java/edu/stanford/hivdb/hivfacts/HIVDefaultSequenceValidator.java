@@ -163,6 +163,9 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		messages.put(
 			"reverse-complement", "This report was derived from the reverse complement of input sequence.");
 
+		levels.put("unsequenced-region", ValidationLevel.WARNING);
+		messages.put("unsequenced-region", "There are %d %s positions located in unsequenced region(s): %s.");
+
 		VALIDATION_RESULT_LEVELS = Collections.unmodifiableMap(levels);
 		VALIDATION_RESULT_MESSAGES = Collections.unmodifiableMap(messages);
 	}
@@ -179,6 +182,7 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		results.addAll(validateReverseComplement(alignedSequence));
 		results.addAll(validateGene(alignedSequence));
 		results.addAll(validateSequenceSize(alignedSequence));
+		results.addAll(validateUnsequencedRegion(alignedSequence));
 		results.addAll(validateShrinkage(alignedSequence));
 		results.addAll(validateLongGap(alignedSequence));
 		results.addAll(validateNAs(alignedSequence));
@@ -195,6 +199,20 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 			VALIDATION_RESULT_MESSAGES.get(key),
 			args);
 		return new ValidationResult(level, message);
+	}
+
+	protected static List<ValidationResult> validateUnsequencedRegion(AlignedSequence<?> alignedSequence) {
+		List<ValidationResult> results = new ArrayList<>();
+		for (AlignedGeneSeq<?> geneSeq : alignedSequence.getAlignedGeneSequences()) {
+			MutationSet<?> unsequenced = geneSeq.getMutations().filterBy(Mutation::isUnsequenced);
+			if (unsequenced.size() > 2) {
+				results.add(newValidationResult(
+					"unsequenced-region", unsequenced.size(),
+					geneSeq.getAbstractGene(), unsequenced.join(", ")
+				));
+			}
+		}
+		return results;
 	}
 
 	protected static List<ValidationResult> validateNotEmpty(AlignedSequence<?> alignedSequence) {
@@ -244,23 +262,20 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 
 	protected static List<ValidationResult> validateSequenceSize(AlignedSequence<HIV> alignedSequence) {
 		int size;
-		HIV hiv = HIV.getInstance();
 		AlignedGeneSeq<?> geneSeq;
-		Gene<HIV> gene;
 		int[] muchTooShortSize = new int[] {60, 150, 100};
 		int[] tooShortSize = new int[] {80, 200, 200};
-		String[] geneNames = new String[] {"HIV1PR", "HIV1RT", "HIV1IN"};
+		String[] geneNames = new String[] {"PR", "RT", "IN"};
 		List<ValidationResult> result = new ArrayList<>();
 		
 		for (int i = 0; i < 3; i ++) {
-			gene = hiv.getGene(geneNames[i]);
-			geneSeq = alignedSequence.getAlignedGeneSequence(gene);
+			geneSeq = alignedSequence.getAlignedGeneSequence(geneNames[i]);
 			if (geneSeq != null) {
 				size = geneSeq.getSize();
 				if (size < muchTooShortSize[i]) {
-					result.add(newValidationResult("sequence-much-too-short", gene.getAbstractGene(), size));
+					result.add(newValidationResult("sequence-much-too-short", geneNames[i], size));
 				} else if (size < tooShortSize[i]) {
-					result.add(newValidationResult("sequence-too-short", gene.getAbstractGene(), size));
+					result.add(newValidationResult("sequence-too-short", geneNames[i], size));
 				}
 			}
 		}

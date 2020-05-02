@@ -162,6 +162,9 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 		levels.put("reverse-complement", ValidationLevel.WARNING);
 		messages.put(
 			"reverse-complement", "This report was derived from the reverse complement of input sequence.");
+		
+		levels.put("unsequenced-region", ValidationLevel.WARNING);
+		messages.put("unsequenced-region", "There are %d %s positions located in unsequenced region(s): %s.");
 
 		VALIDATION_RESULT_LEVELS = Collections.unmodifiableMap(levels);
 		VALIDATION_RESULT_MESSAGES = Collections.unmodifiableMap(messages);
@@ -179,6 +182,7 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 		results.addAll(validateReverseComplement(alignedSequence));
 		results.addAll(validateGene(alignedSequence));
 		results.addAll(validateSequenceSize(alignedSequence));
+		results.addAll(validateUnsequencedRegion(alignedSequence));
 		results.addAll(validateShrinkage(alignedSequence));
 		results.addAll(validateLongGap(alignedSequence));
 		results.addAll(validateNAs(alignedSequence));
@@ -195,6 +199,20 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 			VALIDATION_RESULT_MESSAGES.get(key),
 			args);
 		return new ValidationResult(level, message);
+	}
+	
+	protected static List<ValidationResult> validateUnsequencedRegion(AlignedSequence<?> alignedSequence) {
+		List<ValidationResult> results = new ArrayList<>();
+		for (AlignedGeneSeq<?> geneSeq : alignedSequence.getAlignedGeneSequences()) {
+			MutationSet<?> unsequenced = geneSeq.getMutations().filterBy(Mutation::isUnsequenced);
+			if (unsequenced.size() > 2) {
+				results.add(newValidationResult(
+					"unsequenced-region", unsequenced.size(),
+					geneSeq.getAbstractGene(), unsequenced.join(", ")
+				));
+			}
+		}
+		return results;
 	}
 
 	protected static List<ValidationResult> validateNotEmpty(AlignedSequence<?> alignedSequence) {
@@ -244,34 +262,21 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 
 	protected static List<ValidationResult> validateSequenceSize(AlignedSequence<HIV2> alignedSequence) {
 		int size;
-		HIV2 hiv = HIV2.getInstance();
 		AlignedGeneSeq<?> geneSeq;
-		geneSeq = alignedSequence.getAlignedGeneSequence(hiv.getGene("HIV2APR"));
+		int[] muchTooShortSize = new int[] {60, 150, 100};
+		int[] tooShortSize = new int[] {80, 200, 200};
+		String[] geneNames = new String[] {"PR", "RT", "IN"};
 		List<ValidationResult> result = new ArrayList<>();
-		if (geneSeq != null) {
-			size = geneSeq.getSize();
-			if (size < 60) {
-				result.add(newValidationResult("sequence-much-too-short", geneSeq.getGene(), size));
-			} else if (size < 80) {
-				result.add(newValidationResult("sequence-too-short", geneSeq.getGene(), size));
-			}
-		}
-		geneSeq = alignedSequence.getAlignedGeneSequence(hiv.getGene("HIV2ART"));
-		if (geneSeq != null) {
-			size = geneSeq.getSize();
-			if (size < 150) {
-				result.add(newValidationResult("sequence-much-too-short", geneSeq.getGene(), size));
-			} else if (size < 200) {
-				result.add(newValidationResult("sequence-too-short",geneSeq.getGene(), size));
-			}
-		}
-		geneSeq = alignedSequence.getAlignedGeneSequence(hiv.getGene("HIV2AIN"));
-		if (geneSeq != null) {
-			size = geneSeq.getSize();
-			if (size < 100) {
-				result.add(newValidationResult("sequence-much-too-short", geneSeq.getGene(), size));
-			} else if (size < 200) {
-				result.add(newValidationResult("sequence-too-short", geneSeq.getGene(), size));
+		
+		for (int i = 0; i < 3; i ++) {
+			geneSeq = alignedSequence.getAlignedGeneSequence(geneNames[i]);
+			if (geneSeq != null) {
+				size = geneSeq.getSize();
+				if (size < muchTooShortSize[i]) {
+					result.add(newValidationResult("sequence-much-too-short", geneNames[i], size));
+				} else if (size < tooShortSize[i]) {
+					result.add(newValidationResult("sequence-too-short", geneNames[i], size));
+				}
 			}
 		}
 		return result;
@@ -341,10 +346,10 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 			if (numStopCodons > 1) {
 				result.add(newValidationResult(
 					"severe-warning-too-many-stop-codons",
-					numStopCodons, gene.getName(), stops));
+					numStopCodons, gene.getAbstractGene(), stops));
 			} else if (numStopCodons > 0) {
 				result.add(newValidationResult(
-					"note-stop-codon", numStopCodons, gene.getName(), stops));
+					"note-stop-codon", numStopCodons, gene.getAbstractGene(), stops));
 			}
 		}
 		return result;
@@ -362,26 +367,26 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 			if (numUnusual > 8) {
 				result.add(newValidationResult(
 					"much-too-many-unusual-mutations",
-					numUnusual, gene.getName(), text));
+					numUnusual, gene.getAbstractGene(), text));
 			} else if (numUnusual > 4) {
 				result.add(newValidationResult(
 					"too-many-unusual-mutations",
-					numUnusual, gene.getName(), text));
+					numUnusual, gene.getAbstractGene(), text));
 			} else if (numUnusual > 2) {
 				result.add(newValidationResult(
 					"some-unusual-mutations",
-					numUnusual, gene.getName(), text));
+					numUnusual, gene.getAbstractGene(), text));
 			}
 			MutationSet<HIV2> unusualMutAtDRP = alignedGeneSeq.getUnusualMutationsAtDrugResistancePositions();
 			int numUnusualAtDRP = unusualMutAtDRP.size();
 			if (numUnusualAtDRP > 1) {
 				result.add(newValidationResult(
 					"unusual-mutation-at-DRP-plural",
-					numUnusualAtDRP, gene.getName(), unusualMutAtDRP.join(", ")));
+					numUnusualAtDRP, gene.getAbstractGene(), unusualMutAtDRP.join(", ")));
 			} else if (numUnusualAtDRP == 1) {
 				result.add(newValidationResult(
 					"unusual-mutation-at-DRP",
-					numUnusualAtDRP, gene.getName(), unusualMutAtDRP.join(", ")));
+					numUnusualAtDRP, gene.getAbstractGene(), unusualMutAtDRP.join(", ")));
 			}
 		}
 		return result;
@@ -418,6 +423,7 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 					"%s: %s", e.getKey().getAbstractGene(),
 					e.getValue().join(", ")
 				))
+				.collect(Collectors.joining("; "))
 			);
 		}
 
@@ -463,25 +469,25 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 			if (numTotal > 1) {
 				if (frameShifts.size() > 0 && unusualIndels.size() > 0) {
 					results.add(newValidationResult(
-						"two-or-more-unusual-indels-and-frameshifts", gene.getName(),
+						"two-or-more-unusual-indels-and-frameshifts", gene.getAbstractGene(),
 						numTotal, unusualIndelsListText, frameShiftListText));
 				} else if (frameShifts.size() > 0) {
 					results.add(newValidationResult(
-						"two-or-more-frameshifts", gene.getName(), numTotal,
+						"two-or-more-frameshifts", gene.getAbstractGene(), numTotal,
 						frameShiftListText));
 				} else {
 					results.add(newValidationResult(
-						"two-or-more-unusual-indels", gene.getName(), numTotal,
+						"two-or-more-unusual-indels", gene.getAbstractGene(), numTotal,
 						unusualIndelsListText));
 				}
 
 			} else if (numTotal >0 ) {
 				if (frameShifts.size() > 0) {
 					results.add(newValidationResult(
-						"one-frameshift", gene.getName(), frameShiftListText));
+						"one-frameshift", gene.getAbstractGene(), frameShiftListText));
 				} else {
 					results.add(newValidationResult(
-						"one-unusual-indel", gene.getName(), unusualIndelsListText));
+						"one-unusual-indel", gene.getAbstractGene(), unusualIndelsListText));
 				}
 
 			}

@@ -17,12 +17,12 @@ THRESHOLD_STOP_RATE_FOR_ONE_IN_TEN_THOUSANDS = 0.3
 
 
 def main():
-    if len(sys.argv) != 6:
-        print('Usage: {} <ALL_HM_JSON> <APOBEC_JSON> <APOBEC_DRM_JSON> '
-              '<APOBEC_CSV> <APOBEC_DRM_CSV>',
+    if len(sys.argv) != 7:
+        print('Usage: {} <SPECIES> <ALL_HM_JSON> <APOBEC_JSON> '
+              '<APOBEC_DRM_JSON> <APOBEC_CSV> <APOBEC_DRM_CSV>',
               file=sys.stderr)
         exit(1)
-    hm_input, hm_out, hmdrm_out, hm_csv, hmdrm_csv = sys.argv[1:]
+    species, hm_input, hm_out, hmdrm_out, hm_csv, hmdrm_csv = sys.argv[1:]
     with open(hm_input) as fp:
         hmdata = json.load(fp)
 
@@ -41,15 +41,23 @@ def main():
                 if r['mutated_aa_prevalence'] <=
                 THRESHOLD_MAX_MUTATED_AA_PCNT]
     print('Removed by step 3a1:', len(step_3a0) - len(step_3a1))
-    step_3a2 = [r for r in step_3a1
-                if max(
-                    r['mutated_codon_prevalence_A'] or 0,
-                    r['mutated_codon_prevalence_B'] or 0,
-                    r['mutated_codon_prevalence_C'] or 0,
-                    r['mutated_codon_prevalence_CRF01_AE'] or 0,
-                    r['mutated_codon_prevalence_CRF02_AG'] or 0,
-                ) <=
-                THRESHOLD_MUTATED_CODON_PCNT_MAJOR_SUBTYPE]
+    if species == 'HIV1':
+        step_3a2 = [r for r in step_3a1
+                    if max(
+                        r['mutated_codon_prevalence_A'] or 0,
+                        r['mutated_codon_prevalence_B'] or 0,
+                        r['mutated_codon_prevalence_C'] or 0,
+                        r['mutated_codon_prevalence_CRF01_AE'] or 0,
+                        r['mutated_codon_prevalence_CRF02_AG'] or 0,
+                    ) <=
+                    THRESHOLD_MUTATED_CODON_PCNT_MAJOR_SUBTYPE]
+    else:
+        step_3a2 = [r for r in step_3a1
+                    if max(
+                        r['mutated_codon_prevalence_Group A'] or 0,
+                        r['mutated_codon_prevalence_Group B'] or 0,
+                    ) <=
+                    THRESHOLD_MUTATED_CODON_PCNT_MAJOR_SUBTYPE]
     print('Removed by step 3a2:', len(step_3a1) - len(step_3a2))
     step_3a3 = [r for r in step_3a2
                 if (r['mutated_codon_prevalence_others'] or 0) <=

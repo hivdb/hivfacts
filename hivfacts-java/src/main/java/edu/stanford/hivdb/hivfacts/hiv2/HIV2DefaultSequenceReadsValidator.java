@@ -348,7 +348,7 @@ public class HIV2DefaultSequenceReadsValidator implements SequenceReadsValidator
 		for (GeneSequenceReads<HIV2> gsr : allGeneSeqReads) {
 			stopCodons = stopCodons.mergesWith(gsr.getMutations().getStopCodons());
 		}
-		String stops = stopCodons.join(", ", Mutation::getHumanFormatWithGene);
+		String stops = stopCodons.join(", ", Mutation::getHumanFormatWithAbstractGene);
 		int numStopCodons = stopCodons.size();
 		if (numStopCodons > 1) {
 			results.add(newValidationResult(
