@@ -323,7 +323,8 @@ public class HIVDefaultSequenceReadsValidator implements SequenceReadsValidator<
 				(double) missingPositions / (double) totalPositions * 100.0,
 				missingPositions == 1 ? "" : "s",
 				missingPositions == 1 ? "is" : "are",
-				leftMost.toString(), rightMost.toString()
+				leftMost.toStringWithAbstractGene(),
+				rightMost.toStringWithAbstractGene()
 			));
 		}
 		if (missingDRPs > 0) {
@@ -334,7 +335,8 @@ public class HIVDefaultSequenceReadsValidator implements SequenceReadsValidator<
 				totalDRPs,
 				missingDRPs == 1 ? "" : "s",
 				missingDRPs == 1 ? "is" : "are",
-				leftMost.toString(), rightMost.toString()
+				leftMost.toStringWithAbstractGene(),
+				rightMost.toStringWithAbstractGene()
 			));
 		}
 		return results;
@@ -348,7 +350,7 @@ public class HIVDefaultSequenceReadsValidator implements SequenceReadsValidator<
 		for (GeneSequenceReads<HIV> gsr : allGeneSeqReads) {
 			stopCodons = stopCodons.mergesWith(gsr.getMutations().getStopCodons());
 		}
-		String stops = stopCodons.join(", ", Mutation::getHumanFormatWithGene);
+		String stops = stopCodons.join(", ", Mutation::getHumanFormatWithAbstractGene);
 		int numStopCodons = stopCodons.size();
 		if (numStopCodons > 1) {
 			results.add(newValidationResult(
@@ -416,7 +418,7 @@ public class HIVDefaultSequenceReadsValidator implements SequenceReadsValidator<
 		}
 		int numApobecDRMs = apobecDRMs.size();
 		if (numAPOBECs > APOBEC_THRESHOLD) {
-			String apobecs = apobecDRMs.join(", ", Mutation::getHumanFormatWithGene);
+			String apobecs = apobecDRMs.join(", ", Mutation::getHumanFormatWithAbstractGene);
 			
 			if (numApobecDRMs > 1) {
 				results.add(newValidationResult(
