@@ -27,6 +27,7 @@ import edu.stanford.hivdb.drugs.DrugClass;
 import edu.stanford.hivdb.genotypes.Genotype;
 import edu.stanford.hivdb.genotypes.GenotypeReference;
 import edu.stanford.hivdb.genotypes.Genotyper;
+import edu.stanford.hivdb.mutations.AAMutation;
 import edu.stanford.hivdb.mutations.AminoAcidPercents;
 import edu.stanford.hivdb.mutations.CodonPercents;
 import edu.stanford.hivdb.mutations.CodonMutation;
@@ -47,12 +48,16 @@ public class HIVDataLoader<T extends Virus<T>> {
 
 	private static final Pattern HIV_MUTATION_PATTERN = Pattern.compile(
 		"^\\s*" +
-		"((?i:PR|RT|IN))?[:_-]?" +
+		"(__ASI__)?((?i:PR|RT|IN))?[:_-]?" +
 		"([AC-IK-NP-TV-Y])?" +
 		"(\\d{1,3})" +
-		"([AC-IK-NP-TV-Z.*]+(?:[#_]?[AC-IK-NP-TV-Z.*]+)?|[id_#~-]|[iI]ns(?:ertion)?|[dD]el(?:etion)?)" +
+		"([AC-IK-NP-TV-Zid.*]+(?:[#_]?[AC-IK-NP-TV-Z.*]+)?|[id_#~-]|[iI]ns(?:ertion)?|[dD]el(?:etion)?)" +
 		"(?::([ACGTRYMWSKBDHVN-]{3})?)?" +
 		"\\s*$");
+	
+	private static final Pattern NON_ASI_AA_PATTERN = Pattern.compile(
+		"^([AC-IK-NP-TV-Z.*]+(?:[#_]?[AC-IK-NP-TV-Z.*]+)?|[id_#~-]|[iI]ns(?:ertion)?|[dD]el(?:etion)?)$"
+	);
 
 	protected static String loadResource(String resPath) {
 		try (
@@ -436,7 +441,7 @@ public class HIVDataLoader<T extends Virus<T>> {
 		Matcher m = HIV_MUTATION_PATTERN.matcher(mutText);
 		if (m.matches()) {
 			try {
-				gene = getGene(MAIN_STRAIN + m.group(1).toUpperCase());
+				gene = getGene(MAIN_STRAIN + m.group(2).toUpperCase());
 			} catch (NullPointerException e) {
 				throw new Mutation.InvalidMutationException(
 					"Gene is not specified and also not found in the " +
@@ -457,11 +462,12 @@ public class HIVDataLoader<T extends Virus<T>> {
 	
 	public Mutation<T> parseMutationString(Gene<T> defaultGene, String mutText) {
 		Matcher m = HIV_MUTATION_PATTERN.matcher(mutText);
-		CodonMutation<T> mut = null;
+		Mutation<T> mut = null;
 		if (m.matches()) {
 			Gene<T> gene;
+			boolean isASI = m.group(1).equals("__ASI__");
 			try {
-				gene = getGene(MAIN_STRAIN + m.group(1).toUpperCase());
+				gene = getGene(MAIN_STRAIN + m.group(2).toUpperCase());
 			} catch (NullPointerException e) {
 				if (defaultGene == null) {
 					throw new Mutation.InvalidMutationException(
@@ -474,11 +480,21 @@ public class HIVDataLoader<T extends Virus<T>> {
 					gene = defaultGene;
 				}
 			}
-			int pos = Integer.parseInt(m.group(3));
-			String aas = AAUtils.normalizeAAs(m.group(4));
-			String triplet = m.group(5);
+			int pos = Integer.parseInt(m.group(4));
+			String aas = m.group(5);
+			if (!isASI && !NON_ASI_AA_PATTERN.matcher(aas).matches()) {
+				throw new Mutation.InvalidMutationException(
+					"Tried to parse mutation string using invalid parameters: " + mutText);
+			}
+			aas = AAUtils.normalizeAAs(aas);
+			String triplet = m.group(6);
 			if (triplet == null) triplet = "";
-			mut = new CodonMutation<>(gene, pos, aas, triplet, "", 0xff);
+			if (isASI) {
+				mut = new AAMutation<>(gene, pos, aas.toCharArray());
+			}
+			else {
+				mut = new CodonMutation<>(gene, pos, aas, triplet, "", 0xff);
+			}
 		} else {
 			throw new Mutation.InvalidMutationException(
 				"Tried to parse mutation string using invalid parameters: " + mutText);
