@@ -465,7 +465,7 @@ public class HIVDataLoader<T extends Virus<T>> {
 		Mutation<T> mut = null;
 		if (m.matches()) {
 			Gene<T> gene;
-			boolean isASI = m.group(1).equals("__ASI__");
+			boolean isASI = m.group(1) == null ? false : m.group(1).equals("__ASI__");
 			try {
 				gene = getGene(MAIN_STRAIN + m.group(2).toUpperCase());
 			} catch (NullPointerException e) {
