@@ -24,7 +24,7 @@ QUERY_TBL_CMTS_HIV1 = (
 
 QUERY_TBL_CMTS_HIV2 = (
     'SELECT CommentName, DrugClass, ConditionType, ConditionValue, Comment '
-    "FROM tblConditionalCommentsWithVersions WHERE Version='V9_0a1' "
+    "FROM tblConditionalCommentsWithVersions WHERE Version='V9_0a3' "
     'ORDER BY CommentName'
 )
 

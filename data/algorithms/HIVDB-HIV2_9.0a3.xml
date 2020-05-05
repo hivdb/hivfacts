@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE ALGORITHM SYSTEM "https://cms.hivdb.org/prod/downloads/asi/ASI2.2.dtd">
+<ALGORITHM>
+  <ALGNAME>HIVDB-HIV2</ALGNAME>
+  <ALGVERSION>9.0a3</ALGVERSION>
+  <ALGDATE>2020-05-04</ALGDATE>
+  <DEFINITIONS>
+    <GENE_DEFINITION>
+      <NAME>PR</NAME>
+      <DRUGCLASSLIST>PI</DRUGCLASSLIST>
+    </GENE_DEFINITION>
+    <GENE_DEFINITION>
+      <NAME>RT</NAME>
+      <DRUGCLASSLIST>NRTI</DRUGCLASSLIST>
+    </GENE_DEFINITION>
+    <GENE_DEFINITION>
+      <NAME>IN</NAME>
+      <DRUGCLASSLIST>INSTI</DRUGCLASSLIST>
+    </GENE_DEFINITION>
+    <LEVEL_DEFINITION>
+      <ORDER>1</ORDER>
+      <ORIGINAL>Susceptible</ORIGINAL>
+      <SIR>S</SIR>
+    </LEVEL_DEFINITION>
+    <LEVEL_DEFINITION>
+      <ORDER>2</ORDER>
+      <ORIGINAL>Potential Low-Level Resistance</ORIGINAL>
+      <SIR>S</SIR>
+    </LEVEL_DEFINITION>
+    <LEVEL_DEFINITION>
+      <ORDER>3</ORDER>
+      <ORIGINAL>Low-Level Resistance</ORIGINAL>
+      <SIR>I</SIR>
+    </LEVEL_DEFINITION>
+    <LEVEL_DEFINITION>
+      <ORDER>4</ORDER>
+      <ORIGINAL>Intermediate Resistance</ORIGINAL>
+      <SIR>I</SIR>
+    </LEVEL_DEFINITION>
+    <LEVEL_DEFINITION>
+      <ORDER>5</ORDER>
+      <ORIGINAL>High-Level Resistance</ORIGINAL>
+      <SIR>R</SIR>
+    </LEVEL_DEFINITION>
+    <DRUGCLASS>
+      <NAME>NRTI</NAME>
+      <DRUGLIST>ABC,AZT,D4T,DDI,FTC,3TC,TDF</DRUGLIST>
+    </DRUGCLASS>
+    <DRUGCLASS>
+      <NAME>PI</NAME>
+      <DRUGLIST>ATV/r,DRV/r,FPV/r,IDV/r,LPV/r,NFV,SQV/r,TPV/r</DRUGLIST>
+    </DRUGCLASS>
+    <DRUGCLASS>
+      <NAME>INSTI</NAME>
+      <DRUGLIST>BIC,DTG,EVG,RAL</DRUGLIST>
+    </DRUGCLASS>
+    <GLOBALRANGE><![CDATA[(-INF TO 9 => 1,  10 TO 14 => 2,  15 TO 29 => 3,  30 TO 59 => 4,  60 TO INF => 5)]]></GLOBALRANGE>
+    <COMMENT_DEFINITIONS>
+      <COMMENT_STRING id="HIV2AIN118R">
+        <TEXT><![CDATA[G118R is an uncommon nonpolymorphtic HIV-2-associated drug-resistance mutation which reduces susceptibility to multiple INSTIs.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2AIN121Y">
+        <TEXT><![CDATA[F121Y is an uncommon nonpolymorphic HIV-1-associated drug-resistance mutation which has not yet been reported in HIV-2 infected patients.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2AIN140SAC">
+        <TEXT><![CDATA[G140S/A are common nonpolymorphic HIV-2 associated drug-resistance mutation that usually occur in combination with Q148 mutations.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2AIN143CRGH">
+        <TEXT><![CDATA[Y143C/R/G/H are non-polymorphic HIV-2-associated drug-resistance mutations which reduce susceptibility to RAL. In combination with other mutations, they may also reduce susceptibility to EVG.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2AIN147G">
+        <TEXT><![CDATA[S147G is a non-polymorphic HIV-1-associated drug-resistance mutation that has also been reported in INSTI-experienced persons.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2AIN148HKR">
+        <TEXT><![CDATA[Q148H/K/R are nonpolymorphic HIV-2 associated drug-resistance mutations, which reduce susceptibilit to each of the INSTIs. Q148R and Q148K are associated with greater levels of reduced susceptibility than Q148H. G140 mutations contribute to reduced susceptibility.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2AIN153G">
+        <TEXT><![CDATA[A153G is a nonpolymorphic HIV-2 mutation that is selected by INSTIs usually in combination with N155H.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2AIN155H">
+        <TEXT><![CDATA[N155H is a nonpolymorphic HIV-2 associated drug-resistance mutation which redu es susceptibility to RAL and EVG. It contributes reduced susceptibility to DTG and probably BIC in combination with other drug-resistance mutations.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2AIN231_">
+        <TEXT><![CDATA[Among HIV-2 isolates, amino acid insertions at position 231 are selected by INSTIs and associated with markedly reduced INSTI susceptibility.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2AIN263K">
+        <TEXT><![CDATA[R263K is a nonpolymorphic HIV-2-associated drug-resistance mutation which has so far been rarely reported in HIV-2 infected persons. It reduces susceptibility to DTG, BIC, and probably also to EVG and RAL.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2AIN51Y">
+        <TEXT><![CDATA[H51Y is an uncommon HIV-1-associated drug-resistance mutation which has not yet been reported in INSTI-treated HIV-2 infected persons.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2AIN66AIK">
+        <TEXT><![CDATA[T66AIK are HIV-1-associated drug-resistance mutation which have not yet been reported in HIV-2 infected patients.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2AIN84V">
+        <TEXT><![CDATA[I84V is a polymorphic HIV-2 associated mutation that occurs significantly more commonly in INSTI-experienced compared with INSTI-naïve persons.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2AIN91R">
+        <TEXT><![CDATA[Q91R is a nonpolymorphic HIV-2 associated mutation that occurs significantly more commonly in INSTI-experienced compared with INSTI-naïve persons.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2AIN92GQ">
+        <TEXT><![CDATA[E92Q/G are nonpolymorphic HIV-2 associated drug resistance mutations that reduce susceptibility to RAL and EVG. They may contribute to reduced DTG and BIC susceptibility in combination with other drug-resistance mutations.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2AIN97A">
+        <TEXT><![CDATA[T97A is a common nonpolymorphic common INSTI-selected mutation. In combination with other DRMs, it contributes reduced susceptibility to RAL, EVG, and possibly DTG and BIC.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR10I">
+        <TEXT><![CDATA[V10I is a minimally polymorphic mutation that occurs significantly more commonly in PI-treated than PI-naïve HIV-2 isolates.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR23I">
+        <TEXT><![CDATA[L23I is an uncommon non-polymorphic HIV-1 associated PI-resistance mutation that has not been reported in HIV-2 isolates.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR30N">
+        <TEXT><![CDATA[D30N is a non-polymorphic mutation that causes high-level HIV-1 resistance to NFV. It has rarely been reported in HIV-2 isolates.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR33I">
+        <TEXT><![CDATA[V33I is a minimally polymorphic mutation that occurs significantly more commonly in PI-treated than PI-naïve HIV-2 isolates.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR45R">
+        <TEXT><![CDATA[K45R is a minimally polymorphic mutation that occurs significantly more commonly in PI-treated than PI-naïve HIV-2 isolates.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR47A">
+        <TEXT><![CDATA[V47A is a common non-polymorphic PI-selected HIV-2 mutation that reduces HIV-2 susceptibility to LPV and other PIs.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR48VA">
+        <TEXT><![CDATA[G48VA are non-polymorphic PI-selected HIV-2 mutations.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR50L">
+        <TEXT><![CDATA[I50L is a non-polymorphic HIV-2 mutation selected by ATV. It causes high-level resistance to ATV and increases susceptibility to most of the remaining PIs.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR50V">
+        <TEXT><![CDATA[I50V is a non-polymorphic PI-selected mutation that reduces HIV-2 susceptibility to LPV and other PIs.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR53LY">
+        <TEXT><![CDATA[F53LY are nonpolymorphic mutations that have rarely been reported in treated HIV-2 isolates.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR54L">
+        <TEXT><![CDATA[I54L is a nonpolymorphic PI-selected mutation.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR54M">
+        <TEXT><![CDATA[I54M is a very common non-polymorphic PI-selected mutation. It is associated with reduced HIV-2 susceptibility to multiple Pis.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR56V">
+        <TEXT><![CDATA[T56V is a common nonpolymrophic mutation that occurs significantly more commonly in HIV-2 isolates from PI-treated vs. PI-naïve isolates.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR62A">
+        <TEXT><![CDATA[V62A is a nonpolymorphic mutation that occurs significantly more commonly in PI-treated than PI-naïve HIV-2 isolates. It has been selected in vitro by IDV and been shown to contribute reduced suscptibility to LPV in combination with other DRMs.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR64V">
+        <TEXT><![CDATA[I64V is a polymorphic mutation that occurs singnificatnly more commonly in PI-treated than PI-naïve HIV-2 isolates.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR71I">
+        <TEXT><![CDATA[V71I is a common polymorphic mutation that occurs significantly more commonly in PI-treated than PI-naïve HIV-2 isolates.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR73G">
+        <TEXT><![CDATA[A73G is a nonpolymorphic mutation that occurs significantly more commonoly in PI-treated than PI-naïve HIV-2 isolates.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR82F">
+        <TEXT><![CDATA[I82F is a common non-polymorphic PI-selected HIV-2 mutation that reduces HIV-2 susceptibility to LPV and other PIs.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR82LM">
+        <TEXT><![CDATA[I82LM are nonpolymorphic PI-selected HIV-2 mutations.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR84V">
+        <TEXT><![CDATA[I84V is a non-polymorphic PI-selected HIV-2 mutation associated with reduced susceptibility to multiple Pis.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR85L">
+        <TEXT><![CDATA[F85L is a non-polymorphic PI-selected HIV-2 mutation.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR88D">
+        <TEXT><![CDATA[N88D is a nonpolymorphic HIV-1-associated PI resistance mutation that has rarely been reported in HIV-2 isolatea.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR90M">
+        <TEXT><![CDATA[L90M is a non-polymorphic PI-selected HIV-2 mutation.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2APR99F">
+        <TEXT><![CDATA[L99F is a polymorphic HIV-2 mutation that occurs significantly more commonly in PI-treated than PI-naïve persons. It has been selected in vitro by IDV and been shown to contribute reduced suscptibility to LPV in combination with other DRMs.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART111I">
+        <TEXT><![CDATA[V111I is a common polymorphic mutation that occurs significantly more commonly in HIV-2 sequences from NRTI-treated than NRTI-naïve persons. It appears to increase the replication fitness of HIV-2 strains containing other HIV-2-associated NRTI-resistance mutations.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART115F">
+        <TEXT><![CDATA[Y115F is an HIV-1-associated NRTI-resistance mutation that also reduces HIV-2 susceptibility to each of the NRTIs when it occurs in combination with K65R.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART116Y">
+        <TEXT><![CDATA[F116Y is an accessory HIV-1-associated mutation that usually occurs in combination with the multi-NRTI resistance mutation Q151M. It has not been associated with NRTI therapy in HIV-2 isolates.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART151M">
+        <TEXT><![CDATA[Q151M causes high-level resistance to each of the NRTIs except possibly TXF.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART184VI">
+        <TEXT><![CDATA[M184V/I cause high-level in vitro resistance to XTC and low-level resistance to ABC. However, M184V/I are not contraindications to continued treatment with 3TC or FTC because they increase susceptibility to TXF and are associated with clinically significant reductions in HIV-1 replication.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART210ACDEFGHIKLMPQRSTVWY_-">
+        <TEXT><![CDATA[210W is an HIV-1 associated TAM. The HIV-2 consensus at this position is N. Mutations at this position have not been selected by NRTIs in HIV-2 isolates.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART214L">
+        <TEXT><![CDATA[F214L is a slighly polymorphic HIV-2 mutation that occurs with increased frequency in NRTI-treated persons.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART215YF">
+        <TEXT><![CDATA[S215Y/F occur significantly more commonly in HIV-2 sequences from NRTI-treated than NRTI-naïve persons but their effects on HIV-2 susceptibility to NRTIs is uncertain.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART219ACDFGHIKLMNPQRSTVWY_-">
+        <TEXT><![CDATA[219QENR are HIV-1 associated TAMs. The HIV-2 consensus at this position is E. K219D has been observed in several NRTI-treated HIV-2-infected persons.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART40R">
+        <TEXT><![CDATA[K40R is a nonpolymorphic mutation that occurs significantly more commonly in HIV-2 sequences from NRTI-treated than NRTI-naïve persons. It usually occurs in combination with S215YF mutations. Its effect on HIV-2 NRTI susceptibility is not known.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART41L">
+        <TEXT><![CDATA[M41L is an HIV-1 associated TAM that has not been reported in NRTI-treated HIV-2-infected persons and has not been associated with reduced HIV-2 NRTI susceptibility.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART62V">
+        <TEXT><![CDATA[A62V is a nonpolymoprhic HIV-1 associated mutation that also occurs significantly more commonly in HIV-2 sequences from NRTI-treated persons.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART65EN">
+        <TEXT><![CDATA[K65R occurs significantly more commonly in HIV-2 sequences from NRTI-treated than NRTI-naïve persons and is associated with reduced susceptibility to each of the NRTIs except possibly AZT. K65N/E are mutations that have rarely been selected by TDF, ABC, and d4T in HIV-1 isolates and have not been reported in HIV-2 isolates.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART65R">
+        <TEXT><![CDATA[K65R occurs significantly more commonly in HIV-2 sequences from NRTI-treated than NRTI-naïve persons and is associated with reduced susceptibility to each of the NRTIs except possibly AZT.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART67NGESTH">
+        <TEXT><![CDATA[D67 mutations are commonly occurring HIV-1-assocated TAMs that are rarely selected in HIV-2 isolates.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART69-">
+        <TEXT><![CDATA[Deletions in the Beta3-Beta4 loop are associated with reduced HIV-1 susceptibility to each of the NRTIs but have not been reported in HIV-2 isolates.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART69S">
+        <TEXT><![CDATA[N69S is a slighly polymorphic HIV-2 mutation that occurs with increased frequency in NRTI-treated persons. Its effect on HIV-2 NRTI susceptibility is not known.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART69_">
+        <TEXT><![CDATA[Insertions in the Beta3-Beta4 loop are associated with reduced HIV-1 susceptibility to each of the NRTIs but have not been reported in HIV-2 isolates.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART70N">
+        <TEXT><![CDATA[K70N is a nonpolymorphic HIV-1 associated mutation, which is selected by TDF and ABC. It has been reported in HIV-2 sequences but its effect on HIV-2 NRTI susceptibility is not known.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART70R">
+        <TEXT><![CDATA[K70R is a nonpolymorphic HIV-1 associated mutations. It occurs significantly more commonly in HIV-2 sequences from NRTI-treated than NRTI-naïve persons but its effects on HIV-2 susceptibility to NRTIs is not known.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART74VI">
+        <TEXT><![CDATA[L74VI are common HIV-1-associated NRTI-resistance mutations that have rarely been reported in HIV-2 sequences.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART75V">
+        <TEXT><![CDATA[I75V occurs significantly more commonly in HIV-2 sequences from NRTI-treated than NRTI-naïve persons but its effects on HIV-2 susceptibility to NRTIs is uncertain.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="HIV2ART77L">
+        <TEXT><![CDATA[F77L is an accessory HIV-1-associated mutation that usually occurs in combination with the multi-NRTI resistance mutation Q151M. It has not been associated with NRTI therapy in HIV-2 isolates.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+    </COMMENT_DEFINITIONS>
+  </DEFINITIONS>
+  <DRUG>
+    <NAME>ABC</NAME>
+    <FULLNAME>abacavir</FULLNAME>
+  </DRUG>
+  <DRUG>
+    <NAME>AZT</NAME>
+    <FULLNAME>zidovudine</FULLNAME>
+  </DRUG>
+  <DRUG>
+    <NAME>D4T</NAME>
+    <FULLNAME>stavudine</FULLNAME>
+  </DRUG>
+  <DRUG>
+    <NAME>DDI</NAME>
+    <FULLNAME>didanosine</FULLNAME>
+  </DRUG>
+  <DRUG>
+    <NAME>FTC</NAME>
+    <FULLNAME>emtricitabine</FULLNAME>
+  </DRUG>
+  <DRUG>
+    <NAME>3TC</NAME>
+    <FULLNAME>lamivudine</FULLNAME>
+  </DRUG>
+  <DRUG>
+    <NAME>TDF</NAME>
+    <FULLNAME>tenofovir</FULLNAME>
+  </DRUG>
+  <DRUG>
+    <NAME>ATV/r</NAME>
+    <FULLNAME>atazanavir/r</FULLNAME>
+  </DRUG>
+  <DRUG>
+    <NAME>DRV/r</NAME>
+    <FULLNAME>darunavir/r</FULLNAME>
+  </DRUG>
+  <DRUG>
+    <NAME>FPV/r</NAME>
+    <FULLNAME>fosamprenavir/r</FULLNAME>
+  </DRUG>
+  <DRUG>
+    <NAME>IDV/r</NAME>
+    <FULLNAME>indinavir/r</FULLNAME>
+  </DRUG>
+  <DRUG>
+    <NAME>LPV/r</NAME>
+    <FULLNAME>lopinavir/r</FULLNAME>
+  </DRUG>
+  <DRUG>
+    <NAME>NFV</NAME>
+    <FULLNAME>nelfinavir</FULLNAME>
+  </DRUG>
+  <DRUG>
+    <NAME>SQV/r</NAME>
+    <FULLNAME>saquinavir/r</FULLNAME>
+  </DRUG>
+  <DRUG>
+    <NAME>TPV/r</NAME>
+    <FULLNAME>tipranavir/r</FULLNAME>
+  </DRUG>
+  <DRUG>
+    <NAME>BIC</NAME>
+    <FULLNAME>bictegravir</FULLNAME>
+  </DRUG>
+  <DRUG>
+    <NAME>DTG</NAME>
+    <FULLNAME>dolutegravir</FULLNAME>
+  </DRUG>
+  <DRUG>
+    <NAME>EVG</NAME>
+    <FULLNAME>elvitegravir</FULLNAME>
+  </DRUG>
+  <DRUG>
+    <NAME>RAL</NAME>
+    <FULLNAME>raltegravir</FULLNAME>
+  </DRUG>
+  <MUTATION_COMMENTS>
+    <GENE>
+      <NAME>IN</NAME>
+      <RULE>
+        <CONDITION>118R</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2AIN118R"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>121Y</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2AIN121Y"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>140SAC</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2AIN140SAC"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>143CRGH</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2AIN143CRGH"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>147G</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2AIN147G"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>148HKR</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2AIN148HKR"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>153G</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2AIN153G"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>155H</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2AIN155H"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>231i</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2AIN231_"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>263K</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2AIN263K"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>51Y</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2AIN51Y"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>66AIK</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2AIN66AIK"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>84V</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2AIN84V"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>91R</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2AIN91R"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>92GQ</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2AIN92GQ"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>97A</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2AIN97A"/>
+        </ACTIONS>
+      </RULE>
+    </GENE>
+    <GENE>
+      <NAME>PR</NAME>
+      <RULE>
+        <CONDITION>10I</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR10I"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>23I</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR23I"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>30N</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR30N"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>33I</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR33I"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>45R</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR45R"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>47A</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR47A"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>48VA</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR48VA"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>50L</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR50L"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>50V</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR50V"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>53LY</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR53LY"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>54L</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR54L"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>54M</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR54M"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>56V</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR56V"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>62A</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR62A"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>64V</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR64V"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>71I</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR71I"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>73G</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR73G"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>82F</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR82F"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>82LM</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR82LM"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>84V</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR84V"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>85L</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR85L"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>88D</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR88D"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>90M</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR90M"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>99F</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2APR99F"/>
+        </ACTIONS>
+      </RULE>
+    </GENE>
+    <GENE>
+      <NAME>RT</NAME>
+      <RULE>
+        <CONDITION>111I</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART111I"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>115F</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART115F"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>116Y</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART116Y"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>151M</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART151M"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>184VI</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART184VI"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>210ACDEFGHIKLMPQRSTVWYid</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART210ACDEFGHIKLMPQRSTVWY_-"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>214L</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART214L"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>215YF</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART215YF"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>219ACDFGHIKLMNPQRSTVWYid</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART219ACDFGHIKLMNPQRSTVWY_-"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>40R</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART40R"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>41L</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART41L"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>62V</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART62V"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>65EN</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART65EN"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>65R</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART65R"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>67NGESTH</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART67NGESTH"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>69d</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART69-"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>69S</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART69S"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>69i</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART69_"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>70N</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART70N"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>70R</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART70R"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>74VI</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART74VI"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>75V</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART75V"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>77L</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="HIV2ART77L"/>
+        </ACTIONS>
+      </RULE>
+    </GENE>
+  </MUTATION_COMMENTS>
+  <RESULT_COMMENTS/>
+</ALGORITHM>

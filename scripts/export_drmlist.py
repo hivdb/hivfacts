@@ -31,7 +31,7 @@ QUERY_TBL_COMPSCORES = (
 QUERY_HIV2_DRMS = (
     "SELECT DrugClass, Gene, Pos, AAs "
     "FROM tblMutationTypesWithVersions WHERE "
-    "Version='V9_0a1' AND Type IN ('Major', 'Accessory')"
+    "Version='V9_0a3' AND Type IN ('Major', 'Accessory')"
     'GROUP BY DrugClass, Gene, Pos, AAs ORDER BY Gene, DrugClass, Pos, AAs'
 )
 GENE_ORDER = {

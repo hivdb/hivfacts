@@ -30,7 +30,7 @@ QUERY_HIV1_MUTTYPES = (
 QUERY_HIV2_MUTTYPES = (
     "SELECT Strain, Gene, DrugClass, Pos, AAs, Type, IsUnusual "
     "FROM tblMutationTypesWithVersions WHERE "
-    "Version='V9_0a1' "
+    "Version='V9_0a3' "
     "ORDER BY Gene, DrugClass, Pos, "
     "(CASE Type WHEN 'Major' THEN 0"
     " WHEN 'Accessory' THEN 1"
