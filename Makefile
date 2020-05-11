@@ -1,6 +1,9 @@
 refresh-yamls:
 	@pipenv run python scripts/yaml2json.py
 
+refresh-csvs:
+	@scripts/update-csvs.sh
+
 refresh-drmlist:
 	@scripts/update-drmlist.sh
 

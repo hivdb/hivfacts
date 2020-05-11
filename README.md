@@ -5,7 +5,7 @@
 [![install with pypi](https://img.shields.io/pypi/v/hivfacts.svg)](https://pypi.python.org/pypi/hivfacts)
 [![donation](https://img.shields.io/badge/Donate-Stanford_Giving-green.svg)](https://giving.stanford.edu/goto/shafergift)
 
-Amino acid / codon prevalence and classification data of HIV-1 pol.
+Structured knowledge base of HIV-1/HIV-2.
 
 ## Unusual Mutations
 
