@@ -7,7 +7,7 @@ plugins {
 }
 
 group = 'edu.stanford.hivdb.hivfacts'
-version = '2019.8'
+version = '2020.4'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
