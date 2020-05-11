@@ -1,7 +1,6 @@
 # HIVFacts
 
-[![Travis CI](https://api.travis-ci.org/hivdb/hivfacts.svg?branch=master)](https://travis-ci.org/hivdb/hivfacts)
-[![codecov](https://codecov.io/gh/hivdb/hivfacts/branch/master/graph/badge.svg)](https://codecov.io/gh/hivdb/hivfacts)
+[![Travis CI](https://api.travis-ci.org/hivdb/sierra.svg?branch=master)](https://travis-ci.org/hivdb/sierra)
 [![Download Java](https://api.bintray.com/packages/hivdb/hivdb/hivfacts/images/download.svg)](https://bintray.com/hivdb/hivdb/hivfacts/_latestVersion)
 [![install with pypi](https://img.shields.io/pypi/v/hivfacts.svg)](https://pypi.python.org/pypi/hivfacts)
 [![donation](https://img.shields.io/badge/Donate-Stanford_Giving-green.svg)](https://giving.stanford.edu/goto/shafergift)
