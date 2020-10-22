@@ -118,13 +118,13 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 				     "There is %d unusual mutation at a drug-resistance position in %s: %s.");
 
 		levels.put("severe-APOBEC", ValidationLevel.SEVERE_WARNING);
-		messages.put("severe-APOBEC", "The following %d APOBEC muts were present in the sequence.%s");
+		messages.put("severe-APOBEC", "The following %d APOBEC muts were present in the sequence: %s.%s");
 
 		levels.put("definite-APOBEC", ValidationLevel.WARNING);
-		messages.put("definite-APOBEC", "The following %d APOBEC muts were present in the sequence.%s");
+		messages.put("definite-APOBEC", "The following %d APOBEC muts were present in the sequence: %s.%s");
 
 		levels.put("possible-APOBEC-influence", ValidationLevel.NOTE);
-		messages.put("possible-APOBEC-influence", "The following %d APOBEC muts were present in the sequence.%s");
+		messages.put("possible-APOBEC-influence", "The following %d APOBEC muts were present in the sequence: %s.%s");
 
 		levels.put("multiple-apobec-at-DRP", ValidationLevel.SEVERE_WARNING);
 		messages.put("multiple-apobec-at-DRP",
@@ -410,6 +410,16 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		List<ValidationResult> results = new ArrayList<>();
 		int numApobecMuts = apobecs.size();
 		int numApobecDRMs = apobecDRMs.size();
+		String apobecMutsText = (
+			apobecs.groupByGene()
+			.entrySet()
+			.stream()
+			.map(e -> String.format(
+				"%s: %s", e.getKey().getAbstractGene(),
+				e.getValue().join(", ")
+			))
+			.collect(Collectors.joining("; "))
+		);
 		String extraCmt = "";
 		
 		if (numApobecDRMs > 0) {
@@ -423,15 +433,16 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 					"%s: %s", e.getKey().getAbstractGene(),
 					e.getValue().join(", ")
 				))
+				.collect(Collectors.joining("; "))
 			);
 		}
 
 		if (numApobecMuts > 4) {
-			results.add(newValidationResult("severe-APOBEC", numApobecMuts, extraCmt));
+			results.add(newValidationResult("severe-APOBEC", numApobecMuts, apobecMutsText, extraCmt));
 		} else if (numApobecMuts > 2) {
-			results.add(newValidationResult("definite-APOBEC", numApobecMuts, extraCmt));
+			results.add(newValidationResult("definite-APOBEC", numApobecMuts, apobecMutsText, extraCmt));
 		} else if (numApobecMuts == 2) {
-			results.add(newValidationResult("possible-APOBEC-influence", numApobecMuts, extraCmt));
+			results.add(newValidationResult("possible-APOBEC-influence", numApobecMuts, apobecMutsText, extraCmt));
 		}
 
 		MutationSet<HIV> apobecMutsAtDRP = apobecs.getAtDRPMutations();
