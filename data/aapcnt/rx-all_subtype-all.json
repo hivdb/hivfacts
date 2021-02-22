@@ -10906,8 +10906,8 @@
     "percent": 6.965243435258063e-05,
     "count": 15,
     "total": 215355,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "PR",
@@ -10966,8 +10966,8 @@
     "percent": 7.893942559959137e-05,
     "count": 17,
     "total": 215355,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "PR",
@@ -10976,8 +10976,8 @@
     "percent": 4.1791460611548374e-05,
     "count": 9,
     "total": 215355,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "PR",
@@ -38396,8 +38396,8 @@
     "percent": 2.2953152615511742e-05,
     "count": 5,
     "total": 217835,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "RT",
@@ -38856,8 +38856,8 @@
     "percent": 7.360552041403105e-05,
     "count": 16,
     "total": 217375,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "RT",
@@ -57366,8 +57366,8 @@
     "percent": 3.6383978315148924e-05,
     "count": 8,
     "total": 219877,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "RT",
@@ -64216,8 +64216,8 @@
     "percent": 9.177132421432275e-05,
     "count": 20,
     "total": 217933,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "RT",
@@ -64226,8 +64226,8 @@
     "percent": 1.3765698632148412e-05,
     "count": 3,
     "total": 217933,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "RT",
@@ -64326,8 +64326,8 @@
     "percent": 5.506279452859365e-05,
     "count": 12,
     "total": 217933,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "RT",
@@ -66406,8 +66406,8 @@
     "percent": 8.257448907034887e-05,
     "count": 18,
     "total": 217985,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "RT",
@@ -74926,8 +74926,8 @@
     "percent": 2.3559790035151207e-05,
     "count": 5,
     "total": 212226,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "RT",
@@ -172676,8 +172676,8 @@
     "percent": 3.404834865509023e-05,
     "count": 1,
     "total": 29370,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "IN",
@@ -183686,8 +183686,8 @@
     "percent": 6.808510638297873e-05,
     "count": 2,
     "total": 29375,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "IN",
@@ -184236,8 +184236,8 @@
     "percent": 3.4044871140162734e-05,
     "count": 1,
     "total": 29373,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "IN",
@@ -184316,8 +184316,8 @@
     "percent": 6.808974228032547e-05,
     "count": 2,
     "total": 29373,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "IN",
@@ -185496,8 +185496,8 @@
     "percent": 6.811525100469996e-05,
     "count": 2,
     "total": 29362,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "IN",
@@ -186166,8 +186166,8 @@
     "percent": 0.0,
     "count": 0,
     "total": 29251,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "IN",
@@ -186576,8 +186576,8 @@
     "percent": 6.806656910458428e-05,
     "count": 2,
     "total": 29383,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "IN",
@@ -186726,8 +186726,8 @@
     "percent": 6.806656910458428e-05,
     "count": 2,
     "total": 29383,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "IN",
@@ -187156,8 +187156,8 @@
     "percent": 6.821049759557996e-05,
     "count": 2,
     "total": 29321,
-    "reason": "PCNT",
-    "isUnusual": true
+    "reason": "DRM",
+    "isUnusual": false
   },
   {
     "gene": "IN",

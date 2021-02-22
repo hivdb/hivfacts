@@ -87,6 +87,10 @@
   fullName: bictegravir
   displayAbbr: BIC
   drugClass: INSTI
+- name: CAB
+  fullName: cabotegravir
+  displayAbbr: CAB
+  drugClass: INSTI
 - name: DTG
   fullName: dolutegravir
   displayAbbr: DTG
