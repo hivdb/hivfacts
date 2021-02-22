@@ -4,12 +4,14 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-
-[packages]
+click = "*"
+sqlalchemy = "*"
 pyyaml = "*"
 pymysql = "*"
 lxml = "*"
-hivdb-graphql = {git = "ssh://git@github.com/hivdb/hivdb-graphql.git",ref = "0a8533b66fead5bb9b2762e5383d7fd7a54baa70"}
+hivdb-graphql = {editable = true, path = "/Users/philip/gitrepo/hivdb-graphql"}
+
+[packages]
 
 [requires]
 python_version = "3.7"

@@ -2,6 +2,7 @@
 
 BASEDIR=`realpath $(dirname $0)/..`
 mkdir -p $BASEDIR/data/apobecs
+mkdir -p $BASEDIR/local/apobecs
 APOBEC_ALL_JSON_PATH="$BASEDIR/local/apobecs/apobecs_all.json"
 APOBEC_RESULT_JSON="$BASEDIR/data/apobecs/apobecs.json"
 APOBEC_DRM_RESULT_JSON="$BASEDIR/data/apobecs/apobec_drms.json"

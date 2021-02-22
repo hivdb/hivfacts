@@ -949,6 +949,11 @@
     {
       "gene": "IN",
       "position": 121,
+      "aa": "C"
+    },
+    {
+      "gene": "IN",
+      "position": 121,
       "aa": "Y"
     },
     {
@@ -975,6 +980,11 @@
       "gene": "IN",
       "position": 140,
       "aa": "C"
+    },
+    {
+      "gene": "IN",
+      "position": 140,
+      "aa": "R"
     },
     {
       "gene": "IN",

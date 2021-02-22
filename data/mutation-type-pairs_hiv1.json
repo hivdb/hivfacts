@@ -1984,6 +1984,15 @@
     "gene": "IN",
     "drugClass": "INSTI",
     "position": 121,
+    "aas": "C",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 121,
     "aas": "Y",
     "mutationType": "Major",
     "isUnusual": false
@@ -2040,7 +2049,7 @@
     "position": 140,
     "aas": "R",
     "mutationType": "Major",
-    "isUnusual": false
+    "isUnusual": true
   },
   {
     "strain": "HIV1",

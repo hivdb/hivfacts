@@ -1634,6 +1634,13 @@
     "gene": "IN",
     "drugClass": "INSTI",
     "rule": "118R+138AKT",
+    "drug": "CAB",
+    "score": 10
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "118R+138AKT",
     "drug": "DTG",
     "score": 10
   },
@@ -1657,6 +1664,13 @@
     "rule": "138AKT+140ACS",
     "drug": "BIC",
     "score": 10
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "138AKT+140ACS",
+    "drug": "CAB",
+    "score": 15
   },
   {
     "gene": "IN",
@@ -1690,6 +1704,13 @@
     "gene": "IN",
     "drugClass": "INSTI",
     "rule": "138AKT+148HKR",
+    "drug": "CAB",
+    "score": 20
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "138AKT+148HKR",
     "drug": "DTG",
     "score": 10
   },
@@ -1699,6 +1720,13 @@
     "rule": "140ACS+148HKR",
     "drug": "BIC",
     "score": 10
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "140ACS+148HKR",
+    "drug": "CAB",
+    "score": 20
   },
   {
     "gene": "IN",
@@ -1712,6 +1740,13 @@
     "drugClass": "INSTI",
     "rule": "140ACS+148HKR+149A",
     "drug": "BIC",
+    "score": 10
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "140ACS+148HKR+149A",
+    "drug": "CAB",
     "score": 10
   },
   {
@@ -1746,6 +1781,13 @@
     "gene": "IN",
     "drugClass": "INSTI",
     "rule": "143ACGHRS+163R",
+    "drug": "CAB",
+    "score": 5
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "143ACGHRS+163R",
     "drug": "DTG",
     "score": 5
   },
@@ -1767,6 +1809,13 @@
     "gene": "IN",
     "drugClass": "INSTI",
     "rule": "143ACGHRS+230R",
+    "drug": "CAB",
+    "score": 5
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "143ACGHRS+230R",
     "drug": "DTG",
     "score": 5
   },
@@ -1788,63 +1837,98 @@
     "gene": "IN",
     "drugClass": "INSTI",
     "rule": "147G+148HKR",
+    "drug": "CAB",
+    "score": 20
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "147G+148HKR",
     "drug": "DTG",
     "score": 15
   },
   {
     "gene": "IN",
     "drugClass": "INSTI",
-    "rule": "148HKR+155H",
-    "drug": "BIC",
-    "score": 20
-  },
-  {
-    "gene": "IN",
-    "drugClass": "INSTI",
-    "rule": "148HKR+155H",
-    "drug": "DTG",
-    "score": 20
-  },
-  {
-    "gene": "IN",
-    "drugClass": "INSTI",
-    "rule": "148HKR+163KR",
-    "drug": "BIC",
-    "score": 5
-  },
-  {
-    "gene": "IN",
-    "drugClass": "INSTI",
-    "rule": "148HKR+163KR",
-    "drug": "DTG",
-    "score": 5
-  },
-  {
-    "gene": "IN",
-    "drugClass": "INSTI",
-    "rule": "155H+147G",
+    "rule": "147G+155H",
     "drug": "BIC",
     "score": 10
   },
   {
     "gene": "IN",
     "drugClass": "INSTI",
-    "rule": "155H+147G",
+    "rule": "147G+155H",
+    "drug": "CAB",
+    "score": 25
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "147G+155H",
     "drug": "DTG",
     "score": 10
   },
   {
     "gene": "IN",
     "drugClass": "INSTI",
-    "rule": "155H+147G",
+    "rule": "147G+155H",
     "drug": "EVG",
     "score": 10
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "148HKR+155H",
+    "drug": "BIC",
+    "score": 20
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "148HKR+155H",
+    "drug": "CAB",
+    "score": 20
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "148HKR+155H",
+    "drug": "DTG",
+    "score": 20
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "148HKR+163KR",
+    "drug": "BIC",
+    "score": 5
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "148HKR+163KR",
+    "drug": "CAB",
+    "score": 20
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "148HKR+163KR",
+    "drug": "DTG",
+    "score": 5
   },
   {
     "gene": "IN",
     "drugClass": "INSTI",
     "rule": "155H+263K",
     "drug": "BIC",
+    "score": 20
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "155H+263K",
+    "drug": "CAB",
     "score": 20
   },
   {
@@ -1859,6 +1943,13 @@
     "drugClass": "INSTI",
     "rule": "157Q+263K",
     "drug": "BIC",
+    "score": 10
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "157Q+263K",
+    "drug": "CAB",
     "score": 10
   },
   {
@@ -1873,6 +1964,13 @@
     "drugClass": "INSTI",
     "rule": "51Y+263K",
     "drug": "BIC",
+    "score": 10
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "51Y+263K",
+    "drug": "CAB",
     "score": 10
   },
   {
@@ -1894,6 +1992,13 @@
     "drugClass": "INSTI",
     "rule": "74FIM+118R",
     "drug": "BIC",
+    "score": 10
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "74FIM+118R",
+    "drug": "CAB",
     "score": 10
   },
   {
@@ -1923,6 +2028,13 @@
     "rule": "74FIM+143ACGHRS",
     "drug": "BIC",
     "score": 5
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "74FIM+143ACGHRS",
+    "drug": "CAB",
+    "score": 10
   },
   {
     "gene": "IN",
@@ -1943,6 +2055,13 @@
     "drugClass": "INSTI",
     "rule": "74FIM+148HKR",
     "drug": "BIC",
+    "score": 15
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "74FIM+148HKR",
+    "drug": "CAB",
     "score": 15
   },
   {
@@ -1972,6 +2091,13 @@
     "rule": "92Q+155H",
     "drug": "BIC",
     "score": 10
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "92Q+155H",
+    "drug": "CAB",
+    "score": 20
   },
   {
     "gene": "IN",
@@ -1999,6 +2125,13 @@
     "drugClass": "INSTI",
     "rule": "97A+118R",
     "drug": "BIC",
+    "score": 10
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "97A+118R",
+    "drug": "CAB",
     "score": 10
   },
   {
@@ -2026,6 +2159,13 @@
     "gene": "IN",
     "drugClass": "INSTI",
     "rule": "97A+143ACGHRS",
+    "drug": "CAB",
+    "score": 5
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "97A+143ACGHRS",
     "drug": "EVG",
     "score": 5
   },
@@ -2035,6 +2175,13 @@
     "rule": "97A+148HKR",
     "drug": "BIC",
     "score": 15
+  },
+  {
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "rule": "97A+148HKR",
+    "drug": "CAB",
+    "score": 20
   },
   {
     "gene": "IN",
