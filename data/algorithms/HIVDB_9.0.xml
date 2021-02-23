@@ -56,7 +56,7 @@
     </DRUGCLASS>
     <DRUGCLASS>
       <NAME>INSTI</NAME>
-      <DRUGLIST>BIC,DTG,EVG,RAL</DRUGLIST>
+      <DRUGLIST>BIC,CAB,DTG,EVG,RAL</DRUGLIST>
     </DRUGCLASS>
     <GLOBALRANGE><![CDATA[(-INF TO 9 => 1,  10 TO 14 => 2,  15 TO 29 => 3,  30 TO 59 => 4,  60 TO INF => 5)]]></GLOBALRANGE>
     <COMMENT_DEFINITIONS>
@@ -1947,6 +1947,54 @@
                          (92Q AND 155H) => 10,
                          (97A AND 118R) => 10,
                          (97A AND 148HKR) => 15)]]></CONDITION>
+      <ACTIONS>
+        <SCORERANGE>
+          <USE_GLOBALRANGE/>
+        </SCORERANGE>
+      </ACTIONS>
+    </RULE>
+  </DRUG>
+  <DRUG>
+    <NAME>CAB</NAME>
+    <FULLNAME>cabotegravir</FULLNAME>
+    <RULE>
+      <CONDITION><![CDATA[SCORE FROM(51Y => 15,
+                         MAX ( 66I => 10, 66K => 20 ),
+                         MAX ( 92G => 10, 92Q => 15, 92V => 10 ),
+                         118R => 60,
+                         MAX ( 121C => 60, 121Y => 15 ),
+                         MAX ( 138A => 10, 138K => 10, 138T => 10 ),
+                         MAX ( 140A => 10, 140C => 10, 140R => 60, 140S => 10 ),
+                         MAX ( 143A => 10, 143C => 10, 143G => 10, 143H => 10, 143K => 10, 143R => 10, 143S => 10 ),
+                         146P => 30,
+                         147G => 10,
+                         MAX ( 148H => 30, 148K => 50, 148N => 15, 148R => 40 ),
+                         151L => 15,
+                         MAX ( 153F => 25, 153Y => 25 ),
+                         MAX ( 155H => 25, 155S => 15, 155T => 15 ),
+                         230R => 20,
+                         263K => 30,
+                         (118R AND 138AKT) => 10,
+                         (138AKT AND 140ACS) => 15,
+                         (138AKT AND 148HKR) => 20,
+                         (140ACS AND 148HKR) => 20,
+                         (140ACS AND 148HKR AND 149A) => 10,
+                         (143ACGHRS AND 163R) => 5,
+                         (143ACGHRS AND 230R) => 5,
+                         (147G AND 148HKR) => 20,
+                         (147G AND 155H) => 25,
+                         (148HKR AND 155H) => 20,
+                         (148HKR AND 163KR) => 20,
+                         (155H AND 263K) => 20,
+                         (157Q AND 263K) => 10,
+                         (51Y AND 263K) => 10,
+                         (74FIM AND 118R) => 10,
+                         (74FIM AND 143ACGHRS) => 10,
+                         (74FIM AND 148HKR) => 15,
+                         (92Q AND 155H) => 20,
+                         (97A AND 118R) => 10,
+                         (97A AND 143ACGHRS) => 5,
+                         (97A AND 148HKR) => 20)]]></CONDITION>
       <ACTIONS>
         <SCORERANGE>
           <USE_GLOBALRANGE/>
