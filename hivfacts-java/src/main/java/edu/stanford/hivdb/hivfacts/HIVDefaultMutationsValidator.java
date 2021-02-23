@@ -63,10 +63,10 @@ public class HIVDefaultMutationsValidator implements MutationsValidator<HIV> {
 				     "There is %d unusual mutation at a drug-resistance position: %s.");
 
 		levels.put("additional-unusual-mutation", ValidationLevel.WARNING);
-		messages.put("additional-unusual-mutation", "There is one additional unusual mutation: %s");
+		messages.put("additional-unusual-mutation", "There is one additional unusual mutation: %s.");
 
 		levels.put("additional-unusual-mutations", ValidationLevel.SEVERE_WARNING);
-		messages.put("additional-unusual-mutations", "There are %d additional unusual mutations: %s");
+		messages.put("additional-unusual-mutations", "There are %d additional unusual mutations: %s.");
 
 		levels.put("severe-APOBEC", ValidationLevel.SEVERE_WARNING);
 		messages.put("severe-APOBEC", "The following %d APOBEC muts were present in the sequence.%s");
