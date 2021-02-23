@@ -62,6 +62,11 @@
   {
     "gene": "IN",
     "position": 140,
+    "aa": "R"
+  },
+  {
+    "gene": "IN",
+    "position": 140,
     "aa": "S"
   },
   {

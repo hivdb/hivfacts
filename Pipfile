@@ -12,6 +12,7 @@ lxml = "*"
 hivdb-graphql = {editable = true, path = "/Users/philip/gitrepo/hivdb-graphql"}
 
 [packages]
+simplejson = "*"
 
 [requires]
 python_version = "3.7"
