@@ -5,7 +5,7 @@
     "drugClass": "INSTI",
     "conditionType": "DRUGLEVEL",
     "conditionValue": {
-      "drug": "DTG",
+      "drug": "CAB",
       "levels": [
         4
       ]
@@ -18,7 +18,7 @@
     "drugClass": "INSTI",
     "conditionType": "DRUGLEVEL",
     "conditionValue": {
-      "drug": "DTG",
+      "drug": "CAB",
       "levels": [
         3
       ]
