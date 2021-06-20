@@ -1,0 +1,20 @@
+HIV2A:
+- name: PR
+  geneName: HIV2APR
+  type: GENE
+- name: RT
+  geneName: HIV2ART
+  type: GENE
+- name: IN
+  geneName: HIV2AIN
+  type: GENE
+HIV2B
+- name: PR
+  geneName: HIV2BPR
+  type: GENE
+- name: RT
+  geneName: HIV2BRT
+  type: GENE
+- name: IN
+  geneName: HIV2BIN
+  type: GENE

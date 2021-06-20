@@ -20,6 +20,8 @@ import edu.stanford.hivdb.mutations.MutationPrevalence;
 import edu.stanford.hivdb.mutations.MutationSet;
 import edu.stanford.hivdb.mutations.MutationType;
 import edu.stanford.hivdb.mutations.MutationTypePair;
+import edu.stanford.hivdb.seqreads.SequenceReadsAssembler;
+import edu.stanford.hivdb.sequences.AlignmentConfig;
 import edu.stanford.hivdb.viruses.Gene;
 import edu.stanford.hivdb.viruses.Strain;
 import edu.stanford.hivdb.viruses.Virus;
@@ -47,6 +49,8 @@ public class HIV2 implements Virus<HIV2> {
 	private static final String ALGORITHMS_INDEXPATH = "algorithms/versions_hiv2.json";
 	private static final String ALGORITHMS_RESPATH = "algorithms/%s-HIV2_%s.xml";
 	private static final String CONDCOMMENTS_RESPATH = "conditional-comments_hiv2.json";
+	private static final String ALIGNCONFIG_RESPATH = "alignment-config_hiv2.json";
+	private static final String ASSEMBLYCONFIG_RESPATH = "assembly-config_hiv2.json";
 
 	static {
 		Virus.registerInstance(new HIV2());
@@ -84,7 +88,9 @@ public class HIV2 implements Virus<HIV2> {
 			GENOTYPES_RESPATH,
 			ALGORITHMS_INDEXPATH,
 			ALGORITHMS_RESPATH,
-			CONDCOMMENTS_RESPATH
+			CONDCOMMENTS_RESPATH,
+			ALIGNCONFIG_RESPATH,
+			ASSEMBLYCONFIG_RESPATH
 		);
 	}
 
@@ -299,5 +305,30 @@ public class HIV2 implements Virus<HIV2> {
 		if (o == this) { return true; }
 		// HIV instance is a singleton
 		return false;
+	}
+
+	@Override
+	public AminoAcidPercents<HIV2> getMainAminoAcidPercents(Strain<HIV2> strain) {
+		return getAminoAcidPercents(strain, "all", "all");
+	}
+
+	@Override
+	public CodonPercents<HIV2> getMainCodonPercents(Strain<HIV2> strain) {
+		return getCodonPercents(strain, "all", "all");
+	}
+
+	@Override
+	public DrugResistanceAlgorithm<HIV2> getDefaultDrugResistAlgorithm() {
+		return getLatestDrugResistAlgorithm("HIVDB");
+	}
+
+	@Override
+	public AlignmentConfig<HIV2> getAlignmentConfig() {
+		return dl.getAlignmentConfig();
+	}
+
+	@Override
+	public SequenceReadsAssembler<HIV2> getSequenceReadsAssembler(Strain<HIV2> strain) {
+		return dl.getSequenceReadsAssemblers().get(strain);
 	}
 }
