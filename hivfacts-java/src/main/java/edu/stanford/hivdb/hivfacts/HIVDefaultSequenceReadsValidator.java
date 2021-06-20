@@ -213,7 +213,7 @@ public class HIVDefaultSequenceReadsValidator implements SequenceReadsValidator<
 		if (trimmedPos > 0) {
 			double totalPos = crcs.size();
 			double pcnt = (double) trimmedPos / totalPos;
-			long minReadDepth = seqReads.getMinReadDepth();
+			long minReadDepth = seqReads.getMinPositionReads();
 			results.add(newValidationResult(
 				"min-read-depth-too-low",
 				minReadDepth, trimmedPos, pcnt * 100,

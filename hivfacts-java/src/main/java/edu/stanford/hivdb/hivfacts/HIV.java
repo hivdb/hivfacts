@@ -19,6 +19,8 @@ import edu.stanford.hivdb.mutations.MutationPrevalence;
 import edu.stanford.hivdb.mutations.MutationSet;
 import edu.stanford.hivdb.mutations.MutationType;
 import edu.stanford.hivdb.mutations.MutationTypePair;
+import edu.stanford.hivdb.seqreads.SequenceReadsAssembler;
+import edu.stanford.hivdb.sequences.AlignmentConfig;
 import edu.stanford.hivdb.viruses.Gene;
 import edu.stanford.hivdb.viruses.Strain;
 import edu.stanford.hivdb.viruses.Virus;
@@ -46,6 +48,8 @@ public class HIV implements Virus<HIV> {
 	private static final String ALGORITHMS_INDEXPATH = "algorithms/versions.json";
 	private static final String ALGORITHMS_RESPATH = "algorithms/%s_%s.xml";
 	private static final String CONDCOMMENTS_RESPATH = "conditional-comments_hiv1.json";
+	private static final String ALIGNCONFIG_RESPATH = "alignment-config_hiv1.json";
+	private static final String ASSEMBLYCONFIG_RESPATH = "assembly-config_hiv1.json";
 
 	static {
 		Virus.registerInstance(new HIV());
@@ -83,7 +87,9 @@ public class HIV implements Virus<HIV> {
 			GENOTYPES_RESPATH,
 			ALGORITHMS_INDEXPATH,
 			ALGORITHMS_RESPATH,
-			CONDCOMMENTS_RESPATH
+			CONDCOMMENTS_RESPATH,
+			ALIGNCONFIG_RESPATH,
+			ASSEMBLYCONFIG_RESPATH
 		);
 	}
 
@@ -298,6 +304,31 @@ public class HIV implements Virus<HIV> {
 		if (o == this) { return true; }
 		// HIV instance is a singleton
 		return false;
+	}
+
+	@Override
+	public AminoAcidPercents<HIV> getMainAminoAcidPercents(Strain<HIV> strain) {
+		return getAminoAcidPercents(strain, "all", "all");
+	}
+
+	@Override
+	public CodonPercents<HIV> getMainCodonPercents(Strain<HIV> strain) {
+		return getCodonPercents(strain, "all", "all");
+	}
+
+	@Override
+	public DrugResistanceAlgorithm<HIV> getDefaultDrugResistAlgorithm() {
+		return getLatestDrugResistAlgorithm("HIVDB");
+	}
+
+	@Override
+	public AlignmentConfig<HIV> getAlignmentConfig() {
+		return dl.getAlignmentConfig();
+	}
+
+	@Override
+	public SequenceReadsAssembler<HIV> getSequenceReadsAssembler(Strain<HIV> strain) {
+		return dl.getSequenceReadsAssemblers().get(strain);
 	}
 
 }

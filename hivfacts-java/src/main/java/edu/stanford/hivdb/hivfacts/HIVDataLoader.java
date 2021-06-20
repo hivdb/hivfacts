@@ -37,6 +37,8 @@ import edu.stanford.hivdb.mutations.MutationPrevalence;
 import edu.stanford.hivdb.mutations.MutationSet;
 import edu.stanford.hivdb.mutations.MutationType;
 import edu.stanford.hivdb.mutations.MutationTypePair;
+import edu.stanford.hivdb.seqreads.SequenceReadsAssembler;
+import edu.stanford.hivdb.sequences.AlignmentConfig;
 import edu.stanford.hivdb.utilities.AAUtils;
 import edu.stanford.hivdb.utilities.AssertUtils;
 import edu.stanford.hivdb.utilities.Json;
@@ -95,6 +97,8 @@ public class HIVDataLoader<T extends Virus<T>> {
 	private final String ALGORITHMS_INDEXPATH;
 	private final String ALGORITHMS_RESPATH;
 	private final String CONDCOMMENTS_RESPATH;
+	private final String ALIGNCONFIG_RESPATH;
+	private final String ASSEMBLYCONFIG_RESPATH;
 
 	private transient Map<String, Strain<T>> strains;
 	private transient Map<String, Gene<T>> genes;
@@ -118,6 +122,8 @@ public class HIVDataLoader<T extends Virus<T>> {
 	private transient List<DrugResistanceAlgorithm<T>> drugResistAlgs;
 	private transient Map<String, DrugResistanceAlgorithm<T>> drugResistAlgLookup;
 	private transient ConditionalComments<T> condComments;
+	private transient AlignmentConfig<T> alignmentConfig;
+	private transient Map<Strain<T>, SequenceReadsAssembler<T>> sequenceReadsAssemblers;
 	
 	public HIVDataLoader(
 		T virus,
@@ -141,7 +147,9 @@ public class HIVDataLoader<T extends Virus<T>> {
 		final String GENOTYPES_RESPATH,
 		final String ALGORITHMS_INDEXPATH,
 		final String ALGORITHMS_RESPATH,
-		final String CONDCOMMENTS_RESPATH
+		final String CONDCOMMENTS_RESPATH,
+		final String ALIGNCONFIG_RESPATH,
+		final String ASSEMBLYCONFIG_RESPATH
 	) {
 		this.virus = virus;
 		this.VIRUS_NAME = VIRUS_NAME;
@@ -165,6 +173,8 @@ public class HIVDataLoader<T extends Virus<T>> {
 		this.ALGORITHMS_INDEXPATH = ALGORITHMS_INDEXPATH;
 		this.ALGORITHMS_RESPATH = ALGORITHMS_RESPATH;
 		this.CONDCOMMENTS_RESPATH = CONDCOMMENTS_RESPATH;
+		this.ALIGNCONFIG_RESPATH = ALIGNCONFIG_RESPATH;
+		this.ASSEMBLYCONFIG_RESPATH = ASSEMBLYCONFIG_RESPATH;
 	}
 	
 	private MutationSet<T> loadMutationSetFromRes(String resPath, Collection<Strain<T>> strains) {
@@ -732,6 +742,21 @@ public class HIVDataLoader<T extends Virus<T>> {
 		}
 		return genotyper;
 	}
+
+	public AlignmentConfig<T> getAlignmentConfig() {
+		if (alignmentConfig == null) {
+			String raw = loadResource(ALIGNCONFIG_RESPATH);
+			alignmentConfig = AlignmentConfig.loadJson(raw, virus);
+		}
+		return alignmentConfig;
+	}
 	
+	public Map<Strain<T>, SequenceReadsAssembler<T>> getSequenceReadsAssemblers() {
+		if (sequenceReadsAssemblers == null) {
+			String raw = loadResource(ASSEMBLYCONFIG_RESPATH);
+			sequenceReadsAssemblers = SequenceReadsAssembler.loadJson(raw, virus);
+		}
+		return sequenceReadsAssemblers;
+	}
 	
 }
