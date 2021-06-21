@@ -8,7 +8,7 @@ HIV2A:
 - name: IN
   geneName: HIV2AIN
   type: GENE
-HIV2B
+HIV2B:
 - name: PR
   geneName: HIV2BPR
   type: GENE

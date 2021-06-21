@@ -10,8 +10,7 @@
       "Accessory",
       "Other"
     ],
-    "strainModifiers": {},
-    "nucaminoMinNumOfAA": 40
+    "strainModifiers": {}
   },
   {
     "name": "HIV1RT",
@@ -24,8 +23,7 @@
       "NNRTI",
       "Other"
     ],
-    "strainModifiers": {},
-    "nucaminoMinNumOfAA": 60
+    "strainModifiers": {}
   },
   {
     "name": "HIV1IN",
@@ -38,7 +36,6 @@
       "Accessory",
       "Other"
     ],
-    "strainModifiers": {},
-    "nucaminoMinNumOfAA": 30
+    "strainModifiers": {}
   }
 ]

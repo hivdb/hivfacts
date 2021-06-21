@@ -1,0 +1,19 @@
+{
+  "HIV1": [
+    {
+      "name": "PR",
+      "geneName": "HIV1PR",
+      "type": "GENE"
+    },
+    {
+      "name": "RT",
+      "geneName": "HIV1RT",
+      "type": "GENE"
+    },
+    {
+      "name": "IN",
+      "geneName": "HIV1IN",
+      "type": "GENE"
+    }
+  ]
+}
