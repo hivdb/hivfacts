@@ -10,7 +10,6 @@
     - Accessory
     - Other
   strainModifiers: {}
-  nucaminoMinNumOfAA: 40
 - name: HIV1RT
   ordinal: 2
   strain: HIV1
@@ -33,7 +32,6 @@
     - NNRTI
     - Other
   strainModifiers: {}
-  nucaminoMinNumOfAA: 60
 - name: HIV1IN
   ordinal: 3
   strain: HIV1
@@ -50,4 +48,3 @@
     - Accessory
     - Other
   strainModifiers: {}
-  nucaminoMinNumOfAA: 30

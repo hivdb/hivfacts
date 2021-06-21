@@ -13,8 +13,7 @@
     "strainModifiers": {
       "HIV1": "99M",
       "HIV2B": "99M"
-    },
-    "nucaminoMinNumOfAA": 40
+    }
   },
   {
     "name": "HIV2ART",
@@ -30,8 +29,7 @@
     "strainModifiers": {
       "HIV1": "345M1I214M",
       "HIV2B": "559M"
-    },
-    "nucaminoMinNumOfAA": 60
+    }
   },
   {
     "name": "HIV2AIN",
@@ -47,8 +45,7 @@
     "strainModifiers": {
       "HIV1": "272M2D11M1D5M2D",
       "HIV2B": "293M3I"
-    },
-    "nucaminoMinNumOfAA": 30
+    }
   },
   {
     "name": "HIV2BPR",
@@ -64,8 +61,7 @@
     "strainModifiers": {
       "HIV1": "99M",
       "HIV2A": "99M"
-    },
-    "nucaminoMinNumOfAA": 40
+    }
   },
   {
     "name": "HIV2BRT",
@@ -81,8 +77,7 @@
     "strainModifiers": {
       "HIV1": "345M1I214M",
       "HIV2A": "559M"
-    },
-    "nucaminoMinNumOfAA": 60
+    }
   },
   {
     "name": "HIV2BIN",
@@ -98,7 +93,6 @@
     "strainModifiers": {
       "HIV1": "272M2D11M1D5M5D",
       "HIV2A": "293M3D"
-    },
-    "nucaminoMinNumOfAA": 30
+    }
   }
 ]

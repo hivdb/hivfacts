@@ -12,7 +12,6 @@
   strainModifiers:
     HIV1: 99M
     HIV2B: 99M
-  nucaminoMinNumOfAA: 40
 - name: HIV2ART  # ROD
   ordinal: 5
   strain: HIV2A
@@ -37,7 +36,6 @@
   strainModifiers:
     HIV1: 345M1I214M
     HIV2B: 559M
-  nucaminoMinNumOfAA: 60
 - name: HIV2AIN  # ROD
   ordinal: 6
   strain: HIV2A
@@ -56,7 +54,6 @@
   strainModifiers:
     HIV1: 272M2D11M1D5M2D
     HIV2B: 293M3I
-  nucaminoMinNumOfAA: 30
 - name: HIV2BPR  # EHO
   ordinal: 7
   strain: HIV2B
@@ -71,7 +68,6 @@
   strainModifiers:
     HIV1: 99M
     HIV2A: 99M
-  nucaminoMinNumOfAA: 40
 - name: HIV2BRT  # EHO
   ordinal: 8
   strain: HIV2B
@@ -96,7 +92,6 @@
   strainModifiers:
     HIV1: 345M1I214M
     HIV2A: 559M
-  nucaminoMinNumOfAA: 60
 - name: HIV2BIN  # EHO
   ordinal: 9
   strain: HIV2B
@@ -115,4 +110,3 @@
   strainModifiers:
     HIV1: 272M2D11M1D5M5D
     HIV2A: 293M3D
-  nucaminoMinNumOfAA: 30
