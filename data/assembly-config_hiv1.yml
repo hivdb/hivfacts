@@ -1,4 +1,8 @@
 HIV1:
+- name: gagPR
+  type: UNTRANS_REGION
+  refStart: 1
+  refEnd: 168
 - name: PR
   geneName: HIV1PR
   type: GENE
@@ -8,3 +12,7 @@ HIV1:
 - name: IN
   geneName: HIV1IN
   type: GENE
+- name: polStop
+  type: UNTRANS_REGION
+  refStart: 3010
+  refEnd: 3012
