@@ -21,11 +21,11 @@ dependencies {
 	implementation 'com.google.guava:guava:28.1-jre'
     implementation 'com.codepoetics:protonpack:1.15'
 	testImplementation 'junit:junit:4.12'
-    compile project(':sierra-core')
+    implementation project(':sierra-core')
 }
 
 repositories {
-	jcenter()
+	mavenCentral()
 }
 
 task copyData(type: Copy, group: 'build') {
@@ -35,8 +35,8 @@ task copyData(type: Copy, group: 'build') {
 
 jacocoTestReport {
 	reports {
-		xml.enabled true
-		html.enabled true
+		xml.required = true
+		html.required = true
 	}
 }
 
