@@ -102,7 +102,7 @@ fragmentConfig:
   - fragmentName: HIV1gag
     fromFragment: HXB2_x_ConsensusB
     geneName: HIV1gag
-    refRanges: [[790, 2292]]
+    refRanges: [[790, 2289]]
     minMatchPcnt: 60
     minNumOfAA: 50
     seqShrinkageWindow: 0
