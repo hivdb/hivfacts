@@ -39,6 +39,7 @@ import edu.stanford.hivdb.mutations.MutationType;
 import edu.stanford.hivdb.mutations.MutationTypePair;
 import edu.stanford.hivdb.seqreads.SequenceReadsAssembler;
 import edu.stanford.hivdb.sequences.AlignmentConfig;
+import edu.stanford.hivdb.sequences.SequenceAssembler;
 import edu.stanford.hivdb.utilities.AAUtils;
 import edu.stanford.hivdb.utilities.AssertUtils;
 import edu.stanford.hivdb.utilities.Json;
@@ -124,6 +125,7 @@ public class HIVDataLoader<T extends Virus<T>> {
 	private transient ConditionalComments<T> condComments;
 	private transient AlignmentConfig<T> alignmentConfig;
 	private transient Map<Strain<T>, SequenceReadsAssembler<T>> sequenceReadsAssemblers;
+	private transient Map<Strain<T>, SequenceAssembler<T>> sequenceAssemblers;
 	
 	public HIVDataLoader(
 		T virus,
@@ -757,6 +759,17 @@ public class HIVDataLoader<T extends Virus<T>> {
 			sequenceReadsAssemblers = SequenceReadsAssembler.loadJson(raw, virus);
 		}
 		return sequenceReadsAssemblers;
+	}
+	
+	public Map<Strain<T>, SequenceAssembler<T>> getSequenceAssemblers() {
+		if (sequenceAssemblers == null) {
+			String raw = loadResource(ASSEMBLYCONFIG_RESPATH);
+			Map<Strain<T>, SequenceAssembler<T>> sequenceAssemblers = SequenceAssembler.loadJson(
+				raw,
+				virus);
+			this.sequenceAssemblers = sequenceAssemblers;
+		}
+		return sequenceAssemblers;
 	}
 	
 }

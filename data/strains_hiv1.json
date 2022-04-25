@@ -3,9 +3,6 @@
     "name": "HIV1",
     "ordinal": 1,
     "displayText": "HIV-1",
-    "nucaminoProfile": "hiv1b",
-    "nucaminoGene": "pol",
-    "nucaminoGeneOffset": 56,
-    "absoluteFirstNA": 2253
+    "absoluteFirstNA": 1
   }
 ]

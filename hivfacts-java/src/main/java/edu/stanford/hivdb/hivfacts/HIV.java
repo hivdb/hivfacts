@@ -21,6 +21,7 @@ import edu.stanford.hivdb.mutations.MutationType;
 import edu.stanford.hivdb.mutations.MutationTypePair;
 import edu.stanford.hivdb.seqreads.SequenceReadsAssembler;
 import edu.stanford.hivdb.sequences.AlignmentConfig;
+import edu.stanford.hivdb.sequences.SequenceAssembler;
 import edu.stanford.hivdb.viruses.Gene;
 import edu.stanford.hivdb.viruses.Strain;
 import edu.stanford.hivdb.viruses.Virus;
@@ -329,6 +330,11 @@ public class HIV implements Virus<HIV> {
 	@Override
 	public SequenceReadsAssembler<HIV> getSequenceReadsAssembler(Strain<HIV> strain) {
 		return dl.getSequenceReadsAssemblers().get(strain);
+	}
+
+	@Override
+	public SequenceAssembler<HIV> getSequenceAssembler(Strain<HIV> strain) {
+		return dl.getSequenceAssemblers().get(strain);
 	}
 
 }
