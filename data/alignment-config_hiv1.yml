@@ -89,9 +89,7 @@ fragmentConfig:
     postProcessors: [
       codon-alignment, '790', '2085',   # gag
       codon-alignment,
-        '--gap-placement-score', '2756/3ins:15', # RT:69ins
-        '--gap-placement-score', '2756/6ins:20', # RT:69ins
-        '--gap-placement-score', '2756/9ins:25', # RT:69ins
+      '--gap-placement-score', '2756/3ins:20,2756/6ins:30,2756/9ins:40,2756/12ins:50', # RT:69ins
       '2088', '5096',  # pol
       codon-alignment, '5095', '5619',  # vif
       codon-alignment, '5619', '5771',  # vpr-before-fs
@@ -102,41 +100,106 @@ fragmentConfig:
       codon-alignment, '8797', '9417'   # nef
     ]
   - fragmentName: HIV1gag
+    fromFragment: HXB2_x_ConsensusB
+    geneName: HIV1gag
     refRanges: [[790, 2292]]
-    fromFragment: HXB2_x_ConsensusB
+    minMatchPcnt: 60
+    minNumOfAA: 50
+    seqShrinkageWindow: 0
+    seqShrinkageCutoffPcnt: 50
   - fragmentName: HIV1CA
+    fromFragment: HXB2_x_ConsensusB
+    geneName: HIV1CA
     refRanges: [[1186, 1878]]
-    fromFragment: HXB2_x_ConsensusB
+    minMatchPcnt: 60
+    minNumOfAA: 50
+    seqShrinkageWindow: 0
+    seqShrinkageCutoffPcnt: 50
   - fragmentName: HIV1pol
+    fromFragment: HXB2_x_ConsensusB
+    geneName: HIV1pol
     refRanges: [[2088, 5093]]
-    fromFragment: HXB2_x_ConsensusB
+    minMatchPcnt: 60
+    minNumOfAA: 50
+    seqShrinkageWindow: 0
+    seqShrinkageCutoffPcnt: 50
   - fragmentName: HIV1PR
+    fromFragment: HXB2_x_ConsensusB
+    geneName: HIV1PR
     refRanges: [[2253, 2549]]
-    fromFragment: HXB2_x_ConsensusB
+    minMatchPcnt: 60
+    minNumOfAA: 30
+    seqShrinkageWindow: 0
+    seqShrinkageCutoffPcnt: 50
   - fragmentName: HIV1RT
+    fromFragment: HXB2_x_ConsensusB
+    geneName: HIV1RT
     refRanges: [[2550, 4229]]
-    fromFragment: HXB2_x_ConsensusB
+    minMatchPcnt: 60
+    minNumOfAA: 50
+    seqShrinkageWindow: 0
+    seqShrinkageCutoffPcnt: 50
   - fragmentName: HIV1IN
+    fromFragment: HXB2_x_ConsensusB
+    geneName: HIV1IN
     refRanges: [[4230, 5093]]
-    fromFragment: HXB2_x_ConsensusB
+    minMatchPcnt: 60
+    minNumOfAA: 50
+    seqShrinkageWindow: 0
+    seqShrinkageCutoffPcnt: 50
   - fragmentName: HIV1vif
+    fromFragment: HXB2_x_ConsensusB
+    geneName: HIV1vif
     refRanges: [[5041, 5616]]
-    fromFragment: HXB2_x_ConsensusB
+    minMatchPcnt: 60
+    minNumOfAA: 50
+    seqShrinkageWindow: 0
+    seqShrinkageCutoffPcnt: 50
   - fragmentName: HIV1vpr
+    fromFragment: HXB2_x_ConsensusB
+    geneName: HIV1vpr
     refRanges: [[5559, 5771], [5773, 5847]]
-    fromFragment: HXB2_x_ConsensusB
+    minMatchPcnt: 60
+    minNumOfAA: 50
+    seqShrinkageWindow: 0
+    seqShrinkageCutoffPcnt: 50
   - fragmentName: HIV1tat
+    fromFragment: HXB2_x_ConsensusB
+    geneName: HIV1tat
     refRanges: [[5831, 6046], [8380, 8466]]
-    fromFragment: HXB2_x_ConsensusB
+    minMatchPcnt: 60
+    minNumOfAA: 50
+    seqShrinkageWindow: 0
+    seqShrinkageCutoffPcnt: 50
   - fragmentName: HIV1rev
+    fromFragment: HXB2_x_ConsensusB
+    geneName: HIV1rev
     refRanges: [[5970, 6044], [8378, 8650]]
-    fromFragment: HXB2_x_ConsensusB
+    minMatchPcnt: 60
+    minNumOfAA: 50
+    seqShrinkageWindow: 0
+    seqShrinkageCutoffPcnt: 50
   - fragmentName: HIV1vpu
+    fromFragment: HXB2_x_ConsensusB
+    geneName: HIV1vpu
     refRanges: [[6062, 6307]] 
-    fromFragment: HXB2_x_ConsensusB
+    minMatchPcnt: 60
+    minNumOfAA: 50
+    seqShrinkageWindow: 0
+    seqShrinkageCutoffPcnt: 50
   - fragmentName: HIV1env
+    fromFragment: HXB2_x_ConsensusB
+    geneName: HIV1env
     refRanges: [[6225, 8792]]
-    fromFragment: HXB2_x_ConsensusB
+    minMatchPcnt: 60
+    minNumOfAA: 50
+    seqShrinkageWindow: 0
+    seqShrinkageCutoffPcnt: 50
   - fragmentName: HIV1nef
-    refRanges: [[8797, 9414]]
     fromFragment: HXB2_x_ConsensusB
+    geneName: HIV1nef
+    refRanges: [[8797, 9414]]
+    minMatchPcnt: 60
+    minNumOfAA: 50
+    seqShrinkageWindow: 0
+    seqShrinkageCutoffPcnt: 50
