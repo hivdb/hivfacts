@@ -1,31 +1,123 @@
 {
   "HIV1": [
     {
-      "name": "gagPR",
+      "name": "pre-gag",
       "type": "UNTRANS_REGION",
       "refStart": 1,
-      "refEnd": 168
+      "refEnd": 789
     },
     {
-      "name": "PR",
-      "geneName": "HIV1PR",
+      "name": "gag",
+      "geneName": "HIV1gag",
       "type": "GENE"
     },
     {
-      "name": "RT",
-      "geneName": "HIV1RT",
-      "type": "GENE"
+      "name": "pol",
+      "geneName": "HIV1pol",
+      "type": "GENE",
+      "trim": [
+        [
+          1,
+          202
+        ]
+      ]
     },
     {
-      "name": "IN",
-      "geneName": "HIV1IN",
-      "type": "GENE"
+      "name": "vif",
+      "geneName": "HIV1vif",
+      "type": "GENE",
+      "trim": [
+        [
+          1,
+          53
+        ]
+      ]
     },
     {
-      "name": "polStop",
+      "name": "vprBeforeHXB2fs",
+      "geneName": "HIV1vpr",
+      "type": "GENE",
+      "trim": [
+        [
+          1,
+          58
+        ],
+        [
+          214,
+          288
+        ]
+      ]
+    },
+    {
+      "name": "vprHXB2fs",
       "type": "UNTRANS_REGION",
-      "refStart": 3010,
-      "refEnd": 3012
+      "refStart": 5772,
+      "refEnd": 5772
+    },
+    {
+      "name": "vprAfterHXB2fs",
+      "geneName": "HIV1vpr",
+      "type": "GENE",
+      "trim": [
+        [
+          1,
+          213
+        ]
+      ]
+    },
+    {
+      "name": "tatBeforeIntron",
+      "geneName": "HIV1tat",
+      "type": "GENE",
+      "trim": [
+        [
+          1,
+          17
+        ],
+        [
+          217,
+          303
+        ]
+      ]
+    },
+    {
+      "name": "tat-vpu",
+      "type": "UNTRANS_REGION",
+      "refStart": 6047,
+      "refEnd": 6061
+    },
+    {
+      "name": "vpu",
+      "geneName": "HIV1vpu",
+      "type": "GENE"
+    },
+    {
+      "name": "env",
+      "geneName": "HIV1env",
+      "type": "GENE",
+      "trim": [
+        [
+          1,
+          83
+        ]
+      ]
+    },
+    {
+      "name": "env-nef",
+      "type": "UNTRANS_REGION",
+      "refStart": 8793,
+      "refEnd": 8796
+    },
+    {
+      "name": "nef",
+      "geneName": "HIV1nef",
+      "type": "GENE"
+    },
+    {
+      "name": "post-nef",
+      "type": "UNTRANS_REGION",
+      "refStart": 9415,
+      "refEnd": 9719
     }
   ]
 }

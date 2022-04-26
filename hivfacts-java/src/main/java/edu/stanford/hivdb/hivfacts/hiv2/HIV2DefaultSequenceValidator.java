@@ -19,6 +19,7 @@
 package edu.stanford.hivdb.hivfacts.hiv2;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
@@ -173,7 +174,10 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 	protected HIV2DefaultSequenceValidator() {}
 
 	@Override
-	public List<ValidationResult> validate(AlignedSequence<HIV2> alignedSequence) {
+	public List<ValidationResult> validate(
+		AlignedSequence<HIV2> alignedSequence,
+		Collection<String> includeGenes
+	) {
 		List<ValidationResult> results = new ArrayList<>();
 		results.addAll(validateNotEmpty(alignedSequence));
 		if (results.size() > 0) {

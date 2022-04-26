@@ -19,6 +19,7 @@
 package edu.stanford.hivdb.hivfacts;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
@@ -38,7 +39,9 @@ import edu.stanford.hivdb.mutations.MutationSet;
 import edu.stanford.hivdb.sequences.AlignedGeneSeq;
 import edu.stanford.hivdb.sequences.AlignedSequence;
 import edu.stanford.hivdb.sequences.SequenceValidator;
+import edu.stanford.hivdb.sequences.UnsequencedRegions;
 import edu.stanford.hivdb.utilities.Json;
+import edu.stanford.hivdb.utilities.MyStringUtils;
 import edu.stanford.hivdb.utilities.ValidationLevel;
 import edu.stanford.hivdb.utilities.ValidationResult;
 
@@ -52,9 +55,9 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		Map<String, String> messages = new HashMap<>();
 
 		levels.put("no-gene-found", ValidationLevel.CRITICAL);
-		messages.put("no-gene-found",
-					"There were no Protease, Reverse Transcriptase, or " +
-					"Integrase genes found, refuse to process.");
+		messages.put(
+			"no-gene-found",
+			"There were no %s genes found, refuse to process.");
 
 		levels.put("not-aligned-gene", ValidationLevel.SEVERE_WARNING);
 		messages.put(
@@ -173,23 +176,23 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 	protected HIVDefaultSequenceValidator() {}
 
 	@Override
-	public List<ValidationResult> validate(AlignedSequence<HIV> alignedSequence) {
+	public List<ValidationResult> validate(AlignedSequence<HIV> alignedSequence, Collection<String> includeGenes) {
 		List<ValidationResult> results = new ArrayList<>();
-		results.addAll(validateNotEmpty(alignedSequence));
+		results.addAll(validateNotEmpty(alignedSequence, includeGenes));
 		if (results.size() > 0) {
 			return results;
 		}
 		results.addAll(validateReverseComplement(alignedSequence));
-		results.addAll(validateGene(alignedSequence));
-		results.addAll(validateSequenceSize(alignedSequence));
-		results.addAll(validateUnsequencedRegion(alignedSequence));
-		results.addAll(validateShrinkage(alignedSequence));
-		results.addAll(validateLongGap(alignedSequence));
+		results.addAll(validateGene(alignedSequence, includeGenes));
+		results.addAll(validateSequenceSize(alignedSequence, includeGenes));
+		results.addAll(validateUnsequencedRegion(alignedSequence, includeGenes));
+		results.addAll(validateShrinkage(alignedSequence, includeGenes));
+		results.addAll(validateLongGap(alignedSequence, includeGenes));
 		results.addAll(validateNAs(alignedSequence));
-		results.addAll(validateGaps(alignedSequence));
-		results.addAll(validateNotApobec(alignedSequence));
-		results.addAll(validateNoStopCodons(alignedSequence));
-		results.addAll(validateNoTooManyUnusualMutations(alignedSequence));
+		results.addAll(validateGaps(alignedSequence, includeGenes));
+		results.addAll(validateNotApobec(alignedSequence, includeGenes));
+		results.addAll(validateNoStopCodons(alignedSequence, includeGenes));
+		results.addAll(validateNoTooManyUnusualMutations(alignedSequence, includeGenes));
 		return results;
 	}
 
@@ -201,23 +204,39 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		return new ValidationResult(level, message);
 	}
 
-	protected static List<ValidationResult> validateUnsequencedRegion(AlignedSequence<?> alignedSequence) {
+	protected static List<ValidationResult> validateUnsequencedRegion(
+		AlignedSequence<?> alignedSequence,
+		Collection<String> includeGenes
+	) {
 		List<ValidationResult> results = new ArrayList<>();
 		for (AlignedGeneSeq<?> geneSeq : alignedSequence.getAlignedGeneSequences()) {
-			MutationSet<?> unsequenced = geneSeq.getMutations().filterBy(Mutation::isUnsequenced);
-			if (unsequenced.size() > 2) {
+			String geneText = geneSeq.getAbstractGene();
+			if (!includeGenes.contains(geneText)) {
+				continue;
+			}
+			UnsequencedRegions<?> unseqRegions = geneSeq.getUnsequencedRegions();
+			long unseqSize = unseqRegions.getSize();
+			if (unseqSize > 2) {
 				results.add(newValidationResult(
-					"unsequenced-region", unsequenced.size(),
-					geneSeq.getAbstractGene(), unsequenced.join(", ")
+					"unsequenced-region", unseqSize,
+					geneText,
+					MyStringUtils.andListFormat(unseqRegions.getRegions())
 				));
 			}
 		}
 		return results;
 	}
 
-	protected static List<ValidationResult> validateNotEmpty(AlignedSequence<?> alignedSequence) {
-		if (alignedSequence.isEmpty()) {
-			return Lists.newArrayList(newValidationResult("no-gene-found"));
+	protected static List<ValidationResult> validateNotEmpty(
+		AlignedSequence<?> alignedSequence,
+		Collection<String> includeGenes
+	) {
+		boolean isNotEmpty = alignedSequence.getAvailableGenes().stream()
+			.anyMatch(gene -> includeGenes.contains(gene.getAbstractGene()));
+		if (!isNotEmpty) {
+			return Lists.newArrayList(
+				newValidationResult("no-gene-found", MyStringUtils.andListFormat(includeGenes))
+			);
 		}
 		return Collections.emptyList();
 	}
@@ -229,8 +248,17 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		return Collections.emptyList();
 	}
 
-	protected static List<ValidationResult> validateGene(AlignedSequence<?> alignedSequence) {
-		Set<Gene<?>> discardedGenes = new LinkedHashSet<>(alignedSequence.getDiscardedGenes().keySet());
+	protected static List<ValidationResult> validateGene(
+		AlignedSequence<?> alignedSequence,
+		Collection<String> includeGenes
+	) {
+		Set<Gene<?>> discardedGenes = alignedSequence
+			.getDiscardedGenes()
+			.keySet()
+			.stream()
+			.filter(gene -> includeGenes.contains(gene.getAbstractGene()))
+			.collect(Collectors.toCollection(LinkedHashSet::new));
+		
 		int leftIgnored = 0x7fffffff;
 		int rightIgnored = 0;
 		Strain<?> strain = alignedSequence.getStrain();
@@ -240,27 +268,38 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 			rightIgnored = Math.max(rightIgnored, geneSeq.getLastNA());
 		}
 		rightIgnored = alignedSequence.getInputSequence().getLength() - rightIgnored;
-		if (!availableGenes.contains(strain.getGene("PR")) && leftIgnored > 210) {
-			discardedGenes.add(strain.getGene("PR"));
+		if (includeGenes.contains("PR")) {
+			if (!availableGenes.contains(strain.getGene("PR")) && leftIgnored > 210) {
+				discardedGenes.add(strain.getGene("PR"));
+			}
 		}
-		if (!availableGenes.contains(strain.getGene("RT")) && leftIgnored > 800) {
-			discardedGenes.add(strain.getGene("RT"));
-		} else if (!availableGenes.contains(strain.getGene("RT")) && rightIgnored > 800) {
-			discardedGenes.add(strain.getGene("RT"));
+		if (includeGenes.contains("RT")) {
+			if (!availableGenes.contains(strain.getGene("RT")) && leftIgnored > 800) {
+				discardedGenes.add(strain.getGene("RT"));
+			} else if (!availableGenes.contains(strain.getGene("RT")) && rightIgnored > 800) {
+				discardedGenes.add(strain.getGene("RT"));
+			}
 		}
-		if (!availableGenes.contains(strain.getGene("IN")) && rightIgnored > 600) {
-			discardedGenes.add(strain.getGene("IN"));
+		if (includeGenes.contains("IN")) {
+			if (!availableGenes.contains(strain.getGene("IN")) && rightIgnored > 600) {
+				discardedGenes.add(strain.getGene("IN"));
+			}
 		}
 		if (!discardedGenes.isEmpty()) {
-			String textDiscardedGenes = discardedGenes
-				.stream().map(g -> g.getName())
-				.collect(Collectors.joining(" or "));
+			String textDiscardedGenes = MyStringUtils.orListFormat(
+				discardedGenes
+					.stream().map(g -> g.getAbstractGene())
+					.collect(Collectors.toList())
+			);
 			return Lists.newArrayList(newValidationResult("not-aligned-gene", textDiscardedGenes));
 		}
 		return Collections.emptyList();
 	}
 
-	protected static List<ValidationResult> validateSequenceSize(AlignedSequence<HIV> alignedSequence) {
+	protected static List<ValidationResult> validateSequenceSize(
+		AlignedSequence<HIV> alignedSequence,
+		Collection<String> includeGenes
+	) {
 		int size;
 		AlignedGeneSeq<?> geneSeq;
 		int[] muchTooShortSize = new int[] {60, 150, 100};
@@ -269,6 +308,10 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		List<ValidationResult> result = new ArrayList<>();
 		
 		for (int i = 0; i < 3; i ++) {
+			String geneName = geneNames[i];
+			if (!includeGenes.contains(geneName)) {
+				continue;
+			}
 			geneSeq = alignedSequence.getAlignedGeneSequence(geneNames[i]);
 			if (geneSeq != null) {
 				size = geneSeq.getSize();
@@ -282,29 +325,41 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		return result;
 	}
 
-	protected static List<ValidationResult> validateShrinkage(AlignedSequence<HIV> alignedSequence) {
+	protected static List<ValidationResult> validateShrinkage(
+		AlignedSequence<HIV> alignedSequence,
+		Collection<String> includeGenes
+	) {
 		List<ValidationResult> result = new ArrayList<>();
 		for (AlignedGeneSeq<HIV> geneSeq : alignedSequence.getAlignedGeneSequences()) {
-			Gene<HIV> gene = geneSeq.getGene();
+			String geneText = geneSeq.getAbstractGene();
+			if (!includeGenes.contains(geneText)) {
+				continue;
+			}
 			int[] trimmed = geneSeq.getShrinkage();
 			int leftTrimmed = trimmed[0];
 			int rightTrimmed = trimmed[1];
 			if (leftTrimmed > 0) {
-				result.add(newValidationResult("sequence-trimmed", gene.getAbstractGene(), leftTrimmed, "5′"));
+				result.add(newValidationResult("sequence-trimmed", geneText, leftTrimmed, "5′"));
 			}
 			if (rightTrimmed > 0) {
-				result.add(newValidationResult("sequence-trimmed", gene.getAbstractGene(), rightTrimmed, "3′"));
+				result.add(newValidationResult("sequence-trimmed", geneText, rightTrimmed, "3′"));
 			}
 		}
 		return result;
 	}
 
-	protected static List<ValidationResult> validateLongGap(AlignedSequence<HIV> alignedSequence) {
+	protected static List<ValidationResult> validateLongGap(
+		AlignedSequence<HIV> alignedSequence,
+		Collection<String> includeGenes
+	) {
 		int gapLenThreshold = 10;
-		int continuousDels = 0;
+		int totalIndels = 0;
 		List<ValidationResult> result = new ArrayList<>();
 		for (Mutation<HIV> mut : alignedSequence.getMutations()) {
-			if (continuousDels > gapLenThreshold) {
+			if (!includeGenes.contains(mut.getAbstractGene())) {
+				continue;
+			}
+			if (totalIndels > gapLenThreshold) {
 				result.add(newValidationResult("gap-too-long"));
 				break;
 			}
@@ -313,9 +368,13 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 				break;
 			}
 			if (mut.isDeletion()) {
-				continuousDels ++;
-			} else {
-				continuousDels = 0;
+				totalIndels ++;
+			}
+			else if (mut.isInsertion()) {
+				totalIndels += Math.round(mut.getInsertedNAs().length() / 3);
+			}
+			else {
+				totalIndels = 0;
 			}
 		}
 		return result;
@@ -335,11 +394,18 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		return result;
 	}
 
-	protected static List<ValidationResult> validateNoStopCodons(AlignedSequence<HIV> alignedSequence) {
+	protected static List<ValidationResult> validateNoStopCodons(
+		AlignedSequence<HIV> alignedSequence,
+		Collection<String> includeGenes
+	) {
 		Map<Gene<HIV>, AlignedGeneSeq<HIV>> alignedGeneSeqs = alignedSequence.getAlignedGeneSequenceMap();
 		List<ValidationResult> result = new ArrayList<>();
 
 		for (Gene<HIV> gene : alignedGeneSeqs.keySet()) {
+			String geneText = gene.getAbstractGene();
+			if (!includeGenes.contains(geneText)) {
+				continue;
+			}
 			MutationSet<HIV> stopCodons = alignedGeneSeqs.get(gene).getStopCodons();
 			String stops = stopCodons.join(", ");
 			int numStopCodons = stopCodons.size();
@@ -355,11 +421,18 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		return result;
 	}
 
-	protected static List<ValidationResult> validateNoTooManyUnusualMutations(AlignedSequence<HIV> alignedSequence) {
+	protected static List<ValidationResult> validateNoTooManyUnusualMutations(
+		AlignedSequence<HIV> alignedSequence,
+		Collection<String> includeGenes
+	) {
 		List<ValidationResult> result = new ArrayList<>();
 		Map<Gene<HIV>, AlignedGeneSeq<HIV>> alignedGeneSeqs = alignedSequence.getAlignedGeneSequenceMap();
 
 		for (Gene<HIV> gene : alignedGeneSeqs.keySet()) {
+			String geneText = gene.getAbstractGene();
+			if (!includeGenes.contains(geneText)) {
+				continue;
+			}
 			AlignedGeneSeq<HIV> alignedGeneSeq = alignedGeneSeqs.get(gene);
 			MutationSet<HIV> unusualMutations = alignedGeneSeq.getUnusualMutations();
 			String text = unusualMutations.join(", ");
@@ -367,26 +440,26 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 			if (numUnusual > 8) {
 				result.add(newValidationResult(
 					"much-too-many-unusual-mutations",
-					numUnusual, gene.getAbstractGene(), text));
+					numUnusual, geneText, text));
 			} else if (numUnusual > 4) {
 				result.add(newValidationResult(
 					"too-many-unusual-mutations",
-					numUnusual, gene.getAbstractGene(), text));
+					numUnusual, geneText, text));
 			} else if (numUnusual > 2) {
 				result.add(newValidationResult(
 					"some-unusual-mutations",
-					numUnusual, gene.getAbstractGene(), text));
+					numUnusual, geneText, text));
 			}
 			MutationSet<HIV> unusualMutAtDRP = alignedGeneSeq.getUnusualMutationsAtDrugResistancePositions();
 			int numUnusualAtDRP = unusualMutAtDRP.size();
 			if (numUnusualAtDRP > 1) {
 				result.add(newValidationResult(
 					"unusual-mutation-at-DRP-plural",
-					numUnusualAtDRP, gene.getAbstractGene(), unusualMutAtDRP.join(", ")));
+					numUnusualAtDRP, geneText, unusualMutAtDRP.join(", ")));
 			} else if (numUnusualAtDRP == 1) {
 				result.add(newValidationResult(
 					"unusual-mutation-at-DRP",
-					numUnusualAtDRP, gene.getAbstractGene(), unusualMutAtDRP.join(", ")));
+					numUnusualAtDRP, geneText, unusualMutAtDRP.join(", ")));
 			}
 		}
 		return result;
@@ -404,9 +477,18 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		return subtyper.getClosestSubtype() == Subtype.N;
 	}*/
 
-	protected static List<ValidationResult> validateNotApobec(AlignedSequence<HIV> alignedSequence) {
-		MutationSet<HIV> apobecs = alignedSequence.getMutations().getApobecMutations();
-		MutationSet<HIV> apobecDRMs = alignedSequence.getMutations().getApobecDRMs();
+	protected static List<ValidationResult> validateNotApobec(
+		AlignedSequence<HIV> alignedSequence,
+		Collection<String> includeGenes
+	) {
+		MutationSet<HIV> apobecs = alignedSequence
+			.getMutations()
+			.getApobecMutations()
+			.filterByNoSplit(mut -> includeGenes.contains(mut.getAbstractGene()));
+		MutationSet<HIV> apobecDRMs = alignedSequence
+			.getMutations()
+			.getApobecDRMs()
+			.filterByNoSplit(mut -> includeGenes.contains(mut.getAbstractGene()));
 		List<ValidationResult> results = new ArrayList<>();
 		int numApobecMuts = apobecs.size();
 		int numApobecDRMs = apobecDRMs.size();
@@ -459,12 +541,19 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		return results;
 	}
 
-	private static List<ValidationResult> validateGaps(AlignedSequence<HIV> alignedSequence) {
+	private static List<ValidationResult> validateGaps(
+		AlignedSequence<HIV> alignedSequence,
+		Collection<String> includeGenes
+	) {
 		Map<Gene<HIV>, AlignedGeneSeq<HIV>> alignedGeneSeqs = alignedSequence.getAlignedGeneSequenceMap();
 		List<Gene<HIV>> seqGenes = alignedSequence.getAvailableGenes();
 		List<ValidationResult> results = new ArrayList<>();
 
 		for (Gene<HIV> gene : seqGenes) {
+			String geneText = gene.getAbstractGene();
+			if (!includeGenes.contains(geneText)) {
+				continue;
+			}
 			AlignedGeneSeq<HIV> alignedGeneSeq = alignedGeneSeqs.get(gene);
 			List<FrameShift<HIV>> frameShifts = alignedGeneSeq.getFrameShifts();
 			MutationSet<HIV> insertions = alignedGeneSeq.getInsertions();
@@ -479,32 +568,30 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 			if (numTotal > 1) {
 				if (frameShifts.size() > 0 && unusualIndels.size() > 0) {
 					results.add(newValidationResult(
-						"two-or-more-unusual-indels-and-frameshifts", gene.getAbstractGene(),
+						"two-or-more-unusual-indels-and-frameshifts", geneText,
 						numTotal, unusualIndelsListText, frameShiftListText));
 				} else if (frameShifts.size() > 0) {
 					results.add(newValidationResult(
-						"two-or-more-frameshifts", gene.getAbstractGene(), numTotal,
+						"two-or-more-frameshifts", geneText, numTotal,
 						frameShiftListText));
 				} else {
 					results.add(newValidationResult(
-						"two-or-more-unusual-indels", gene.getAbstractGene(), numTotal,
+						"two-or-more-unusual-indels", geneText, numTotal,
 						unusualIndelsListText));
 				}
 
 			} else if (numTotal >0 ) {
 				if (frameShifts.size() > 0) {
 					results.add(newValidationResult(
-						"one-frameshift", gene.getAbstractGene(), frameShiftListText));
+						"one-frameshift", geneText, frameShiftListText));
 				} else {
 					results.add(newValidationResult(
-						"one-unusual-indel", gene.getAbstractGene(), unusualIndelsListText));
+						"one-unusual-indel", geneText, unusualIndelsListText));
 				}
 
 			}
 		}
 		return results;
 	}
-
-
 
 }
