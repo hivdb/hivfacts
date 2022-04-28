@@ -51,7 +51,7 @@ public class HIVDataLoader<T extends Virus<T>> {
 
 	private static final Pattern HIV_MUTATION_PATTERN = Pattern.compile(
 		"^\\s*" +
-		"(__ASI__)?((?i:PR|RT|IN))?[:_-]?" +
+		"(__ASI__)?((?i:CA|PR|RT|IN))?[:_-]?" +
 		"([AC-IK-NP-TV-Y])?" +
 		"(\\d{1,3})" +
 		"([AC-IK-NP-TV-Zid.*]+(?:[#_]?[AC-IK-NP-TV-Z.*]+)?|[id_#~-]|[iI]ns(?:ertion)?|[dD]el(?:etion)?)" +

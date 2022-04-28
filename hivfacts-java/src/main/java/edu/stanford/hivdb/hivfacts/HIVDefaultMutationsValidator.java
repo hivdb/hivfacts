@@ -19,6 +19,7 @@
 package edu.stanford.hivdb.hivfacts;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -28,6 +29,7 @@ import java.util.stream.Collectors;
 import edu.stanford.hivdb.mutations.Mutation;
 import edu.stanford.hivdb.mutations.MutationSet;
 import edu.stanford.hivdb.mutations.MutationsValidator;
+import edu.stanford.hivdb.utilities.MyStringUtils;
 import edu.stanford.hivdb.utilities.ValidationLevel;
 import edu.stanford.hivdb.utilities.ValidationResult;
 
@@ -91,11 +93,11 @@ public class HIVDefaultMutationsValidator implements MutationsValidator<HIV> {
 	}
 
 	@Override
-	public List<ValidationResult> validate(MutationSet<HIV> mutations) {
+	public List<ValidationResult> validate(MutationSet<HIV> mutations, Collection<String> includeGenes) {
 		List<ValidationResult> validationResults = new ArrayList<>();
-		validationResults.addAll(validateNoStopCodons(mutations));
-		validationResults.addAll(validateNotApobec(mutations));
-		validationResults.addAll(validateNoTooManyUnusualMutations(mutations));
+		validationResults.addAll(validateNoStopCodons(mutations, includeGenes));
+		validationResults.addAll(validateNotApobec(mutations, includeGenes));
+		validationResults.addAll(validateNoTooManyUnusualMutations(mutations, includeGenes));
 		return validationResults;
 	}
 
@@ -107,9 +109,15 @@ public class HIVDefaultMutationsValidator implements MutationsValidator<HIV> {
 		return new ValidationResult(level, message);
 	}
 
-	private List<ValidationResult> validateNoStopCodons(MutationSet<HIV> mutations) {
+	private List<ValidationResult> validateNoStopCodons(
+		MutationSet<HIV> mutations,
+		Collection<String> includeGenes
+	) {
 		List<ValidationResult> validationResults = new ArrayList<>();
-		int numStopCodons = mutations.getStopCodons().size();
+		int numStopCodons = mutations
+			.getStopCodons()
+			.filterBy(mut -> includeGenes.contains(mut.getAbstractGene()))
+			.size();
 		if (numStopCodons > 1) {
 			validationResults.add(newValidationResult(
 				"severe-warning-too-many-stop-codons",
@@ -123,9 +131,14 @@ public class HIVDefaultMutationsValidator implements MutationsValidator<HIV> {
 	}
 
 
-	private List<ValidationResult> validateNoTooManyUnusualMutations(MutationSet<HIV> mutations) {
+	private List<ValidationResult> validateNoTooManyUnusualMutations(
+		MutationSet<HIV> mutations,
+		Collection<String> includeGenes
+	) {
 		List<ValidationResult> validationResults = new ArrayList<>();
-		MutationSet<HIV> unusualMutations = mutations.getUnusualMutations();
+		MutationSet<HIV> unusualMutations = mutations
+			.getUnusualMutations()
+			.filterBy(mut -> includeGenes.contains(mut.getAbstractGene()));
 		int numUnusual = unusualMutations.size();
 
 		MutationSet<HIV> unusualMutAtDRP = unusualMutations.getAtDRPMutations();
@@ -180,9 +193,16 @@ public class HIVDefaultMutationsValidator implements MutationsValidator<HIV> {
 
 	}
 
-	private List<ValidationResult> validateNotApobec(MutationSet<HIV> mutations) {
-		MutationSet<HIV> apobecs = mutations.getApobecMutations();
-		MutationSet<HIV> apobecDRMs = mutations.getApobecDRMs();
+	private List<ValidationResult> validateNotApobec(
+		MutationSet<HIV> mutations,
+		Collection<String> includeGenes
+	) {
+		MutationSet<HIV> apobecs = mutations
+			.getApobecMutations()
+			.filterBy(mut -> includeGenes.contains(mut.getAbstractGene()));
+		MutationSet<HIV> apobecDRMs = mutations
+			.getApobecDRMs()
+			.filterBy(mut -> includeGenes.contains(mut.getAbstractGene()));
 		List<ValidationResult> results = new ArrayList<>();
 		int numApobecMuts = apobecs.size();
 		int numApobecDRMs = apobecDRMs.size();
@@ -197,8 +217,8 @@ public class HIVDefaultMutationsValidator implements MutationsValidator<HIV> {
 				.stream()
 				.map(e -> String.format(
 					"%s: %s", e.getKey().getAbstractGene(),
-					e.getValue().join(", ")
-				)).collect(Collectors.joining(","))
+					MyStringUtils.andListFormat(e.getValue())
+				)).collect(Collectors.joining("; "))
 			);
 		}
 
