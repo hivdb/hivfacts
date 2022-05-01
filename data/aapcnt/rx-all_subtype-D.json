@@ -1,5 +1,8215 @@
 [
   {
+    "gene": "CA",
+    "position": 1,
+    "aa": "P",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 1,
+    "aa": "Q",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 2,
+    "aa": "I",
+    "percent": 0.958041958041958,
+    "count": 548,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 2,
+    "aa": "V",
+    "percent": 0.02972027972027972,
+    "count": 17,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 2,
+    "aa": "L",
+    "percent": 0.01048951048951049,
+    "count": 6,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 2,
+    "aa": "N",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 3,
+    "aa": "V",
+    "percent": 0.9912739965095986,
+    "count": 568,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 3,
+    "aa": "L",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 3,
+    "aa": "M",
+    "percent": 0.0034904013961605585,
+    "count": 2,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 3,
+    "aa": "I",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 3,
+    "aa": "Q",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 4,
+    "aa": "Q",
+    "percent": 0.9860627177700348,
+    "count": 566,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 4,
+    "aa": "R",
+    "percent": 0.012195121951219513,
+    "count": 7,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 4,
+    "aa": "P",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 5,
+    "aa": "N",
+    "percent": 0.9947735191637631,
+    "count": 571,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 5,
+    "aa": "Y",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 5,
+    "aa": "T",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 5,
+    "aa": "G",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 6,
+    "aa": "L",
+    "percent": 0.9352014010507881,
+    "count": 534,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 6,
+    "aa": "Q",
+    "percent": 0.0017513134851138354,
+    "count": 1,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 6,
+    "aa": "I",
+    "percent": 0.01576182136602452,
+    "count": 9,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 6,
+    "aa": "M",
+    "percent": 0.014010507880910683,
+    "count": 8,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 6,
+    "aa": "P",
+    "percent": 0.005253940455341506,
+    "count": 3,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 6,
+    "aa": "V",
+    "percent": 0.008756567425569177,
+    "count": 5,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 6,
+    "aa": "A",
+    "percent": 0.010507880910683012,
+    "count": 6,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 6,
+    "aa": "T",
+    "percent": 0.0035026269702276708,
+    "count": 2,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 6,
+    "aa": "S",
+    "percent": 0.0017513134851138354,
+    "count": 1,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 6,
+    "aa": "H",
+    "percent": 0.0035026269702276708,
+    "count": 2,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 7,
+    "aa": "Q",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 7,
+    "aa": "R",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 7,
+    "aa": "K",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 8,
+    "aa": "G",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 8,
+    "aa": "N",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 9,
+    "aa": "Q",
+    "percent": 0.9947735191637631,
+    "count": 571,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 9,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 9,
+    "aa": "R",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 9,
+    "aa": "V",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 10,
+    "aa": "M",
+    "percent": 0.9860383944153578,
+    "count": 565,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 10,
+    "aa": "L",
+    "percent": 0.0034904013961605585,
+    "count": 2,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 10,
+    "aa": "K",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 10,
+    "aa": "W",
+    "percent": 0.0034904013961605585,
+    "count": 2,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 10,
+    "aa": "T",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 10,
+    "aa": "P",
+    "percent": 0.0034904013961605585,
+    "count": 2,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 11,
+    "aa": "V",
+    "percent": 0.9475524475524476,
+    "count": 542,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 11,
+    "aa": "T",
+    "percent": 0.006993006993006993,
+    "count": 4,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 11,
+    "aa": "I",
+    "percent": 0.038461538461538464,
+    "count": 22,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 11,
+    "aa": "G",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 11,
+    "aa": "A",
+    "percent": 0.0034965034965034965,
+    "count": 2,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 11,
+    "aa": "E",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 12,
+    "aa": "H",
+    "percent": 0.9738675958188153,
+    "count": 559,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 12,
+    "aa": "Y",
+    "percent": 0.024390243902439025,
+    "count": 14,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 12,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 13,
+    "aa": "Q",
+    "percent": 0.9930191972076788,
+    "count": 569,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 13,
+    "aa": "P",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 13,
+    "aa": "N",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 13,
+    "aa": "A",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 13,
+    "aa": "H",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 14,
+    "aa": "A",
+    "percent": 0.6890459363957597,
+    "count": 390,
+    "total": 566,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 14,
+    "aa": "S",
+    "percent": 0.09010600706713781,
+    "count": 51,
+    "total": 566,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 14,
+    "aa": "P",
+    "percent": 0.1607773851590106,
+    "count": 91,
+    "total": 566,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 14,
+    "aa": "N",
+    "percent": 0.03180212014134275,
+    "count": 18,
+    "total": 566,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 14,
+    "aa": "T",
+    "percent": 0.012367491166077738,
+    "count": 7,
+    "total": 566,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 14,
+    "aa": "V",
+    "percent": 0.01060070671378092,
+    "count": 6,
+    "total": 566,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 14,
+    "aa": "C",
+    "percent": 0.0017667844522968198,
+    "count": 1,
+    "total": 566,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 14,
+    "aa": "G",
+    "percent": 0.0017667844522968198,
+    "count": 1,
+    "total": 566,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 14,
+    "aa": "Q",
+    "percent": 0.0017667844522968198,
+    "count": 1,
+    "total": 566,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 15,
+    "aa": "L",
+    "percent": 0.3939393939393939,
+    "count": 221,
+    "total": 561,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 15,
+    "aa": "I",
+    "percent": 0.5775401069518716,
+    "count": 324,
+    "total": 561,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 15,
+    "aa": "V",
+    "percent": 0.008912655971479501,
+    "count": 5,
+    "total": 561,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 15,
+    "aa": "M",
+    "percent": 0.017825311942959002,
+    "count": 10,
+    "total": 561,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 15,
+    "aa": "R",
+    "percent": 0.0017825311942959,
+    "count": 1,
+    "total": 561,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 16,
+    "aa": "S",
+    "percent": 0.9632224168126094,
+    "count": 550,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 16,
+    "aa": "T",
+    "percent": 0.028021015761821366,
+    "count": 16,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 16,
+    "aa": "P",
+    "percent": 0.0017513134851138354,
+    "count": 1,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 16,
+    "aa": "A",
+    "percent": 0.005253940455341506,
+    "count": 3,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 16,
+    "aa": "K",
+    "percent": 0.0017513134851138354,
+    "count": 1,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 17,
+    "aa": "P",
+    "percent": 0.9947735191637631,
+    "count": 571,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 17,
+    "aa": "A",
+    "percent": 0.003484320557491289,
+    "count": 2,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 17,
+    "aa": "S",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 18,
+    "aa": "R",
+    "percent": 0.9947735191637631,
+    "count": 571,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 18,
+    "aa": "K",
+    "percent": 0.003484320557491289,
+    "count": 2,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 18,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 19,
+    "aa": "T",
+    "percent": 0.9895470383275261,
+    "count": 568,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 19,
+    "aa": "I",
+    "percent": 0.006968641114982578,
+    "count": 4,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 19,
+    "aa": "P",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 19,
+    "aa": "D",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 20,
+    "aa": "L",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 20,
+    "aa": "R",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 21,
+    "aa": "N",
+    "percent": 0.9895470383275261,
+    "count": 568,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 21,
+    "aa": "I",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 21,
+    "aa": "S",
+    "percent": 0.003484320557491289,
+    "count": 2,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 21,
+    "aa": "H",
+    "percent": 0.003484320557491289,
+    "count": 2,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 21,
+    "aa": "P",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 22,
+    "aa": "A",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 22,
+    "aa": "V",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 23,
+    "aa": "W",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 23,
+    "aa": "*",
+    "percent": 0.003484320557491289,
+    "count": 2,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 24,
+    "aa": "V",
+    "percent": 0.9965095986038395,
+    "count": 571,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 24,
+    "aa": "I",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 24,
+    "aa": "G",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 25,
+    "aa": "K",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 25,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 26,
+    "aa": "V",
+    "percent": 0.9930313588850174,
+    "count": 570,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 26,
+    "aa": "Y",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 26,
+    "aa": "G",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 26,
+    "aa": "A",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 26,
+    "aa": "R",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 27,
+    "aa": "I",
+    "percent": 0.9370629370629371,
+    "count": 536,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 27,
+    "aa": "V",
+    "percent": 0.05944055944055944,
+    "count": 34,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 27,
+    "aa": "M",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 27,
+    "aa": "C",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 28,
+    "aa": "E",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 28,
+    "aa": "K",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 28,
+    "aa": "Y",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 29,
+    "aa": "E",
+    "percent": 0.9597902097902098,
+    "count": 549,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 29,
+    "aa": "K",
+    "percent": 0.0034965034965034965,
+    "count": 2,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 29,
+    "aa": "D",
+    "percent": 0.03496503496503497,
+    "count": 20,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 29,
+    "aa": "N",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 30,
+    "aa": "K",
+    "percent": 0.9825783972125436,
+    "count": 564,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 30,
+    "aa": "R",
+    "percent": 0.013937282229965157,
+    "count": 8,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 30,
+    "aa": "I",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 30,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 31,
+    "aa": "A",
+    "percent": 0.9616055846422339,
+    "count": 551,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 31,
+    "aa": "N",
+    "percent": 0.010471204188481676,
+    "count": 6,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 31,
+    "aa": "G",
+    "percent": 0.019197207678883072,
+    "count": 11,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 31,
+    "aa": "S",
+    "percent": 0.006980802792321117,
+    "count": 4,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 31,
+    "aa": "P",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 32,
+    "aa": "F",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 32,
+    "aa": "T",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 33,
+    "aa": "S",
+    "percent": 0.8861646234676007,
+    "count": 506,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 33,
+    "aa": "N",
+    "percent": 0.10683012259194395,
+    "count": 61,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 33,
+    "aa": "R",
+    "percent": 0.0017513134851138354,
+    "count": 1,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 33,
+    "aa": "K",
+    "percent": 0.0035026269702276708,
+    "count": 2,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 33,
+    "aa": "Y",
+    "percent": 0.0017513134851138354,
+    "count": 1,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 34,
+    "aa": "P",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 34,
+    "aa": "S",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 35,
+    "aa": "E",
+    "percent": 0.9947643979057592,
+    "count": 570,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 35,
+    "aa": "D",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 35,
+    "aa": "K",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 35,
+    "aa": "W",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 36,
+    "aa": "V",
+    "percent": 0.9736842105263158,
+    "count": 555,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 36,
+    "aa": "I",
+    "percent": 0.02280701754385965,
+    "count": 13,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 36,
+    "aa": "T",
+    "percent": 0.0017543859649122807,
+    "count": 1,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 36,
+    "aa": "Y",
+    "percent": 0.0017543859649122807,
+    "count": 1,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 37,
+    "aa": "I",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 37,
+    "aa": "C",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 38,
+    "aa": "P",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 38,
+    "aa": "H",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 39,
+    "aa": "M",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 39,
+    "aa": "H",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 40,
+    "aa": "F",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 40,
+    "aa": "C",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 40,
+    "aa": "H",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 41,
+    "aa": "T",
+    "percent": 0.36971830985915494,
+    "count": 210,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 41,
+    "aa": "S",
+    "percent": 0.5845070422535211,
+    "count": 332,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 41,
+    "aa": "V",
+    "percent": 0.00528169014084507,
+    "count": 3,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 41,
+    "aa": "P",
+    "percent": 0.0017605633802816902,
+    "count": 1,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 41,
+    "aa": "I",
+    "percent": 0.01232394366197183,
+    "count": 7,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 41,
+    "aa": "A",
+    "percent": 0.02112676056338028,
+    "count": 12,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 41,
+    "aa": "M",
+    "percent": 0.0035211267605633804,
+    "count": 2,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 41,
+    "aa": "L",
+    "percent": 0.0017605633802816902,
+    "count": 1,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 42,
+    "aa": "A",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 42,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 43,
+    "aa": "L",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 43,
+    "aa": "V",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 44,
+    "aa": "S",
+    "percent": 0.9824868651488616,
+    "count": 561,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 44,
+    "aa": "A",
+    "percent": 0.01576182136602452,
+    "count": 9,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 44,
+    "aa": "L",
+    "percent": 0.0017513134851138354,
+    "count": 1,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 45,
+    "aa": "E",
+    "percent": 0.9860627177700348,
+    "count": 566,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 45,
+    "aa": "D",
+    "percent": 0.008710801393728223,
+    "count": 5,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 45,
+    "aa": "N",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 45,
+    "aa": "Q",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 45,
+    "aa": "H",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 46,
+    "aa": "G",
+    "percent": 0.9965095986038395,
+    "count": 571,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 46,
+    "aa": "R",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 46,
+    "aa": "Q",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 47,
+    "aa": "A",
+    "percent": 0.9947552447552448,
+    "count": 569,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 47,
+    "aa": "C",
+    "percent": 0.0034965034965034965,
+    "count": 2,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 47,
+    "aa": "D",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 48,
+    "aa": "T",
+    "percent": 0.9982547993019197,
+    "count": 572,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 48,
+    "aa": "Y",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 49,
+    "aa": "P",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 49,
+    "aa": "S",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 49,
+    "aa": "K",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 50,
+    "aa": "Q",
+    "percent": 0.8380281690140845,
+    "count": 476,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 50,
+    "aa": "S",
+    "percent": 0.05457746478873239,
+    "count": 31,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 50,
+    "aa": "T",
+    "percent": 0.017605633802816902,
+    "count": 10,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 50,
+    "aa": "G",
+    "percent": 0.051056338028169015,
+    "count": 29,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 50,
+    "aa": "H",
+    "percent": 0.014084507042253521,
+    "count": 8,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 50,
+    "aa": "A",
+    "percent": 0.01584507042253521,
+    "count": 9,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 50,
+    "aa": "Y",
+    "percent": 0.0017605633802816902,
+    "count": 1,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 50,
+    "aa": "V",
+    "percent": 0.0035211267605633804,
+    "count": 2,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 50,
+    "aa": "N",
+    "percent": 0.0017605633802816902,
+    "count": 1,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 50,
+    "aa": "K",
+    "percent": 0.0017605633802816902,
+    "count": 1,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 51,
+    "aa": "D",
+    "percent": 0.9965095986038395,
+    "count": 571,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 51,
+    "aa": "N",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 51,
+    "aa": "V",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 52,
+    "aa": "L",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 52,
+    "aa": "F",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 52,
+    "aa": "H",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 53,
+    "aa": "N",
+    "percent": 0.9947735191637631,
+    "count": 571,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 53,
+    "aa": "Y",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 53,
+    "aa": "T",
+    "percent": 0.003484320557491289,
+    "count": 2,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 54,
+    "aa": "T",
+    "percent": 0.9156414762741653,
+    "count": 521,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 54,
+    "aa": "S",
+    "percent": 0.043936731107205626,
+    "count": 25,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 54,
+    "aa": "V",
+    "percent": 0.007029876977152899,
+    "count": 4,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 54,
+    "aa": "I",
+    "percent": 0.005272407732864675,
+    "count": 3,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 54,
+    "aa": "L",
+    "percent": 0.019332161687170474,
+    "count": 11,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 54,
+    "aa": "D",
+    "percent": 0.0017574692442882249,
+    "count": 1,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 54,
+    "aa": "G",
+    "percent": 0.0017574692442882249,
+    "count": 1,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 54,
+    "aa": "P",
+    "percent": 0.0017574692442882249,
+    "count": 1,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 54,
+    "aa": "M",
+    "percent": 0.0017574692442882249,
+    "count": 1,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 54,
+    "aa": "A",
+    "percent": 0.0017574692442882249,
+    "count": 1,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 55,
+    "aa": "M",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 55,
+    "aa": "C",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 55,
+    "aa": "F",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 56,
+    "aa": "L",
+    "percent": 0.9947735191637631,
+    "count": 571,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 56,
+    "aa": "K",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 56,
+    "aa": "M",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 56,
+    "aa": "S",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 57,
+    "aa": "N",
+    "percent": 0.9895470383275261,
+    "count": 568,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 57,
+    "aa": "H",
+    "percent": 0.005226480836236934,
+    "count": 3,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 57,
+    "aa": "Y",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 57,
+    "aa": "D",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 57,
+    "aa": "S",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 58,
+    "aa": "T",
+    "percent": 0.9650959860383944,
+    "count": 553,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 58,
+    "aa": "V",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 58,
+    "aa": "A",
+    "percent": 0.020942408376963352,
+    "count": 12,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 58,
+    "aa": "S",
+    "percent": 0.005235602094240838,
+    "count": 3,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 58,
+    "aa": "I",
+    "percent": 0.005235602094240838,
+    "count": 3,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 58,
+    "aa": "Y",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 59,
+    "aa": "V",
+    "percent": 0.9633507853403142,
+    "count": 552,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 59,
+    "aa": "I",
+    "percent": 0.031413612565445025,
+    "count": 18,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 59,
+    "aa": "R",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 59,
+    "aa": "A",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 59,
+    "aa": "L",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 60,
+    "aa": "G",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 60,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 61,
+    "aa": "G",
+    "percent": 0.9947735191637631,
+    "count": 571,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 61,
+    "aa": "S",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 61,
+    "aa": "-",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 61,
+    "aa": "R",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 62,
+    "aa": "H",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 62,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 63,
+    "aa": "Q",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 63,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 63,
+    "aa": "G",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 64,
+    "aa": "A",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 64,
+    "aa": "*",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 65,
+    "aa": "A",
+    "percent": 0.9965095986038395,
+    "count": 571,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 65,
+    "aa": "P",
+    "percent": 0.0034904013961605585,
+    "count": 2,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 66,
+    "aa": "M",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 66,
+    "aa": "S",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 66,
+    "aa": "G",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 67,
+    "aa": "Q",
+    "percent": 0.9930313588850174,
+    "count": 570,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 67,
+    "aa": "R",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 67,
+    "aa": "H",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 67,
+    "aa": "N",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 67,
+    "aa": "K",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 68,
+    "aa": "M",
+    "percent": 0.9860627177700348,
+    "count": 566,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 68,
+    "aa": "I",
+    "percent": 0.010452961672473868,
+    "count": 6,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 68,
+    "aa": "A",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 68,
+    "aa": "S",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 69,
+    "aa": "L",
+    "percent": 0.9947735191637631,
+    "count": 571,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 69,
+    "aa": "F",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 69,
+    "aa": "Q",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 69,
+    "aa": "S",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 70,
+    "aa": "K",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 70,
+    "aa": "R",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 70,
+    "aa": "F",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 71,
+    "aa": "E",
+    "percent": 0.9210526315789473,
+    "count": 525,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 71,
+    "aa": "D",
+    "percent": 0.07719298245614035,
+    "count": 44,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 71,
+    "aa": "L",
+    "percent": 0.0017543859649122807,
+    "count": 1,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 72,
+    "aa": "T",
+    "percent": 0.9930313588850174,
+    "count": 570,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 72,
+    "aa": "V",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 72,
+    "aa": "H",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 72,
+    "aa": "A",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 72,
+    "aa": "F",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 73,
+    "aa": "I",
+    "percent": 0.9947735191637631,
+    "count": 571,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 73,
+    "aa": "T",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 73,
+    "aa": "Q",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 73,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 74,
+    "aa": "N",
+    "percent": 0.9947735191637631,
+    "count": 571,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 74,
+    "aa": "Y",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 74,
+    "aa": "E",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 74,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 75,
+    "aa": "E",
+    "percent": 0.9686411149825784,
+    "count": 556,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 75,
+    "aa": "D",
+    "percent": 0.029616724738675958,
+    "count": 17,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 75,
+    "aa": "P",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 76,
+    "aa": "E",
+    "percent": 0.9912891986062717,
+    "count": 569,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 76,
+    "aa": "K",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 76,
+    "aa": "R",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 76,
+    "aa": "G",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 76,
+    "aa": "A",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 76,
+    "aa": "S",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 77,
+    "aa": "A",
+    "percent": 0.9965095986038395,
+    "count": 571,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 77,
+    "aa": "Q",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 77,
+    "aa": "F",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 78,
+    "aa": "A",
+    "percent": 0.9876977152899824,
+    "count": 562,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 78,
+    "aa": "G",
+    "percent": 0.005272407732864675,
+    "count": 3,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 78,
+    "aa": "S",
+    "percent": 0.0017574692442882249,
+    "count": 1,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 78,
+    "aa": "V",
+    "percent": 0.0035149384885764497,
+    "count": 2,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 78,
+    "aa": "P",
+    "percent": 0.0017574692442882249,
+    "count": 1,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 79,
+    "aa": "E",
+    "percent": 0.9616724738675958,
+    "count": 552,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 79,
+    "aa": "D",
+    "percent": 0.036585365853658534,
+    "count": 21,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 79,
+    "aa": "R",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 80,
+    "aa": "W",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 80,
+    "aa": "Y",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 81,
+    "aa": "D",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 81,
+    "aa": "Y",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 82,
+    "aa": "R",
+    "percent": 0.9947735191637631,
+    "count": 571,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 82,
+    "aa": "M",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 82,
+    "aa": "T",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 82,
+    "aa": "F",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 83,
+    "aa": "L",
+    "percent": 0.8614564831261101,
+    "count": 485,
+    "total": 563,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 83,
+    "aa": "I",
+    "percent": 0.03907637655417407,
+    "count": 22,
+    "total": 563,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 83,
+    "aa": "A",
+    "percent": 0.0017761989342806395,
+    "count": 1,
+    "total": 563,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 83,
+    "aa": "M",
+    "percent": 0.021314387211367674,
+    "count": 12,
+    "total": 563,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 83,
+    "aa": "Q",
+    "percent": 0.012433392539964476,
+    "count": 7,
+    "total": 563,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 83,
+    "aa": "V",
+    "percent": 0.03019538188277087,
+    "count": 17,
+    "total": 563,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 83,
+    "aa": "T",
+    "percent": 0.03197158081705151,
+    "count": 18,
+    "total": 563,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 83,
+    "aa": "*",
+    "percent": 0.0017761989342806395,
+    "count": 1,
+    "total": 563,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 84,
+    "aa": "H",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 84,
+    "aa": "Y",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 85,
+    "aa": "P",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 85,
+    "aa": "_",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 85,
+    "aa": "*",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 86,
+    "aa": "V",
+    "percent": 0.9383802816901409,
+    "count": 533,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 86,
+    "aa": "I",
+    "percent": 0.00528169014084507,
+    "count": 3,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 86,
+    "aa": "M",
+    "percent": 0.01056338028169014,
+    "count": 6,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 86,
+    "aa": "P",
+    "percent": 0.01056338028169014,
+    "count": 6,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 86,
+    "aa": "A",
+    "percent": 0.03345070422535211,
+    "count": 19,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 86,
+    "aa": "Y",
+    "percent": 0.0017605633802816902,
+    "count": 1,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 87,
+    "aa": "H",
+    "percent": 0.7530864197530864,
+    "count": 427,
+    "total": 567,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 87,
+    "aa": "Q",
+    "percent": 0.2204585537918871,
+    "count": 125,
+    "total": 567,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 87,
+    "aa": "P",
+    "percent": 0.026455026455026454,
+    "count": 15,
+    "total": 567,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 88,
+    "aa": "A",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 88,
+    "aa": "V",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 88,
+    "aa": "S",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 89,
+    "aa": "G",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 89,
+    "aa": "S",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 90,
+    "aa": "P",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 90,
+    "aa": "A",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 90,
+    "aa": "N",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 91,
+    "aa": "I",
+    "percent": 0.38405797101449274,
+    "count": 212,
+    "total": 552,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 91,
+    "aa": "V",
+    "percent": 0.3677536231884058,
+    "count": 203,
+    "total": 552,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 91,
+    "aa": "N",
+    "percent": 0.09057971014492754,
+    "count": 50,
+    "total": 552,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 91,
+    "aa": "P",
+    "percent": 0.025362318840579712,
+    "count": 14,
+    "total": 552,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 91,
+    "aa": "Y",
+    "percent": 0.0036231884057971015,
+    "count": 2,
+    "total": 552,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 91,
+    "aa": "L",
+    "percent": 0.016304347826086956,
+    "count": 9,
+    "total": 552,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 91,
+    "aa": "T",
+    "percent": 0.012681159420289856,
+    "count": 7,
+    "total": 552,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 91,
+    "aa": "H",
+    "percent": 0.019927536231884056,
+    "count": 11,
+    "total": 552,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 91,
+    "aa": "A",
+    "percent": 0.05615942028985507,
+    "count": 31,
+    "total": 552,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 91,
+    "aa": "Q",
+    "percent": 0.019927536231884056,
+    "count": 11,
+    "total": 552,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 91,
+    "aa": "S",
+    "percent": 0.0018115942028985507,
+    "count": 1,
+    "total": 552,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 91,
+    "aa": "M",
+    "percent": 0.0018115942028985507,
+    "count": 1,
+    "total": 552,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 92,
+    "aa": "A",
+    "percent": 0.9476439790575916,
+    "count": 543,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 92,
+    "aa": "V",
+    "percent": 0.008726003490401396,
+    "count": 5,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 92,
+    "aa": "P",
+    "percent": 0.04013961605584642,
+    "count": 23,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 92,
+    "aa": "C",
+    "percent": 0.0034904013961605585,
+    "count": 2,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 93,
+    "aa": "P",
+    "percent": 0.9825783972125436,
+    "count": 564,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 93,
+    "aa": "T",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 93,
+    "aa": "S",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 93,
+    "aa": "V",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 93,
+    "aa": "A",
+    "percent": 0.008710801393728223,
+    "count": 5,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 93,
+    "aa": "Q",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 93,
+    "aa": "N",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 94,
+    "aa": "G",
+    "percent": 0.9895470383275261,
+    "count": 568,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 94,
+    "aa": "R",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 94,
+    "aa": "N",
+    "percent": 0.006968641114982578,
+    "count": 4,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 94,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 95,
+    "aa": "Q",
+    "percent": 0.9912891986062717,
+    "count": 569,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 95,
+    "aa": "P",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 95,
+    "aa": "H",
+    "percent": 0.003484320557491289,
+    "count": 2,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 95,
+    "aa": "A",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 95,
+    "aa": "K",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 96,
+    "aa": "M",
+    "percent": 0.8113879003558719,
+    "count": 456,
+    "total": 562,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 96,
+    "aa": "L",
+    "percent": 0.07829181494661921,
+    "count": 44,
+    "total": 562,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 96,
+    "aa": "I",
+    "percent": 0.09608540925266904,
+    "count": 54,
+    "total": 562,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 96,
+    "aa": "V",
+    "percent": 0.012455516014234875,
+    "count": 7,
+    "total": 562,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 96,
+    "aa": "*",
+    "percent": 0.0017793594306049821,
+    "count": 1,
+    "total": 562,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 97,
+    "aa": "R",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 97,
+    "aa": "K",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 97,
+    "aa": "H",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 98,
+    "aa": "E",
+    "percent": 0.9153439153439153,
+    "count": 519,
+    "total": 567,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 98,
+    "aa": "D",
+    "percent": 0.08289241622574955,
+    "count": 47,
+    "total": 567,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 98,
+    "aa": "R",
+    "percent": 0.001763668430335097,
+    "count": 1,
+    "total": 567,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 99,
+    "aa": "P",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 99,
+    "aa": "V",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 100,
+    "aa": "R",
+    "percent": 0.987783595113438,
+    "count": 566,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 100,
+    "aa": "T",
+    "percent": 0.008726003490401396,
+    "count": 5,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 100,
+    "aa": "K",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 100,
+    "aa": "E",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 101,
+    "aa": "G",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 101,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 102,
+    "aa": "S",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 102,
+    "aa": "G",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 102,
+    "aa": "I",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 103,
+    "aa": "D",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 103,
+    "aa": "A",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 103,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 104,
+    "aa": "I",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 104,
+    "aa": "H",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 105,
+    "aa": "A",
+    "percent": 0.9947643979057592,
+    "count": 570,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 105,
+    "aa": "V",
+    "percent": 0.0034904013961605585,
+    "count": 2,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 105,
+    "aa": "M",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 106,
+    "aa": "G",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 106,
+    "aa": "E",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 106,
+    "aa": "A",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 107,
+    "aa": "T",
+    "percent": 0.9895104895104895,
+    "count": 566,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 107,
+    "aa": "P",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 107,
+    "aa": "V",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 107,
+    "aa": "A",
+    "percent": 0.0034965034965034965,
+    "count": 2,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 107,
+    "aa": "S",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 107,
+    "aa": "L",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 108,
+    "aa": "T",
+    "percent": 0.9982547993019197,
+    "count": 572,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 108,
+    "aa": "S",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 109,
+    "aa": "S",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 109,
+    "aa": "I",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 109,
+    "aa": "F",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 110,
+    "aa": "T",
+    "percent": 0.7797202797202797,
+    "count": 446,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 110,
+    "aa": "S",
+    "percent": 0.09090909090909091,
+    "count": 52,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 110,
+    "aa": "N",
+    "percent": 0.12762237762237763,
+    "count": 73,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 110,
+    "aa": "D",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 111,
+    "aa": "L",
+    "percent": 0.980836236933798,
+    "count": 563,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 111,
+    "aa": "T",
+    "percent": 0.005226480836236934,
+    "count": 3,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 111,
+    "aa": "P",
+    "percent": 0.008710801393728223,
+    "count": 5,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 111,
+    "aa": "I",
+    "percent": 0.003484320557491289,
+    "count": 2,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 111,
+    "aa": "H",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 112,
+    "aa": "Q",
+    "percent": 0.9843205574912892,
+    "count": 565,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 112,
+    "aa": "E",
+    "percent": 0.003484320557491289,
+    "count": 2,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 112,
+    "aa": "A",
+    "percent": 0.008710801393728223,
+    "count": 5,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 112,
+    "aa": "D",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 112,
+    "aa": "I",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 113,
+    "aa": "E",
+    "percent": 0.9930191972076788,
+    "count": 569,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 113,
+    "aa": "D",
+    "percent": 0.005235602094240838,
+    "count": 3,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 113,
+    "aa": "N",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 114,
+    "aa": "Q",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 114,
+    "aa": "*",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 115,
+    "aa": "I",
+    "percent": 0.9526315789473684,
+    "count": 543,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 115,
+    "aa": "V",
+    "percent": 0.03508771929824561,
+    "count": 20,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 115,
+    "aa": "M",
+    "percent": 0.008771929824561403,
+    "count": 5,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 115,
+    "aa": "L",
+    "percent": 0.0035087719298245615,
+    "count": 2,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 116,
+    "aa": "G",
+    "percent": 0.5106382978723404,
+    "count": 288,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 116,
+    "aa": "A",
+    "percent": 0.3723404255319149,
+    "count": 210,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 116,
+    "aa": "D",
+    "percent": 0.012411347517730497,
+    "count": 7,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 116,
+    "aa": "N",
+    "percent": 0.005319148936170213,
+    "count": 3,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 116,
+    "aa": "T",
+    "percent": 0.06382978723404255,
+    "count": 36,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 116,
+    "aa": "Q",
+    "percent": 0.024822695035460994,
+    "count": 14,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 116,
+    "aa": "R",
+    "percent": 0.005319148936170213,
+    "count": 3,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 116,
+    "aa": "S",
+    "percent": 0.0017730496453900709,
+    "count": 1,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 116,
+    "aa": "E",
+    "percent": 0.0017730496453900709,
+    "count": 1,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 116,
+    "aa": "Y",
+    "percent": 0.0017730496453900709,
+    "count": 1,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 117,
+    "aa": "W",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 117,
+    "aa": "P",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 118,
+    "aa": "M",
+    "percent": 0.9860627177700348,
+    "count": 566,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 118,
+    "aa": "I",
+    "percent": 0.012195121951219513,
+    "count": 7,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 118,
+    "aa": "H",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 119,
+    "aa": "T",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 119,
+    "aa": "A",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 120,
+    "aa": "N",
+    "percent": 0.20567375886524822,
+    "count": 116,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 120,
+    "aa": "S",
+    "percent": 0.6879432624113475,
+    "count": 388,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 120,
+    "aa": "G",
+    "percent": 0.06382978723404255,
+    "count": 36,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 120,
+    "aa": "A",
+    "percent": 0.01773049645390071,
+    "count": 10,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 120,
+    "aa": "H",
+    "percent": 0.01773049645390071,
+    "count": 10,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 120,
+    "aa": "T",
+    "percent": 0.0017730496453900709,
+    "count": 1,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 120,
+    "aa": "R",
+    "percent": 0.0017730496453900709,
+    "count": 1,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 120,
+    "aa": "C",
+    "percent": 0.0017730496453900709,
+    "count": 1,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 120,
+    "aa": "F",
+    "percent": 0.0017730496453900709,
+    "count": 1,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 121,
+    "aa": "N",
+    "percent": 0.9895287958115183,
+    "count": 567,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 121,
+    "aa": "T",
+    "percent": 0.0034904013961605585,
+    "count": 2,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 121,
+    "aa": "I",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 121,
+    "aa": "Q",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 121,
+    "aa": "Y",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 121,
+    "aa": "V",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 122,
+    "aa": "P",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 122,
+    "aa": "*",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 122,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 123,
+    "aa": "P",
+    "percent": 0.9702276707530648,
+    "count": 554,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 123,
+    "aa": "S",
+    "percent": 0.0070052539404553416,
+    "count": 4,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 123,
+    "aa": "A",
+    "percent": 0.021015761821366025,
+    "count": 12,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 123,
+    "aa": "V",
+    "percent": 0.0017513134851138354,
+    "count": 1,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 124,
+    "aa": "I",
+    "percent": 0.9020979020979021,
+    "count": 516,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 124,
+    "aa": "V",
+    "percent": 0.08741258741258741,
+    "count": 50,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 124,
+    "aa": "Y",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 124,
+    "aa": "T",
+    "percent": 0.005244755244755245,
+    "count": 3,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 124,
+    "aa": "M",
+    "percent": 0.0034965034965034965,
+    "count": 2,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 125,
+    "aa": "P",
+    "percent": 1.0,
+    "count": 574,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 126,
+    "aa": "V",
+    "percent": 1.0,
+    "count": 573,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 127,
+    "aa": "G",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 127,
+    "aa": "*",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 128,
+    "aa": "E",
+    "percent": 0.8945518453427065,
+    "count": 509,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 128,
+    "aa": "D",
+    "percent": 0.10369068541300527,
+    "count": 59,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 128,
+    "aa": "N",
+    "percent": 0.0017574692442882249,
+    "count": 1,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 129,
+    "aa": "I",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 129,
+    "aa": "M",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 129,
+    "aa": "-",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 130,
+    "aa": "Y",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 130,
+    "aa": "-",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 131,
+    "aa": "K",
+    "percent": 0.9947643979057592,
+    "count": 570,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 131,
+    "aa": "T",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 131,
+    "aa": "-",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 131,
+    "aa": "N",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 132,
+    "aa": "R",
+    "percent": 0.9825783972125436,
+    "count": 564,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 132,
+    "aa": "K",
+    "percent": 0.0156794425087108,
+    "count": 9,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 132,
+    "aa": "-",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 133,
+    "aa": "W",
+    "percent": 0.9965095986038395,
+    "count": 571,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 133,
+    "aa": "*",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 133,
+    "aa": "-",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 134,
+    "aa": "I",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 134,
+    "aa": "E",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 135,
+    "aa": "I",
+    "percent": 0.9440559440559441,
+    "count": 540,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 135,
+    "aa": "V",
+    "percent": 0.055944055944055944,
+    "count": 32,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 136,
+    "aa": "L",
+    "percent": 0.9720767888307156,
+    "count": 557,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 136,
+    "aa": "I",
+    "percent": 0.006980802792321117,
+    "count": 4,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 136,
+    "aa": "M",
+    "percent": 0.017452006980802792,
+    "count": 10,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 136,
+    "aa": "P",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 136,
+    "aa": "V",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 137,
+    "aa": "G",
+    "percent": 0.9947643979057592,
+    "count": 570,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 137,
+    "aa": "K",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 137,
+    "aa": "S",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 137,
+    "aa": "L",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 138,
+    "aa": "L",
+    "percent": 0.9930191972076788,
+    "count": 569,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 138,
+    "aa": "F",
+    "percent": 0.0034904013961605585,
+    "count": 2,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 138,
+    "aa": "I",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 138,
+    "aa": "W",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 139,
+    "aa": "N",
+    "percent": 0.9930313588850174,
+    "count": 570,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 139,
+    "aa": "Y",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 139,
+    "aa": "D",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 139,
+    "aa": "T",
+    "percent": 0.003484320557491289,
+    "count": 2,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 140,
+    "aa": "K",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 140,
+    "aa": "G",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 140,
+    "aa": "R",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 141,
+    "aa": "I",
+    "percent": 0.9947735191637631,
+    "count": 571,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 141,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 141,
+    "aa": "V",
+    "percent": 0.003484320557491289,
+    "count": 2,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 142,
+    "aa": "V",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 142,
+    "aa": "I",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 142,
+    "aa": "E",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 143,
+    "aa": "R",
+    "percent": 0.9947643979057592,
+    "count": 570,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 143,
+    "aa": "-",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 143,
+    "aa": "S",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 143,
+    "aa": "K",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 144,
+    "aa": "M",
+    "percent": 0.9930313588850174,
+    "count": 570,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 144,
+    "aa": "I",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 144,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 144,
+    "aa": "-",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 144,
+    "aa": "R",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 145,
+    "aa": "Y",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 145,
+    "aa": "-",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 146,
+    "aa": "S",
+    "percent": 0.9930313588850174,
+    "count": 570,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 146,
+    "aa": "I",
+    "percent": 0.003484320557491289,
+    "count": 2,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 146,
+    "aa": "-",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 146,
+    "aa": "C",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 147,
+    "aa": "P",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 147,
+    "aa": "H",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 148,
+    "aa": "V",
+    "percent": 0.9895470383275261,
+    "count": 568,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 148,
+    "aa": "T",
+    "percent": 0.008710801393728223,
+    "count": 5,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 148,
+    "aa": "N",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 149,
+    "aa": "S",
+    "percent": 0.987783595113438,
+    "count": 566,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 149,
+    "aa": "N",
+    "percent": 0.0034904013961605585,
+    "count": 2,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 149,
+    "aa": "D",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 149,
+    "aa": "G",
+    "percent": 0.005235602094240838,
+    "count": 3,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 149,
+    "aa": "C",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 150,
+    "aa": "I",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 150,
+    "aa": "*",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 151,
+    "aa": "L",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 151,
+    "aa": "I",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 152,
+    "aa": "D",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 152,
+    "aa": "N",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 152,
+    "aa": "A",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 153,
+    "aa": "I",
+    "percent": 0.9947735191637631,
+    "count": 571,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 153,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 153,
+    "aa": "V",
+    "percent": 0.003484320557491289,
+    "count": 2,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 154,
+    "aa": "R",
+    "percent": 0.7588652482269503,
+    "count": 428,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 154,
+    "aa": "K",
+    "percent": 0.2393617021276596,
+    "count": 135,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 154,
+    "aa": "W",
+    "percent": 0.0017730496453900709,
+    "count": 1,
+    "total": 564,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 155,
+    "aa": "Q",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 155,
+    "aa": "R",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 156,
+    "aa": "G",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 156,
+    "aa": "N",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 157,
+    "aa": "P",
+    "percent": 0.9982547993019197,
+    "count": 572,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 157,
+    "aa": "L",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 158,
+    "aa": "K",
+    "percent": 0.9947735191637631,
+    "count": 571,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 158,
+    "aa": "R",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 158,
+    "aa": "C",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 158,
+    "aa": "Y",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 159,
+    "aa": "E",
+    "percent": 0.9982547993019197,
+    "count": 572,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 159,
+    "aa": "S",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 160,
+    "aa": "P",
+    "percent": 0.9842931937172775,
+    "count": 564,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 160,
+    "aa": "S",
+    "percent": 0.008726003490401396,
+    "count": 5,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 160,
+    "aa": "T",
+    "percent": 0.005235602094240838,
+    "count": 3,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 160,
+    "aa": "H",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 161,
+    "aa": "F",
+    "percent": 0.9982547993019197,
+    "count": 572,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 161,
+    "aa": "Y",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 162,
+    "aa": "R",
+    "percent": 0.9912739965095986,
+    "count": 568,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 162,
+    "aa": "T",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 162,
+    "aa": "K",
+    "percent": 0.0034904013961605585,
+    "count": 2,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 162,
+    "aa": "_",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 162,
+    "aa": "I",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 163,
+    "aa": "D",
+    "percent": 0.9947643979057592,
+    "count": 570,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 163,
+    "aa": "E",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 163,
+    "aa": "N",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 163,
+    "aa": "T",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 164,
+    "aa": "Y",
+    "percent": 1.0,
+    "count": 574,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 165,
+    "aa": "V",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 165,
+    "aa": "M",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 165,
+    "aa": "I",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 166,
+    "aa": "D",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 166,
+    "aa": "Q",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 167,
+    "aa": "R",
+    "percent": 0.9964973730297724,
+    "count": 569,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 167,
+    "aa": "P",
+    "percent": 0.0017513134851138354,
+    "count": 1,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 167,
+    "aa": "H",
+    "percent": 0.0017513134851138354,
+    "count": 1,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 168,
+    "aa": "F",
+    "percent": 0.9965095986038395,
+    "count": 571,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 168,
+    "aa": "L",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 168,
+    "aa": "K",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 169,
+    "aa": "Y",
+    "percent": 0.9947552447552448,
+    "count": 569,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 169,
+    "aa": "L",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 169,
+    "aa": "P",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 169,
+    "aa": "F",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 170,
+    "aa": "K",
+    "percent": 0.9825479930191972,
+    "count": 563,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 170,
+    "aa": "R",
+    "percent": 0.015706806282722512,
+    "count": 9,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 170,
+    "aa": "E",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 171,
+    "aa": "T",
+    "percent": 0.9387040280210157,
+    "count": 536,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 171,
+    "aa": "V",
+    "percent": 0.050788091068301226,
+    "count": 29,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 171,
+    "aa": "I",
+    "percent": 0.005253940455341506,
+    "count": 3,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 171,
+    "aa": "C",
+    "percent": 0.0035026269702276708,
+    "count": 2,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 171,
+    "aa": "P",
+    "percent": 0.0017513134851138354,
+    "count": 1,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 172,
+    "aa": "L",
+    "percent": 1.0,
+    "count": 571,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 173,
+    "aa": "R",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 173,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 174,
+    "aa": "A",
+    "percent": 0.9982547993019197,
+    "count": 572,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 174,
+    "aa": "D",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 175,
+    "aa": "E",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 175,
+    "aa": "T",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 176,
+    "aa": "Q",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 176,
+    "aa": "_",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 176,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 177,
+    "aa": "A",
+    "percent": 0.9511343804537522,
+    "count": 545,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 177,
+    "aa": "G",
+    "percent": 0.03664921465968586,
+    "count": 21,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 177,
+    "aa": "C",
+    "percent": 0.012216404886561954,
+    "count": 7,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 178,
+    "aa": "S",
+    "percent": 0.8831858407079646,
+    "count": 499,
+    "total": 565,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 178,
+    "aa": "T",
+    "percent": 0.11327433628318584,
+    "count": 64,
+    "total": 565,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 178,
+    "aa": "_",
+    "percent": 0.0017699115044247787,
+    "count": 1,
+    "total": 565,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 178,
+    "aa": "A",
+    "percent": 0.0017699115044247787,
+    "count": 1,
+    "total": 565,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 179,
+    "aa": "Q",
+    "percent": 0.9825479930191972,
+    "count": 563,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 179,
+    "aa": "T",
+    "percent": 0.005235602094240838,
+    "count": 3,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 179,
+    "aa": "S",
+    "percent": 0.005235602094240838,
+    "count": 3,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 179,
+    "aa": "H",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 179,
+    "aa": "A",
+    "percent": 0.0034904013961605585,
+    "count": 2,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 179,
+    "aa": "P",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 180,
+    "aa": "E",
+    "percent": 0.20458553791887124,
+    "count": 116,
+    "total": 567,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 180,
+    "aa": "D",
+    "percent": 0.7918871252204586,
+    "count": 449,
+    "total": 567,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 180,
+    "aa": "N",
+    "percent": 0.001763668430335097,
+    "count": 1,
+    "total": 567,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 180,
+    "aa": "A",
+    "percent": 0.001763668430335097,
+    "count": 1,
+    "total": 567,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 181,
+    "aa": "V",
+    "percent": 1.0,
+    "count": 574,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 182,
+    "aa": "K",
+    "percent": 0.9930313588850174,
+    "count": 570,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 182,
+    "aa": "Y",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 182,
+    "aa": "V",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 182,
+    "aa": "Q",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 182,
+    "aa": "*",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 183,
+    "aa": "N",
+    "percent": 0.9,
+    "count": 513,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 183,
+    "aa": "G",
+    "percent": 0.02280701754385965,
+    "count": 13,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 183,
+    "aa": "T",
+    "percent": 0.03508771929824561,
+    "count": 20,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 183,
+    "aa": "S",
+    "percent": 0.017543859649122806,
+    "count": 10,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 183,
+    "aa": "A",
+    "percent": 0.005263157894736842,
+    "count": 3,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 183,
+    "aa": "H",
+    "percent": 0.005263157894736842,
+    "count": 3,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 183,
+    "aa": "Q",
+    "percent": 0.008771929824561403,
+    "count": 5,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 183,
+    "aa": "K",
+    "percent": 0.0017543859649122807,
+    "count": 1,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 183,
+    "aa": "I",
+    "percent": 0.0017543859649122807,
+    "count": 1,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 183,
+    "aa": "R",
+    "percent": 0.0017543859649122807,
+    "count": 1,
+    "total": 570,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 184,
+    "aa": "W",
+    "percent": 0.9947460595446584,
+    "count": 568,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 184,
+    "aa": "L",
+    "percent": 0.0017513134851138354,
+    "count": 1,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 184,
+    "aa": "G",
+    "percent": 0.0017513134851138354,
+    "count": 1,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 184,
+    "aa": "S",
+    "percent": 0.0017513134851138354,
+    "count": 1,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 185,
+    "aa": "M",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 185,
+    "aa": "K",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 185,
+    "aa": "_",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 186,
+    "aa": "T",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 186,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 187,
+    "aa": "D",
+    "percent": 0.027923211169284468,
+    "count": 16,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 187,
+    "aa": "E",
+    "percent": 0.9668411867364747,
+    "count": 554,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 187,
+    "aa": "K",
+    "percent": 0.0034904013961605585,
+    "count": 2,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 187,
+    "aa": "N",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 188,
+    "aa": "T",
+    "percent": 0.9982547993019197,
+    "count": 572,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 188,
+    "aa": "N",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 189,
+    "aa": "L",
+    "percent": 0.9982547993019197,
+    "count": 572,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 189,
+    "aa": "W",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 190,
+    "aa": "L",
+    "percent": 0.993006993006993,
+    "count": 568,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 190,
+    "aa": "M",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 190,
+    "aa": "V",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 190,
+    "aa": "W",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 190,
+    "aa": "Q",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 191,
+    "aa": "V",
+    "percent": 0.9752650176678446,
+    "count": 552,
+    "total": 566,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 191,
+    "aa": "I",
+    "percent": 0.02120141342756184,
+    "count": 12,
+    "total": 566,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 191,
+    "aa": "L",
+    "percent": 0.0035335689045936395,
+    "count": 2,
+    "total": 566,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 192,
+    "aa": "Q",
+    "percent": 0.9982517482517482,
+    "count": 571,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 192,
+    "aa": "H",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 193,
+    "aa": "N",
+    "percent": 0.9965095986038395,
+    "count": 571,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 193,
+    "aa": "H",
+    "percent": 0.0034904013961605585,
+    "count": 2,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 194,
+    "aa": "A",
+    "percent": 0.9736379613356766,
+    "count": 554,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 194,
+    "aa": "L",
+    "percent": 0.0017574692442882249,
+    "count": 1,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 194,
+    "aa": "S",
+    "percent": 0.02460456942003515,
+    "count": 14,
+    "total": 569,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 195,
+    "aa": "N",
+    "percent": 0.9947735191637631,
+    "count": 571,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 195,
+    "aa": "D",
+    "percent": 0.003484320557491289,
+    "count": 2,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 195,
+    "aa": "I",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 196,
+    "aa": "P",
+    "percent": 1.0,
+    "count": 574,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 197,
+    "aa": "D",
+    "percent": 0.9947735191637631,
+    "count": 571,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 197,
+    "aa": "G",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 197,
+    "aa": "H",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 197,
+    "aa": "N",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 198,
+    "aa": "C",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 198,
+    "aa": "S",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 198,
+    "aa": "Y",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 199,
+    "aa": "K",
+    "percent": 0.9492119089316988,
+    "count": 542,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 199,
+    "aa": "R",
+    "percent": 0.04553415061295972,
+    "count": 26,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 199,
+    "aa": "S",
+    "percent": 0.0017513134851138354,
+    "count": 1,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 199,
+    "aa": "N",
+    "percent": 0.0017513134851138354,
+    "count": 1,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 199,
+    "aa": "E",
+    "percent": 0.0017513134851138354,
+    "count": 1,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 200,
+    "aa": "N",
+    "percent": 0.012237762237762238,
+    "count": 7,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 200,
+    "aa": "T",
+    "percent": 0.9755244755244755,
+    "count": 558,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 200,
+    "aa": "V",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 200,
+    "aa": "S",
+    "percent": 0.0034965034965034965,
+    "count": 2,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 200,
+    "aa": "I",
+    "percent": 0.005244755244755245,
+    "count": 3,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 200,
+    "aa": "Q",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 201,
+    "aa": "I",
+    "percent": 0.9947643979057592,
+    "count": 570,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 201,
+    "aa": "V",
+    "percent": 0.0034904013961605585,
+    "count": 2,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 201,
+    "aa": "L",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 202,
+    "aa": "L",
+    "percent": 1.0,
+    "count": 574,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 203,
+    "aa": "K",
+    "percent": 0.9581151832460733,
+    "count": 549,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 203,
+    "aa": "Q",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 203,
+    "aa": "R",
+    "percent": 0.03664921465968586,
+    "count": 21,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 203,
+    "aa": "I",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 203,
+    "aa": "T",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 204,
+    "aa": "A",
+    "percent": 0.9895470383275261,
+    "count": 568,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 204,
+    "aa": "S",
+    "percent": 0.003484320557491289,
+    "count": 2,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 204,
+    "aa": "G",
+    "percent": 0.006968641114982578,
+    "count": 4,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 205,
+    "aa": "L",
+    "percent": 0.9842931937172775,
+    "count": 564,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 205,
+    "aa": "M",
+    "percent": 0.012216404886561954,
+    "count": 7,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 205,
+    "aa": "F",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 205,
+    "aa": "W",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 206,
+    "aa": "G",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 206,
+    "aa": "R",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 206,
+    "aa": "*",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 207,
+    "aa": "P",
+    "percent": 0.975609756097561,
+    "count": 560,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 207,
+    "aa": "T",
+    "percent": 0.012195121951219513,
+    "count": 7,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 207,
+    "aa": "A",
+    "percent": 0.006968641114982578,
+    "count": 4,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 207,
+    "aa": "Q",
+    "percent": 0.003484320557491289,
+    "count": 2,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 207,
+    "aa": "S",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 208,
+    "aa": "G",
+    "percent": 0.4169611307420495,
+    "count": 236,
+    "total": 566,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 208,
+    "aa": "A",
+    "percent": 0.5388692579505301,
+    "count": 305,
+    "total": 566,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 208,
+    "aa": "Q",
+    "percent": 0.0353356890459364,
+    "count": 20,
+    "total": 566,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 208,
+    "aa": "E",
+    "percent": 0.0017667844522968198,
+    "count": 1,
+    "total": 566,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 208,
+    "aa": "T",
+    "percent": 0.0017667844522968198,
+    "count": 1,
+    "total": 566,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 208,
+    "aa": "H",
+    "percent": 0.00530035335689046,
+    "count": 3,
+    "total": 566,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 209,
+    "aa": "A",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 209,
+    "aa": "T",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 209,
+    "aa": "-",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 210,
+    "aa": "T",
+    "percent": 0.8966725043782837,
+    "count": 512,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 210,
+    "aa": "S",
+    "percent": 0.09632224168126094,
+    "count": 55,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 210,
+    "aa": "N",
+    "percent": 0.005253940455341506,
+    "count": 3,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 210,
+    "aa": "P",
+    "percent": 0.0017513134851138354,
+    "count": 1,
+    "total": 571,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 211,
+    "aa": "L",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 211,
+    "aa": "S",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 212,
+    "aa": "E",
+    "percent": 0.9947735191637631,
+    "count": 571,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 212,
+    "aa": "K",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 212,
+    "aa": "*",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 212,
+    "aa": "W",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 213,
+    "aa": "E",
+    "percent": 0.9895287958115183,
+    "count": 567,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 213,
+    "aa": "D",
+    "percent": 0.008726003490401396,
+    "count": 5,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 213,
+    "aa": "K",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 214,
+    "aa": "M",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 214,
+    "aa": "K",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 215,
+    "aa": "M",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 215,
+    "aa": "L",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 216,
+    "aa": "T",
+    "percent": 0.9912739965095986,
+    "count": 568,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 216,
+    "aa": "P",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 216,
+    "aa": "A",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 216,
+    "aa": "S",
+    "percent": 0.0034904013961605585,
+    "count": 2,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 216,
+    "aa": "I",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 217,
+    "aa": "A",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 217,
+    "aa": "E",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 217,
+    "aa": "S",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 218,
+    "aa": "C",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 218,
+    "aa": "S",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 219,
+    "aa": "Q",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 219,
+    "aa": "G",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 220,
+    "aa": "G",
+    "percent": 0.9965156794425087,
+    "count": 572,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 220,
+    "aa": "E",
+    "percent": 0.003484320557491289,
+    "count": 2,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 221,
+    "aa": "V",
+    "percent": 0.9982547993019197,
+    "count": 572,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 221,
+    "aa": "_",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 222,
+    "aa": "G",
+    "percent": 1.0,
+    "count": 574,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 223,
+    "aa": "G",
+    "percent": 0.9947735191637631,
+    "count": 571,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 223,
+    "aa": "-",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 223,
+    "aa": "P",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 223,
+    "aa": "E",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 224,
+    "aa": "P",
+    "percent": 0.9982547993019197,
+    "count": 572,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 224,
+    "aa": "T",
+    "percent": 0.0017452006980802793,
+    "count": 1,
+    "total": 573,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 225,
+    "aa": "S",
+    "percent": 0.6223776223776224,
+    "count": 356,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 225,
+    "aa": "G",
+    "percent": 0.3618881118881119,
+    "count": 207,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 225,
+    "aa": "Q",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 225,
+    "aa": "A",
+    "percent": 0.006993006993006993,
+    "count": 4,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 225,
+    "aa": "R",
+    "percent": 0.0034965034965034965,
+    "count": 2,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 225,
+    "aa": "L",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 225,
+    "aa": "T",
+    "percent": 0.0017482517482517483,
+    "count": 1,
+    "total": 572,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 226,
+    "aa": "H",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 226,
+    "aa": "P",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 227,
+    "aa": "K",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 227,
+    "aa": "P",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 228,
+    "aa": "A",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 228,
+    "aa": "T",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 229,
+    "aa": "R",
+    "percent": 0.9982578397212544,
+    "count": 573,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 229,
+    "aa": "T",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 230,
+    "aa": "V",
+    "percent": 0.9612676056338029,
+    "count": 546,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 230,
+    "aa": "I",
+    "percent": 0.035211267605633804,
+    "count": 20,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 230,
+    "aa": "-",
+    "percent": 0.0017605633802816902,
+    "count": 1,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 230,
+    "aa": "L",
+    "percent": 0.0017605633802816902,
+    "count": 1,
+    "total": 568,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 231,
+    "aa": "L",
+    "percent": 0.9930313588850174,
+    "count": 570,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 231,
+    "aa": "F",
+    "percent": 0.003484320557491289,
+    "count": 2,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
+    "gene": "CA",
+    "position": 231,
+    "aa": "-",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": false
+  },
+  {
+    "gene": "CA",
+    "position": 231,
+    "aa": "M",
+    "percent": 0.0017421602787456446,
+    "count": 1,
+    "total": 574,
+    "reason": "PCNT",
+    "isUnusual": true
+  },
+  {
     "gene": "PR",
     "position": 1,
     "aa": "A",

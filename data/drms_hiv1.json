@@ -1,4 +1,51 @@
 {
+  "CAI": [
+    {
+      "gene": "CA",
+      "position": 56,
+      "aa": "I"
+    },
+    {
+      "gene": "CA",
+      "position": 66,
+      "aa": "I"
+    },
+    {
+      "gene": "CA",
+      "position": 67,
+      "aa": "Y"
+    },
+    {
+      "gene": "CA",
+      "position": 67,
+      "aa": "H"
+    },
+    {
+      "gene": "CA",
+      "position": 70,
+      "aa": "N"
+    },
+    {
+      "gene": "CA",
+      "position": 74,
+      "aa": "D"
+    },
+    {
+      "gene": "CA",
+      "position": 74,
+      "aa": "S"
+    },
+    {
+      "gene": "CA",
+      "position": 105,
+      "aa": "E"
+    },
+    {
+      "gene": "CA",
+      "position": 107,
+      "aa": "N"
+    }
+  ],
   "PI": [
     {
       "gene": "PR",

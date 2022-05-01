@@ -154,5 +154,11 @@
     "fullName": "raltegravir",
     "displayAbbr": "RAL",
     "drugClass": "INSTI"
+  },
+  {
+    "name": "LEN",
+    "fullName": "lenacapavir",
+    "displayAbbr": "LEN",
+    "drugClass": "CAI"
   }
 ]

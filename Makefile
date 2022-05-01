@@ -1,3 +1,23 @@
+data/drms_%.json: data/drms_%.csv
+	@pipenv run python scripts/drms_csv2json.py $<
+
+data/mutation-type-pairs_%.json: data/mutation-type-pairs_%.csv
+	@pipenv run python scripts/csv2json.py $<
+
+data/apobec%/apobecs.json: data/apobec%/apobecs.csv
+	@pipenv run python scripts/csv2json.py $<
+
+data/apobec%/apobec_drms.json: data/apobec%/apobec_drms.csv
+	@pipenv run python scripts/csv2json.py $<
+
+data/aapcnt/rx-all_subtype-%.json: data/aapcnt/rx-all_subtype-%.csv
+	@pipenv run python scripts/csv2json.py $<
+
+data/%.json: data/%.yml
+	@pipenv run python scripts/yaml2json.py $<
+
+data: data/*.json data/apobecs/*.json data/apobecs-hiv2/*.json
+
 refresh-yamls:
 	@pipenv run python scripts/yaml2json.py
 

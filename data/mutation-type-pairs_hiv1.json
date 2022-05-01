@@ -2347,5 +2347,86 @@
     "aas": "ACDEFGHILMNPQSTVWY_-",
     "mutationType": "Other",
     "isUnusual": true
+  },
+  {
+    "strain": "HIV1",
+    "gene": "CA",
+    "drugClass": "CAI",
+    "position": 56,
+    "aas": "I",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "CA",
+    "drugClass": "CAI",
+    "position": 66,
+    "aas": "I",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "CA",
+    "drugClass": "CAI",
+    "position": 67,
+    "aas": "Y",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "CA",
+    "drugClass": "CAI",
+    "position": 67,
+    "aas": "H",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "CA",
+    "drugClass": "CAI",
+    "position": 70,
+    "aas": "N",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "CA",
+    "drugClass": "CAI",
+    "position": 74,
+    "aas": "D",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "CA",
+    "drugClass": "CAI",
+    "position": 74,
+    "aas": "S",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "CA",
+    "drugClass": "CAI",
+    "position": 105,
+    "aas": "E",
+    "mutationType": "Major",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "CA",
+    "drugClass": "CAI",
+    "position": 107,
+    "aas": "N",
+    "mutationType": "Major",
+    "isUnusual": false
   }
 ]

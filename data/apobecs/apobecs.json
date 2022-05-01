@@ -1,5 +1,385 @@
 [
   {
+    "gene": "CA",
+    "position": 8,
+    "aa": "R"
+  },
+  {
+    "gene": "CA",
+    "position": 10,
+    "aa": "I"
+  },
+  {
+    "gene": "CA",
+    "position": 28,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 29,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 35,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 46,
+    "aa": "R"
+  },
+  {
+    "gene": "CA",
+    "position": 46,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 46,
+    "aa": "E"
+  },
+  {
+    "gene": "CA",
+    "position": 51,
+    "aa": "N"
+  },
+  {
+    "gene": "CA",
+    "position": 60,
+    "aa": "R"
+  },
+  {
+    "gene": "CA",
+    "position": 60,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 60,
+    "aa": "E"
+  },
+  {
+    "gene": "CA",
+    "position": 61,
+    "aa": "R"
+  },
+  {
+    "gene": "CA",
+    "position": 71,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 75,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 76,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 79,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 81,
+    "aa": "N"
+  },
+  {
+    "gene": "CA",
+    "position": 82,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 89,
+    "aa": "R"
+  },
+  {
+    "gene": "CA",
+    "position": 89,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 89,
+    "aa": "E"
+  },
+  {
+    "gene": "CA",
+    "position": 97,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 98,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 100,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 101,
+    "aa": "R"
+  },
+  {
+    "gene": "CA",
+    "position": 101,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 101,
+    "aa": "E"
+  },
+  {
+    "gene": "CA",
+    "position": 103,
+    "aa": "N"
+  },
+  {
+    "gene": "CA",
+    "position": 106,
+    "aa": "R"
+  },
+  {
+    "gene": "CA",
+    "position": 106,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 106,
+    "aa": "E"
+  },
+  {
+    "gene": "CA",
+    "position": 113,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 116,
+    "aa": "R"
+  },
+  {
+    "gene": "CA",
+    "position": 116,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 116,
+    "aa": "E"
+  },
+  {
+    "gene": "CA",
+    "position": 127,
+    "aa": "R"
+  },
+  {
+    "gene": "CA",
+    "position": 127,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 127,
+    "aa": "E"
+  },
+  {
+    "gene": "CA",
+    "position": 128,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 137,
+    "aa": "R"
+  },
+  {
+    "gene": "CA",
+    "position": 137,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 137,
+    "aa": "E"
+  },
+  {
+    "gene": "CA",
+    "position": 143,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 152,
+    "aa": "N"
+  },
+  {
+    "gene": "CA",
+    "position": 156,
+    "aa": "R"
+  },
+  {
+    "gene": "CA",
+    "position": 156,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 156,
+    "aa": "E"
+  },
+  {
+    "gene": "CA",
+    "position": 159,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 162,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 163,
+    "aa": "N"
+  },
+  {
+    "gene": "CA",
+    "position": 166,
+    "aa": "N"
+  },
+  {
+    "gene": "CA",
+    "position": 167,
+    "aa": "Q"
+  },
+  {
+    "gene": "CA",
+    "position": 173,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 175,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 180,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 185,
+    "aa": "I"
+  },
+  {
+    "gene": "CA",
+    "position": 187,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 197,
+    "aa": "N"
+  },
+  {
+    "gene": "CA",
+    "position": 206,
+    "aa": "R"
+  },
+  {
+    "gene": "CA",
+    "position": 206,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 206,
+    "aa": "E"
+  },
+  {
+    "gene": "CA",
+    "position": 212,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 213,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 214,
+    "aa": "I"
+  },
+  {
+    "gene": "CA",
+    "position": 215,
+    "aa": "I"
+  },
+  {
+    "gene": "CA",
+    "position": 220,
+    "aa": "R"
+  },
+  {
+    "gene": "CA",
+    "position": 220,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 220,
+    "aa": "E"
+  },
+  {
+    "gene": "CA",
+    "position": 222,
+    "aa": "R"
+  },
+  {
+    "gene": "CA",
+    "position": 222,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 222,
+    "aa": "E"
+  },
+  {
+    "gene": "CA",
+    "position": 223,
+    "aa": "R"
+  },
+  {
+    "gene": "CA",
+    "position": 223,
+    "aa": "K"
+  },
+  {
+    "gene": "CA",
+    "position": 223,
+    "aa": "E"
+  },
+  {
+    "gene": "CA",
+    "position": 229,
+    "aa": "K"
+  },
+  {
     "gene": "PR",
     "position": 6,
     "aa": "*"

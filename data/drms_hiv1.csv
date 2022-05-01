@@ -1,4 +1,13 @@
 ﻿drug_class,gene,position,aa
+CAI,CA,56,I
+CAI,CA,66,I
+CAI,CA,67,Y
+CAI,CA,67,H
+CAI,CA,70,N
+CAI,CA,74,D
+CAI,CA,74,S
+CAI,CA,105,E
+CAI,CA,107,N
 PI,PR,10,F
 PI,PR,11,I
 PI,PR,11,L
