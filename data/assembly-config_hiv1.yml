@@ -3,13 +3,48 @@ HIV1:
   type: UNTRANS_REGION
   refStart: 1
   refEnd: 789
-- name: gag
+
+# The gag gene is assembled from four pieces of regions:
+# - Piece 1: gagPreCA
+# - Piece 2: CA
+# - Piece 3: gagPostCAPrePR
+# - Piece 4: PR
+#
+#  | Piece 1  | Piece 2          | Piece 3 | Piece 4 ...
+#  |----------------- gag ---------------------|
+#  1 (hxb2=790)                              1500
+#             |------ CA --------|         |--- PR ...
+#            397 (hxb2=1186)   1089       1464
+- name: gagPreCA
   geneName: HIV1gag
   type: GENE
-- name: pol
-  geneName: HIV1pol
+  #   Start of CA
+  #        v
+  trim: [[397, 1500]]
+  #              ^
+  #          End of gag
+- name: CA
+  geneName: HIV1CA
   type: GENE
-  trim: [[1, 202]]
+- name: gagPostCA
+  geneName: HIV1gag
+  type: GENE
+  #        End of CA
+  #            v
+  trim: [[1, 1089], [1464, 1500]]
+  #                    ^
+  #               Start of PR
+- name: PR
+  geneName: HIV1PR
+  type: GENE
+# gag gene ends in PR
+
+- name: RT
+  geneName: HIV1RT
+  type: GENE
+- name: IN
+  geneName: HIV1IN
+  type: GENE
 - name: vif
   geneName: HIV1vif
   type: GENE

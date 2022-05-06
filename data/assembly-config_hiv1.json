@@ -7,20 +7,50 @@
       "refEnd": 789
     },
     {
-      "name": "gag",
+      "name": "gagPreCA",
       "geneName": "HIV1gag",
+      "type": "GENE",
+      "trim": [
+        [
+          397,
+          1500
+        ]
+      ]
+    },
+    {
+      "name": "CA",
+      "geneName": "HIV1CA",
       "type": "GENE"
     },
     {
-      "name": "pol",
-      "geneName": "HIV1pol",
+      "name": "gagPostCA",
+      "geneName": "HIV1gag",
       "type": "GENE",
       "trim": [
         [
           1,
-          202
+          1089
+        ],
+        [
+          1464,
+          1500
         ]
       ]
+    },
+    {
+      "name": "PR",
+      "geneName": "HIV1PR",
+      "type": "GENE"
+    },
+    {
+      "name": "RT",
+      "geneName": "HIV1RT",
+      "type": "GENE"
+    },
+    {
+      "name": "IN",
+      "geneName": "HIV1IN",
+      "type": "GENE"
     },
     {
       "name": "vif",
