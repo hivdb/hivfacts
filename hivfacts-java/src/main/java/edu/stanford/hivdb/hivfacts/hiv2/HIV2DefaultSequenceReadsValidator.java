@@ -19,6 +19,7 @@
 package edu.stanford.hivdb.hivfacts.hiv2;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -164,16 +165,16 @@ public class HIV2DefaultSequenceReadsValidator implements SequenceReadsValidator
 
 	}
 
-
-	public List<ValidationResult> validate(SequenceReads<HIV2> seqReads) {
+	@Override
+	public List<ValidationResult> validate(SequenceReads<HIV2> seqReads, Collection<String> includeGenes) {
 		List<ValidationResult> results = new ArrayList<>();
 		results.addAll(validateNotEmpty(seqReads));
 		if (!results.isEmpty()) {
 			return results;
 		}
 		results.addAll(validateTooLowThreshold(seqReads));
-		results.addAll(validateNoMissingPositions(seqReads));
-		results.addAll(validateTrimmedPositions(seqReads));
+		results.addAll(validateNoMissingPositions(seqReads, includeGenes));
+		results.addAll(validateTrimmedPositions(seqReads, includeGenes));
 		results.addAll(validateNoStopCodons(seqReads));
 		results.addAll(validateNoTooManyUnusualMutations(seqReads));
 		results.addAll(validateNoTooManyApobec(seqReads));
@@ -206,9 +207,9 @@ public class HIV2DefaultSequenceReadsValidator implements SequenceReadsValidator
 				
 	}
 	
-	protected List<ValidationResult> validateTrimmedPositions(SequenceReads<HIV2> seqReads) {
+	protected List<ValidationResult> validateTrimmedPositions(SequenceReads<HIV2> seqReads, Collection<String> includeGenes) {
 		List<ValidationResult> results = new ArrayList<>();
-		List<OneCodonReadsCoverage<HIV2>> crcs = seqReads.getCodonReadsCoverage();
+		List<OneCodonReadsCoverage<HIV2>> crcs = seqReads.getCodonReadsCoverage(includeGenes);
 		long trimmedPos = crcs.stream().filter(crc -> crc.isTrimmed()).count();
 		if (trimmedPos > 0) {
 			double totalPos = crcs.size();
@@ -289,9 +290,9 @@ public class HIV2DefaultSequenceReadsValidator implements SequenceReadsValidator
 		return validated;
 	}*/
 	
-	protected List<ValidationResult> validateNoMissingPositions(SequenceReads<HIV2> seqReads) {
+	protected List<ValidationResult> validateNoMissingPositions(SequenceReads<HIV2> seqReads, Collection<String> includeGenes) {
 		List<ValidationResult> results = new ArrayList<>();
-		List<OneCodonReadsCoverage<HIV2>> crcs = seqReads.getCodonReadsCoverage();
+		List<OneCodonReadsCoverage<HIV2>> crcs = seqReads.getCodonReadsCoverage(includeGenes);
 		if (crcs.isEmpty()) {
 			return results;
 		}

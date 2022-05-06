@@ -19,8 +19,8 @@
 package edu.stanford.hivdb.hivfacts;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -36,13 +36,13 @@ import edu.stanford.hivdb.seqreads.GeneSequenceReads;
 import edu.stanford.hivdb.seqreads.OneCodonReadsCoverage;
 import edu.stanford.hivdb.seqreads.SequenceReads;
 import edu.stanford.hivdb.seqreads.SequenceReadsValidator;
+import edu.stanford.hivdb.utilities.MyStringUtils;
 import edu.stanford.hivdb.utilities.ValidationLevel;
 import edu.stanford.hivdb.utilities.ValidationResult;
+import edu.stanford.hivdb.viruses.Gene;
 
 public class HIVDefaultSequenceReadsValidator implements SequenceReadsValidator<HIV> {
 
-	private static final Map<String, ValidationLevel> VALIDATION_RESULT_LEVELS;
-	private static final Map<String, String> VALIDATION_RESULT_MESSAGES;
 	// private static final Double PROPORTION_TRIMMED_POSITIONS_THRESHOLD = 0.05;
 	// private static final Double GAP_LEN_THRESHOLD = 0.1;
 	private static final Double UNUSUAL_THRESHOLD = 0.01;
@@ -50,172 +50,59 @@ public class HIVDefaultSequenceReadsValidator implements SequenceReadsValidator<
 	// private static final Map<GeneEnum, Pair<Integer, Integer>> SEQUENCE_DRM_RANGES;
 	// private static final Double SEQUENCE_DRM_MIN1 = 0.4;
 	// private static final Double SEQUENCE_DRM_MIN2 = 0.6;
-
-	static {
-		Map<String, ValidationLevel> levels = new HashMap<>();
-		Map<String, String> messages = new HashMap<>();
-
-		levels.put("no-gene-found", ValidationLevel.CRITICAL);
-		messages.put("no-gene-found",
-					"There were no Protease, Reverse Transcriptase, or " +
-					"Integrase genes found, refuse to process.");
-
-		/* levels.put("gap-too-long", ValidationLevel.SEVERE_WARNING);
-		messages.put(
-			"gap-too-long",
-			"More than 10%% of intermediate continuous positions are absent " +
-			"in the submitted codon frequency table. This may indicates " +
-			"preprocess issue and lead to incorrect subtyping detection. Click " +
-			"the ‘Read Coverage’ button to review."); */
-		
-		levels.put("position-missing", ValidationLevel.WARNING);
-		messages.put(
-			"position-missing",
-			"%d (%.1f%%) position%s %s missing between %s and %s. " +
-			"Click the ‘Read Coverage’ button to review.");
-		
-		levels.put("drm-position-missing", ValidationLevel.WARNING);
-		messages.put(
-			"drm-position-missing",
-			"%d (%.1f%%) out of %d position%s that may have a drug " +
-			"resistance mutation %s missing between %s and %s. " +
-			"Click the ‘Read Coverage’ button to review.");
-		
-		levels.put("min-read-depth-too-low", ValidationLevel.WARNING);
-		messages.put(
-			"min-read-depth-too-low",
-			"You have selected a minimal read-depth of %d. However, " +
-			"%d (%.1f%%) position%s in your sequence %s fewer than %d " +
-			"reads. Click the ‘Read Coverage’ button to review.");
-
-		/*levels.put("sequence-much-too-short", ValidationLevel.SEVERE_WARNING);
-		messages.put(
-			"sequence-much-too-short",
-			"The %s sequence contains just %d codon(s) in DRM region, " +
-			"which is not sufficient for a comprehensive interpretation.");
-
-		levels.put("sequence-too-short", ValidationLevel.WARNING);
-		messages.put(
-			"sequence-too-short",
-			"The %s sequence contains just %d codon(s) in DRM region, " +
-			"which is not sufficient for a comprehensive interpretation.");*/
-
-		levels.put("too-many-stop-codons", ValidationLevel.WARNING);
-		messages.put("too-many-stop-codons", "There are %d stop codons: %s.");
-
-		levels.put("one-stop-codon", ValidationLevel.WARNING);
-		messages.put("one-stop-codon", "There is one stop codon: %s.");
-
-		levels.put("too-many-unusual-mutations", ValidationLevel.SEVERE_WARNING);
-		messages.put(
-			"too-many-unusual-mutations",
-			"At this threshold (%.1f%%), >= 1.0%% of positions have a " +
-			"highly unusual mutation (defined as a prevalence <0.01%% in " +
-			"published group M direct PCR sequences). This indicates that " +
-			"there may be an unacceptably high risk that some mutations at " +
-			"this threshold represent sequence artifacts.");
-
-		
-		levels.put("too-many-apobec-mutations-one-apobec-drm", ValidationLevel.WARNING);
-		messages.put(
-			"too-many-apobec-mutations-one-apobec-drm",
-			"At this threshold (%.1f%%), >=3 positions with signature " +
-			"APOBEC mutations. At this threshold, the sequence also contains " +
-			"one drug-resistance mutation that could be caused by " +
-			"APOBEC-mediated G-to-A hypermutation (%s). This " +
-			"DRM therefore should be considered possible sequence artifacts.");
-		
-		levels.put("too-many-apobec-mutations-multiple-apobec-drms", ValidationLevel.WARNING);
-		messages.put(
-			"too-many-apobec-mutations-multiple-apobec-drms",
-			"At this threshold (%.1f%%), >=3 positions with signature " +
-			"APOBEC mutations. At this threshold, the sequence also contains " +
-			"%d drug-resistance mutations that could be caused by " +
-			"APOBEC-mediated G-to-A hypermutation (%s). These " +
-			"DRMs therefore should be considered possible sequence artifacts.");
-
-		levels.put("too-many-apobec-mutations-no-apobec-drm", ValidationLevel.WARNING);
-		messages.put(
-			"too-many-apobec-mutations-no-apobec-drm",
-			"At this threshold (%.1f%%), >=3 positions with signature " +
-			"APOBEC mutations. At this threshold, the sequence contains no" +
-			"drug-resistance mutations that could be caused by " +
-			"APOBEC-mediated G-to-A hypermutation.");
-
-		levels.put("too-low-threshold", ValidationLevel.SEVERE_WARNING);
-		messages.put(
-			"too-low-threshold",
-			"Extensive empirical data, as well as, modeling data suggest that " +
-			"the risk of sequence artifact is almost inevitable at thresholds " +
-			"below 0.5%% to 1.0%% unless unique molecular identifiers (UMI) are " +
-			"used prior to PCR. We display quality control data for the 0.1%% " +
-			"and 0.2%% thresholds solely to indicate that choosing a threshold " +
-			"that is too low will result in sequence artifacts."
-		);
-		
-		VALIDATION_RESULT_LEVELS = Collections.unmodifiableMap(levels);
-		VALIDATION_RESULT_MESSAGES = Collections.unmodifiableMap(messages);
-
-		/* Map<GeneEnum, Pair<Integer, Integer>> seqDrmRanges = new EnumMap<>(GeneEnum.class);
-		seqDrmRanges.put(GeneEnum.PR, Pair.of(10, 90));
-		seqDrmRanges.put(GeneEnum.RT, Pair.of(41, 348));
-		seqDrmRanges.put(GeneEnum.IN, Pair.of(51, 263));
-		SEQUENCE_DRM_RANGES = Collections.unmodifiableMap(seqDrmRanges); */
-
-	}
-
-
-	public List<ValidationResult> validate(SequenceReads<HIV> seqReads) {
+	
+	public List<ValidationResult> validate(SequenceReads<HIV> seqReads, Collection<String> includeGenes) {
 		List<ValidationResult> results = new ArrayList<>();
-		results.addAll(validateNotEmpty(seqReads));
+		results.addAll(validateNotEmpty(seqReads, includeGenes));
 		if (!results.isEmpty()) {
 			return results;
 		}
 		results.addAll(validateTooLowThreshold(seqReads));
-		results.addAll(validateNoMissingPositions(seqReads));
-		results.addAll(validateTrimmedPositions(seqReads));
-		results.addAll(validateNoStopCodons(seqReads));
-		results.addAll(validateNoTooManyUnusualMutations(seqReads));
-		results.addAll(validateNoTooManyApobec(seqReads));
+		results.addAll(validateNoMissingPositions(seqReads, includeGenes));
+		results.addAll(validateTrimmedPositions(seqReads, includeGenes));
+		results.addAll(validateNoStopCodons(seqReads, includeGenes));
+		results.addAll(validateNoTooManyUnusualMutations(seqReads, includeGenes));
+		results.addAll(validateNoTooManyApobec(seqReads, includeGenes));
 		return results;
 	}
 
-	protected ValidationResult newValidationResult(String key, Object... args) {
-		ValidationLevel level = VALIDATION_RESULT_LEVELS.get(key);
-		String message = String.format(
-			VALIDATION_RESULT_MESSAGES.get(key),
-			args);
-		return new ValidationResult(level, message);
-	}
-
-	protected List<ValidationResult> validateNotEmpty(SequenceReads<HIV> seqReads) {
-		if (seqReads.isEmpty()) {
-			return Lists.newArrayList(newValidationResult("no-gene-found"));
+	protected static List<ValidationResult> validateNotEmpty(
+		SequenceReads<HIV> seqReads,
+		Collection<String> includeGenes
+	) {
+		boolean isNotEmpty = seqReads.getAvailableGenes().stream()
+			.anyMatch(gene -> includeGenes.contains(gene.getAbstractGene()));
+		if (!isNotEmpty) {
+			return Lists.newArrayList(
+				HIV1ValidationMessage.NoGeneFound.format(MyStringUtils.andListFormat(includeGenes))
+			);
 		}
 		return Collections.emptyList();
 	}
 	
-	protected List<ValidationResult> validateTooLowThreshold(SequenceReads<HIV> seqReads) {
+	protected static List<ValidationResult> validateTooLowThreshold(SequenceReads<HIV> seqReads) {
 		List<ValidationResult> results = new ArrayList<>();
 		double cutoff = seqReads.getMinPrevalence();
 		if (Math.abs(cutoff - 0.001) < 1e-5 ||
 			Math.abs(cutoff - 0.002) < 1e-5) {
-			results.add(newValidationResult("too-low-threshold"));
+			results.add(HIV1ValidationMessage.NGSTooLowThreshold.format());
 		}
 		return results;
 				
 	}
 	
-	protected List<ValidationResult> validateTrimmedPositions(SequenceReads<HIV> seqReads) {
+	protected static List<ValidationResult> validateTrimmedPositions(
+		SequenceReads<HIV> seqReads,
+		Collection<String> includeGenes
+	) {
 		List<ValidationResult> results = new ArrayList<>();
-		List<OneCodonReadsCoverage<HIV>> crcs = seqReads.getCodonReadsCoverage();
+		List<OneCodonReadsCoverage<HIV>> crcs = seqReads.getCodonReadsCoverage(includeGenes);
 		long trimmedPos = crcs.stream().filter(crc -> crc.isTrimmed()).count();
 		if (trimmedPos > 0) {
 			double totalPos = crcs.size();
 			double pcnt = (double) trimmedPos / totalPos;
 			long minReadDepth = seqReads.getMinPositionReads();
-			results.add(newValidationResult(
-				"min-read-depth-too-low",
+			results.add(HIV1ValidationMessage.NGSMinReadDepthTooLow.format(
 				minReadDepth, trimmedPos, pcnt * 100,
 				trimmedPos == 1 ? "" : "s",
 				trimmedPos == 1 ? "has" : "have",
@@ -225,147 +112,78 @@ public class HIVDefaultSequenceReadsValidator implements SequenceReadsValidator<
 		return results;
 	}
 
-	/*protected boolean validateSequenceSize() {
-		long size;
-		Gene[] genes = seqReads.getStrain().getGenes();
-		GeneSequenceReads geneSeqReads;
-		boolean validated = true;
-		
-		for (Gene gene : genes) {
-			geneSeqReads = seqReads.getGeneSequenceReads(gene);
-			if (geneSeqReads != null) {
-				Pair<Integer, Integer> drmRange = SEQUENCE_DRM_RANGES.get(gene.getGeneEnum());
-				Integer left = drmRange.getLeft();
-				Integer right = drmRange.getRight();
-
-				size = geneSeqReads.getAllPositionCodonReads().stream()
-					.filter(pcr -> {
-						long pos = pcr.getPosition();
-						return pos >= left && pos <= right;
-					})
-					.count();
-				double ratio = (double) size / (double) (right - left + 1);
-				if (ratio < SEQUENCE_DRM_MIN1) {
-					addValidationResult("sequence-much-too-short", gene, size);
-					validated = false;
-				}
-				else if (ratio < SEQUENCE_DRM_MIN2) {
-					addValidationResult("sequence-too-short", gene, size);
-					validated = false;
-				}
-			}
-		}
-		return validated;
-	}*/
-
-	/*protected boolean validateLongGap() {
-		boolean validated = true;
-		List<OneCodonReadsCoverage> crcs = seqReads.getCodonReadsCoverage();
-		if (crcs.isEmpty()) {
-			return validated;
-		}
-		long leftMost = crcs.get(0).getPolPosition();
-		long rightMost = crcs.get(crcs.size() - 1).getPolPosition();
-		double maxGapWidth = Math.ceil((rightMost - leftMost + 1) * GAP_LEN_THRESHOLD);
-		
-		long prevPos = leftMost;
-		for (OneCodonReadsCoverage crc : crcs) {
-			long curPos = crc.getPolPosition();
-			double posDiff = curPos - prevPos;
-			if (posDiff > maxGapWidth) {
-				addValidationResult("gap-too-long");
-				validated = false;
-				break;
-			}
-			prevPos = curPos;
-		}
-		for (Mutation mut : seqReads.getMutations()) {
-			if (mut.getInsertedNAs().length() > maxGapWidth * 3) {
-				addValidationResult("gap-too-long");
-				validated = false;
-				break;
-			}
-		}
-		return validated;
-	}*/
-	
-	protected List<ValidationResult> validateNoMissingPositions(SequenceReads<HIV> seqReads) {
+	protected static List<ValidationResult> validateNoMissingPositions(
+		SequenceReads<HIV> seqReads,
+		Collection<String> includeGenes
+	) {
 		List<ValidationResult> results = new ArrayList<>();
-		List<OneCodonReadsCoverage<HIV>> crcs = seqReads.getCodonReadsCoverage();
+		List<OneCodonReadsCoverage<HIV>> crcs = seqReads.getCodonReadsCoverage(includeGenes);
 		if (crcs.isEmpty()) {
 			return results;
 		}
-		GenePosition<HIV> leftMost = crcs.get(0).getGenePosition();
-		GenePosition<HIV> rightMost = crcs.get(crcs.size() - 1).getGenePosition();
-		Set<GenePosition<HIV>> needGenePositions = (
-			GenePosition.getGenePositionsBetween(leftMost, rightMost)
+		OneCodonReadsCoverage<HIV> tmpCRC = crcs.get(0);
+		GenePosition<HIV> leftMost = new GenePosition<>(tmpCRC.getGene(), 1);
+		tmpCRC = crcs.get(crcs.size() - 1);
+		GenePosition<HIV> rightMost = new GenePosition<>(tmpCRC.getGene(), tmpCRC.getGene().getAASize());
+		
+		Set<GenePosition<HIV>> needGenePositions = GenePosition
+			.getGenePositionsBetween(leftMost, rightMost, includeGenes);
+
+		// For DRPs, the leftMost must be the begining of the first gene and the rightMost must be the ending of the last gene
+		Set<GenePosition<HIV>> needDRGenePositions = GenePosition
+			.getDRGenePositionsBetween(leftMost, rightMost, includeGenes);
+
+		Set<GenePosition<HIV>> availableGenePositions = crcs.stream()
+			.map(crc -> crc.getGenePosition())
+			.collect(Collectors.toSet());
+		
+		return HIVDefaultSequenceValidator.validateNoMissingPositions(
+				needGenePositions,
+				needDRGenePositions,
+				availableGenePositions
 		);
-		Set<GenePosition<HIV>> needDRGenePositions = GenePosition.getDRGenePositionsBetween(leftMost, rightMost);
-		Set<GenePosition<HIV>> availableGenePositions = (
-			crcs.stream().map(crc -> crc.getGenePosition()).collect(Collectors.toSet())
+	}
+
+	protected static List<ValidationResult> validateNoStopCodons(
+		SequenceReads<HIV> seqReads,
+		Collection<String> includeGenes
+	) {
+		List<ValidationResult> results = new ArrayList<>();
+		MutationSet<HIV> stopCodons = (
+			seqReads.getMutations()
+			.getStopCodons()
+			.filterBy(mut -> includeGenes.contains(mut.getAbstractGene()))
 		);
-		long totalPositions = needGenePositions.size();
-		long totalDRPs = needDRGenePositions.size();
-		long missingPositions = (
-			needGenePositions.stream()
-			.filter(gp -> !availableGenePositions.contains(gp))
-			.count()
-		);
-		long missingDRPs = (
-			needDRGenePositions.stream()
-			.filter(gp -> !availableGenePositions.contains(gp))
-			.count()
-		);
-		if (missingPositions > 0) {
-			results.add(newValidationResult(
-				"position-missing",
-				missingPositions,
-				(double) missingPositions / (double) totalPositions * 100.0,
-				missingPositions == 1 ? "" : "s",
-				missingPositions == 1 ? "is" : "are",
-				leftMost.toStringWithAbstractGene(),
-				rightMost.toStringWithAbstractGene()
-			));
+		for (Map.Entry<Gene<HIV>, MutationSet<HIV>> entry : stopCodons.groupByGene().entrySet()) {
+			String geneText = entry.getKey().getAbstractGene();
+			MutationSet<HIV> geneStopCodons = entry.getValue();
+			int numGeneStopCodons = geneStopCodons.size();
+			String geneStopText = geneStopCodons.join(", ", Mutation::getHumanFormatWithAbstractGene);
+			if (numGeneStopCodons > 1) {
+				results.add(HIV1ValidationMessage.MultipleStopCodons.formatWithLevel(
+					ValidationLevel.WARNING,
+					numGeneStopCodons,
+					geneText,
+					geneStopText
+				));
+			} else if (numGeneStopCodons > 0) {
+				results.add(HIV1ValidationMessage.SingleStopCodon.formatWithLevel(
+					ValidationLevel.WARNING,
+					geneText,
+					geneStopText
+				));
+			}
 		}
-		if (missingDRPs > 0) {
-			results.add(newValidationResult(
-				"drm-position-missing",
-				missingDRPs,
-				(double) missingDRPs / (double) totalDRPs * 100.0,
-				totalDRPs,
-				missingDRPs == 1 ? "" : "s",
-				missingDRPs == 1 ? "is" : "are",
-				leftMost.toStringWithAbstractGene(),
-				rightMost.toStringWithAbstractGene()
-			));
-		}
+		
 		return results;
 	}
 
-	protected List<ValidationResult> validateNoStopCodons(SequenceReads<HIV> seqReads) {
+	protected static List<ValidationResult> validateNoTooManyUnusualMutations(
+		SequenceReads<HIV> seqReads,
+		Collection<String> includeGenes
+	) {
 		List<ValidationResult> results = new ArrayList<>();
-		List<GeneSequenceReads<HIV>> allGeneSeqReads = seqReads.getAllGeneSequenceReads();
-		MutationSet<HIV> stopCodons = new MutationSet<>();
-
-		for (GeneSequenceReads<HIV> gsr : allGeneSeqReads) {
-			stopCodons = stopCodons.mergesWith(gsr.getMutations().getStopCodons());
-		}
-		String stops = stopCodons.join(", ", Mutation::getHumanFormatWithAbstractGene);
-		int numStopCodons = stopCodons.size();
-		if (numStopCodons > 1) {
-			results.add(newValidationResult(
-				"too-many-stop-codons",
-				numStopCodons, stops
-			));
-		} else if (numStopCodons > 0) {
-			results.add(newValidationResult("one-stop-codon", stops));
-		}
-		return results;
-	}
-
-	protected List<ValidationResult> validateNoTooManyUnusualMutations(SequenceReads<HIV> seqReads) {
-		List<ValidationResult> results = new ArrayList<>();
-		List<GeneSequenceReads<HIV>> allGeneSeqReads = seqReads.getAllGeneSequenceReads();
+		List<GeneSequenceReads<HIV>> allGeneSeqReads = seqReads.getAllGeneSequenceReads(includeGenes);
 		double numUnusuals = 0;
 		double numPositions = 0;
 		double cutoff = seqReads.getMinPrevalence();
@@ -387,16 +205,17 @@ public class HIVDefaultSequenceReadsValidator implements SequenceReadsValidator<
 		}
 		double unusualPcnt = numUnusuals / numPositions;
 		if (unusualPcnt > UNUSUAL_THRESHOLD) {
-			results.add(newValidationResult(
-				"too-many-unusual-mutations", cutoff * 100
-			));
+			results.add(HIV1ValidationMessage.NGSTooManyUnusualMutations.format(cutoff * 100));
 		}
 		return results;
 	}
 
-	protected List<ValidationResult> validateNoTooManyApobec(SequenceReads<HIV> seqReads) {
+	protected static List<ValidationResult> validateNoTooManyApobec(
+		SequenceReads<HIV> seqReads,
+		Collection<String> includeGenes
+	) {
 		List<ValidationResult> results = new ArrayList<>();
-		List<GeneSequenceReads<HIV>> allGeneSeqReads = seqReads.getAllGeneSequenceReads();
+		List<GeneSequenceReads<HIV>> allGeneSeqReads = seqReads.getAllGeneSequenceReads(includeGenes);
 		int numAPOBECs = 0;
 		MutationSet<HIV> apobecDRMs = new MutationSet<>();
 		double cutoff = seqReads.getMinPrevalence();
@@ -421,20 +240,17 @@ public class HIVDefaultSequenceReadsValidator implements SequenceReadsValidator<
 			String apobecs = apobecDRMs.join(", ", Mutation::getHumanFormatWithAbstractGene);
 			
 			if (numApobecDRMs > 1) {
-				results.add(newValidationResult(
-					"too-many-apobec-mutations-multiple-apobec-drms",
+				results.add(HIV1ValidationMessage.NGSTooManyApobecMutationsMultipleApobecDRMs.format(
 					cutoff * 100, numApobecDRMs, apobecs
 				));
 			}
 			else if (numApobecDRMs == 1) {
-				results.add(newValidationResult(
-					"too-many-apobec-mutations-one-apobec-drm",
+				results.add(HIV1ValidationMessage.NGSTooManyApobecMutationsOneApobecDRM.format(
 					cutoff * 100, apobecs
 				));
 			}
 			else {
-				results.add(newValidationResult(
-					"too-many-apobec-mutations-no-apobec-drm",
+				results.add(HIV1ValidationMessage.NGSTooManyApobecMutationsNoApobecDRM.format(
 					cutoff * 100
 				));
 			}

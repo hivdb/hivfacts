@@ -20,8 +20,6 @@ package edu.stanford.hivdb.hivfacts;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -32,65 +30,9 @@ import edu.stanford.hivdb.mutations.MutationsValidator;
 import edu.stanford.hivdb.utilities.MyStringUtils;
 import edu.stanford.hivdb.utilities.ValidationLevel;
 import edu.stanford.hivdb.utilities.ValidationResult;
+import edu.stanford.hivdb.viruses.Gene;
 
 public class HIVDefaultMutationsValidator implements MutationsValidator<HIV> {
-
-	private static final Map<String, ValidationLevel> VALIDATION_RESULT_LEVELS;
-	private static final Map<String, String> VALIDATION_RESULT_MESSAGES;
-
-	static {
-		Map<String, ValidationLevel> levels = new HashMap<>();
-		Map<String, String> messages = new HashMap<>();
-		levels.put("severe-warning-too-many-stop-codons", ValidationLevel.SEVERE_WARNING);
-		messages.put("severe-warning-too-many-stop-codons", "The submitted mutations contain %d stop codons.");
-
-		levels.put("note-stop-codon", ValidationLevel.WARNING);
-		messages.put("note-stop-codon", "The submitted mutations contain %d stop codon.");
-
-		levels.put("much-too-many-unusual-mutations", ValidationLevel.SEVERE_WARNING);
-		messages.put("much-too-many-unusual-mutations", "There are %d unusual mutations: %s.");
-
-		levels.put("too-many-unusual-mutations", ValidationLevel.WARNING);
-		messages.put("too-many-unusual-mutations", "There are %d unusual mutations: %s.");
-
-		levels.put("some-unusual-mutations", ValidationLevel.NOTE);
-		messages.put("some-unusual-mutations", "There are %d unusual mutations: %s.");
-
-		levels.put("unusual-mutation-at-DRP-plural", ValidationLevel.SEVERE_WARNING);
-		messages.put("unusual-mutation-at-DRP-plural",
-				     "There are %d unusual mutations at drug-resistance positions: %s.");
-
-		levels.put("unusual-mutation-at-DRP", ValidationLevel.WARNING);
-		messages.put("unusual-mutation-at-DRP",
-				     "There is %d unusual mutation at a drug-resistance position: %s.");
-
-		levels.put("additional-unusual-mutation", ValidationLevel.WARNING);
-		messages.put("additional-unusual-mutation", "There is one additional unusual mutation: %s.");
-
-		levels.put("additional-unusual-mutations", ValidationLevel.SEVERE_WARNING);
-		messages.put("additional-unusual-mutations", "There are %d additional unusual mutations: %s.");
-
-		levels.put("severe-APOBEC", ValidationLevel.SEVERE_WARNING);
-		messages.put("severe-APOBEC", "The following %d APOBEC muts were present in the sequence.%s");
-
-		levels.put("definite-APOBEC", ValidationLevel.WARNING);
-		messages.put("definite-APOBEC", "The following %d APOBEC muts were present in the sequence.%s");
-
-		levels.put("possible-APOBEC-influence", ValidationLevel.NOTE);
-		messages.put("possible-APOBEC-influence", "The following %d APOBEC muts were present in the sequence.%s");
-
-		levels.put("multiple-apobec-at-DRP", ValidationLevel.SEVERE_WARNING);
-		messages.put("multiple-apobec-at-DRP",
-				     "There are %d APOBEC-associated mutations at drug-resistance positions: %s.");
-
-		levels.put("single-apobec-at-DRP", ValidationLevel.WARNING);
-		messages.put("single-apobec-at-DRP",
-				     "There is %d APOBEC-associated mutation at a drug-resistance position: %s.");
-
-		VALIDATION_RESULT_LEVELS = Collections.unmodifiableMap(levels);
-		VALIDATION_RESULT_MESSAGES = Collections.unmodifiableMap(messages);
-
-	}
 
 	@Override
 	public List<ValidationResult> validate(MutationSet<HIV> mutations, Collection<String> includeGenes) {
@@ -101,91 +43,102 @@ public class HIVDefaultMutationsValidator implements MutationsValidator<HIV> {
 		return validationResults;
 	}
 
-	private ValidationResult newValidationResult(String key, Object... args) {
-		ValidationLevel level = VALIDATION_RESULT_LEVELS.get(key);
-		String message = String.format(
-			VALIDATION_RESULT_MESSAGES.get(key),
-			args);
-		return new ValidationResult(level, message);
-	}
-
-	private List<ValidationResult> validateNoStopCodons(
+	private static List<ValidationResult> validateNoStopCodons(
 		MutationSet<HIV> mutations,
 		Collection<String> includeGenes
 	) {
 		List<ValidationResult> validationResults = new ArrayList<>();
-		int numStopCodons = mutations
+		MutationSet<HIV> stopCodons = mutations
 			.getStopCodons()
-			.filterBy(mut -> includeGenes.contains(mut.getAbstractGene()))
-			.size();
-		if (numStopCodons > 1) {
-			validationResults.add(newValidationResult(
-				"severe-warning-too-many-stop-codons",
-				numStopCodons));
-		} else if (numStopCodons > 0) {
-			validationResults.add(newValidationResult(
-				"note-stop-codon", numStopCodons));
+			.filterBy(mut -> includeGenes.contains(mut.getAbstractGene()));
+		for (Map.Entry<Gene<HIV>, MutationSet<HIV>> entry : stopCodons.groupByGene().entrySet()) {
+			String geneText = entry.getKey().getAbstractGene();
+			MutationSet<HIV> geneStopCodons = entry.getValue();
+			int numGeneStopCodons = geneStopCodons.size();
+			String geneStopText = geneStopCodons.join(", ", Mutation::getHumanFormatWithAbstractGene);
+			if (numGeneStopCodons > 1) {
+				validationResults.add(HIV1ValidationMessage.MultipleStopCodons.formatWithLevel(
+					ValidationLevel.SEVERE_WARNING,
+					numGeneStopCodons,
+					geneText,
+					geneStopText
+				));
+			} else if (numGeneStopCodons > 0) {
+				validationResults.add(HIV1ValidationMessage.SingleStopCodon.formatWithLevel(
+					ValidationLevel.WARNING,
+					geneText,
+					geneStopText
+				));
+			}
 		}
-
+		
 		return validationResults;
 	}
 
 
-	private List<ValidationResult> validateNoTooManyUnusualMutations(
+	private static List<ValidationResult> validateNoTooManyUnusualMutations(
 		MutationSet<HIV> mutations,
 		Collection<String> includeGenes
 	) {
 		List<ValidationResult> validationResults = new ArrayList<>();
-		MutationSet<HIV> unusualMutations = mutations
+		MutationSet<HIV> unusualMuts = mutations
 			.getUnusualMutations()
 			.filterBy(mut -> includeGenes.contains(mut.getAbstractGene()));
-		int numUnusual = unusualMutations.size();
 
-		MutationSet<HIV> unusualMutAtDRP = unusualMutations.getAtDRPMutations();
+		for (Map.Entry<Gene<HIV>, MutationSet<HIV>> entry : unusualMuts.groupByGene().entrySet()) {
+			String geneText = entry.getKey().getAbstractGene();
+			MutationSet<HIV> geneUnusualMuts = entry.getValue();
+			int numGeneUnusual = geneUnusualMuts.size();
 
-		int numUnusualAtDRP = unusualMutAtDRP.size();
-		/*if (numUnusual != numUnusualAtDRP && numUnusual > 1) {
-			System.out.println("Debug:text:" + text);
-			addValidationResult("too-many-unusual-mutations",
-					numUnusual, text);
-			validated = false;
-		} else*/
+			MutationSet<HIV> geneUnusualMutsAtDRP = geneUnusualMuts.getAtDRPMutations();
+			int numGeneUnusualAtDRP = geneUnusualMutsAtDRP.size();
 
-		if (numUnusualAtDRP > 1) {
-			validationResults.add(newValidationResult(
-				"unusual-mutation-at-DRP-plural",
-				numUnusualAtDRP, unusualMutAtDRP.join(", ", Mutation::getHumanFormatWithGene))
-			);
-		} else if (numUnusualAtDRP == 1) {
-			validationResults.add(newValidationResult(
-				"unusual-mutation-at-DRP",
-				numUnusualAtDRP,  unusualMutAtDRP.join(", ", Mutation::getHumanFormatWithGene))
-			);
-		}
-		if (numUnusual > 1) {
-			if (numUnusualAtDRP == 0) {
-				validationResults.add(newValidationResult(
-					"too-many-unusual-mutations",
-					numUnusual, unusualMutations.join(", ", Mutation::getHumanFormatWithGene))
+			if (numGeneUnusualAtDRP > 1) {
+				validationResults.add(HIV1ValidationMessage.MultipleUnusualMutationsAtDRP.formatWithLevel(
+					ValidationLevel.SEVERE_WARNING,
+					numGeneUnusualAtDRP,
+					geneText,
+					geneUnusualMutsAtDRP.join(", "))
 				);
-
-			} else if (numUnusual - numUnusualAtDRP == 1) {
-				MutationSet<HIV> additionalMuts = unusualMutations.subtractsBy(unusualMutAtDRP);
-				validationResults.add(newValidationResult(
-					"additional-unusual-mutation",
-					additionalMuts.join(", ", Mutation::getHumanFormatWithGene))
+			} else if (numGeneUnusualAtDRP == 1) {
+				validationResults.add(HIV1ValidationMessage.SingleUnusualMutationAtDRP.formatWithLevel(
+						ValidationLevel.WARNING,
+						geneText,
+						geneUnusualMutsAtDRP.join(", "))
 				);
+			}
+			if (numGeneUnusual > 1) {
+				String geneMutText = geneUnusualMuts.join(", ");
+				if (numGeneUnusualAtDRP == 0) {
+					validationResults.add(HIV1ValidationMessage.MultipleUnusualMutations.formatWithLevel(
+						ValidationLevel.WARNING,
+						numGeneUnusual,
+						geneText,
+						geneMutText
+					));
 
-			} else if (numUnusual -numUnusualAtDRP > 1) {
-				int numAdditionalUnusual = numUnusual - numUnusualAtDRP;
-				MutationSet<HIV> additionalMuts = unusualMutations.subtractsBy(unusualMutAtDRP);
-				validationResults.add(newValidationResult(
-					"additional-unusual-mutations", numAdditionalUnusual,
-					additionalMuts.join(", ", Mutation::getHumanFormatWithGene))
-				);
-			} else {
-				// numUnusual == numUnusualAtDRP && numUnusual > 1
-				// No  warning  necessary as it will be included in the unusual-mutation-at-DRP-plural warning
+				} else if (numGeneUnusual - numGeneUnusualAtDRP == 1) {
+					MutationSet<HIV> additionalMuts = geneUnusualMuts.subtractsBy(geneUnusualMutsAtDRP);
+					validationResults.add(HIV1ValidationMessage.SingleAdditionalUnusualMutation.formatWithLevel(
+						ValidationLevel.WARNING,
+						geneText,
+						additionalMuts.join(", ")
+					));
+					
+
+				} else if (numGeneUnusual - numGeneUnusualAtDRP > 1) {
+					int numAdditionalUnusual = numGeneUnusual - numGeneUnusualAtDRP;
+					MutationSet<HIV> additionalMuts = geneUnusualMuts.subtractsBy(geneUnusualMutsAtDRP);
+					validationResults.add(HIV1ValidationMessage.MultipleAdditionalUnusualMutations.formatWithLevel(
+						ValidationLevel.SEVERE_WARNING,
+						numAdditionalUnusual,
+						geneText,
+						additionalMuts.join(", ")
+					));
+				} else {
+					// numGeneUnusual == numGeneUnusualAtDRP && numGeneUnusual > 1
+					// No warning necessary as it will be included in the MultipleUnusualMutationsAtDRP warning
+				}
 			}
 		}
 
@@ -193,7 +146,7 @@ public class HIVDefaultMutationsValidator implements MutationsValidator<HIV> {
 
 	}
 
-	private List<ValidationResult> validateNotApobec(
+	private static List<ValidationResult> validateNotApobec(
 		MutationSet<HIV> mutations,
 		Collection<String> includeGenes
 	) {
@@ -206,6 +159,16 @@ public class HIVDefaultMutationsValidator implements MutationsValidator<HIV> {
 		List<ValidationResult> results = new ArrayList<>();
 		int numApobecMuts = apobecs.size();
 		int numApobecDRMs = apobecDRMs.size();
+		String apobecMutsText = (
+			apobecs.groupByGene()
+			.entrySet()
+			.stream()
+			.map(e -> String.format(
+				"%s: %s", e.getKey().getAbstractGene(),
+				e.getValue().join(", ")
+			))
+			.collect(Collectors.joining("; "))
+		);
 		String extraCmt = "";
 
 		if (numApobecDRMs > 0) {
@@ -223,23 +186,40 @@ public class HIVDefaultMutationsValidator implements MutationsValidator<HIV> {
 		}
 
 		if (numApobecMuts > 3) {
-			results.add(newValidationResult("severe-APOBEC", numApobecMuts, extraCmt));
+			results.add(HIV1ValidationMessage.MultipleApobec.formatWithLevel(
+				ValidationLevel.SEVERE_WARNING,
+				numApobecMuts,
+				apobecMutsText,
+				extraCmt
+			));
 		} else if (numApobecMuts > 1) {
-			results.add(newValidationResult("definite-APOBEC", numApobecMuts, extraCmt));
+			results.add(HIV1ValidationMessage.MultipleApobec.formatWithLevel(
+				ValidationLevel.WARNING,
+				numApobecMuts,
+				apobecMutsText,
+				extraCmt
+			));
 		} else if (numApobecMuts == 1) {
-			results.add(newValidationResult("possible-APOBEC-influence", numApobecMuts, extraCmt));
+			results.add(HIV1ValidationMessage.SingleApobec.formatWithLevel(
+				ValidationLevel.NOTE,
+				apobecMutsText,
+				extraCmt
+			));
 		}
 
 		MutationSet<HIV> apobecMutsAtDRP = apobecs.getAtDRPMutations();
 		int numApobecMutsAtDRP = apobecMutsAtDRP.size();
 		if (numApobecMutsAtDRP > 1) {
-			results.add(newValidationResult(
-				"multiple-apobec-at-DRP", numApobecMutsAtDRP,
-				apobecMutsAtDRP.join(", ", Mutation::getHumanFormatWithGene)));
+			results.add(HIV1ValidationMessage.MultipleApobecAtDRP.formatWithLevel(
+				ValidationLevel.SEVERE_WARNING,
+				numApobecMutsAtDRP,
+				apobecMutsAtDRP.join(", ", Mutation::getHumanFormatWithAbstractGene)
+			));
 		} else if (numApobecMutsAtDRP == 1) {
-			results.add(newValidationResult(
-				"single-apobec-at-DRP", numApobecMutsAtDRP,
-				apobecMutsAtDRP.join(", ", Mutation::getHumanFormatWithGene)));
+			results.add(HIV1ValidationMessage.SingleApobecAtDRP.formatWithLevel(
+				ValidationLevel.WARNING,
+				apobecMutsAtDRP.join(", ", Mutation::getHumanFormatWithAbstractGene)
+			));
 		}
 		return results;
 	}
