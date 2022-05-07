@@ -27,32 +27,30 @@ public enum HIV1ValidationMessage implements ValidationMessage {
 		ValidationLevel.WARNING,
 		"The %s sequence had %d amino acids trimmed from its %s-end due to poor quality."
 	),
-	FASTASequenceTooShort(
-		ValidationLevel.WARNING,
-		"The %s sequence contains just %d codons, " +
-		"which is not sufficient for a comprehensive interpretation."
-	),
 	FASTAInvalidNAsRemoved(
 		ValidationLevel.NOTE,
 		"Non-NA character(s) %s were found and removed from the sequence."
 	),
-	MultiplePositionsMissing(
+	MultiplePositionsMissingWithMultipleDRPs(
 		ValidationLevel.WARNING,
-		"%d positions were not sequenced or aligned: %s."
+		"%d positions were not sequenced or aligned: %s. Of them, %d are at drug-resistance positions: %s."
 	),
-	SinglePositionMissing(
-		ValidationLevel.NOTE,
-		"One position was not sequenced or aligned: %s."
-	),
-	MultipleDRPsMissing(
+	MultiplePositionsMissingWithSingleDRP(
 		ValidationLevel.WARNING,
-		"%d drug-resistance positions " +
-		"were not sequenced or aligned: %s."
+		"%d positions were not sequenced or aligned: %s. Of them, one is at drug-resistance position: %s."
 	),
 	SingleDRPMissing(
 		ValidationLevel.NOTE,
 		"One drug-resistance position " +
 		"was not sequenced or aligned: %s."
+	),
+	MultiplePositionsMissingWithoutDRP(
+		ValidationLevel.WARNING,
+		"%d positions were not sequenced or aligned: %s. However, none is at drug-resistance position."
+	),
+	SinglePositionMissingWithoutDRP(
+		ValidationLevel.NOTE,
+		"One non-drug-resistance position was not sequenced or aligned: %s."
 	),
 	NGSMinReadDepthTooLow(
 		ValidationLevel.WARNING,

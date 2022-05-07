@@ -224,23 +224,22 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 			"; "
 		);
 		
-		if (numMissingPositions > 1) {
-			results.add(HIV1ValidationMessage.MultiplePositionsMissing.formatWithLevel(
+		if (numMissingDRPs > 1) {
+			results.add(HIV1ValidationMessage.MultiplePositionsMissingWithMultipleDRPs.formatWithLevel(
+				numMissingDRPs > 5 ? ValidationLevel.CRITICAL : (
+					numMissingDRPs > 3 ? ValidationLevel.SEVERE_WARNING : ValidationLevel.WARNING
+				),
+				numMissingPositions,
+				textMissingPositions,
+				numMissingDRPs,
+				textMissingDRPs
+			));
+		}
+		else if (numMissingDRPs > 0 && numMissingPositions > 1) {
+			results.add(HIV1ValidationMessage.MultiplePositionsMissingWithSingleDRP.formatWithLevel(
 				ValidationLevel.WARNING,
 				numMissingPositions,
-				textMissingPositions
-			));
-		}
-		else if (numMissingPositions > 0) {
-			results.add(HIV1ValidationMessage.SinglePositionMissing.formatWithLevel(
-				ValidationLevel.NOTE,
-				textMissingPositions
-			));
-		}
-		if (numMissingDRPs > 1) {
-			results.add(HIV1ValidationMessage.MultipleDRPsMissing.formatWithLevel(
-				numMissingDRPs > 3 ? ValidationLevel.SEVERE_WARNING : ValidationLevel.WARNING,
-				numMissingDRPs,
+				textMissingPositions,
 				textMissingDRPs
 			));
 		}
@@ -249,7 +248,19 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 				ValidationLevel.NOTE,
 				textMissingDRPs
 			));
-			
+		}
+		else if (numMissingPositions > 1) {
+			results.add(HIV1ValidationMessage.MultiplePositionsMissingWithoutDRP.formatWithLevel(
+				ValidationLevel.WARNING,
+				numMissingPositions,
+				textMissingPositions
+			));
+		}
+		else if (numMissingPositions > 0) {
+			results.add(HIV1ValidationMessage.SinglePositionMissingWithoutDRP.formatWithLevel(
+				ValidationLevel.NOTE,
+				textMissingPositions
+			));
 		}
 		return results;
 	}
