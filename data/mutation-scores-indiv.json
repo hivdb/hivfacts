@@ -1717,7 +1717,7 @@
     "pos": 106,
     "aa": "M",
     "drug": "DOR",
-    "score": 50
+    "score": 30
   },
   {
     "gene": "RT",
@@ -1741,7 +1741,7 @@
     "pos": 108,
     "aa": "I",
     "drug": "DOR",
-    "score": 15
+    "score": 10
   },
   {
     "gene": "RT",
@@ -1885,7 +1885,7 @@
     "pos": 138,
     "aa": "K",
     "drug": "DOR",
-    "score": 10
+    "score": 5
   },
   {
     "gene": "RT",
@@ -2565,7 +2565,7 @@
     "pos": 188,
     "aa": "C",
     "drug": "DOR",
-    "score": 10
+    "score": 5
   },
   {
     "gene": "RT",
@@ -2621,7 +2621,7 @@
     "pos": 188,
     "aa": "H",
     "drug": "DOR",
-    "score": 10
+    "score": 5
   },
   {
     "gene": "RT",
@@ -2837,7 +2837,7 @@
     "pos": 190,
     "aa": "S",
     "drug": "DOR",
-    "score": 30
+    "score": 20
   },
   {
     "gene": "RT",
@@ -3621,7 +3621,7 @@
     "pos": 221,
     "aa": "Y",
     "drug": "DOR",
-    "score": 15
+    "score": 10
   },
   {
     "gene": "RT",
@@ -3661,7 +3661,7 @@
     "pos": 225,
     "aa": "H",
     "drug": "DOR",
-    "score": 30
+    "score": 20
   },
   {
     "gene": "RT",
@@ -3725,7 +3725,7 @@
     "pos": 227,
     "aa": "I",
     "drug": "DOR",
-    "score": 50
+    "score": 60
   },
   {
     "gene": "RT",
@@ -3749,7 +3749,7 @@
     "pos": 227,
     "aa": "L",
     "drug": "DOR",
-    "score": 50
+    "score": 60
   },
   {
     "gene": "RT",
@@ -3773,7 +3773,7 @@
     "pos": 227,
     "aa": "V",
     "drug": "DOR",
-    "score": 50
+    "score": 60
   },
   {
     "gene": "RT",
@@ -3877,7 +3877,7 @@
     "pos": 234,
     "aa": "I",
     "drug": "DOR",
-    "score": 30
+    "score": 45
   },
   {
     "gene": "RT",
@@ -3885,7 +3885,7 @@
     "pos": 236,
     "aa": "L",
     "drug": "DOR",
-    "score": 15
+    "score": 10
   },
   {
     "gene": "RT",
@@ -3925,7 +3925,7 @@
     "pos": 318,
     "aa": "F",
     "drug": "DOR",
-    "score": 30
+    "score": 60
   },
   {
     "gene": "RT",

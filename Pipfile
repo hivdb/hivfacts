@@ -10,9 +10,10 @@ pyyaml = "*"
 pymysql = "*"
 lxml = "*"
 hivdb-graphql = {editable = true, path = "/Users/philip/gitrepo/hivdb-graphql"}
+mypy = "*"
 
 [packages]
 simplejson = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.9"
