@@ -337,4 +337,15 @@ public class HIV2 implements Virus<HIV2> {
 	public SequenceAssembler<HIV2> getSequenceAssembler(Strain<HIV2> strain) {
 		return dl.getSequenceAssemblers().get(strain);
 	}
+
+	@Override
+	public String getGeneDisplay(String geneName) {
+		return geneName;
+	}
+
+	@Override
+	public String getGeneDisplay(Gene<HIV2> gene) {
+		return gene.getAbstractGene();
+	}
+
 }

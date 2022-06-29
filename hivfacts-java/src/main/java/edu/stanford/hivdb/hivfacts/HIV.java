@@ -337,4 +337,14 @@ public class HIV implements Virus<HIV> {
 		return dl.getSequenceAssemblers().get(strain);
 	}
 
+	@Override
+	public String getGeneDisplay(String geneName) {
+		return geneName;
+	}
+
+	@Override
+	public String getGeneDisplay(Gene<HIV> gene) {
+		return gene.getAbstractGene();
+	}
+
 }
