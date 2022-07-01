@@ -9,6 +9,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
@@ -343,6 +344,7 @@ public class HIVDataLoader<T extends Virus<T>> {
 		return (
 			genes.values()
 			.stream()
+			.distinct()
 			.filter(gene -> gene.getStrain() == strain)
 			.collect(Collectors.toList())
 		);
@@ -364,7 +366,11 @@ public class HIVDataLoader<T extends Virus<T>> {
 		if (drugClasses == null) {
 			initDrugClasses();
 		}
-		return Sets.newLinkedHashSet(drugClasses.values());
+		return drugClasses.values().stream()
+			.distinct()
+			.collect(
+				Collectors.toCollection(LinkedHashSet::new)
+			);
 	}
 	
 	
