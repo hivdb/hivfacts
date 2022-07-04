@@ -8,7 +8,8 @@
         "codon-alignment",
         "1",
         "3111"
-      ]
+      ],
+      "minimap2Opts": "-w 5 -B 1"
     },
     {
       "fragmentName": "HIV2APR",
@@ -21,8 +22,8 @@
         ]
       ],
       "minMatchPcnt": 60,
-      "minNumOfAA": 40,
-      "seqShrinkageWindow": 15,
+      "minNumOfAA": 30,
+      "seqShrinkageWindow": 0,
       "seqShrinkageCutoffPcnt": 30
     },
     {
@@ -36,8 +37,8 @@
         ]
       ],
       "minMatchPcnt": 60,
-      "minNumOfAA": 60,
-      "seqShrinkageWindow": 15,
+      "minNumOfAA": 50,
+      "seqShrinkageWindow": 0,
       "seqShrinkageCutoffPcnt": 30
     },
     {
@@ -51,8 +52,8 @@
         ]
       ],
       "minMatchPcnt": 60,
-      "minNumOfAA": 30,
-      "seqShrinkageWindow": 15,
+      "minNumOfAA": 50,
+      "seqShrinkageWindow": 0,
       "seqShrinkageCutoffPcnt": 30
     },
     {
@@ -62,7 +63,8 @@
         "codon-alignment",
         "1",
         "3117"
-      ]
+      ],
+      "minimap2Opts": "-w 5 -B 1"
     },
     {
       "fragmentName": "HIV2BPR",
@@ -75,8 +77,8 @@
         ]
       ],
       "minMatchPcnt": 60,
-      "minNumOfAA": 40,
-      "seqShrinkageWindow": 15,
+      "minNumOfAA": 30,
+      "seqShrinkageWindow": 0,
       "seqShrinkageCutoffPcnt": 30
     },
     {
@@ -90,8 +92,8 @@
         ]
       ],
       "minMatchPcnt": 60,
-      "minNumOfAA": 60,
-      "seqShrinkageWindow": 15,
+      "minNumOfAA": 50,
+      "seqShrinkageWindow": 0,
       "seqShrinkageCutoffPcnt": 30
     },
     {
@@ -105,8 +107,8 @@
         ]
       ],
       "minMatchPcnt": 60,
-      "minNumOfAA": 30,
-      "seqShrinkageWindow": 15,
+      "minNumOfAA": 50,
+      "seqShrinkageWindow": 0,
       "seqShrinkageCutoffPcnt": 30
     }
   ]
