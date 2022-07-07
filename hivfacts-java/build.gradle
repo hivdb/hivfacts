@@ -41,6 +41,7 @@ jacocoTestReport {
 }
 
 assemble.dependsOn copyData
+test.dependsOn copyData
 
 task sourcesJar(type: Jar) {
 	dependsOn classes
