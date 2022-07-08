@@ -226,8 +226,8 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		
 		if (numMissingDRPs > 1) {
 			results.add(HIV1ValidationMessage.MultiplePositionsMissingWithMultipleDRPs.formatWithLevel(
-				numMissingDRPs > 5 ? ValidationLevel.CRITICAL : (
-					numMissingDRPs > 3 ? ValidationLevel.SEVERE_WARNING : ValidationLevel.WARNING
+				numMissingDRPs > 5 ? ValidationLevel.SEVERE_WARNING : (
+					numMissingDRPs > 3 ? ValidationLevel.WARNING : ValidationLevel.NOTE
 				),
 				numMissingPositions,
 				textMissingPositions,
