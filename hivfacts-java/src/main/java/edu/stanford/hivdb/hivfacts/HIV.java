@@ -4,6 +4,8 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
+import com.google.common.collect.Sets;
+
 import edu.stanford.hivdb.comments.ConditionalComments;
 import edu.stanford.hivdb.drugresistance.algorithm.DrugResistanceAlgorithm;
 import edu.stanford.hivdb.drugs.Drug;
@@ -55,11 +57,11 @@ public class HIV implements Virus<HIV> {
 	static {
 		Virus.registerInstance(new HIV());
 	}
-		
+
 	public static HIV getInstance() {
 		return Virus.getInstance(HIV.class);
 	}
-	
+
 	private final HIVDataLoader<HIV> dl;
 
 	private HIV() {
@@ -98,17 +100,17 @@ public class HIV implements Virus<HIV> {
 	public String getName() {
 		return dl.getName();
 	}
-	
+
 	@Override
 	public Strain<HIV> getMainStrain() {
 		return dl.getMainStrain();
 	}
-	
+
 	@Override
 	public Collection<Strain<HIV>> getStrains() {
 		return dl.getStrains();
 	}
-	
+
 	@Override
 	public Strain<HIV> getStrain(String name) {
 		return dl.getStrain(name);
@@ -118,32 +120,32 @@ public class HIV implements Virus<HIV> {
 	public Collection<Gene<HIV>> getGenes(Strain<HIV> strain) {
 		return dl.getGenes(strain);
 	}
-	
+
 	@Override
 	public Gene<HIV> getGene(String name) {
 		return dl.getGene(name);
 	}
-	
+
 	@Override
 	public Collection<DrugClass<HIV>> getDrugClasses() {
 		return dl.getDrugClasses();
 	}
-	
+
 	@Override
 	public Map<String, DrugClass<HIV>> getDrugClassSynonymMap() {
 		return dl.getDrugClassSynonymMap();
 	}
-	
+
 	@Override
 	public DrugClass<HIV> getDrugClass(String name) {
 		return dl.getDrugClass(name);
 	}
-	
+
 	@Override
 	public Collection<Drug<HIV>> getDrugs() {
 		return dl.getDrugs();
 	}
-	
+
 	@Override
 	public Map<String, Drug<HIV>> getDrugSynonymMap() {
 		return dl.getDrugSynonymMap();
@@ -158,8 +160,8 @@ public class HIV implements Virus<HIV> {
 	public Collection<DrugResistanceAlgorithm<HIV>> getDrugResistAlgorithms(Collection<String> algorithmNames) {
 		return dl.getDrugResistAlgorithms(algorithmNames);
 	}
-	
-	
+
+
 	@Override
 	public DrugResistanceAlgorithm<HIV> getDrugResistAlgorithm(String name) {
 		return dl.getDrugResistAlgorithm(name);
@@ -169,7 +171,7 @@ public class HIV implements Virus<HIV> {
 	public DrugResistanceAlgorithm<HIV> getDrugResistAlgorithm(String family, String version) {
 		return dl.getDrugResistAlgorithm(family, version);
 	}
-	
+
 	@Override
 	public Gene<HIV> extractMutationGene(String mutText) {
 		return dl.extractMutationGene(mutText);
@@ -184,7 +186,7 @@ public class HIV implements Virus<HIV> {
 	public Mutation<HIV> parseMutationString(String mutText) {
 		return dl.parseMutationString(mutText);
 	}
-	
+
 	@Override
 	public MutationSet<HIV> newMutationSet(String formattedMuts) {
 		return dl.newMutationSet(formattedMuts);
@@ -192,7 +194,7 @@ public class HIV implements Virus<HIV> {
 
 	@Override
 	public MutationSet<HIV> newMutationSet(Collection<String> formattedMuts) {
-		return dl.newMutationSet(formattedMuts); 
+		return dl.newMutationSet(formattedMuts);
 	}
 
 	@Override
@@ -209,7 +211,7 @@ public class HIV implements Virus<HIV> {
 	public Map<DrugClass<HIV>, MutationSet<HIV>> getDrugResistMutations() {
 		return dl.getDrugResistMutations();
 	}
-	
+
 	@Override
 	public Map<DrugClass<HIV>, MutationSet<HIV>> getSurveilDrugResistMutations() {
 		return dl.getSurveilDrugResistMutations();
@@ -219,7 +221,7 @@ public class HIV implements Virus<HIV> {
 	public Map<DrugClass<HIV>, MutationSet<HIV>> getRxSelectedMutations() {
 		return dl.getRxSelectedMutations();
 	}
-	
+
 	@Override
 	public MutationSet<HIV> getApobecMutations() {
 		return dl.getApobecMutations();
@@ -234,7 +236,7 @@ public class HIV implements Virus<HIV> {
 	public Collection<MutationType<HIV>> getMutationTypes() {
 		return dl.getMutationTypes();
 	}
-	
+
 	@Override
 	public MutationType<HIV> getMutationType(String mutTypeText) {
 		return dl.getMutationType(mutTypeText);
@@ -244,7 +246,7 @@ public class HIV implements Virus<HIV> {
 	public Collection<MutationTypePair<HIV>> getMutationTypePairs() {
 		return dl.getMutationTypePairs();
 	}
-	
+
 	@Override
 	public AminoAcidPercents<HIV> getAminoAcidPercents(Strain<HIV> strain, String treatment, String subtype) {
 		return dl.getAminoAcidPercents(strain, treatment, subtype);
@@ -259,17 +261,17 @@ public class HIV implements Virus<HIV> {
 	public List<MutationPrevalence<HIV>> getMutationPrevalence(GenePosition<HIV> genePos) {
 		return dl.getMutationPrevalence(genePos);
 	}
-	
+
 	@Override
 	public ConditionalComments<HIV> getConditionalComments() {
 		return dl.getConditionalComments();
 	}
-	
+
 	@Override
 	public List<String> getMainSubtypes(Strain<HIV> strain) {
 		return dl.getMainSubtypes(strain);
 	}
-	
+
 	@Override
 	public Map<Gene<HIV>, Map<String, Integer[]>> getNumPatientsForAAPercents(Strain<HIV> strain) {
 		return dl.getNumPatientsForAAPercents(strain);
@@ -279,7 +281,7 @@ public class HIV implements Virus<HIV> {
 	public Collection<Genotype<HIV>> getGenotypes() {
 		return dl.getGenotypes();
 	}
-	
+
 	@Override
 	public Genotype<HIV> getGenotype(String name) {
 		return dl.getGenotype(name);
@@ -294,7 +296,7 @@ public class HIV implements Virus<HIV> {
 	public List<GenotypeReference<HIV>> getGenotypeReferences() {
 		return dl.getGenotypeReferences();
 	}
-	
+
 	@Override
 	public Genotyper<HIV> getGenotyper() {
 		return dl.getGenotyper();
@@ -345,6 +347,11 @@ public class HIV implements Virus<HIV> {
 	@Override
 	public String getGeneDisplay(Gene<HIV> gene) {
 		return gene.getAbstractGene();
+	}
+
+	@Override
+	public Collection<String> getDefaultIncludedGenes() {
+		return Sets.newLinkedHashSet(List.of("PR", "RT", "IN"));
 	}
 
 }
