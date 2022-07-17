@@ -56,7 +56,7 @@ public enum HIV1ValidationMessage implements ValidationMessage {
 		ValidationLevel.WARNING,
 		"You have selected a minimal read-depth of %d. However, " +
 		"%d (%.1f%%) position%s in your sequence %s fewer than %d " +
-		"reads. Click the ‘Read Coverage’ button to review."
+		"reads."
 	),
 	MultipleStopCodons(
 		ValidationLevel.WARNING,
@@ -137,7 +137,7 @@ public enum HIV1ValidationMessage implements ValidationMessage {
 	),
 	NGSTooManyUnusualMutations(
 		ValidationLevel.SEVERE_WARNING,
-		"At this threshold (%.1f%%), >= 1.0%% of positions have a " +
+		"At this threshold (%.1f%%), ≥1.0%% of positions have a " +
 		"highly unusual mutation (defined as a prevalence <0.01%% in " +
 		"published group M direct PCR sequences). This indicates that " +
 		"there may be an unacceptably high risk that some mutations at " +
@@ -145,7 +145,7 @@ public enum HIV1ValidationMessage implements ValidationMessage {
 	),
 	NGSTooManyApobecMutationsOneApobecDRM(
 		ValidationLevel.WARNING,
-		"At this threshold (%.1f%%), >=3 positions with signature " +
+		"At this threshold (%.1f%%), ≥3 positions with signature " +
 		"APOBEC mutations. At this threshold, the sequence also contains " +
 		"one drug-resistance mutation that could be caused by " +
 		"APOBEC-mediated G-to-A hypermutation (%s). This " +
@@ -153,7 +153,7 @@ public enum HIV1ValidationMessage implements ValidationMessage {
 	),
 	NGSTooManyApobecMutationsMultipleApobecDRMs(
 		ValidationLevel.WARNING,
-		"At this threshold (%.1f%%), >=3 positions with signature " +
+		"At this threshold (%.1f%%), ≥3 positions with signature " +
 		"APOBEC mutations. At this threshold, the sequence also contains " +
 		"%d drug-resistance mutations that could be caused by " +
 		"APOBEC-mediated G-to-A hypermutation (%s). These " +
@@ -161,7 +161,7 @@ public enum HIV1ValidationMessage implements ValidationMessage {
 	),
 	NGSTooManyApobecMutationsNoApobecDRM(
 		ValidationLevel.WARNING,
-		"At this threshold (%.1f%%), >=3 positions with signature " +
+		"At this threshold (%.1f%%), ≥3 positions with signature " +
 		"APOBEC mutations. At this threshold, the sequence contains no" +
 		"drug-resistance mutations that could be caused by " +
 		"APOBEC-mediated G-to-A hypermutation."
