@@ -99,6 +99,7 @@ fragmentConfig:
       codon-alignment, '--min-gap-distance=15', '6225', '8795',  # env
       codon-alignment, '--min-gap-distance=15', '8797', '9417'   # nef
     ]
+    minimap2Opts: "-w 5 -B 1"
   - fragmentName: HIV1gag
     fromFragment: HXB2_x_ConsensusB
     geneName: HIV1gag
