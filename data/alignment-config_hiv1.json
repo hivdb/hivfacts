@@ -42,7 +42,8 @@
         "--min-gap-distance=15",
         "8797",
         "9417"
-      ]
+      ],
+      "minimap2Opts": "-w 5 -B 1"
     },
     {
       "fragmentName": "HIV1gag",
