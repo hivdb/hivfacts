@@ -18,10 +18,16 @@ data/aapcnt/rx-all_subtype-*.json: scripts/csv2json.py
 data/aapcnt/rx-all_subtype-%.json: data/aapcnt/rx-all_subtype-%.csv
 	@pipenv run python scripts/csv2json.py $<
 
+data/patterns_hiv1.csv: scripts/export_patterns.py
+	@pipenv run python scripts/export_patterns.py $@
+
+# data/patterns_%.json: data/patterns_%.csv
+# 	@pipenv run python scripts/csv2json.py $<
+
 data/%.json: data/%.yml
 	@pipenv run python scripts/yaml2json.py $<
 
-data: data/*.json data/apobecs/*.json data/apobecs-hiv2/*.json data/aapcnt/*.json
+data: data/patterns_hiv1.csv data/*.json data/apobecs/*.json data/apobecs-hiv2/*.json data/aapcnt/*.json
 
 refresh-yamls:
 	@pipenv run python scripts/yaml2json.py
