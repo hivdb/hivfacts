@@ -9,7 +9,7 @@
         "1",
         "3111"
       ],
-      "minimap2Opts": "-w 5 -B 1"
+      "minimap2Opts": "-w 5"
     },
     {
       "fragmentName": "HIV2APR",

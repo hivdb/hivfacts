@@ -38,6 +38,7 @@ import edu.stanford.hivdb.mutations.FrameShift;
 import edu.stanford.hivdb.mutations.MutationSet;
 import edu.stanford.hivdb.sequences.AlignedGeneSeq;
 import edu.stanford.hivdb.sequences.AlignedSequence;
+import edu.stanford.hivdb.sequences.GeneRegions;
 import edu.stanford.hivdb.sequences.SequenceValidator;
 import edu.stanford.hivdb.utilities.Json;
 import edu.stanford.hivdb.utilities.ValidationLevel;
@@ -205,10 +206,11 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 		return new ValidationResult(level, message);
 	}
 	
-	protected static List<ValidationResult> validateUnsequencedRegion(AlignedSequence<?> alignedSequence) {
+	protected static List<ValidationResult> validateUnsequencedRegion(AlignedSequence<HIV2> alignedSequence) {
 		List<ValidationResult> results = new ArrayList<>();
-		for (AlignedGeneSeq<?> geneSeq : alignedSequence.getAlignedGeneSequences()) {
-			MutationSet<?> unsequenced = geneSeq.getMutations().filterBy(Mutation::isUnsequenced);
+		for (AlignedGeneSeq<HIV2> geneSeq : alignedSequence.getAlignedGeneSequences()) {
+			GeneRegions<HIV2> unseqRegions = geneSeq.getUnsequencedRegions();
+			MutationSet<HIV2> unsequenced = geneSeq.getMutations().filterBy(mut -> mut.isUnsequenced(unseqRegions));
 			if (unsequenced.size() > 2) {
 				results.add(newValidationResult(
 					"unsequenced-region", unsequenced.size(),
@@ -307,7 +309,7 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 		int gapLenThreshold = 10;
 		int continuousDels = 0;
 		List<ValidationResult> result = new ArrayList<>();
-		for (Mutation<HIV2> mut : alignedSequence.getMutations()) {
+		for (Mutation<HIV2> mut : alignedSequence.getSequencedMutations()) {
 			if (continuousDels > gapLenThreshold) {
 				result.add(newValidationResult("gap-too-long"));
 				break;
@@ -409,8 +411,8 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 	}*/
 
 	protected static List<ValidationResult> validateNotApobec(AlignedSequence<HIV2> alignedSequence) {
-		MutationSet<HIV2> apobecs = alignedSequence.getMutations().getApobecMutations();
-		MutationSet<HIV2> apobecDRMs = alignedSequence.getMutations().getApobecDRMs();
+		MutationSet<HIV2> apobecs = alignedSequence.getSequencedMutations().getApobecMutations();
+		MutationSet<HIV2> apobecDRMs = alignedSequence.getSequencedMutations().getApobecDRMs();
 		List<ValidationResult> results = new ArrayList<>();
 		int numApobecMuts = apobecs.size();
 		int numApobecDRMs = apobecDRMs.size();

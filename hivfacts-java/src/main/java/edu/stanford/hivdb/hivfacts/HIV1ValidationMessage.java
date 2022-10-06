@@ -12,9 +12,7 @@ public enum HIV1ValidationMessage implements ValidationMessage {
 	FASTAGeneNotAligned(
 		ValidationLevel.SEVERE_WARNING,
 		"This sequence may also have nucleotides belonging to %s. " +
-		"Analysis of this part of the input sequence was suppressed " +
-		"due to poor quality, insufficient size or " +
-		"improper concatenation of multiple partial sequences."
+		"Reason to exclude %s: %s"
 	),
 	FASTAGapTooLong(
 		ValidationLevel.CRITICAL,

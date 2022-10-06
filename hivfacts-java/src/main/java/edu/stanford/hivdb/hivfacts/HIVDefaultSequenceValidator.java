@@ -56,6 +56,7 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		if (results.size() > 0) {
 			return results;
 		}
+		results.addAll(validateGene(alignedSequence, includeGenes));
 		results.addAll(validateReverseComplement(alignedSequence));
 		results.addAll(validateNoMissingPositions(alignedSequence, includeGenes));
 		results.addAll(validateShrinkage(alignedSequence, includeGenes));
@@ -112,53 +113,26 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		return Collections.emptyList();
 	}
 
-	/* protected static List<ValidationResult> validateGene(
+	protected static List<ValidationResult> validateGene(
 		AlignedSequence<?> alignedSequence,
 		Collection<String> includeGenes
 	) {
-		Set<Gene<?>> discardedGenes = alignedSequence
-			.getDiscardedGenes()
-			.keySet()
-			.stream()
-			.filter(gene -> includeGenes.contains(gene.getAbstractGene()))
-			.collect(Collectors.toCollection(LinkedHashSet::new));
-		
-		int leftIgnored = 0x7fffffff;
-		int rightIgnored = 0;
-		Strain<?> strain = alignedSequence.getStrain();
-		List<?> availableGenes = alignedSequence.getAvailableGenes();
-		for (AlignedGeneSeq<?> geneSeq : alignedSequence.getAlignedGeneSequences()) {
-			leftIgnored = Math.min(leftIgnored, geneSeq.getFirstNA() - 1);
-			rightIgnored = Math.max(rightIgnored, geneSeq.getLastNA());
-		}
-		rightIgnored = alignedSequence.getInputSequence().getLength() - rightIgnored;
-		if (includeGenes.contains("PR")) {
-			if (!availableGenes.contains(strain.getGene("PR")) && leftIgnored > 210) {
-				discardedGenes.add(strain.getGene("PR"));
+		List<ValidationResult> messages = new ArrayList<>();
+		for (Map.Entry<?, String> entry : alignedSequence.getDiscardedGenes().entrySet()) {
+			Gene<?> gene = (Gene<?>) entry.getKey();
+			if (!includeGenes.contains(gene.getAbstractGene())) {
+				continue;
 			}
-		}
-		if (includeGenes.contains("RT")) {
-			if (!availableGenes.contains(strain.getGene("RT")) && leftIgnored > 800) {
-				discardedGenes.add(strain.getGene("RT"));
-			} else if (!availableGenes.contains(strain.getGene("RT")) && rightIgnored > 800) {
-				discardedGenes.add(strain.getGene("RT"));
-			}
-		}
-		if (includeGenes.contains("IN")) {
-			if (!availableGenes.contains(strain.getGene("IN")) && rightIgnored > 600) {
-				discardedGenes.add(strain.getGene("IN"));
-			}
-		}
-		if (!discardedGenes.isEmpty()) {
-			String textDiscardedGenes = MyStringUtils.orListFormat(
-				discardedGenes
-					.stream().map(g -> g.getAbstractGene())
-					.collect(Collectors.toList())
+			messages.add(
+				HIV1ValidationMessage.FASTAGeneNotAligned.format(
+					gene.getAbstractGene(),
+					gene.getAbstractGene(),
+					entry.getValue()
+				)
 			);
-			return Lists.newArrayList(HIV1ValidationMessage.FASTAGeneNotAligned.format(textDiscardedGenes));
 		}
-		return Collections.emptyList();
-	} */
+		return messages;
+	}
 
 	/* protected static List<ValidationResult> validateSequenceSize(
 		AlignedSequence<HIV> alignedSequence,
@@ -347,7 +321,7 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		int gapLenThreshold = 10;
 		int totalIndels = 0;
 		List<ValidationResult> result = new ArrayList<>();
-		for (Mutation<HIV> mut : alignedSequence.getMutations()) {
+		for (Mutation<HIV> mut : alignedSequence.getSequencedMutations()) {
 			if (!includeGenes.contains(mut.getAbstractGene())) {
 				continue;
 			}
@@ -392,7 +366,7 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 	) {
 		List<ValidationResult> results = new ArrayList<>();
 		MutationSet<HIV> stopCodons = (
-			alignedSequence.getMutations()
+			alignedSequence.getSequencedMutations()
 			.getStopCodons()
 			.filterBy(mut -> includeGenes.contains(mut.getAbstractGene()))
 		);
@@ -426,7 +400,7 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 	) {
 		List<ValidationResult> results = new ArrayList<>();
 		MutationSet<HIV> unusualMuts = alignedSequence
-			.getMutations()
+			.getSequencedMutations()
 			.getUnusualMutations()
 			.filterBy(mut -> includeGenes.contains(mut.getAbstractGene()));
 		
@@ -494,11 +468,11 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		Collection<String> includeGenes
 	) {
 		MutationSet<HIV> apobecs = alignedSequence
-			.getMutations()
+			.getSequencedMutations()
 			.getApobecMutations()
 			.filterByNoSplit(mut -> includeGenes.contains(mut.getAbstractGene()));
 		MutationSet<HIV> apobecDRMs = alignedSequence
-			.getMutations()
+			.getSequencedMutations()
 			.getApobecDRMs()
 			.filterByNoSplit(mut -> includeGenes.contains(mut.getAbstractGene()));
 		List<ValidationResult> results = new ArrayList<>();
