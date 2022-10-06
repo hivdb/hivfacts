@@ -210,7 +210,7 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 		List<ValidationResult> results = new ArrayList<>();
 		for (AlignedGeneSeq<HIV2> geneSeq : alignedSequence.getAlignedGeneSequences()) {
 			GeneRegions<HIV2> unseqRegions = geneSeq.getUnsequencedRegions();
-			MutationSet<HIV2> unsequenced = geneSeq.getMutations().filterBy(mut -> mut.isUnsequenced(unseqRegions));
+			MutationSet<HIV2> unsequenced = geneSeq.getMutations().filterByNoSplit(mut -> mut.isUnsequenced(unseqRegions));
 			if (unsequenced.size() > 2) {
 				results.add(newValidationResult(
 					"unsequenced-region", unsequenced.size(),
