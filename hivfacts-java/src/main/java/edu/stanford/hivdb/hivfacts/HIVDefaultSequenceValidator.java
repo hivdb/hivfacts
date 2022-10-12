@@ -357,6 +357,14 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 				Json.dumps(String.join("", invalids))
 			));
 		}
+		int removedLeadingNs = alignedSequence.getInputSequence().getRemovedLeadingNs();
+		int removedTrailingNs = alignedSequence.getInputSequence().getRemovedTrailingNs();
+		if (removedLeadingNs > 0 || removedTrailingNs > 0) {
+			result.add(HIV1ValidationMessage.FASTAEndingNsRemoved.format(
+				removedLeadingNs + removedTrailingNs
+			));
+			
+		}
 		return result;
 	}
 

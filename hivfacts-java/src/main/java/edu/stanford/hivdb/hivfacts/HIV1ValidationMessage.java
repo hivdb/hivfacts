@@ -29,6 +29,10 @@ public enum HIV1ValidationMessage implements ValidationMessage {
 		ValidationLevel.NOTE,
 		"Non-NA character(s) %s were found and removed from the sequence."
 	),
+	FASTAEndingNsRemoved(
+		ValidationLevel.NOTE,
+		"%d wildcard notation “N”’s have been removed from the 5’ and/or 3’ ends of the sequence."
+	),
 	MultiplePositionsMissingWithMultipleDRPs(
 		ValidationLevel.WARNING,
 		"%d positions were not sequenced or aligned: %s. Of them, %d are at drug-resistance positions: %s."
