@@ -90,6 +90,7 @@ fragmentConfig:
       codon-alignment, '--min-gap-distance=15', '790', '2085',   # gag
       codon-alignment, '--min-gap-distance=15',
       '--gap-placement-score=2756/3ins:20,2756/6ins:30,2756/9ins:40,2756/12ins:50', # RT:69ins
+      '--gap-placement-score=4994/6ins:20', # IN:255insTN
       '2088', '5096',  # pol
       codon-alignment, '--min-gap-distance=15', '5095', '5619',  # vif
       codon-alignment, '--min-gap-distance=15', '5619', '5771',  # vpr-before-fs
