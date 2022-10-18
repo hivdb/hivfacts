@@ -27,7 +27,7 @@ data/patterns_%.json: data/patterns_%.csv
 data/%.json: data/%.yml
 	@pipenv run python scripts/yaml2json.py $<
 
-data: data/*csv data/*.json data/apobecs/*.json data/apobecs-hiv2/*.json data/aapcnt/*.json
+data: data/*csv data/*.json data/algorithms/*.json data/apobecs/*.json data/apobecs-hiv2/*.json data/aapcnt/*.json
 
 refresh-yamls:
 	@pipenv run python scripts/yaml2json.py
