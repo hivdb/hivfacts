@@ -27,7 +27,14 @@ data/patterns_%.json: data/patterns_%.csv
 data/%.json: data/%.yml
 	@pipenv run python scripts/yaml2json.py $<
 
-data: data/*csv data/*.json data/algorithms/*.json data/apobecs/*.json data/apobecs-hiv2/*.json data/aapcnt/*.json
+data/conditional-comments_hiv1.json: data/conditional-comments_hiv1.csv scripts/condcmts_csv2json.py
+	@pipenv run python scripts/condcmts_csv2json.py HIV1 data/conditional-comments_hiv1.csv data/conditional-comments_hiv1.json
+
+data/algorithms/*.xml:
+	@dos2unix -q $@
+	@echo $@
+
+data: data/*csv data/*.json data/algorithms/*.xml data/algorithms/*.json data/apobecs/*.json data/apobecs-hiv2/*.json data/aapcnt/*.json
 
 refresh-yamls:
 	@pipenv run python scripts/yaml2json.py
@@ -74,4 +81,4 @@ build-python:
 release-python:
 	@cd hivfacts-python; ./setup.py copy_data sdist bdist_wheel upload
 
-.PHONY: release-java
+.PHONY: release-java data/algorithms/*.xml
