@@ -220,16 +220,7 @@
     "gene": "RT",
     "drugClass": "NRTI",
     "position": 70,
-    "aas": "EG",
-    "mutationType": "NRTI",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "RT",
-    "drugClass": "NRTI",
-    "position": 70,
-    "aas": "QNST",
+    "aas": "EGQNST",
     "mutationType": "NRTI",
     "isUnusual": false
   },
@@ -274,25 +265,7 @@
     "gene": "RT",
     "drugClass": "NRTI",
     "position": 75,
-    "aas": "M",
-    "mutationType": "NRTI",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "RT",
-    "drugClass": "NRTI",
-    "position": 75,
-    "aas": "SA",
-    "mutationType": "NRTI",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "RT",
-    "drugClass": "NRTI",
-    "position": 75,
-    "aas": "T",
+    "aas": "MTAS",
     "mutationType": "NRTI",
     "isUnusual": false
   },
@@ -427,15 +400,6 @@
     "gene": "RT",
     "drugClass": "NRTI",
     "position": 215,
-    "aas": "F",
-    "mutationType": "NRTI",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "RT",
-    "drugClass": "NRTI",
-    "position": 215,
     "aas": "GHKMPQRW_-",
     "mutationType": "NRTI",
     "isUnusual": true
@@ -454,7 +418,7 @@
     "gene": "RT",
     "drugClass": "NRTI",
     "position": 215,
-    "aas": "Y",
+    "aas": "YF",
     "mutationType": "NRTI",
     "isUnusual": false
   },
@@ -463,16 +427,7 @@
     "gene": "RT",
     "drugClass": "NRTI",
     "position": 219,
-    "aas": "NR",
-    "mutationType": "NRTI",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "RT",
-    "drugClass": "NRTI",
-    "position": 219,
-    "aas": "QE",
+    "aas": "EQNR",
     "mutationType": "NRTI",
     "isUnusual": false
   },
@@ -1300,6 +1255,15 @@
     "gene": "PR",
     "drugClass": "PI",
     "position": 33,
+    "aas": "IV",
+    "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "PR",
+    "drugClass": "PI",
+    "position": 33,
     "aas": "_",
     "mutationType": "Other",
     "isUnusual": false
@@ -1507,18 +1471,9 @@
     "gene": "PR",
     "drugClass": "PI",
     "position": 53,
-    "aas": "L",
+    "aas": "LY",
     "mutationType": "Accessory",
     "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "PR",
-    "drugClass": "PI",
-    "position": 53,
-    "aas": "Y",
-    "mutationType": "Other",
-    "isUnusual": true
   },
   {
     "strain": "HIV1",
@@ -1894,7 +1849,16 @@
     "gene": "IN",
     "drugClass": "INSTI",
     "position": 74,
-    "aas": "MIF",
+    "aas": "MF",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 74,
+    "aas": "I",
     "mutationType": "Other",
     "isUnusual": false
   },
@@ -1912,7 +1876,7 @@
     "gene": "IN",
     "drugClass": "INSTI",
     "position": 92,
-    "aas": "G",
+    "aas": "GV",
     "mutationType": "Major",
     "isUnusual": false
   },
@@ -1922,15 +1886,6 @@
     "drugClass": "INSTI",
     "position": 92,
     "aas": "Q",
-    "mutationType": "Major",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "IN",
-    "drugClass": "INSTI",
-    "position": 92,
-    "aas": "V",
     "mutationType": "Major",
     "isUnusual": false
   },
@@ -2137,7 +2092,7 @@
     "gene": "IN",
     "drugClass": "INSTI",
     "position": 146,
-    "aas": "P",
+    "aas": "PRL",
     "mutationType": "Major",
     "isUnusual": false
   },
@@ -2146,7 +2101,7 @@
     "gene": "IN",
     "drugClass": "INSTI",
     "position": 146,
-    "aas": "ACDEFGHIKLMNRSTVWY_-",
+    "aas": "ACDEFGHIKMNSTVWY_-",
     "mutationType": "Accessory",
     "isUnusual": true
   },
@@ -2245,7 +2200,7 @@
     "gene": "IN",
     "drugClass": "INSTI",
     "position": 153,
-    "aas": "YF",
+    "aas": "YFA",
     "mutationType": "Accessory",
     "isUnusual": false
   },
@@ -2254,7 +2209,7 @@
     "gene": "IN",
     "drugClass": "INSTI",
     "position": 153,
-    "aas": "ACDEGHIKLMNPQRTVW_-",
+    "aas": "CDEGHIKLMNPQRTVW_-",
     "mutationType": "Other",
     "isUnusual": true
   },
