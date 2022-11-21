@@ -2915,7 +2915,7 @@
       "pos": 65,
       "aas": "ACDFGHILMPQSTVWY_-"
     },
-    "comment": "K65R confers intermediate reductions in susceptibility to TFV, ABC, and 3FTC. It increases AZT susceptibility. K65N appears to have reduced replication compared with K65R. K65E is an extremely rare NRTI-selected mutation with markedly reduced replication fitness. Its effect on NRTI susceptibility is uncertain. $listMutsIn{65(NOT NRE)} is a highly unusual mutation at this position."
+    "comment": "K65R confers intermediate reductions in susceptibility to TDF, ABC, and 3TC/FTC. It increases AZT susceptibility. K65N appears to have reduced replication compared with K65R. K65E is an extremely rare NRTI-selected mutation with markedly reduced replication fitness. Its effect on NRTI susceptibility is uncertain. $listMutsIn{65(NOT NRE)} is a highly unusual mutation at this position."
   },
   {
     "strain": "HIV1",
@@ -2927,7 +2927,7 @@
       "pos": 65,
       "aas": "E"
     },
-    "comment": "K65R confers intermediate reductions in susceptibility to TFV, ABC, and 3FTC. It increases AZT susceptibility. K65E is an extremely rare NRTI-selected mutation with markedly reduced replication fitness. Its effect on NRTI susceptibility is uncertain."
+    "comment": "K65R confers intermediate reductions in susceptibility to TDF, ABC, and 3TC/FTC. It increases AZT susceptibility. K65E is an extremely rare NRTI-selected mutation with markedly reduced replication fitness. Its effect on NRTI susceptibility is uncertain."
   },
   {
     "strain": "HIV1",
@@ -2939,7 +2939,7 @@
       "pos": 65,
       "aas": "N"
     },
-    "comment": "K65R confers intermediate reductions in susceptibility to TFV, ABC, and 3FTC. It increases AZT susceptibility. K65N appears to have reduced replication compared with K65R."
+    "comment": "K65R confers intermediate reductions in susceptibility to TDF, ABC, and 3TC/FTC. It increases AZT susceptibility. K65N appears to have reduced replication compared with K65R."
   },
   {
     "strain": "HIV1",
@@ -2951,7 +2951,7 @@
       "pos": 65,
       "aas": "R"
     },
-    "comment": "K65R confers intermediate reductions in susceptibility to TFV, ABC, and 3FTC. It increases AZT susceptibility."
+    "comment": "K65R confers intermediate reductions in susceptibility to TDF, ABC, and 3TC/FTC. It increases AZT susceptibility. In NRTI-experienced, INSTI-naive patients with K65R, TDF+3TC+DTG is usually highly effective and more effective than AZT/3TC/DTG. However, in patients receiving TDF+3TC+DTG, there is a risk of emergent DTG resistance that does not arise in NRTI-naive patients receiving TDF+3TC+DTG."
   },
   {
     "strain": "HIV1",
@@ -3162,7 +3162,7 @@
       "pos": 75,
       "aas": "CDEFGHKNPQRWY_-"
     },
-    "comment": "V75I is a relatively non-polymorphic accessory mutation that often occurs in combination with the multi-NRTI resistance mutation Q151M. When it occurs alone, its clinical significance is uncertain. V75T/M/A/S are nonpolymorphic accessory NRTI-selected mutations. They appear to have minimal phenotypic effects on AZT, ABC, and TFV. $listMutsIn{75(NOT MTISAL)} is a highly unusual mutation at this position."
+    "comment": "V75I is a relatively non-polymorphic accessory mutation that often occurs in combination with the multi-NRTI resistance mutation Q151M. When it occurs alone, its clinical significance is uncertain. V75T/M/A/S are nonpolymorphic accessory NRTI-selected mutations. They appear to have minimal phenotypic effects on AZT, ABC, and TDF. $listMutsIn{75(NOT MTISAL)} is a highly unusual mutation at this position."
   },
   {
     "strain": "HIV1",
@@ -3186,7 +3186,7 @@
       "pos": 75,
       "aas": "MTAS"
     },
-    "comment": "V75T/M/A/S are nonpolymorphic accessory NRTI-selected mutations. They appear to have minimal phenotypic effects on AZT, ABC, and TFV."
+    "comment": "V75T/M/A/S are nonpolymorphic accessory NRTI-selected mutations. They appear to have minimal phenotypic effects on AZT, ABC, and TDF."
   },
   {
     "strain": "HIV1",

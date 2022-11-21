@@ -131,7 +131,25 @@
     "drugClass": "NRTI",
     "position": 68,
     "aas": "G",
-    "mutationType": "Other",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 68,
+    "aas": "N",
+    "mutationType": "NRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NRTI",
+    "position": 68,
+    "aas": "R",
+    "mutationType": "NRTI",
     "isUnusual": false
   },
   {

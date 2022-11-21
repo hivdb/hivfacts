@@ -713,6 +713,21 @@
     },
     {
       "gene": "RT",
+      "position": 68,
+      "aa": "G"
+    },
+    {
+      "gene": "RT",
+      "position": 68,
+      "aa": "N"
+    },
+    {
+      "gene": "RT",
+      "position": 68,
+      "aa": "R"
+    },
+    {
+      "gene": "RT",
       "position": 69,
       "aa": "-"
     },

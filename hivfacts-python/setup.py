@@ -7,7 +7,7 @@ from shutil import copy2
 import setuptools
 from setuptools.command.build_py import build_py
 
-version = '2022.6a1'
+version = '2022.11'
 
 
 class CopyHIVFactsDataCmd(build_py):
