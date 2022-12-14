@@ -74,11 +74,6 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 			"the input sequence was concatenated from multiple partial sequences. Adding 'N's in place " +
 			"of the missing sequence will allow the sequence to be processed.");
 
-		levels.put("sequence-trimmed", ValidationLevel.WARNING);
-		messages.put(
-			"sequence-trimmed",
-			"The %s sequence had %d amino acids trimmed from its %s-end due to poor quality.");
-
 		levels.put("sequence-much-too-short", ValidationLevel.SEVERE_WARNING);
 		messages.put(
 			"sequence-much-too-short",
@@ -188,7 +183,6 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 		results.addAll(validateGene(alignedSequence));
 		results.addAll(validateSequenceSize(alignedSequence));
 		results.addAll(validateUnsequencedRegion(alignedSequence));
-		results.addAll(validateShrinkage(alignedSequence));
 		results.addAll(validateLongGap(alignedSequence));
 		results.addAll(validateNAs(alignedSequence));
 		results.addAll(validateGaps(alignedSequence));
@@ -283,23 +277,6 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 				} else if (size < tooShortSize[i]) {
 					result.add(newValidationResult("sequence-too-short", geneNames[i], size));
 				}
-			}
-		}
-		return result;
-	}
-
-	protected static List<ValidationResult> validateShrinkage(AlignedSequence<HIV2> alignedSequence) {
-		List<ValidationResult> result = new ArrayList<>();
-		for (AlignedGeneSeq<HIV2> geneSeq : alignedSequence.getAlignedGeneSequences()) {
-			Gene<HIV2> gene = geneSeq.getGene();
-			int[] trimmed = geneSeq.getShrinkage();
-			int leftTrimmed = trimmed[0];
-			int rightTrimmed = trimmed[1];
-			if (leftTrimmed > 0) {
-				result.add(newValidationResult("sequence-trimmed", gene, leftTrimmed, "5′"));
-			}
-			if (rightTrimmed > 0) {
-				result.add(newValidationResult("sequence-trimmed", gene, rightTrimmed, "3′"));
 			}
 		}
 		return result;

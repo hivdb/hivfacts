@@ -59,7 +59,6 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		results.addAll(validateGene(alignedSequence, includeGenes));
 		results.addAll(validateReverseComplement(alignedSequence));
 		results.addAll(validateNoMissingPositions(alignedSequence, includeGenes));
-		results.addAll(validateShrinkage(alignedSequence, includeGenes));
 		results.addAll(validateLongGap(alignedSequence, includeGenes));
 		results.addAll(validateNAs(alignedSequence));
 		results.addAll(validateGaps(alignedSequence, includeGenes));
@@ -289,29 +288,6 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 			needDRGenePositions,
 			availableGenePositions
 		);
-	}
-
-	protected static List<ValidationResult> validateShrinkage(
-		AlignedSequence<HIV> alignedSequence,
-		Collection<String> includeGenes
-	) {
-		List<ValidationResult> result = new ArrayList<>();
-		for (AlignedGeneSeq<HIV> geneSeq : alignedSequence.getAlignedGeneSequences()) {
-			String geneText = geneSeq.getAbstractGene();
-			if (!includeGenes.contains(geneText)) {
-				continue;
-			}
-			int[] trimmed = geneSeq.getShrinkage();
-			int leftTrimmed = trimmed[0];
-			int rightTrimmed = trimmed[1];
-			if (leftTrimmed > 0) {
-				result.add(HIV1ValidationMessage.FASTASequenceTrimmed.format(geneText, leftTrimmed, "5′"));
-			}
-			if (rightTrimmed > 0) {
-				result.add(HIV1ValidationMessage.FASTASequenceTrimmed.format(geneText, rightTrimmed, "3′"));
-			}
-		}
-		return result;
 	}
 
 	protected static List<ValidationResult> validateLongGap(

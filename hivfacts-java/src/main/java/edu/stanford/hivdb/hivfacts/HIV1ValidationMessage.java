@@ -21,10 +21,6 @@ public enum HIV1ValidationMessage implements ValidationMessage {
 		"the input sequence was concatenated from multiple partial sequences. Adding 'N's in place " +
 		"of the missing sequence will allow the sequence to be processed."
 	),
-	FASTASequenceTrimmed(
-		ValidationLevel.WARNING,
-		"The %s sequence had %d amino acids trimmed from its %s-end due to poor quality."
-	),
 	FASTAInvalidNAsRemoved(
 		ValidationLevel.NOTE,
 		"Non-NA character(s) %s were found and removed from the sequence."
