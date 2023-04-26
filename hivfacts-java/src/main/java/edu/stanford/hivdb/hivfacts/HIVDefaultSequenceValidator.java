@@ -38,6 +38,8 @@ import edu.stanford.hivdb.mutations.GenePosition;
 import edu.stanford.hivdb.mutations.MutationSet;
 import edu.stanford.hivdb.sequences.AlignedGeneSeq;
 import edu.stanford.hivdb.sequences.AlignedSequence;
+import edu.stanford.hivdb.sequences.AlignmentMessage;
+import edu.stanford.hivdb.sequences.AlignmentMessage.AlignmentMessageLevel;
 import edu.stanford.hivdb.sequences.SequenceValidator;
 import edu.stanford.hivdb.sequences.GeneRegions;
 import edu.stanford.hivdb.utilities.Json;
@@ -56,6 +58,7 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		if (results.size() > 0) {
 			return results;
 		}
+		results.addAll(validateAlignment(alignedSequence));
 		results.addAll(validateGene(alignedSequence, includeGenes));
 		results.addAll(validateReverseComplement(alignedSequence));
 		results.addAll(validateNoMissingPositions(alignedSequence, includeGenes));
@@ -110,6 +113,25 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 			return Lists.newArrayList(HIV1ValidationMessage.FASTAReverseComplement.format());
 		}
 		return Collections.emptyList();
+	}
+	
+	protected static List<ValidationResult> validateAlignment(
+		AlignedSequence<?> alignedSequence
+	) {
+		List<ValidationResult> messages = new ArrayList<>();
+		for (AlignmentMessage msg : alignedSequence.getAlignmentMessages()) {
+			messages.add(
+				new ValidationResult(
+					// TODO: currently we don't report ERROR level in PostAlign
+					// In the future, ERROR=>CRITICAL should be added
+					msg.getLevel() == AlignmentMessageLevel.INFO ?
+						ValidationLevel.NOTE :
+						ValidationLevel.WARNING,
+					String.format("[PostAlign] %s", msg.getMessage())
+				)
+			);
+		}
+		return messages;
 	}
 
 	protected static List<ValidationResult> validateGene(
