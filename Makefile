@@ -30,9 +30,16 @@ data/%.json: data/%.yml
 data/conditional-comments_hiv1.json: data/conditional-comments_hiv1.csv scripts/condcmts_csv2json.py
 	@pipenv run python scripts/condcmts_csv2json.py HIV1 data/conditional-comments_hiv1.csv data/conditional-comments_hiv1.json
 
-data/algorithms/*.xml:
+ASI_FILES := $(wildcard data/algorithms/*.xml)
+ASI_FILES := $(filter-out data/algorithms/HIVDB_latest.xml, $(ASI_FILES))
+
+$(ASI_FILES):
 	@dos2unix -q $@
 	@echo $@
+
+data/algorithms/HIVDB_latest.xml: data/algorithms/versions.json
+	@rm -f data/algorithms/HIVDB_latest.xml
+	@ln -s HIVDB_$(shell cat data/algorithms/versions.json | jq '.HIVDB[-1][0]' --raw-output).xml data/algorithms/HIVDB_latest.xml 
 
 data: data/*csv data/*.json data/algorithms/*.xml data/algorithms/*.json data/apobecs/*.json data/apobecs-hiv2/*.json data/aapcnt/*.json
 
@@ -81,4 +88,4 @@ build-python:
 release-python:
 	@cd hivfacts-python; ./setup.py copy_data sdist bdist_wheel upload
 
-.PHONY: release-java data/algorithms/*.xml
+.PHONY: release-java
