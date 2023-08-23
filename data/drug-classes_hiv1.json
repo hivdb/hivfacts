@@ -10,6 +10,7 @@
     "synonyms": [],
     "mutationTypes": [
       "Major",
+      "Accessory",
       "Other"
     ]
   },
