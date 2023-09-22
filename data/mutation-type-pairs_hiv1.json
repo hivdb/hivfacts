@@ -50,7 +50,7 @@
     "drugClass": "NRTI",
     "position": 65,
     "aas": "ACDFGHILMPQSTVWY_-",
-    "mutationType": "NRTI",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -95,7 +95,7 @@
     "drugClass": "NRTI",
     "position": 67,
     "aas": "ACFIKLMPQRVWY_",
-    "mutationType": "NRTI",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -202,16 +202,7 @@
     "gene": "RT",
     "drugClass": "NRTI",
     "position": 69,
-    "aas": "N",
-    "mutationType": "Other",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "RT",
-    "drugClass": "NRTI",
-    "position": 69,
-    "aas": "SAIE",
+    "aas": "NSAIE",
     "mutationType": "Other",
     "isUnusual": false
   },
@@ -230,7 +221,7 @@
     "drugClass": "NRTI",
     "position": 70,
     "aas": "ACDFHILMPVWY_",
-    "mutationType": "NRTI",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -257,7 +248,7 @@
     "drugClass": "NRTI",
     "position": 74,
     "aas": "ACDEFGHKMNPQRSTWY_-",
-    "mutationType": "NRTI",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -392,7 +383,7 @@
     "drugClass": "NRTI",
     "position": 184,
     "aas": "ACDEFGHKLNPQRSTWY_-",
-    "mutationType": "NRTI",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -419,7 +410,7 @@
     "drugClass": "NRTI",
     "position": 215,
     "aas": "GHKMPQRW_-",
-    "mutationType": "NRTI",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -491,7 +482,7 @@
     "drugClass": "NNRTI",
     "position": 100,
     "aas": "ACDEFGHKMNPQRSTWY_-",
-    "mutationType": "NNRTI",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -572,7 +563,7 @@
     "drugClass": "NNRTI",
     "position": 103,
     "aas": "ACDFGILMPVWY_-",
-    "mutationType": "NNRTI",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -797,7 +788,7 @@
     "drugClass": "NNRTI",
     "position": 181,
     "aas": "ADEHKLMNPQRTW_-",
-    "mutationType": "NNRTI",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -833,7 +824,7 @@
     "drugClass": "NNRTI",
     "position": 188,
     "aas": "ADEGIKMNPQRSTVW_-",
-    "mutationType": "NNRTI",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -896,7 +887,7 @@
     "drugClass": "NNRTI",
     "position": 190,
     "aas": "DFHIKLMNPWY_-",
-    "mutationType": "NNRTI",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -1256,7 +1247,7 @@
     "drugClass": "PI",
     "position": 32,
     "aas": "ACDEFGHKLMNPQRSTWY_-",
-    "mutationType": "Accessory",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -1382,7 +1373,7 @@
     "drugClass": "PI",
     "position": 46,
     "aas": "ACDEFGHKNPQRSTWY_-",
-    "mutationType": "Accessory",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -1418,7 +1409,7 @@
     "drugClass": "PI",
     "position": 47,
     "aas": "CDEFGHKLMNPQRSTWY_-",
-    "mutationType": "Accessory",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -1454,7 +1445,7 @@
     "drugClass": "PI",
     "position": 48,
     "aas": "CDEFHIKNPRWY_-",
-    "mutationType": "Accessory",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -1481,7 +1472,7 @@
     "drugClass": "PI",
     "position": 50,
     "aas": "ACDEFGHKMNPQRSTWY_-",
-    "mutationType": "Accessory",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -1562,7 +1553,7 @@
     "drugClass": "PI",
     "position": 73,
     "aas": "EFHIKLMNPQRWY_-",
-    "mutationType": "Accessory",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -1670,7 +1661,7 @@
     "drugClass": "PI",
     "position": 82,
     "aas": "DEGHKNPQRWY_-",
-    "mutationType": "Accessory",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -1715,7 +1706,7 @@
     "drugClass": "PI",
     "position": 84,
     "aas": "DEFGHKLMNPQRSTWY_-",
-    "mutationType": "Accessory",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -1841,7 +1832,7 @@
     "drugClass": "INSTI",
     "position": 66,
     "aas": "CDEFGHLMNPQRSVWY_-",
-    "mutationType": "Major",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -1886,7 +1877,7 @@
     "drugClass": "INSTI",
     "position": 92,
     "aas": "ACDFHIKLMNPRSTWY_-",
-    "mutationType": "Major",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -2022,7 +2013,7 @@
     "position": 140,
     "aas": "R",
     "mutationType": "Major",
-    "isUnusual": true
+    "isUnusual": false
   },
   {
     "strain": "HIV1",
@@ -2039,7 +2030,7 @@
     "drugClass": "INSTI",
     "position": 140,
     "aas": "DEFHIKLMNPQTVWY_-",
-    "mutationType": "Accessory",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -2066,7 +2057,7 @@
     "drugClass": "INSTI",
     "position": 143,
     "aas": "DEFILMNPQTVW_-",
-    "mutationType": "Major",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -2102,7 +2093,7 @@
     "drugClass": "INSTI",
     "position": 145,
     "aas": "ACDEFGHIKLMNQRTVWY_-",
-    "mutationType": "Accessory",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -2120,7 +2111,7 @@
     "drugClass": "INSTI",
     "position": 146,
     "aas": "ACDEFGHIKMNSTVWY_-",
-    "mutationType": "Accessory",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -2129,7 +2120,7 @@
     "drugClass": "INSTI",
     "position": 147,
     "aas": "ACDEFHIKLMNPQRTVWY_-",
-    "mutationType": "Major",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -2147,7 +2138,7 @@
     "drugClass": "INSTI",
     "position": 148,
     "aas": "ACDEFGILMPSTVWY_-",
-    "mutationType": "Major",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
@@ -2237,7 +2228,7 @@
     "drugClass": "INSTI",
     "position": 155,
     "aas": "ACDEFGIKLMPQRVWY_-",
-    "mutationType": "Major",
+    "mutationType": "Other",
     "isUnusual": true
   },
   {
