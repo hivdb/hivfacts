@@ -206,7 +206,7 @@
       "pos": 121,
       "aas": "ADEGHIKLMNPQRSTVW_-"
     },
-    "comment": "F121Y is a rare nonpolymorphic mutation selected primarily by RAL. It is associated with >10-fold reduced susceptibility to RAL but has minimal if any effect on susceptibility to CAB, DTG, and BIC. F121C is an extremely rare mutation. Preliminary data suggests it may confers high level phenotypic resistance to RAL, EVG, and possibly CAB. $listMutsIn{121(NOT Y)} is an unusual mutation at this position."
+    "comment": "F121Y is a rare nonpolymorphic mutation selected primarily by RAL. It is associated with >10-fold reduced susceptibility to RAL but has minimal if any effect on susceptibility to CAB, DTG, and BIC. F121C is an extremely rare mutation. Preliminary data suggests it may confers high level phenotypic resistance to RAL, EVG, and possibly CAB. $listMutsIn{121(NOT CY)} is an unusual mutation at this position."
   },
   {
     "strain": "HIV1",
@@ -378,15 +378,15 @@
   },
   {
     "strain": "HIV1",
-    "commentName": "IN146ACDEFGHIKLMNRSTVWYid",
+    "commentName": "IN146ACDEFGHIKMNSTVWYid",
     "drugClass": "INSTI",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "IN",
       "pos": 146,
-      "aas": "ACDEFGHIKLMNRSTVWY_-"
+      "aas": "ACDEFGHIKMNSTVWY_-"
     },
-    "comment": "Q146P/R/L are rare mutations that have been selected in vitro by EVG, DTG, BIC, and CAB. Q146P/L have been associated with 5-15-fold reduced EVG susceptibility but not with reduced susceptibility to other INSTIs. $listMutsIn{146(NOT P)} is an unusual mutation at this position."
+    "comment": "Q146P/R/L are rare mutations that have been selected in vitro by EVG, DTG, BIC, and CAB. Q146P/L have been associated with 5-15-fold reduced EVG susceptibility but not with reduced susceptibility to other INSTIs. $listMutsIn{146(NOT PRL)} is an unusual mutation at this position."
   },
   {
     "strain": "HIV1",
@@ -522,15 +522,15 @@
   },
   {
     "strain": "HIV1",
-    "commentName": "IN153ACDEGHIKLMNPQRTVWid",
+    "commentName": "IN153CDEGHIKLMNPQRTVWid",
     "drugClass": "INSTI",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "IN",
       "pos": 153,
-      "aas": "ACDEGHIKLMNPQRTVW_-"
+      "aas": "CDEGHIKLMNPQRTVW_-"
     },
-    "comment": "S153Y/F are very rare mutations selected in vitro by EVG, DTG, BIC, and CAB. Alone they reduce EVG susceptibility about 5-fold and DTG, CAB, and BIC susceptibility about 2-fold. S153A is a rare mutation that alone does not appear to reduce INSTI susceptibility. $listMutsIn{153(NOT YF)} is an unusual mutation at this position."
+    "comment": "S153Y/F are very rare mutations selected in vitro by EVG, DTG, BIC, and CAB. Alone they reduce EVG susceptibility about 5-fold and DTG, CAB, and BIC susceptibility about 2-fold. S153A is a rare mutation that alone does not appear to reduce INSTI susceptibility. $listMutsIn{153(NOT YFA)} is an unusual mutation at this position."
   },
   {
     "strain": "HIV1",

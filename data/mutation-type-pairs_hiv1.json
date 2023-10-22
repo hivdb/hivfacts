@@ -1966,7 +1966,7 @@
     "gene": "IN",
     "drugClass": "INSTI",
     "position": 121,
-    "aas": "ACDEGHIKLMNPQRSTVW_-",
+    "aas": "ADEGHIKLMNPQRSTVW_-",
     "mutationType": "Other",
     "isUnusual": true
   },
