@@ -1,9 +1,9 @@
-A:
+A1:
   classificationLevel: SUBTYPE
-  displayName: A
+  displayName: A1
   distanceUpperLimit: 0.07
   isSimpleCRF: false
-  name: A
+  name: A1
   parentGenotypes: null
   regions: null
 A2:
@@ -12,6 +12,46 @@ A2:
   distanceUpperLimit: 0.06
   isSimpleCRF: false
   name: A2
+  parentGenotypes: null
+  regions: null
+A3:
+  classificationLevel: SUBTYPE
+  displayName: A3
+  distanceUpperLimit: 0.06
+  isSimpleCRF: false
+  name: A3
+  parentGenotypes: null
+  regions: null
+A4:
+  classificationLevel: SUBTYPE
+  displayName: A4
+  distanceUpperLimit: 0.06
+  isSimpleCRF: false
+  name: A4
+  parentGenotypes: null
+  regions: null
+A6:
+  classificationLevel: SUBTYPE
+  displayName: A6
+  distanceUpperLimit: 0.06
+  isSimpleCRF: false
+  name: A6
+  parentGenotypes: null
+  regions: null
+A7:
+  classificationLevel: SUBTYPE
+  displayName: A7
+  distanceUpperLimit: 0.06
+  isSimpleCRF: false
+  name: A7
+  parentGenotypes: null
+  regions: null
+A8:
+  classificationLevel: SUBTYPE
+  displayName: A8
+  distanceUpperLimit: 0.06
+  isSimpleCRF: false
+  name: A8
   parentGenotypes: null
   regions: null
 B:
@@ -124,7 +164,7 @@ X01:
   distanceUpperLimit: 0.05
   isSimpleCRF: false
   name: X01
-  parentGenotypes: A
+  parentGenotypes: A1
   regions: null
 X02:
   classificationLevel: CRF
@@ -132,18 +172,18 @@ X02:
   distanceUpperLimit: 0.07
   isSimpleCRF: false
   name: X02
-  parentGenotypes: A|G
+  parentGenotypes: A1|G
   regions: null
 X03:
   classificationLevel: CRF
-  displayName: CRF03_AB
+  displayName: CRF03_A6B
   distanceUpperLimit: 0.02
   isSimpleCRF: true
   name: X03
-  parentGenotypes: A|B
+  parentGenotypes: A6|B
   regions:
   - end: 2687
-    genotypeName: A
+    genotypeName: A6
     start: 2253
   - end: 5094
     genotypeName: B
@@ -182,7 +222,7 @@ X06:
     genotypeName: G
     start: 3901
   - end: 5040
-    genotypeName: A
+    genotypeName: A1
     start: 4267
   - end: 5094
     genotypeName: J
@@ -261,7 +301,7 @@ X11:
   distanceUpperLimit: 0.06
   isSimpleCRF: true
   name: X11
-  parentGenotypes: A|J
+  parentGenotypes: A1|J
   regions:
   - end: 3089
     genotypeName: J
@@ -273,7 +313,7 @@ X11:
     genotypeName: J
     start: 3490
   - end: 5094
-    genotypeName: A
+    genotypeName: A1
     start: 4040
 X12:
   classificationLevel: CRF
@@ -392,7 +432,7 @@ X18:
     genotypeName: U
     start: 3041
   - end: 3730
-    genotypeName: A
+    genotypeName: A1
     start: 3440
   - end: 4130
     genotypeName: H
@@ -412,7 +452,7 @@ X19:
   parentGenotypes: D
   regions:
   - end: 4671
-    genotypeName: A
+    genotypeName: A1
     start: 4240
   - end: 5094
     genotypeName: G
@@ -469,13 +509,13 @@ X22:
   distanceUpperLimit: 0.03
   isSimpleCRF: true
   name: X22
-  parentGenotypes: A
+  parentGenotypes: A1
   regions:
   - end: 2666
     genotypeName: X01
     start: 2253
   - end: 5094
-    genotypeName: A
+    genotypeName: A1
     start: 2666
 X23:
   classificationLevel: CRF
@@ -544,7 +584,7 @@ X25:
     genotypeName: U
     start: 3128
   - end: 4003
-    genotypeName: A
+    genotypeName: A1
     start: 3692
   - end: 5094
     genotypeName: U
@@ -555,22 +595,22 @@ X26:
   distanceUpperLimit: 0.03
   isSimpleCRF: true
   name: X26
-  parentGenotypes: A
+  parentGenotypes: A1
   regions:
   - end: 5094
-    genotypeName: A
+    genotypeName: A1
     start: 4516
   - end: 4515
     genotypeName: U
     start: 4236
   - end: 4235
-    genotypeName: A
+    genotypeName: A1
     start: 2681
   - end: 2680
     genotypeName: U
     start: 2380
   - end: 2379
-    genotypeName: A
+    genotypeName: A1
     start: 2253
 X27:
   classificationLevel: CRF
@@ -653,7 +693,7 @@ X31:
     start: 2976
 X32:
   classificationLevel: CRF
-  displayName: CRF32_06A1
+  displayName: CRF32_06A6
   distanceUpperLimit: 0.02
   isSimpleCRF: true
   name: X32
@@ -698,20 +738,20 @@ X34:
     start: 2253
 X35:
   classificationLevel: CRF
-  displayName: CRF35_AD
+  displayName: CRF35_A1D
   distanceUpperLimit: 0.04
   isSimpleCRF: true
   name: X35
-  parentGenotypes: A|D
+  parentGenotypes: A1|D
   regions:
   - end: 5094
-    genotypeName: A
+    genotypeName: A1
     start: 3539
   - end: 3538
     genotypeName: D
     start: 3185
   - end: 3184
-    genotypeName: A
+    genotypeName: A1
     start: 3100
   - end: 3099
     genotypeName: D
@@ -720,7 +760,7 @@ X35:
     genotypeName: D
     start: 2253
   - end: 2901
-    genotypeName: A
+    genotypeName: A1
     start: 2445
 X36:
   classificationLevel: CRF
@@ -728,7 +768,7 @@ X36:
   distanceUpperLimit: 0.03
   isSimpleCRF: true
   name: X36
-  parentGenotypes: A|X02
+  parentGenotypes: A1|X02
   regions:
   - end: 5094
     genotypeName: G
@@ -737,7 +777,7 @@ X36:
     genotypeName: X02
     start: 4074
   - end: 4073
-    genotypeName: A
+    genotypeName: A1
     start: 3358
   - end: 3357
     genotypeName: X02
@@ -748,10 +788,10 @@ X37:
   distanceUpperLimit: 0.03
   isSimpleCRF: true
   name: X37
-  parentGenotypes: A|G
+  parentGenotypes: A1|G
   regions:
   - end: 4663
-    genotypeName: A
+    genotypeName: A1
     start: 2914
   - end: 5094
     genotypeName: U
@@ -893,7 +933,7 @@ X45:
   parentGenotypes: null
   regions:
   - end: 2398
-    genotypeName: A
+    genotypeName: A1
     start: 2253
   - end: 2933
     genotypeName: U
@@ -911,7 +951,7 @@ X45:
     genotypeName: U
     start: 4081
   - end: 5094
-    genotypeName: A
+    genotypeName: A1
     start: 4300
 X46:
   classificationLevel: CRF
@@ -976,7 +1016,7 @@ X49:
   parentGenotypes: null
   regions:
   - end: 2391
-    genotypeName: A
+    genotypeName: A1
     start: 2253
   - end: 2642
     genotypeName: J
@@ -991,7 +1031,7 @@ X49:
     genotypeName: J
     start: 3374
   - end: 4083
-    genotypeName: A
+    genotypeName: A1
     start: 3745
   - end: 5094
     genotypeName: C
@@ -1002,13 +1042,13 @@ X50:
   distanceUpperLimit: 0.03
   isSimpleCRF: true
   name: X50
-  parentGenotypes: A|D
+  parentGenotypes: A1|D
   regions:
   - end: 2490
     genotypeName: D
     start: 2253
   - end: 5094
-    genotypeName: A
+    genotypeName: A1
     start: 2491
 X51:
   classificationLevel: CRF
@@ -1231,23 +1271,23 @@ X62:
     start: 2253
 X63:
   classificationLevel: CRF
-  displayName: CRF63_02A1
+  displayName: CRF63_02A6
   distanceUpperLimit: 0.02
   isSimpleCRF: true
   name: X63
-  parentGenotypes: A|X02
+  parentGenotypes: A6|X02
   regions:
   - end: 3222
     genotypeName: X02
     start: 2253
   - end: 4031
-    genotypeName: A
+    genotypeName: A6
     start: 3222
   - end: 4499
     genotypeName: X02
     start: 4031
   - end: 5094
-    genotypeName: A
+    genotypeName: A6
     start: 4500
 X64:
   classificationLevel: CRF

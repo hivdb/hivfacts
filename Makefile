@@ -41,7 +41,7 @@ data/algorithms/HIVDB_latest.xml: data/algorithms/versions.json
 	@rm -f data/algorithms/HIVDB_latest.xml
 	@ln -s HIVDB_$(shell cat data/algorithms/versions.json | jq '.HIVDB[-1][0]' --raw-output).xml data/algorithms/HIVDB_latest.xml 
 
-data: data/*csv data/*.json data/algorithms/*.xml data/algorithms/*.json data/apobecs/*.json data/apobecs-hiv2/*.json data/aapcnt/*.json
+data: data/*csv data/*.json data/algorithms/*.xml data/algorithms/*.json data/apobecs/*.json data/apobecs-hiv2/*.json data/aapcnt/*.json data/genotypes/*.json
 
 refresh-yamls:
 	@pipenv run python scripts/yaml2json.py
