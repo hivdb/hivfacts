@@ -912,7 +912,7 @@
         </ACTIONS>
       </RULE>
       <RULE>
-        <CONDITION>219-</CONDITION>
+        <CONDITION>219d</CONDITION>
         <ACTIONS>
           <COMMENT ref="HIV2ART219-"/>
         </ACTIONS>

@@ -62,5 +62,5 @@ HIV2ART184VI,RT,NRTI,"M184V/I is the most common HIV-2 drug-resistance mutation.
 HIV2ART210ACDEFGHIKLMPQRSTVWY_-,RT,NRTI,210W is an HIV-1 associated TAM. The HIV-2 consensus at this position is N. Mutations at this position have not been selected by NRTIs in HIV-2 isolates.,1,MUTATION,210ACDEFGHIKLMPQRSTVWYid,2020-05-04
 HIV2ART214L,RT,NRTI,F214L is a slighly polymorphic HIV-2 mutation that occurs with increased frequency in NRTI-treated persons.,1,MUTATION,214L,2020-05-04
 HIV2ART215YF,RT,NRTI,S215YF are nonpolymorphic HIV-2 drug-resistance mutations that are selected by AZT.,1,MUTATION,215YF,2024-01-13
-HIV2ART219-,RT,NRTI,E219D is a polymorphic mutation that also appears to be selected by AZT.,1,MUTATION,219-,2024-01-13
+HIV2ART219-,RT,NRTI,E219D is a polymorphic mutation that also appears to be selected by AZT.,1,MUTATION,219d,2024-01-13
 HIV2ART223R,RT,NRTI,K223R is a polymorphic HIV-2 mutation that occurs more commonly in NRTI-treated persons. It is considered to be associated with reduced AZT susceptibility.,1,MUTATION,223R,2024-01-13
