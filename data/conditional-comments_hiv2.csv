@@ -1,4 +1,4 @@
-﻿id,gene,drugClass,text,sortTag,conditionType,condition,date
+id,gene,drugClass,text,sortTag,conditionType,condition,date
 HIV2AIN46R,IN,INSTI,K46R is an uncommon nonpolymorphic HIV-2-associated RAL-selected mutation that alone has a minimal effect on RAL or DTG susceptibility.,1,MUTATION,46R,2024-01-13
 HIV2AIN51Y,IN,INSTI,H51Y is an HIV-1-associated drug-resistance mutation which has not yet been reported in HIV-2 infected persons.,1,MUTATION,51Y,2024-01-13
 HIV2AIN66AIK,IN,INSTI,T66AIK are HIV-1-associated drug-resistance mutations which have not been reported in HIV-2 infected patients.,1,MUTATION,66AIK,2024-01-13
@@ -7,7 +7,7 @@ HIV2AIN91R,IN,INSTI,Q91R is a nonpolymorphic HIV-2-associated RAL-selected mutat
 HIV2AIN92AGQ,IN,INSTI,"E92AQ are nonpolymorphic HIV-2 associated mutations selected by RAL while E92G has been selected in one person receiving DTG. Alone, they are associated with reduced EVG susceptibility. They contribute reduced susceptibility to each of the INSTIs when combined with other INSTI DRMs. ",1,MUTATION,92AGQ,2024-01-13
 HIV2AIN97A,IN,INSTI,"T97A is a common nonpolymorphic INSTI-selected mutation. In combination with other DRMs, it contributes reduced susceptibility to RAL, EVG, and possibly DTG and BIC.",1,MUTATION,97A,2024-01-13
 HIV2AIN118R,IN,INSTI,G118R is an uncommon nonpolymorphtic HIV-2-associated mutation which has been reported in one person who received RAL followed by DTG.  It is associated with about 6-fold reduced RAL susceptibility and about 8-fold reduced DTG susceptibility.,1,MUTATION,118R,2024-01-13
-HIV21AIN119T,IN,INSTI,A119T is a polymorphic HIV-2-associated mutation which occurs significantly more commonly in RAL-experienced compared with INSTI-naïve persons. Alone it has a minimal effect on INSTI susceptibility.,1,MUTATION,119T,2024-01-13
+HIV2AIN119T,IN,INSTI,A119T is a polymorphic HIV-2-associated mutation which occurs significantly more commonly in RAL-experienced compared with INSTI-naïve persons. Alone it has a minimal effect on INSTI susceptibility.,1,MUTATION,119T,2024-01-13
 HIV2AIN121Y,IN,INSTI,F121Y is an uncommon nonpolymorphic HIV-1-associated drug-resistance mutation which has not been reported in HIV-2 infected patients.,1,MUTATION,121Y,2024-01-13
 HIV2AIN140SA,IN,INSTI,"G140SA are common nonpolymorphic HIV-2 associated drug-resistance mutations that usually occur in combination with Q148 mutations. Alone, they have little effect on INSTI susceptibility but in combination with mutations at position 148, they are associated with high level reductions in susceptibility to RAL and DTG.",1,MUTATION,140SA,2024-01-13
 HIV2AIN141I,IN,INSTI,"V141I is a slightly polymorphic mutation that is selected by RAL and possibly DTG. It usually occurs in combination with other INSTI-selected mutations. By itselft, it has a minimal effect on RAL and DTG susceptibility.",1,MUTATION,141I,2024-01-13

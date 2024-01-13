@@ -27,8 +27,11 @@ data/patterns_%.json: data/patterns_%.csv
 data/%.json: data/%.yml
 	@pipenv run python scripts/yaml2json.py $<
 
-data/conditional-comments_hiv1.json: data/conditional-comments_hiv1.csv scripts/condcmts_csv2json.py
-	@pipenv run python scripts/condcmts_csv2json.py HIV1 data/conditional-comments_hiv1.csv data/conditional-comments_hiv1.json
+data/conditional-comments_%.json: data/conditional-comments_%.csv scripts/condcmts_csv2json.py
+	@pipenv run python scripts/condcmts_csv2json.py HIV1 $< $@
+
+data/conditional-comments_hiv2.json: data/conditional-comments_hiv2.csv scripts/condcmts_csv2json.py
+	@pipenv run python scripts/condcmts_csv2json.py HIV2 $< $@
 
 ASI_FILES := $(wildcard data/algorithms/*.xml)
 ASI_FILES := $(filter-out data/algorithms/HIVDB_latest.xml, $(ASI_FILES))

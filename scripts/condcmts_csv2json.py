@@ -58,8 +58,15 @@ def main(species: str, input_csv: TextIO, output_json: TextIO) -> None:
     reader: csv.DictReader = csv.DictReader(input_csv)
     cmtlist = []
     for row in reader:
-        gene = row['gene']
-        strain = 'HIV1' if species == 'HIV1' else gene[:5]
+        cmtid = row['id']
+        if species == 'HIV1':
+            strain = 'HIV1'
+        elif cmtid.startswith('HIV2A'):
+            strain = 'HIV2A'
+        elif cmtid.startswith('HIV2B'):
+            strain = 'HIV2B'
+        else:
+            raise RuntimeError('unknown strain for {}'.format(cmtid))
         cmtlist.append({
             'strain': strain,
             'commentName': row['id'],
