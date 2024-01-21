@@ -660,7 +660,7 @@ X29:
   - end: 2571
     genotypeName: F
     start: 2253
-  - end: 36882
+  - end: 3682
     genotypeName: B
     start: 2572
   - end: 5094
@@ -1089,12 +1089,12 @@ X53:
   name: X53
   parentGenotypes: X01
   regions:
-  - end: 5094
-    genotypeName: X01
-    start: 2400
   - end: 2399
     genotypeName: B
     start: 2253
+  - end: 5094
+    genotypeName: X01
+    start: 2400
 X54:
   classificationLevel: CRF
   displayName: CRF54_01B
