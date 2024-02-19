@@ -44,7 +44,7 @@
         "8797",
         "9417"
       ],
-      "minimap2Opts": "-w 5 --score-N 0 --secondary no"
+      "minimap2Opts": "-k 10 --score-N 0 --secondary no"
     },
     {
       "fragmentName": "HIV1gag",

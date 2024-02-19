@@ -100,11 +100,11 @@ fragmentConfig:
       codon-alignment, '--min-gap-distance=15', '6225', '8795',  # env
       codon-alignment, '--min-gap-distance=15', '8797', '9417'   # nef
     ]
-    # smaller minimizer window size (10=>5) and no penalty for N base
-    # the usage of --score-N 0 is recommended in several MiniMap2 issues
-    # such as https://github.com/lh3/minimap2/issues/354 and
-    # https://github.com/lh3/minimap2/issues/720
-    minimap2Opts: "-w 5 --score-N 0 --secondary no"
+    # 1. use smaller k-mer (default: 15) for increasing alignment sensitivity
+    # 2. no penalty for N base is recommended in several MiniMap2 issues:
+    #    https://github.com/lh3/minimap2/issues/354 and
+    #    https://github.com/lh3/minimap2/issues/720
+    minimap2Opts: "-k 10 --score-N 0 --secondary no"
   - fragmentName: HIV1gag
     fromFragment: HXB2_x_ConsensusB
     geneName: HIV1gag
