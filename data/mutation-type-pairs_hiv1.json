@@ -139,16 +139,7 @@
     "gene": "RT",
     "drugClass": "NRTI",
     "position": 68,
-    "aas": "N",
-    "mutationType": "NRTI",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "RT",
-    "drugClass": "NRTI",
-    "position": 68,
-    "aas": "R",
+    "aas": "DNR",
     "mutationType": "NRTI",
     "isUnusual": false
   },
@@ -1822,7 +1813,7 @@
     "gene": "IN",
     "drugClass": "INSTI",
     "position": 66,
-    "aas": "A",
+    "aas": "AI",
     "mutationType": "Major",
     "isUnusual": false
   },
@@ -1834,15 +1825,6 @@
     "aas": "CDEFGHLMNPQRSVWY_-",
     "mutationType": "Other",
     "isUnusual": true
-  },
-  {
-    "strain": "HIV1",
-    "gene": "IN",
-    "drugClass": "INSTI",
-    "position": 66,
-    "aas": "I",
-    "mutationType": "Major",
-    "isUnusual": false
   },
   {
     "strain": "HIV1",
@@ -1869,6 +1851,15 @@
     "position": 74,
     "aas": "I",
     "mutationType": "Other",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
+    "position": 75,
+    "aas": "A",
+    "mutationType": "Accessory",
     "isUnusual": false
   },
   {
@@ -1974,6 +1965,15 @@
     "strain": "HIV1",
     "gene": "IN",
     "drugClass": "INSTI",
+    "position": 122,
+    "aas": "N",
+    "mutationType": "Accessory",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "IN",
+    "drugClass": "INSTI",
     "position": 128,
     "aas": "T",
     "mutationType": "Accessory",
@@ -2047,7 +2047,7 @@
     "gene": "IN",
     "drugClass": "INSTI",
     "position": 143,
-    "aas": "CR",
+    "aas": "CRH",
     "mutationType": "Major",
     "isUnusual": false
   },
@@ -2059,15 +2059,6 @@
     "aas": "DEFILMNPQTVW_-",
     "mutationType": "Other",
     "isUnusual": true
-  },
-  {
-    "strain": "HIV1",
-    "gene": "IN",
-    "drugClass": "INSTI",
-    "position": 143,
-    "aas": "H",
-    "mutationType": "Major",
-    "isUnusual": false
   },
   {
     "strain": "HIV1",
