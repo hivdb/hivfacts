@@ -643,7 +643,16 @@
     "gene": "RT",
     "drugClass": "NNRTI",
     "position": 106,
-    "aas": "CDEFGHKLNPQRSTWY_-",
+    "aas": "L",
+    "mutationType": "NNRTI",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "RT",
+    "drugClass": "NNRTI",
+    "position": 106,
+    "aas": "CDEFGHKNPQRSTWY_-",
     "mutationType": "Other",
     "isUnusual": true
   },
