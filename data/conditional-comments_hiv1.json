@@ -170,7 +170,7 @@
       "pos": 118,
       "aas": "ACDEFHIKLMNPQSTVWY_-"
     },
-    "comment": "G118R is a nonpolymorphic mutation reported in a significant proportion of persons with VF and emergent HIVDR in persons receiving a DTG-containing regimen. It has occasionally been reported in persons receiving other INSTIs. It is associated with greater than 10-fold reduced susceptibility to DTG, 5-10-fold reduced susceptibility to RAL, EVG, and CAB, and about 3 fold reduced susceptibility to BIC. $listMutsIn{118(NOT R)} is an unusual mutation at this position."
+    "comment": "G118R is a nonpolymorphic mutation reported in a significant proportion of persons with VF and emergent HIVDR in persons receiving a DTG-containing regimen. It has occasionally been reported in persons receiving other INSTIs. It is associated with greater than 10-fold reduced susceptibility to DTG, 5-10-fold reduced susceptibility to RAL, EVG, and CAB, and about 3 fold reduced susceptibility to BIC. However, the data for BIC are based on the results of a single site-directed mutant. $listMutsIn{118(NOT R)} is an unusual mutation at this position."
   },
   {
     "strain": "HIV1",
@@ -182,7 +182,7 @@
       "pos": 118,
       "aas": "R"
     },
-    "comment": "G118R is a nonpolymorphic mutation reported in a significant proportion of persons with VF and emergent HIVDR in persons receiving a DTG-containing regimen. It has occasionally been reported in persons receiving other INSTIs. It is associated with greater than 10-fold reduced susceptibility to DTG, 5-10-fold reduced susceptibility to RAL, EVG, and CAB, and about 3 fold reduced susceptibility to BIC."
+    "comment": "G118R is a nonpolymorphic mutation reported in a significant proportion of persons with VF and emergent HIVDR in persons receiving a DTG-containing regimen. It has occasionally been reported in persons receiving other INSTIs. It is associated with greater than 10-fold reduced susceptibility to DTG, 5-10-fold reduced susceptibility to RAL, EVG, and CAB, and about 3 fold reduced susceptibility to BIC. However, the data for BIC are based on the results of a single site-directed mutant."
   },
   {
     "strain": "HIV1",
@@ -266,7 +266,7 @@
       "pos": 138,
       "aas": "CFGHILMNPQRSVWY_-"
     },
-    "comment": "E138K/A/T are common nonpolymorphic accessory resistance mutations selected in patients receiving RAL, EVG, CAB, and DTG. Alone they do not reduce INSTI susceptibility. However, they contribute to reduced susceptibility in combination with other mutations particularly those at position 148. E138D is a polymorphism that occurs in 1% to 2% of viruses from INSTI-naive patients. It does not appear to be selected by INSTIs or to reduce INSTI susceptibility. $listMutsIn{138(NOT KATD)} is an unusual mutation at this position."
+    "comment": "E138K/A/T are common nonpolymorphic accessory resistance mutations selected in patients receiving RAL, EVG, CAB, and DTG. Alone they do not reduce INSTI susceptibility. However, they contribute to reduced susceptibility in combination with other mutations particularly those at position 148. E138D is a polymorphism that occurs in 1% to 2% of viruses from INSTI-na\u00efve patients. It does not appear to be selected by INSTIs or to reduce INSTI susceptibility. $listMutsIn{138(NOT KATD)} is an unusual mutation at this position."
   },
   {
     "strain": "HIV1",
@@ -506,7 +506,7 @@
       "pos": 151,
       "aas": "CDEFGHKMNPQRSTWY_-"
     },
-    "comment": "V151I is an accessory INSTI selected mutation that occurs in 1% to 3% of viruses from ART-naive persons depending on subtype. Alone, it appears to have little or no effect on INSTI susceptibility. V151L is an extremely rare mutation that reduces susceptibility to RAL and EVG by 15 to 20-fold and to CAB and DTG by about 3-fold. V151A is an extremely rare mutation associated with minimally reduced susceptibility to RAL and EVG. $listMutsIn{151(NOT IAL)} is an unusual mutation at this position."
+    "comment": "V151I is an accessory INSTI selected mutation that occurs in 1% to 3% of viruses from ART-na\u00efve persons depending on subtype. Alone, it appears to have little or no effect on INSTI susceptibility. V151L is an extremely rare mutation that reduces susceptibility to RAL and EVG by 15 to 20-fold and to CAB and DTG by about 3-fold. V151A is an extremely rare mutation associated with minimally reduced susceptibility to RAL and EVG. $listMutsIn{151(NOT IAL)} is an unusual mutation at this position."
   },
   {
     "strain": "HIV1",
@@ -518,7 +518,7 @@
       "pos": 151,
       "aas": "I"
     },
-    "comment": "V151I is an accessory INSTI selected mutation that occurs in 1% to 3% of viruses from ART-naive persons depending on subtype. Alone, it appears to have little or no effect on INSTI susceptibility."
+    "comment": "V151I is an accessory INSTI selected mutation that occurs in 1% to 3% of viruses from ART-na\u00efve persons depending on subtype. Alone, it appears to have little or no effect on INSTI susceptibility."
   },
   {
     "strain": "HIV1",
@@ -662,7 +662,7 @@
       "pos": 263,
       "aas": "ACDEFGHILMNPQSTVWY_-"
     },
-    "comment": "R263K is a nonpolymorphic mutation selected in vitro by EVG, DTG, BIC, and CAB. It occurs in a high proportion of persons who develop VF and emergent HIVDR while receiving DTG. Alone, it reduces DTG, BIC, and CAB susceptibility about 2-fold and EVG susceptibility about 5-fold. $listMutsIn{263(NOT K)} is an unusual mutation at this position."
+    "comment": "R263K is a nonpolymorphic mutation selected in vitro by EVG, DTG, BIC, and CAB. It occurs in a high proportion of persons who develop VF and emergent HIVDR while receiving DTG. Alone, it reduces DTG, BIC, and CAB susceptibility about 2-fold and EVG susceptibility about 5-fold. It remains uncertain whether this mutation is a contraindication to continued treatment with DTG or BIC. $listMutsIn{263(NOT K)} is an unusual mutation at this position."
   },
   {
     "strain": "HIV1",
@@ -674,7 +674,7 @@
       "pos": 263,
       "aas": "K"
     },
-    "comment": "R263K is a nonpolymorphic mutation selected in vitro by EVG, DTG, BIC, and CAB. It occurs in a high proportion of persons who develop VF and emergent HIVDR while receiving DTG. Alone, it reduces DTG, BIC, and CAB susceptibility about 2-fold and EVG susceptibility about 5-fold."
+    "comment": "R263K is a nonpolymorphic mutation selected in vitro by EVG, DTG, BIC, and CAB. It occurs in a high proportion of persons who develop VF and emergent HIVDR while receiving DTG. Alone, it reduces DTG, BIC, and CAB susceptibility about 2-fold and EVG susceptibility about 5-fold. It remains uncertain whether this mutation is a contraindication to continued treatment with DTG or BIC."
   },
   {
     "strain": "HIV1",
@@ -698,7 +698,7 @@
       "pos": 50,
       "aas": "I"
     },
-    "comment": "M50I is a highly polymorphic mutation, which has a prevalence of 3% to 34% in INSTI-na\u00efve persons depending on subtype. It has been selected in vitro by DTG and BIC in combination with R263K. It is uncertain whether it contributes to reduced DTG and CAB susceptibility in combination with R263K."
+    "comment": "M50I is a highly polymorphic mutation, which has a prevalence of 3% to 34% in INSTI-na\u00efve persons depending on subtype. It has been selected in vitro by DTG and BIC in combination with R263K. It also appears to frequently occur in combination with R263K in patients receiving DTG and BIC. It is uncertain whether it contributes to reduced DTG and CAB susceptibility in combination with R263K."
   },
   {
     "strain": "HIV1",
@@ -2999,7 +2999,7 @@
       "pos": 65,
       "aas": "R"
     },
-    "comment": "K65R confers intermediate reductions in susceptibility to TDF, ABC, and 3TC/FTC. It increases AZT susceptibility. In NRTI-experienced, INSTI-naive patients with K65R, TDF+3TC+DTG is usually highly effective and more effective than AZT/3TC/DTG. However, in patients receiving TDF+3TC+DTG, there is a risk of emergent DTG resistance that does not arise in NRTI-naive patients receiving TDF+3TC+DTG."
+    "comment": "K65R confers intermediate reductions in susceptibility to TDF, ABC, and 3TC/FTC. Other than M184VI, it is the most common DRM emerging in patients receiving TDF/XTC. K65R increases AZT susceptibility. In NRTI-experienced, INSTI-naive patients with K65R, TDF/3TC/DTG is usually highly effective and more effective than AZT/3TC/DTG. However, in patients receiving TDF/3TC/DTG, there is a risk of emergent DTG resistance that does not arise in NRTI-naive patients receiving TDF/3TC/DTG."
   },
   {
     "strain": "HIV1",

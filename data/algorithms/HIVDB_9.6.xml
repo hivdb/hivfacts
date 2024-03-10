@@ -2,8 +2,8 @@
 <!DOCTYPE ALGORITHM SYSTEM "https://cms.hivdb.org/prod/downloads/asi/ASI2.3.dtd">
 <ALGORITHM>
   <ALGNAME>HIVDB</ALGNAME>
-  <ALGVERSION>9.6a1</ALGVERSION>
-  <ALGDATE>2024-02-24</ALGDATE>
+  <ALGVERSION>9.6</ALGVERSION>
+  <ALGDATE>2024-03-09</ALGDATE>
   <DEFINITIONS>
     <GENE_DEFINITION>
       <NAME>CA</NAME>
@@ -148,15 +148,15 @@
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="IN118ACDEFHIKLMNPQSTVWYid">
-        <!--<DATE>2024-02-24</DATE>-->
+        <!--<DATE>2024-03-09</DATE>-->
         <!--<DRUGCLASS>INSTI</DRUGCLASS>-->
-        <TEXT><![CDATA[G118R is a nonpolymorphic mutation reported in a significant proportion of persons with VF and emergent HIVDR in persons receiving a DTG-containing regimen. It has occasionally been reported in persons receiving other INSTIs. It is associated with greater than 10-fold reduced susceptibility to DTG, 5-10-fold reduced susceptibility to RAL, EVG, and CAB, and about 3 fold reduced susceptibility to BIC. $listMutsIn{118(NOT R)} is an unusual mutation at this position.]]></TEXT>
+        <TEXT><![CDATA[G118R is a nonpolymorphic mutation reported in a significant proportion of persons with VF and emergent HIVDR in persons receiving a DTG-containing regimen. It has occasionally been reported in persons receiving other INSTIs. It is associated with greater than 10-fold reduced susceptibility to DTG, 5-10-fold reduced susceptibility to RAL, EVG, and CAB, and about 3 fold reduced susceptibility to BIC. However, the data for BIC are based on the results of a single site-directed mutant. $listMutsIn{118(NOT R)} is an unusual mutation at this position.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="IN118R">
-        <!--<DATE>2024-02-24</DATE>-->
+        <!--<DATE>2024-03-09</DATE>-->
         <!--<DRUGCLASS>INSTI</DRUGCLASS>-->
-        <TEXT><![CDATA[G118R is a nonpolymorphic mutation reported in a significant proportion of persons with VF and emergent HIVDR in persons receiving a DTG-containing regimen. It has occasionally been reported in persons receiving other INSTIs. It is associated with greater than 10-fold reduced susceptibility to DTG, 5-10-fold reduced susceptibility to RAL, EVG, and CAB, and about 3 fold reduced susceptibility to BIC.]]></TEXT>
+        <TEXT><![CDATA[G118R is a nonpolymorphic mutation reported in a significant proportion of persons with VF and emergent HIVDR in persons receiving a DTG-containing regimen. It has occasionally been reported in persons receiving other INSTIs. It is associated with greater than 10-fold reduced susceptibility to DTG, 5-10-fold reduced susceptibility to RAL, EVG, and CAB, and about 3 fold reduced susceptibility to BIC. However, the data for BIC are based on the results of a single site-directed mutant.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="IN119R">
@@ -198,7 +198,7 @@
       <COMMENT_STRING id="IN138CFGHILMNPQRSVWYid">
         <!--<DATE>2022-10-23</DATE>-->
         <!--<DRUGCLASS>INSTI</DRUGCLASS>-->
-        <TEXT><![CDATA[E138K/A/T are common nonpolymorphic accessory resistance mutations selected in patients receiving RAL, EVG, CAB, and DTG. Alone they do not reduce INSTI susceptibility. However, they contribute to reduced susceptibility in combination with other mutations particularly those at position 148. E138D is a polymorphism that occurs in 1% to 2% of viruses from INSTI-naive patients. It does not appear to be selected by INSTIs or to reduce INSTI susceptibility. $listMutsIn{138(NOT KATD)} is an unusual mutation at this position.]]></TEXT>
+        <TEXT><![CDATA[E138K/A/T are common nonpolymorphic accessory resistance mutations selected in patients receiving RAL, EVG, CAB, and DTG. Alone they do not reduce INSTI susceptibility. However, they contribute to reduced susceptibility in combination with other mutations particularly those at position 148. E138D is a polymorphism that occurs in 1% to 2% of viruses from INSTI-naïve patients. It does not appear to be selected by INSTIs or to reduce INSTI susceptibility. $listMutsIn{138(NOT KATD)} is an unusual mutation at this position.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="IN138D">
@@ -318,13 +318,13 @@
       <COMMENT_STRING id="IN151CDEFGHKMNPQRSTWYid">
         <!--<DATE>2022-10-23</DATE>-->
         <!--<DRUGCLASS>INSTI</DRUGCLASS>-->
-        <TEXT><![CDATA[V151I is an accessory INSTI selected mutation that occurs in 1% to 3% of viruses from ART-naive persons depending on subtype. Alone, it appears to have little or no effect on INSTI susceptibility. V151L is an extremely rare mutation that reduces susceptibility to RAL and EVG by 15 to 20-fold and to CAB and DTG by about 3-fold. V151A is an extremely rare mutation associated with minimally reduced susceptibility to RAL and EVG. $listMutsIn{151(NOT IAL)} is an unusual mutation at this position.]]></TEXT>
+        <TEXT><![CDATA[V151I is an accessory INSTI selected mutation that occurs in 1% to 3% of viruses from ART-naïve persons depending on subtype. Alone, it appears to have little or no effect on INSTI susceptibility. V151L is an extremely rare mutation that reduces susceptibility to RAL and EVG by 15 to 20-fold and to CAB and DTG by about 3-fold. V151A is an extremely rare mutation associated with minimally reduced susceptibility to RAL and EVG. $listMutsIn{151(NOT IAL)} is an unusual mutation at this position.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="IN151I">
         <!--<DATE>2022-10-23</DATE>-->
         <!--<DRUGCLASS>INSTI</DRUGCLASS>-->
-        <TEXT><![CDATA[V151I is an accessory INSTI selected mutation that occurs in 1% to 3% of viruses from ART-naive persons depending on subtype. Alone, it appears to have little or no effect on INSTI susceptibility.]]></TEXT>
+        <TEXT><![CDATA[V151I is an accessory INSTI selected mutation that occurs in 1% to 3% of viruses from ART-naïve persons depending on subtype. Alone, it appears to have little or no effect on INSTI susceptibility.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="IN151L">
@@ -394,15 +394,15 @@
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="IN263ACDEFGHILMNPQSTVWYid">
-        <!--<DATE>2024-02-24</DATE>-->
+        <!--<DATE>2024-03-09</DATE>-->
         <!--<DRUGCLASS>INSTI</DRUGCLASS>-->
-        <TEXT><![CDATA[R263K is a nonpolymorphic mutation selected in vitro by EVG, DTG, BIC, and CAB. It occurs in a high proportion of persons who develop VF and emergent HIVDR while receiving DTG. Alone, it reduces DTG, BIC, and CAB susceptibility about 2-fold and EVG susceptibility about 5-fold. $listMutsIn{263(NOT K)} is an unusual mutation at this position.]]></TEXT>
+        <TEXT><![CDATA[R263K is a nonpolymorphic mutation selected in vitro by EVG, DTG, BIC, and CAB. It occurs in a high proportion of persons who develop VF and emergent HIVDR while receiving DTG. Alone, it reduces DTG, BIC, and CAB susceptibility about 2-fold and EVG susceptibility about 5-fold. It remains uncertain whether this mutation is a contraindication to continued treatment with DTG or BIC. $listMutsIn{263(NOT K)} is an unusual mutation at this position.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="IN263K">
-        <!--<DATE>2024-02-24</DATE>-->
+        <!--<DATE>2024-03-09</DATE>-->
         <!--<DRUGCLASS>INSTI</DRUGCLASS>-->
-        <TEXT><![CDATA[R263K is a nonpolymorphic mutation selected in vitro by EVG, DTG, BIC, and CAB. It occurs in a high proportion of persons who develop VF and emergent HIVDR while receiving DTG. Alone, it reduces DTG, BIC, and CAB susceptibility about 2-fold and EVG susceptibility about 5-fold.]]></TEXT>
+        <TEXT><![CDATA[R263K is a nonpolymorphic mutation selected in vitro by EVG, DTG, BIC, and CAB. It occurs in a high proportion of persons who develop VF and emergent HIVDR while receiving DTG. Alone, it reduces DTG, BIC, and CAB susceptibility about 2-fold and EVG susceptibility about 5-fold. It remains uncertain whether this mutation is a contraindication to continued treatment with DTG or BIC.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="IN49G">
@@ -412,9 +412,9 @@
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="IN50I">
-        <!--<DATE>2024-02-24</DATE>-->
+        <!--<DATE>2024-03-09</DATE>-->
         <!--<DRUGCLASS>INSTI</DRUGCLASS>-->
-        <TEXT><![CDATA[M50I is a highly polymorphic mutation, which has a prevalence of 3% to 34% in INSTI-naïve persons depending on subtype. It has been selected in vitro by DTG and BIC in combination with R263K. It is uncertain whether it contributes to reduced DTG and CAB susceptibility in combination with R263K.]]></TEXT>
+        <TEXT><![CDATA[M50I is a highly polymorphic mutation, which has a prevalence of 3% to 34% in INSTI-naïve persons depending on subtype. It has been selected in vitro by DTG and BIC in combination with R263K. It also appears to frequently occur in combination with R263K in patients receiving DTG and BIC. It is uncertain whether it contributes to reduced DTG and CAB susceptibility in combination with R263K.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="IN51ACDEFGIKLMNPQRSTVWid">
@@ -1516,9 +1516,9 @@
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="RT65R">
-        <!--<DATE>2022-11-20</DATE>-->
+        <!--<DATE>2024-03-09</DATE>-->
         <!--<DRUGCLASS>NRTI</DRUGCLASS>-->
-        <TEXT><![CDATA[K65R confers intermediate reductions in susceptibility to TDF, ABC, and 3TC/FTC. It increases AZT susceptibility. In NRTI-experienced, INSTI-naive patients with K65R, TDF+3TC+DTG is usually highly effective and more effective than AZT/3TC/DTG. However, in patients receiving TDF+3TC+DTG, there is a risk of emergent DTG resistance that does not arise in NRTI-naive patients receiving TDF+3TC+DTG.]]></TEXT>
+        <TEXT><![CDATA[K65R confers intermediate reductions in susceptibility to TDF, ABC, and 3TC/FTC. Other than M184VI, it is the most common DRM emerging in patients receiving TDF/XTC. K65R increases AZT susceptibility. In NRTI-experienced, INSTI-naive patients with K65R, TDF/3TC/DTG is usually highly effective and more effective than AZT/3TC/DTG. However, in patients receiving TDF/3TC/DTG, there is a risk of emergent DTG resistance that does not arise in NRTI-naive patients receiving TDF/3TC/DTG.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="RT67-70d">
@@ -1828,7 +1828,7 @@
     <FULLNAME>emtricitabine</FULLNAME>
     <RULE>
       <CONDITION><![CDATA[SCORE FROM (
-  MAX(65N => 15, 65R => 30),
+  MAX(65N => 15, 65R => 15),
   67d => 15,
   68d => 15,
   MAX(69i => 30, 69d => 15),
@@ -1855,7 +1855,7 @@
     <FULLNAME>lamivudine</FULLNAME>
     <RULE>
       <CONDITION><![CDATA[SCORE FROM (
-  MAX(65N => 15, 65R => 30),
+  MAX(65N => 15, 65R => 15),
   67d => 15,
   68d => 15,
   MAX(69i => 30, 69d => 15),
@@ -1946,13 +1946,16 @@
   318F => 60,
   100I AND 103N => 15,
   103N AND 181C => 5,
-  103N AND 225H => 10,
-  106I AND 181C => 5,
-  108I AND 181C => 5,
+  103N AND 225H => 15,
+  106I AND 181C => 10,
+  106I AND 190S => 10,
+  108I AND 181C => 10,
   108I AND 234I => 10,
   181CIV AND 190ACSTV => 10,
-  MAX(181CIV AND 221Y => 10, 221Y AND 181CIV => 5),
-  98G AND 181C => 5,
+  181CIV AND 221Y => 10,
+  98G AND 106I => 5,
+  98G AND 190ASC => 5,
+  98G AND 181CIV => 10,
   101E AND 181C => 5,
   MAX(101E AND 190A => 5, 101E AND 190S => 5),
   106I AND 234I => 10,
@@ -1985,10 +1988,9 @@
   MAX(227C => 45, 227I => 10, 227L => 15, 227V => 10),
   MAX(230I => 10, 230L => 45),
   318F => 10,
-  98G AND 181C => 5,
+  98G AND 181CIV => 5,
   98G AND 227CL => 15,
   101E AND 181C => 5,
-  221Y AND 181CIV => 5,
   MAX(103H => 60, 103N => 60, 103S => 45, 103T => 15),
   MAX(238N => 10, 238T => 30),
   103R AND 179D => 20,
@@ -2019,11 +2021,10 @@
   227C => 30,
   MAX(230I => 10, 230L => 30),
   181CIV AND 190ACSTV => 10,
-  98G AND 181C => 5,
+  98G AND 181CIV => 5,
   98G AND 227CL => 15,
   101E AND 181C => 5,
   MAX(101E AND 190A => 5, 101E AND 190S => 5),
-  221Y AND 181CIV => 5,
   101E AND 188L => 5,
   MAX(179F AND 181C => 15, 179T AND 181C => 10)
 )]]></CONDITION>
@@ -2087,7 +2088,9 @@
   106I AND 181C => 10,
   181CIV AND 190ACSTV => 10,
   181CIV AND 221Y => 10,
-  98G AND 181C => 5,
+  98G AND 106I => 5,
+  98G AND 190ASC => 5,
+  98G AND 181CIV => 5,
   98G AND 227CL => 15,
   103R AND 179D => 15,
   MAX(179F AND 181C => 15, 179T AND 181C => 10),
@@ -2457,7 +2460,7 @@
   51Y => 10,
   MAX(66I => 5, 66K => 15),
   92Q => 10,
-  118R => 30,
+  118R => 45,
   MAX(121C => 15, 121Y => 10),
   MAX(138A => 10, 138K => 10, 138T => 10),
   MAX(140A => 10, 140C => 10, 140R => 10, 140S => 10),
@@ -2512,18 +2515,17 @@
   MAX(140A => 15, 140C => 15, 140R => 60, 140S => 15),
   MAX(143A => 10, 143C => 10, 143G => 10, 143H => 10, 143K => 10, 143R => 10, 143S => 10),
   147G => 15,
-  MAX(148H => 45, 148K => 60, 148R => 60, 148N => 10),
+  MAX(148H => 60, 148K => 60, 148R => 60, 148N => 10),
   151L => 15,
   MAX(153F => 25, 153Y => 25),
   MAX(155H => 30, 155S => 15, 155T => 15),
   230R => 15,
-  263K => 30,
+  263K => 60,
   75A AND 148HKR => 5,
   138AKT AND 140ACS => 15,
   138K AND 263K => 10,
   147G AND 148HKR => 15,
   147G AND 155H => 15,
-  148HKR AND 155H => 0,
   148HKR AND 163KR => 15,
   157Q AND 263K => 10,
   51Y AND 263K => 10,
