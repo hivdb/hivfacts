@@ -2,7 +2,6 @@ plugins {
 	// Apply the java-library plugin to add support for Java Library
 	id 'java-library'
 	id 'jacoco'
-	id 'com.jfrog.bintray' version '1.8.4'
 	id 'maven-publish'
 }
 
@@ -51,88 +50,4 @@ task sourcesJar(type: Jar) {
 
 artifacts {
 	archives sourcesJar
-}
-
-publishing {
-
-	publications {
-
-		HIVFactsJava(MavenPublication) {
-			/* shamelessly copied from GraphQL-Java */
-			version version
-			from components.java
-
-			artifact sourcesJar {
-				classifier "sources"
-			}
-			pom.withXml {
-				Node pomNode = asNode()
-				pomNode.dependencies.'*'.findAll() {
-					it.artifactId.text() == 'antlr4'
-				}.each() {
-					it.parent().remove(it)
-				}
-				pomNode.children().last() + {
-					resolveStrategy = Closure.DELEGATE_FIRST
-					name 'hivfacts'
-					description 'Amino Acid / Codon Classification Data of HIV-1 pol'
-					url "https://github.com/hivdb/hivfacts"
-					scm {
-						url "https://github.com/hivdb/hivfacts"
-						connection "https://github.com/hivdb/hivfacts"
-						developerConnection "https://github.com/hivdb/hivfacts"
-					}
-					licenses {
-						license {
-							name 'Unlicense'
-							url 'https://github.com/hivdb/hivfacts/blob/master/LICENSE'
-							distribution 'repo'
-						}
-					}
-					developers {
-						developer {
-							id 'philiptzou'
-							name 'Philip Tzou'
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-bintray {
-	user = project.findProperty('BINTRAY_USER')
-	key = project.findProperty('BINTRAY_KEY')
-	publications = ['HIVFactsJava']
-	publish = true
-	pkg {
-		repo = 'hivdb'
-		name = 'hivfacts'
-		userOrg = 'hivdb'
-		desc = 'Amino Acid / Codon Classification Data of HIV-1 pol'
-		licenses = ['Unlicense']
-		vcsUrl = 'https://github.com/hivdb/hivfacts.git'
-	
-		version {
-			name = project.version
-			desc = project.description
-			released = new Date()
-			vcsTag = 'v' + project.version
-			gpg {
-				sign = true
-			}
-			mavenCentralSync {
-				sync = true
-				user = project.findProperty('MAVEN_USER')
-				password = project.findProperty('MAVEN_PASSWORD')
-				close = '1'
-			}
-		}
-   	}
-}
-
-// all publish tasks depend on the build task
-tasks.withType(PublishToMavenRepository) {
-    dependsOn build
 }
