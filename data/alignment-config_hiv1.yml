@@ -105,7 +105,7 @@ fragmentConfig:
     # 3. no penalty for N base is recommended in several MiniMap2 issues:
     #    https://github.com/lh3/minimap2/issues/354 and
     #    https://github.com/lh3/minimap2/issues/720
-    minimap2Opts: "-k 10 -w 5 --score-N 0 --secondary no"
+    minimap2Opts: "-k 6 -w 3 --score-N 0 --secondary no"
   - fragmentName: HIV1gag
     fromFragment: HXB2_x_ConsensusB
     geneName: HIV1gag

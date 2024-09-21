@@ -261,7 +261,7 @@ public class HIV2DefaultSequenceValidator implements SequenceValidator<HIV2> {
 	}
 
 	protected static List<ValidationResult> validateSequenceSize(AlignedSequence<HIV2> alignedSequence) {
-		int size;
+		long size;
 		AlignedGeneSeq<?> geneSeq;
 		int[] muchTooShortSize = new int[] {60, 150, 100};
 		int[] tooShortSize = new int[] {80, 200, 200};

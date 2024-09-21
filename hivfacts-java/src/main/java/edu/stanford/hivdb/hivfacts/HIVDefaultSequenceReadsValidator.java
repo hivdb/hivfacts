@@ -36,10 +36,12 @@ import edu.stanford.hivdb.seqreads.GeneSequenceReads;
 import edu.stanford.hivdb.seqreads.OneCodonReadsCoverage;
 import edu.stanford.hivdb.seqreads.SequenceReads;
 import edu.stanford.hivdb.seqreads.SequenceReadsValidator;
+import edu.stanford.hivdb.sequences.GeneRegions;
 import edu.stanford.hivdb.utilities.MyStringUtils;
 import edu.stanford.hivdb.utilities.ValidationLevel;
 import edu.stanford.hivdb.utilities.ValidationResult;
 import edu.stanford.hivdb.viruses.Gene;
+import edu.stanford.hivdb.viruses.Strain;
 
 public class HIVDefaultSequenceReadsValidator implements SequenceReadsValidator<HIV> {
 
@@ -132,10 +134,33 @@ public class HIVDefaultSequenceReadsValidator implements SequenceReadsValidator<
 		// For DRPs, the leftMost must be the begining of the first gene and the rightMost must be the ending of the last gene
 		Set<GenePosition<HIV>> needDRGenePositions = GenePosition
 			.getDRGenePositionsBetween(leftMost, rightMost, includeGenes);
+	
+		Strain<HIV> strain = seqReads.getStrain();
+		Map<Gene<HIV>, GeneRegions<HIV>> unseqRegions = includeGenes.stream()
+			.map(absGene -> strain.getGene(absGene))
+			.collect(Collectors.toMap(
+				gene -> gene,
+				gene -> {
+					GeneSequenceReads<HIV> gs = seqReads.getGeneSequenceReads(gene);
+					return gs == null ? (
+						GeneRegions.newGeneRegions(gene, 1, gene.getAASize())
+					) : gs.getUnsequencedRegions();
+				}
+			));
 
-		Set<GenePosition<HIV>> availableGenePositions = crcs.stream()
-			.map(crc -> crc.getGenePosition())
-			.collect(Collectors.toSet());
+		Set<GenePosition<HIV>> availableGenePositions = needGenePositions.stream()
+				.filter(gpos -> {
+					Gene<HIV> gene = gpos.getGene();
+					GeneRegions<HIV> geneUnseqRegions = unseqRegions.get(gene);
+					if (geneUnseqRegions == null) {
+						return true;
+					}
+					if (geneUnseqRegions.contains(gpos.getPosition())) {
+						return false;
+					}
+					return true;
+				})	
+				.collect(Collectors.toSet());
 		
 		return HIVDefaultSequenceValidator.validateNoMissingPositions(
 				needGenePositions,
