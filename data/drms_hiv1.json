@@ -713,6 +713,11 @@
   "NNRTI": [
     {
       "gene": "RT",
+      "position": 90,
+      "aa": "I"
+    },
+    {
+      "gene": "RT",
       "position": 98,
       "aa": "G"
     },
@@ -960,6 +965,11 @@
       "gene": "RT",
       "position": 227,
       "aa": "V"
+    },
+    {
+      "gene": "RT",
+      "position": 227,
+      "aa": "Y"
     },
     {
       "gene": "RT",
