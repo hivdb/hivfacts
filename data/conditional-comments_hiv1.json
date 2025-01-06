@@ -9,7 +9,7 @@
       "pos": 56,
       "aas": "I"
     },
-    "comment": "L56I has been selected in vitro by LEN. It is associated with ~200-fold reduced LEN susceptibility. It has an RC of 3%-9%."
+    "comment": "L56I has been selected in vitro by LEN. It is associated with ~200-fold reduced LEN susceptibility. It has an RC of 3%-9%. It has not been selected in a patient."
   },
   {
     "strain": "HIV1",
@@ -57,19 +57,31 @@
       "pos": 70,
       "aas": "NHRS"
     },
-    "comment": "K70R has been selected in vitro by LEN in combination with Q67H. Q67H+K70R has been selected in 2 patients receiving LEN. Alone K70R is associated with 1.2 fold reduced susceptibility. The combination of Q67H+K70R is associated with 15-20-fold reduced LEN susceptibility. K70H has been selected in 1 patient receiving LEN. It is associated with ~100-fold reduced susceptibility and an RC of ~10%. K70S has been selected in 1 patient receiving LEN. Its effect on susceptibility has not been repored. K70N has been associated with ~20-fold reduced LEN susceptibility and an RC of ~1%."
+    "comment": "K70HNRS have been selected in patients receiving LEN. K70H alone is associated with about 100-fold reduced LEN susceptibility. K70N alone is associated with about 25-fold reduced LEN susceptibility. K70R has little or no affect on LEN susceptibility but in combination with Q67H it reduces susceptibility about 20-fold.  Susceptibility data are not available for K70S."
   },
   {
     "strain": "HIV1",
-    "commentName": "CA74DS",
+    "commentName": "CA74D",
     "drugClass": "CAI",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "CA",
       "pos": 74,
-      "aas": "DS"
+      "aas": "D"
     },
-    "comment": "N74D has been selected in vitro by LEN both alone and in combination with Q67H. Alone, it is associated with ~20-fold reduced LEN susceptibility and an RC of ~50%. In combination with Q67H, it is associated with >1000 reduced LEN susceptibility. N74D occurred in 1 patient in combination with M66I. N74S has been selected in vitro by LEN in combination with Q67H. In combination with Q67H, it is associated with 20-fold reduced susceptibility."
+    "comment": "N74D has been selected in vitro by LEN both alone and in combination with Q67H. It has also been selected alone in four persons receiving LEN including two persons  receiving LEN as PrEP. Alone, it is associated with ~20-fold reduced LEN susceptibility and an RC of ~50%.  In combination with Q67H, it is associated with >1000 reduced LEN susceptibility."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "CA74SK",
+    "drugClass": "CAI",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "CA",
+      "pos": 74,
+      "aas": "SK"
+    },
+    "comment": "N74S has been selected in vitro by LEN in combination with Q67H. In combination with Q67H, it is associated with 20-fold reduced susceptibility. N74K has been selected in combination K70H in one person."
   },
   {
     "strain": "HIV1",
@@ -81,19 +93,19 @@
       "pos": 105,
       "aas": "TSE"
     },
-    "comment": "A105T has been selected in 2 patients receiving LEN in combination with M66I. Alone it is associated with 3-fold reduced LEN susceptibility and an RC of ~60%. A105E was selected in vitro by GS-CA1. It is associated with ~4-fold reduced LEN susceptibility. A105S has been reported as a subdominant variant in one patient receiving LEN. Its effect on susceptibility has not been reported."
+    "comment": "A105T has been selected in 4 patients receiving LEN always in combination with other capsid mutations. Alone it is associated with 3-fold reduced LEN susceptibility and an RC of ~60%. A105E has been selected in vitro by GS-CA1. It is associated with ~4-fold reduced LEN susceptibility. A105S has been reported as a subdominant variant in one patient receiving LEN. Its effect on susceptibility has not been reported."
   },
   {
     "strain": "HIV1",
-    "commentName": "CA107NSA",
+    "commentName": "CA107NSAC",
     "drugClass": "CAI",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "CA",
       "pos": 107,
-      "aas": "NSA"
+      "aas": "NSAC"
     },
-    "comment": "T107N has been selected in vitro by LEN in combination with Q67H. Alone it is associated with 4-fold reduced LEN susceptibility. In combination with Q67H, it is associated with ~90-fold reduced LEN susceptibility. T107A has been reported in combination with M66I in 1 patient receiving LEN. The combination was associated with 240-fold reduced LEN susceptibility.  Its effect on susceptibility alone has not been reported. T107S is a common polymorphism that occurs in previously untreated persons."
+    "comment": "T107N has been selected in vitro and in vivo by LEN. Alone it is associated with 4-fold reduced LEN susceptibility. In combination with Q67H, it is associated with ~90-fold reduced LEN susceptibility. T107A/S are polymorphic mutations that have been reported in combination with other LEN-associated mutations. T107C is a nonpolymorphic mutation. The effects of T107A/S/C on susceptibility are not known."
   },
   {
     "strain": "HIV1",
