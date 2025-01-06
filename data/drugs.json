@@ -123,6 +123,12 @@
     "drugClass": "NNRTI"
   },
   {
+    "name": "DPV",
+    "fullName": "dapivirine",
+    "displayAbbr": "DPV",
+    "drugClass": "NNRTI"
+  },
+  {
     "name": "BIC",
     "fullName": "bictegravir",
     "displayAbbr": "BIC",

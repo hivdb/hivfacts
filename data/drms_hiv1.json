@@ -63,6 +63,11 @@
     {
       "gene": "CA",
       "position": 74,
+      "aa": "K"
+    },
+    {
+      "gene": "CA",
+      "position": 74,
       "aa": "S"
     },
     {
@@ -83,7 +88,7 @@
     {
       "gene": "CA",
       "position": 107,
-      "aa": "A"
+      "aa": "C"
     },
     {
       "gene": "CA",

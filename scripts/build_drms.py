@@ -66,7 +66,7 @@ def write_drms_csv(
         writer = csv.writer(drms_csv)
         writer.writerow(['drug_class', 'gene', 'position', 'aa'])
         writer.writerows(sorted_drms)
-        print(f'wrtie to {drms_csv.name}')
+        print(f'write to {drms_csv.name}')
 
 
 def extract_drms(
