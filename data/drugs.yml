@@ -114,3 +114,18 @@
   fullName: lenacapavir
   displayAbbr: LEN
   drugClass: CAI
+
+- name: CD4bs
+  fullName: CD4-binding site neutralizing antibodies
+  displayAbbr: CD4bs
+  drugClass: bNAb
+
+- name: ENF
+  fullName: Enfuvirtide
+  displayAbbr: ENF
+  drugClass: FI
+
+- name: FTR
+  fullName: Fostemsavir
+  displayAbbr: FTR
+  drugClass: AI

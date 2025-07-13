@@ -320,7 +320,13 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		int totalIndels = 0;
 		List<ValidationResult> result = new ArrayList<>();
 		for (Mutation<HIV> mut : alignedSequence.getSequencedMutations()) {
-			if (!includeGenes.contains(mut.getAbstractGene())) {
+			String absGene = mut.getAbstractGene();
+			if (!includeGenes.contains(absGene)) {
+				continue;
+			}
+			if (absGene.equals("env")) {
+				// We do not assert long gaps in Envelope, as it is known
+				// to contain excess gaps compared to HXB2.
 				continue;
 			}
 			if (totalIndels > gapLenThreshold) {

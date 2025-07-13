@@ -1283,5 +1283,2451 @@
       "position": 263,
       "aa": "K"
     }
+  ],
+  "bNAb": [
+    {
+      "gene": "env",
+      "position": 123,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 123,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 123,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 123,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 123,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 123,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 123,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 123,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 123,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 123,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 123,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 123,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 123,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 123,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 123,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 123,
+      "aa": "S"
+    },
+    {
+      "gene": "env",
+      "position": 123,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 123,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 123,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 124,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 124,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 124,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 124,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 124,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 124,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 124,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 124,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 124,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 124,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 124,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 124,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 124,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 124,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 124,
+      "aa": "S"
+    },
+    {
+      "gene": "env",
+      "position": 124,
+      "aa": "T"
+    },
+    {
+      "gene": "env",
+      "position": 124,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 124,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 124,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 127,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 127,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 127,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 127,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 127,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 127,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 127,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 127,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 127,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 127,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 127,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 127,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 127,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 127,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 127,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 127,
+      "aa": "S"
+    },
+    {
+      "gene": "env",
+      "position": 127,
+      "aa": "T"
+    },
+    {
+      "gene": "env",
+      "position": 127,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 127,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 128,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 128,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 128,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 128,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 128,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 128,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 128,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 128,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 128,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 128,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 128,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 128,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 128,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 128,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 128,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 128,
+      "aa": "S"
+    },
+    {
+      "gene": "env",
+      "position": 128,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 128,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 128,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 130,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 130,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 130,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 130,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 130,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 130,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 130,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 130,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 130,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 130,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 130,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 130,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 130,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 130,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 130,
+      "aa": "S"
+    },
+    {
+      "gene": "env",
+      "position": 130,
+      "aa": "T"
+    },
+    {
+      "gene": "env",
+      "position": 130,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 130,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 130,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 132,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 132,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 132,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 132,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 132,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 132,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 132,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 132,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 132,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 132,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 132,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 132,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 132,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 132,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 132,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 132,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 132,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 132,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 134,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 160,
+      "aa": " "
+    },
+    {
+      "gene": "env",
+      "position": 160,
+      "aa": "n"
+    },
+    {
+      "gene": "env",
+      "position": 160,
+      "aa": "o"
+    },
+    {
+      "gene": "env",
+      "position": 160,
+      "aa": "t"
+    },
+    {
+      "gene": "env",
+      "position": 160,
+      "aa": " "
+    },
+    {
+      "gene": "env",
+      "position": 160,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 162,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 162,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 162,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 162,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 162,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 162,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 162,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 162,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 162,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 162,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 162,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 162,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 162,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 162,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 162,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 162,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 162,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 162,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 163,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 165,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 165,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 166,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 166,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 166,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 167,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 167,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 168,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 168,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 168,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 168,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 168,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 168,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 168,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 168,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 168,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 168,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 168,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 168,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 168,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 168,
+      "aa": "S"
+    },
+    {
+      "gene": "env",
+      "position": 168,
+      "aa": "T"
+    },
+    {
+      "gene": "env",
+      "position": 168,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 168,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 168,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 169,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 170,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 177,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 177,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 177,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 177,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 177,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 177,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 177,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 177,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 177,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 177,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 177,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 177,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 177,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 177,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 177,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 177,
+      "aa": "S"
+    },
+    {
+      "gene": "env",
+      "position": 177,
+      "aa": "T"
+    },
+    {
+      "gene": "env",
+      "position": 177,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 177,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 156,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 156,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 156,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 156,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 156,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 156,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 156,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 156,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 156,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 156,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 156,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 156,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 156,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 156,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 156,
+      "aa": "S"
+    },
+    {
+      "gene": "env",
+      "position": 156,
+      "aa": "T"
+    },
+    {
+      "gene": "env",
+      "position": 156,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 156,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 156,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 158,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 158,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 158,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 158,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 158,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 158,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 158,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 158,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 158,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 158,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 158,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 158,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 158,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 158,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 158,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 158,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 158,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 158,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 284,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 301,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 301,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 301,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 301,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 301,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 301,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 301,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 301,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 301,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 301,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 301,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 301,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 301,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 301,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 301,
+      "aa": "S"
+    },
+    {
+      "gene": "env",
+      "position": 301,
+      "aa": "T"
+    },
+    {
+      "gene": "env",
+      "position": 301,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 301,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 301,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 303,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 303,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 303,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 303,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 303,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 303,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 303,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 303,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 303,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 303,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 303,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 303,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 303,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 303,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 303,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 303,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 303,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 303,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 323,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 324,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 325,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 325,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 325,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 325,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 325,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 325,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 325,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 325,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 325,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 325,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 325,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 325,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 325,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 325,
+      "aa": "S"
+    },
+    {
+      "gene": "env",
+      "position": 325,
+      "aa": "T"
+    },
+    {
+      "gene": "env",
+      "position": 325,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 325,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 325,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 326,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 326,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 326,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 326,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 326,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 326,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 326,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 326,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 326,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 326,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 326,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 326,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 326,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 326,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 326,
+      "aa": "S"
+    },
+    {
+      "gene": "env",
+      "position": 326,
+      "aa": "T"
+    },
+    {
+      "gene": "env",
+      "position": 326,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 326,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 326,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 327,
+      "aa": " "
+    },
+    {
+      "gene": "env",
+      "position": 327,
+      "aa": "n"
+    },
+    {
+      "gene": "env",
+      "position": 327,
+      "aa": "o"
+    },
+    {
+      "gene": "env",
+      "position": 327,
+      "aa": "t"
+    },
+    {
+      "gene": "env",
+      "position": 327,
+      "aa": " "
+    },
+    {
+      "gene": "env",
+      "position": 327,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 330,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 330,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 332,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 332,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 332,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 332,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 332,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 332,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 332,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 332,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 332,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 332,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 332,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 332,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 332,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 332,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 332,
+      "aa": "S"
+    },
+    {
+      "gene": "env",
+      "position": 332,
+      "aa": "T"
+    },
+    {
+      "gene": "env",
+      "position": 332,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 332,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 332,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 334,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 334,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 334,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 334,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 334,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 334,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 334,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 334,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 334,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 334,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 334,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 334,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 334,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 334,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 334,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 334,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 334,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 334,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 415,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 415,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 441,
+      "aa": "P"
+    }
+  ],
+  "FI": [
+    {
+      "gene": "env",
+      "position": 547,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 547,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 547,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 547,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 547,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 547,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 547,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 547,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 547,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 547,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 547,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 547,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 547,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 547,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 547,
+      "aa": "S"
+    },
+    {
+      "gene": "env",
+      "position": 547,
+      "aa": "T"
+    },
+    {
+      "gene": "env",
+      "position": 547,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 547,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 547,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 548,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 548,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 548,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 548,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 548,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 548,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 548,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 548,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 548,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 548,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 548,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 548,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 548,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 548,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 548,
+      "aa": "S"
+    },
+    {
+      "gene": "env",
+      "position": 548,
+      "aa": "T"
+    },
+    {
+      "gene": "env",
+      "position": 548,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 548,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 548,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 549,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 549,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 549,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 549,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 549,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 549,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 549,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 549,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 549,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 549,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 549,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 549,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 549,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 549,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 549,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 549,
+      "aa": "S"
+    },
+    {
+      "gene": "env",
+      "position": 549,
+      "aa": "T"
+    },
+    {
+      "gene": "env",
+      "position": 549,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 549,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 551,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 551,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 551,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 551,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 551,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 551,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 551,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 551,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 551,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 551,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 551,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 551,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 551,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 551,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 551,
+      "aa": "S"
+    },
+    {
+      "gene": "env",
+      "position": 551,
+      "aa": "T"
+    },
+    {
+      "gene": "env",
+      "position": 551,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 551,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 551,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 553,
+      "aa": "T"
+    },
+    {
+      "gene": "env",
+      "position": 553,
+      "aa": " "
+    },
+    {
+      "gene": "env",
+      "position": 554,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 554,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 554,
+      "aa": "S"
+    },
+    {
+      "gene": "env",
+      "position": 555,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 555,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 555,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 555,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 555,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 555,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 555,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 555,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 555,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 555,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 555,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 555,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 555,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 555,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 555,
+      "aa": "S"
+    },
+    {
+      "gene": "env",
+      "position": 555,
+      "aa": "T"
+    },
+    {
+      "gene": "env",
+      "position": 555,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 555,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 555,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 556,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 556,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 556,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 556,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 556,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 556,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 556,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 556,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 556,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 556,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 556,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 556,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 556,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 556,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 556,
+      "aa": "S"
+    },
+    {
+      "gene": "env",
+      "position": 556,
+      "aa": "T"
+    },
+    {
+      "gene": "env",
+      "position": 556,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 556,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 556,
+      "aa": "Y"
+    }
+  ],
+  "AI": [
+    {
+      "gene": "env",
+      "position": 375,
+      "aa": "A"
+    },
+    {
+      "gene": "env",
+      "position": 375,
+      "aa": "C"
+    },
+    {
+      "gene": "env",
+      "position": 375,
+      "aa": "D"
+    },
+    {
+      "gene": "env",
+      "position": 375,
+      "aa": "E"
+    },
+    {
+      "gene": "env",
+      "position": 375,
+      "aa": "F"
+    },
+    {
+      "gene": "env",
+      "position": 375,
+      "aa": "G"
+    },
+    {
+      "gene": "env",
+      "position": 375,
+      "aa": "H"
+    },
+    {
+      "gene": "env",
+      "position": 375,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 375,
+      "aa": "K"
+    },
+    {
+      "gene": "env",
+      "position": 375,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 375,
+      "aa": "M"
+    },
+    {
+      "gene": "env",
+      "position": 375,
+      "aa": "N"
+    },
+    {
+      "gene": "env",
+      "position": 375,
+      "aa": "P"
+    },
+    {
+      "gene": "env",
+      "position": 375,
+      "aa": "Q"
+    },
+    {
+      "gene": "env",
+      "position": 375,
+      "aa": "R"
+    },
+    {
+      "gene": "env",
+      "position": 375,
+      "aa": "T"
+    },
+    {
+      "gene": "env",
+      "position": 375,
+      "aa": "V"
+    },
+    {
+      "gene": "env",
+      "position": 375,
+      "aa": "W"
+    },
+    {
+      "gene": "env",
+      "position": 375,
+      "aa": "Y"
+    },
+    {
+      "gene": "env",
+      "position": 426,
+      "aa": "L"
+    },
+    {
+      "gene": "env",
+      "position": 434,
+      "aa": "I"
+    },
+    {
+      "gene": "env",
+      "position": 475,
+      "aa": "I"
+    }
   ]
 }

@@ -73,5 +73,44 @@
       "Accessory",
       "Other"
     ]
+  },
+  {
+    "name": "bNAb",
+    "ordinal": 6,
+    "abstractGene": "env",
+    "fullName": "Broadly Neutralizing Antibody",
+    "strains": [
+      "HIV1"
+    ],
+    "synonyms": [],
+    "mutationTypes": [
+      "Other"
+    ]
+  },
+  {
+    "name": "FI",
+    "ordinal": 7,
+    "abstractGene": "env",
+    "fullName": "Fusion Inhibitor",
+    "strains": [
+      "HIV1"
+    ],
+    "synonyms": [],
+    "mutationTypes": [
+      "Other"
+    ]
+  },
+  {
+    "name": "AI",
+    "ordinal": 8,
+    "abstractGene": "env",
+    "fullName": "Attachment Inhibitor",
+    "strains": [
+      "HIV1"
+    ],
+    "synonyms": [],
+    "mutationTypes": [
+      "Other"
+    ]
   }
 ]
