@@ -56,29 +56,29 @@ fragmentConfig:
        tgtttatccattttcagaattgggtgtcgacatagcagaataggcgttactcgacagaggagagcaagaaatggagccagtagatcctagactagagccctggaagcatccaggaagtca\
        gcctaaaactgcttgtaccaattgctattgtaaaaagtgttgctttcattgccaagtttgtttcataacaaaagccttaggcatctcctatggcaggaagaagcggagacagcgacgaag\
        agctcatcagaacagtcagactcatcaagcttctctatcaaagcagtaagtagtacatgtaacgcaacctataccaatagtagcaatagtagcattagtagtagcaataataatagcaat\
-       agttgtgtggtccatagtaatcatagaatataggaaaatattaagacaaagaaaaatagacaggttaattgatagactaatagaaagagcagaagacagtggcaatgagagtgaaggaga\
-       aatatcagcacttgtggagatgggggtggagatggggcaccatgctccttgggatgttgatgatctgtagtgctacagaaaaattgtgggtcacagtctattatggggtacctgtgtgga\
-       aggaagcaaccaccactctattttgtgcatcagatgctaaagcatatgatacagaggtacataatgtttgggccacacatgcctgtgtacccacagaccccaacccacaagaagtagtat\
-       tggtaaatgtgacagaaaattttaacatgtggaaaaatgacatggtagaacagatgcatgaggatataatcagtttatgggatcaaagcctaaagccatgtgtaaaattaaccccactct\
-       gtgttagtttaaagtgcactgatttgaagaatgatactaataccaatagtagtagcgggagaatgataatggagaaaggagagataaaaaactgctctttcaatatcagcacaagcataa\
-       gaggtaaggtgcagaaagaatatgcatttttttataaacttgatataataccaatagataatgatactaccagctataagttgacaagttgtaacacctcagtcattacacaggcctgtc\
-       caaaggtatcctttgagccaattcccatacattattgtgccccggctggttttgcgattctaaaatgtaataataagacgttcaatggaacaggaccatgtacaaatgtcagcacagtac\
-       aatgtacacatggaattaggccagtagtatcaactcaactgctgttaaatggcagtctagcagaagaagaggtagtaattagatctgtcaatttcacggacaatgctaaaaccataatag\
-       tacagctgaacacatctgtagaaattaattgtacaagacccaacaacaatacaagaaaaagaatccgtatccagagaggaccagggagagcatttgttacaataggaaaaataggaaata\
-       tgagacaagcacattgtaacattagtagagcaaaatggaataacactttaaaacagatagctagcaaattaagagaacaatttggaaataataaaacaataatctttaagcaatcctcag\
-       gaggggacccagaaattgtaacgcacagttttaattgtggaggggaatttttctactgtaattcaacacaactgtttaatagtacttggtttaatagtacttggagtactgaagggtcaa\
-       ataacactgaaggaagtgacacaatcaccctcccatgcagaataaaacaaattataaacatgtggcagaaagtaggaaaagcaatgtatgcccctcccatcagtggacaaattagatgtt\
-       catcaaatattacagggctgctattaacaagagatggtggtaatagcaacaatgagtccgagatcttcagacctggaggaggagatatgagggacaattggagaagtgaattatataaat\
-       ataaagtagtaaaaattgaaccattaggagtagcacccaccaaggcaaagagaagagtggtgcagagagaaaaaagagcagtgggaataggagctttgttccttgggttcttgggagcag\
-       caggaagcactatgggcgcagcctcaatgacgctgacggtacaggccagacaattattgtctggtatagtgcagcagcagaacaatttgctgagggctattgaggcgcaacagcatctgt\
-       tgcaactcacagtctggggcatcaagcagctccaggcaagaatcctggctgtggaaagatacctaaaggatcaacagctcctggggatttggggttgctctggaaaactcatttgcacca\
-       ctgctgtgccttggaatgctagttggagtaataaatctctggaacagatttggaatcacacgacctggatggagtgggacagagaaattaacaattacacaagcttaatacactccttaa\
-       ttgaagaatcgcaaaaccagcaagaaaagaatgaacaagaattattggaattagataaatgggcaagtttgtggaattggtttaacataacaaattggctgtggtatataaaattattca\
-       taatgatagtaggaggcttggtaggtttaagaatagtttttgctgtactttctatagtgaatagagttaggcagggatattcaccattatcgtttcagacccacctcccaaccccgaggg\
-       gacccgacaggcccgaaggaatCgaagaagaaggtggagagagagacagagacagatccattcgattagtgaacggatccttggcacttatctgggacgatctgcggagcctgtgcctct\
-       tcagctaccaccgcttgagagacttactcttgattgtaacgaggattgtggaacttctgggacgcagggggtgggaagccctcaaatattggtggaatctcctacagtattggagtcagg\
-       aactaaagaatagtgctgttagcttgctcaatgccacagccatagcagtagctgaggggacagatagggttatagaagtagtacaaggagcttgtagagctattcgccacatacctagaa\
-       gaataagacagggcttggaaaggattttgctataagatgggtggcaagtggtcaaaaagtagtgtgattggatggcctactgtaagggaaagaatgagacgagctgagccagcagcagat\
+       agttgtgtggtccatagtaatcatagaatataggaaaatattaagacaaagaaaaatagacaggttaattgatagactaatagaaagagcagaagacagtggcaATGAGAGTGATGGGGA\
+       TAtatCAGAGGAATTGTCAACACTTGTGGAGATGGGGCATCTTGATCTTTGGGATGTTAATAATCTGTAGTGCTGCAGAAAACTTGTGGGTCACAGTCTATTATGGGGTACCTGTGTGGA\
+       AAGAAGCAAACACCACTCTATTTTGTGCATCAGATGCTAAAGCATATGATACAGAAGTACATAATGTCTGGGCTACACATGCCTGTGTACCCACAGACCCCAACCCACAAGAAATAGTTT\
+       TGGAAAATGTAACAGAAAATTTTAACATGTGGAAAAATAACATGGTAGAACAGATGCATGAGGATATAATCAGTTTATGGGATCAAAGCCTAAAGCCATGTGTAAAGTTAACCCCACTCT\
+       GTGTTACTTTAAATTGTACTGATGTTAATGCCACTAATAATACTACTAATAATagcgggagaatgataatggagaaaGAAGAAATAAAAAACTGCTCTTTCAATATAACCACAGAAATAA\
+       GAGATAAGAAGAAGAAAGTATATGCACTTTTTTATAAACTTGATGTAGTACCAATTGATaatGATAATAATAGTTATAGATTAATAAATTGTAATACCTCAGCCATTACACAGGCTTGTC\
+       CAAAGGTATCCTTTGAGCCAATTCCCATACATTATTGTGCTCCAGCTGGTTTTGCGATTCTAAAGTGTAATGATAAGAAGTTCAATGGAACAGGGCCATGCAAAAATGTCAGCACAGTAC\
+       AATGTACACATGGAATTAAGCCAGTAGTATCAACTCAACTGCTGTTAAATGGCAGTCTAGCAGAAGAAGAGATAATAATTAGATCTGAAAATATCACAAACAATGCCAAAACCATAATAG\
+       TACAGCTTAATGAATCTGTAGAAATTAATTGTACAAGACCCAACAACAATACAAGAAAAAGTATACGTATAcagagaGGACCAGGACAAGCATTCTATGCAACAGGAGAAATAGGAGATA\
+       TAAGACAAGCACATTGTAATATTAGTAGAACAAAATGGAATAAAACTTTACAACAGGTAGCTAAAAAATTAAGAGAACACTTTggaaatAATAAAACAATAATCTTTAATCCATCCTCAG\
+       GAGGGGACCTAGAAATTACAACACATAGTTTTAATTGTGGAGGAGAATTTTTCTATTGTAATACATCAGAACTGTTTAATAGTACTTGGtttaatagtacttggagtactgaagggtcaa\
+       ataacAATGGTACTAATAACACTATCACACTCCCATGCAGAATAAAACAAATTATAAACATGTGGCAGGGAGTAGGACAAGCAATGTATGCCCCTCCCATCGAAGGAAAAATAAGATGTA\
+       CATCAAATATTACAGGACTACTATTAACAAGAGATGGTGGTAATAATAATACTGAGACCgagatcTTCAGACCTGGAGGAGGAGATATGAGGGACAATTGGAGAAGTGAATTATATAAAT\
+       ATAAAGTAGTAAAAATTGAACCACTAGGAGTAGCACCCACCAAGGCAAAGAGAAGAGTGGTGGAGAGAGAAAAAAGAGCAGTGGGAATAGGAGCTGTGTTCCTTGGGTTCTTGGGAGCAG\
+       CAGGAAGCACTATGGGCGCGGCGTCAATAACGCTGACGGTACAGGCCAGACAATTATTGTCTGGTATAGTGCAACAGCAAAGCAATTTGCTGAGGGCTATAGAGGCGCAACAGCATCTGT\
+       TGCAACTCACAGTCTGGGGCATTAAACAGCTCCAGGCAAGAGTCCTGGCTGTGGAAAGATACCTAAAGGATCAACAGCTCCTAGGAATTTGGGGCTGCTCTGGAAAACTCATCTGCACCA\
+       CTAATGTGCCCTGGAACTCTAGTTGGAGTAATAAATCTCAGGATGAGATTTGGGATAACATGACCTGGATGGAGTGGGATAAAGAAATTAACAATTACACAGACATAATATACAGCTTAA\
+       TTGAAGAATCGCAGAACCAGCAGGAAAAGAATGAACAAGAATTATTGGCATTGGACAAATGGGCAAGTCTGTGGAATTGGTTTGACATAACAAATTGGCTGTGGTATATAAAAATATTCA\
+       TAATGATAGTAGGAGGCTTAATAGGTTTAAGAATAGTTTTTGCTGTGCTTTCTATAGTAAATAGAGTTAGGCAGGGATACTCACCTTTGTCGTTTCAGACCCTTATCCCAAACCCGAGGG\
+       GACCCGACAGGCCCGAAGGAATCGAAGAAGAAGGTGGAGAGCAAGACAGAGACAGATCCATTCGATTAGTGAACGGATTCTTAGCACTTGCCTGGGACGACCTGCGGAGCCTGTGCCTCT\
+       TCAGCTACCACCGCTTGAGAGACTTAATCTTGATTGCAGCGAGGACTGTGGAACTTCTGGGACGCAGGGGGTGGGAAGCCCTCAAATATCTGTGGAATCTTCTGCAGTATTGGGGTCAGG\
+       AACTAAAGAATAGTGCTATTAGTTTGCTTGATACCACAGCAATAGCAGTAGCTGAGGGGACAGATAGGGTTATAGAAGTAGTACAAAGAGTTTGTAGAGCTATTCTCAACATACCTAGAA\
+       GAATAAGACAGGGCTTTGAAAGGGCTTTGCTATAAgatgggtggcaagtggtcaaaaagtagtgtgattggatggcctactgtaagggaaagaatgagacgagctgagccagcagcagat\
        agggtgggagcagcatctcgagacctggaaaaacatggagcaatcacaagtagcaatacagcagctaccaatgctgcttgtgcctggctagaagcacaagaggaggaggaggtgggtttt\
        ccagtcacacctcaggtacctttaagaccaatgacttacaaggcagctgtagatcttagccactttttaaaagaaaaggggggactggaagggctaattcactcccaaagaagacaagat\
        atccttgatctgtggatctaccacacacaaggctacttccctgattGgcagaactacacaccagggccaggggtcagatatccactgacctttggatggtgctacaagctagtaccagtt\
@@ -96,7 +96,7 @@ fragmentConfig:
       codon-alignment, '--min-gap-distance=15', '5619', '5771',  # vpr-before-fs
       codon-alignment, '--min-gap-distance=15', '5773', '5850',  # vpr-after-fs
       codon-alignment, '--min-gap-distance=15', '5849', '6046',  # tat exon1
-      codon-alignment, '--min-gap-distance=15', '6062', '6226',  # vpu
+      codon-alignment, '--min-gap-distance=15', '6062', '6223',  # vpu
       codon-alignment, '--min-gap-distance=15', '6225', '8795',  # env
       codon-alignment, '--min-gap-distance=15', '8797', '9417'   # nef
     ]
