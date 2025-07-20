@@ -3307,5 +3307,977 @@
       "aas": "G"
     },
     "comment": "A98G is a non-polymorphic accessory mutation associated with low-level reduced susceptibility to each of the NNRTIs."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env113N",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 113,
+      "aas": "N"
+    },
+    "comment": "Position D113 is highly conserved. D113N has been associated with reduced VRC01 susceptibility and with escape from neutralization in a subtype A pseudovirus."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env124ACDEFGHIKLMNQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 124,
+      "aas": "ACDEFGHIKLMNQRSTVWY-_"
+    },
+    "comment": "P124 is a highly conserved position involved in CD4 binding and is a contact site for N6, PGDM1400 and CAP256.VRC26.25."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env197ACDEFGHIKLMPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 197,
+      "aas": "ACDEFGHIKLMPQRSTVWY-_"
+    },
+    "comment": "Positions 197/199 comprise a highly conserved PNGS. It is a contact site for VRC01 and 3BNC117. Substitutions at this position have been associated with reduced VRC01 susceptibility and with VRC01 and 3BNC117 neutralization escape in vitro in a subtype A pseudovirus."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env199ACDEFGHIKLMNPQRVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 199,
+      "aas": "ACDEFGHIKLMNPQRVWY-_"
+    },
+    "comment": "Positions 197/199 comprise a highly conserved PNGS. It is a contact site for VRC01,  3BNC117, and possibly VRC07-523 and N6. Substitutions at this position have been associated with reduced VRC01 susceptibility and with VRC01 and 3BNC117 neutralization escape in a subtype A pseudovirus."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env207ACDEFGHILMNPQSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 207,
+      "aas": "ACDEFGHILMNPQSTVWY-_"
+    },
+    "comment": "K207 is a highly conserved site. It is a secondary 3BNC117 contact site. Substitutions at this residue have been associated with VRC01 and 3BNC117 neutralization escape in a subtype A pseudovirus."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env262ACDEFGHIKLMPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 262,
+      "aas": "ACDEFGHIKLMPQRSTVWY-_"
+    },
+    "comment": "N262 is a highly conserved site. Alanine mutations at this position partially reduce binding to VRC01, 3BNC117, and N6."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env274ACDEFGHIKLMNPQRTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 274,
+      "aas": "ACDEFGHIKLMNPQRTVWY-_"
+    },
+    "comment": "S274 is a highly conserved site. S274Y has been reported in one patient receiving 3BNC117."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env275GKS",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 275,
+      "aas": "GKS"
+    },
+    "comment": "275 is a polymorphic VRC01 and 3BNC117 contact site. 275K, a variant present in about 8% of group M sequences, emerged in one patient receiving VRC01 and in one patient receiving 3BNC117. 275SG have been associated with VRC07 neutralization escape in a subtype B virus."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env276ACDEFGHIKLMPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 276,
+      "aas": "ACDEFGHIKLMPQRSTVWY-_"
+    },
+    "comment": "Positions 276/278 comprise a highly conserved PNGS. It is involved in CD4 binding and is a contact site for 3BNC117, VRC07, and N6. N276D emerged in one patient receiving 3BNC117. Loss of PNGS at this position has been associated with VRC07 neutralization escape in vitro in a subtype B virus. Loss of this PNGS has been predicted to reduce VRC01 and VRC07-523 susceptibility."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env278ACDEFGHIKLMNPQRVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 278,
+      "aas": "ACDEFGHIKLMNPQRVWY-_"
+    },
+    "comment": "Positions 276/278 comprise a highly conserved PNGS. It is involved in CD4 binding and is a contact site for 3BNC117, VRC07, and N6. N276D emerged in one patient receiving 3BNC117. Loss of PNGS at this position has been associated with VRC07 neutralization escape in vitro in a subtype B virus. Loss of this PNGS has been predicted to reduce VRC01 and VRC07-523 susceptibility."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env279ACEFGHIKLMPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 279,
+      "aas": "ACEFGHIKLMPQRSTVWY-_"
+    },
+    "comment": "ND279 is involved in CD4 binding and is a contact site for VRC01, 3BNC117, VRC07, and N6. 279A and 279K have been associated with reduced susceptibility to VRC01, 3BNC117, and N6 in alanine mutagenesis studies and in site-directed mutants. 279E has been selected by N6 in NHP. Other substitutions at this position have been associated with reduced susceptibility to each of these bNAbs in neutralization escape studies."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env280ACDEFGHIKLMPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 280,
+      "aas": "ACDEFGHIKLMPQRSTVWY-_"
+    },
+    "comment": "N280 is a highly conserved position involved in CD4 binding and iscontact site for VRC01, 3BNC117, VRC07, and N6. N280S emerged in a patient receiving VRC01. N280Y is associated with reduced susceptibility to VRC01, 3BNC117, and N6 in site-directed mutants. 280S was associated with lack of response to 3BNC117 in one patient. Substitutions at this position have been associated with reduced susceptibility to each of these bNAbs in neutralization escape studies."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env281DHT",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 281,
+      "aas": "DHT"
+    },
+    "comment": "AVT281 is involved in CD4 binding and is a contact site for VRC01, 3BNC117, VRC07, and N6. A281T, which occurs in about 11% of group M viruses, emerged in HIS mice and A281D emerged in two patients receiving 3BNC117. A281T is associated with high-level reduced VRC01, 3BNC117, and N6 susceptibility in site-directed mutants. 281HT was associated with lack of response to 3BNC117. Substitutions at this position have been associated with reduced susceptibility to each of these bNAbs in neutralization escape studies."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env282ACDEFGHILMNPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 282,
+      "aas": "ACDEFGHILMNPQRSTVWY-_"
+    },
+    "comment": "K282 is a highly conserved position involved in CD4 binding and is a contact site for 3BNC117, VRC07, and N6. K282A is associated with a 12-fold reduction in 3BNC117 susceptibility in a site-directed mutant and about 3-fold reduced binding to VRC01 and N6. K282R emerged in two patients receiving VRC01. Substitutions at this position have been associated with reduced susceptibility to VRC01, 3BNC117, and VRC07 in neutralization escape studies."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env283N",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 283,
+      "aas": "N"
+    },
+    "comment": "T283 is a polymorphic position involved in CD4 binding. T283N, which occurs in about 12% of group M viruses, has been associated with reduced susceptibility to VRC07 in a neutralization escape study"
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env304ACDEFGHIKLMNPQSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 304,
+      "aas": "ACDEFGHIKLMNPQSTVWY-_"
+    },
+    "comment": "R304 is a highly conserved position. Substitutions at this position have been associated with 3BNC117 neutralization escape in subtype A and B pseudoviruses."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env308ACDEFGIKLMNPQSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 308,
+      "aas": "ACDEFGIKLMNPQSTVWY-_"
+    },
+    "comment": "Position 308 is a polymorphic secondary binding site for 3BNC117 usually encoded by R and H. Substitutions at this position such as DNSC have been associated with 3BNC117 neutralization escape in subtype A and B pseudoviruses."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env312ACDEFHIKLMNPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 312,
+      "aas": "ACDEFHIKLMNPQRSTVWY-_"
+    },
+    "comment": "G312 is a highly conserved position. Substitutions at this position have been associated with 3BNC117 neutralization escape in subtype A pseudoviruses."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env316DEK",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 316,
+      "aas": "DEK"
+    },
+    "comment": "Position 316 is a secondary binding site for 3BNC117. It is usually encoded by ATV. Substitutions at this position such as EDK have been associated with 3BNC117 neutralization escape in subtype A pseudoviruses."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env318ACDEGHIKLMNPQRSTVWdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 318,
+      "aas": "ACDEGHIKLMNPQRSTVW-_"
+    },
+    "comment": "Position 318 is a relatively conserved position usually encoded by Y and F. Substituions at this position such as ETDCK have been associated with 3BNC117 neutralization escape in subtype A pseudoviruses."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env326ACDEFGHKLMNPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 326,
+      "aas": "ACDEFGHKLMNPQRSTVWY-_"
+    },
+    "comment": "I326 is a highly conserved position and a key contact site for VRC01, 3BNC117, 10-1074, and PGT121. Substitutions at this site, including alanine, have been associated with neutralization escape in subtype A pseudoviruses and reduced PGT121 susceptibility."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env365ACDEFGHIKLMNPQRTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 365,
+      "aas": "ACDEFGHIKLMNPQRTVWY-_"
+    },
+    "comment": "S365 is a relatively conserved position involved in CD4 binding. It is also a contact site for VRC01, 3BNC117, VRC07, and N6. S365A is associated with approximately 30% binding to N6."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env366ACDEFHIKLMNPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 366,
+      "aas": "ACDEFHIKLMNPQRSTVWY-_"
+    },
+    "comment": "G366 is a highly conserved position involved in CD4 binding. It is also a contact site for VRC01, 3BNC117, VRC07, and N6. Alanine mutations at this position are associated with approximately 25% binding to VRC01, 3BNC117, and N6."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env367ACDEFHIKLMNPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 367,
+      "aas": "ACDEFHIKLMNPQRSTVWY-_"
+    },
+    "comment": "G367 is a highly conserved position involved in CD4 binding. It is also a contact site for VRC01, 3BNC117, VRC07, and N6. Alanine mutations at this position are associated with approximately 20% binding to VRC01, 3BNC117, and N6."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env368ACEFGHIKLMNPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 368,
+      "aas": "ACEFGHIKLMNPQRSTVWY-_"
+    },
+    "comment": "D368 is a highly conserved position involved in CD4 binding. It is also a contact site for VRC01, 3BNC117, VRC07, and N6. Alanine mutations at this position are associated with markedly reduced binding to VRC01, 15% binding to 3BNC117, and 10% binding to N6."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env369K",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 369,
+      "aas": "K"
+    },
+    "comment": "LP369 is involved in CD4 binding. L369K reduces VRC01 susceptibility. Substitutions at this position have been associated with VRC01 and 3BNC117 neutralization escape in subtype A pseudoviruses."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env370ACDFGHIKLMNPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 370,
+      "aas": "ACDFGHIKLMNPQRSTVWY-_"
+    },
+    "comment": "E370 is a highly conserved position involved in CD4 binding. It is also an N6 contact site. Alanine mutations at this position are associated with approximately 15% VRC01 and 30% 3BNC117 and N6 binding."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env371ACDEFGHKLMNPQRSTWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 371,
+      "aas": "ACDEFGHKLMNPQRSTWY-_"
+    },
+    "comment": "IV371 is a relatively conserved position involved in CD4 binding. It is also a contact site for VRC01, 3BNC117, VRC07, and N6. Alanine mutations at this position are associated with approximately 15%, 30%, and 40% binding to VRC01, N6, and 3BNC117."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env373K",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 373,
+      "aas": "K"
+    },
+    "comment": "TM373K emerged in a patient receiving 3BNC117."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env420ACDEFGHKLMNPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 420,
+      "aas": "ACDEFGHKLMNPQRSTVWY-_"
+    },
+    "comment": "I420 is a highly conserved position. Alanine at this position is with approximately 7-fold reduced VRC01 susceptibility."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env427ACDEFGHIKLMNPQRSTVYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 427,
+      "aas": "ACDEFGHIKLMNPQRSTVY-_"
+    },
+    "comment": "W427 is a highly conserved position involved in CD4 binding. It is a VRC01 and N6 binding site."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env428ACDEFGHIKLMNPRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 428,
+      "aas": "ACDEFGHIKLMNPRSTVWY-_"
+    },
+    "comment": "Q428 is a highly conserved position involved in CD4 binding. It is a VRC01 and 3BNC117 binding site."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env456ACDEFGHIKLMNPQSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 456,
+      "aas": "ACDEFGHIKLMNPQSTVWY-_"
+    },
+    "comment": "R456 is a highly conserved V5 loop position involved in CD4 binding. It is a contact site for VRC01, 3BNC117, VRC07, and N6. R456S has been reported in a patient receiving 3BNC117. R456W was associated with 3BNC117 neutralization escape in subtype A pseudoviruses. R456S has been predicted to reduce VRC01, 3BNC117, and VRC07-523 susceptibility."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env457ACEFGHIKLMNPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 457,
+      "aas": "ACEFGHIKLMNPQRSTVWY-_"
+    },
+    "comment": "D457 is a highly conserved V5 loop position involved in CD4 binding. It is a contact site for VRC01, 3BNC117, VRC07, and N6. Alanine mutations at this position are associated with approximately 5-fold reduced VRC01 susceptibility and 8-fold reduced N6 susceptibility."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env458ACDEFHIKLMNPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 458,
+      "aas": "ACDEFHIKLMNPQRSTVWY-_"
+    },
+    "comment": "G458 is a highly conserved V5 loop position involved in CD4 binding. It is a contact site for VRC01, 3BNC117, VRC07, and N6. Substitutions at this position are associated with VRC07 neutralization escape in subtype B pseudoviruses. G458Y has been predicted to cause high-level 3BNC117 resistance in one analysis."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env459ACDEFHIKLMNPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 459,
+      "aas": "ACDEFHIKLMNPQRSTVWY-_"
+    },
+    "comment": "G459 is a highly conserved V5 loop position involved in CD4 binding. It is a contact site for VRC01, 3BNC117, VRC07, and N6. G459D and G459L have been reported in patients receiving 3BNC177. Substitutions at this position are associated with VRC07 neutralization escape in subtype B pseudoviruses. Analyses of susceptibility data have suggested that substitutions at this position reduce VRC01, 3BNC117, and VRC07 susceptibility."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env469ACDEFGHIKLMNPQSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 469,
+      "aas": "ACDEFGHIKLMNPQSTVWY-_"
+    },
+    "comment": "R469 is a highly conserved position involved in CD4 binding. It is also a contact site for VRC01, 3BNC117, VRC07, and N6."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env471EI",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 471,
+      "aas": "EI"
+    },
+    "comment": "Position 471 is a polymorphic position involved in CD4 binding. G471E, which occurs in approximately 5% of group M sequences,  has been reported in a patient receiving 3BNC117. Various substitutions at this position have been associated with escape from 3BNC117 neutralization in a subtype A pseudovirus. An analysis of susceptibility data has suggested that G471E is associated with reduced 3BNC117 susceptibility and G471I is associated with reduced VRC07-523 susceptibility."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env474ACEFGHIKLMPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 474,
+      "aas": "ACEFGHIKLMPQRSTVWY-_"
+    },
+    "comment": "DN474 is involved in CD4 binding. It is also a contact site for N6. Alanine mutations at this position are associated with approximately 20% binding to VRC01 and 33% binding to N6."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env547ACDEFHIKLMNPQRSTVWYdi",
+    "drugClass": "FI",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 547,
+      "aas": "ACDEFHIKLMNPQRSTVWY-_"
+    },
+    "comment": "Gp41 G36 (gp120 G547) is a highly conserved residue. Changes at this position including GDESV have been associated with reduced susceptibility to enfuvirtide."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env548ACDEFGHKLMNPQRSTVWYdi",
+    "drugClass": "FI",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 548,
+      "aas": "ACDEFGHKLMNPQRSTVWY-_"
+    },
+    "comment": "Gp41 I37 (gp120 I548) is a highly conserved residue. I37V has been associated with reduced susceptibility to enfuvirtide."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env549ACDEFGHIKLMNPQRSTWYdi",
+    "drugClass": "FI",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 549,
+      "aas": "ACDEFGHIKLMNPQRSTWY-_"
+    },
+    "comment": "Gp41 V38 (gp120 V549) is a highly conserved residue. Changes at this position including V38AEGM have beeen associated with reduced susceptibility to enfuvirtide."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env551ACDEFGHIKLMNPRSTVWYdi",
+    "drugClass": "FI",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 551,
+      "aas": "ACDEFGHIKLMNPRSTVWY-_"
+    },
+    "comment": "Gp41 Q40 (gp120 Q551) is a highly conserved residue. Changes at this position including Q40H have beeen associated with reduced susceptibility to enfuvirtide."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env553T",
+    "drugClass": "FI",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 553,
+      "aas": "T"
+    },
+    "comment": "Gp41 position 42 (gp120 position 553) is a polymormphic residue encoded by N, S, and R. 42T has been associated with reduced susceptibility to enfuvirtide."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env554DKS",
+    "drugClass": "FI",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 554,
+      "aas": "DKS"
+    },
+    "comment": "Gp41 position 43 (gp120 position 554) is a polymorphic residue encoded by N and S. N43DKS have been associated with reduced susceptibility to enfuvirtide."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env555ACDEFGHIKMNPQRSTVWYdi",
+    "drugClass": "FI",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 555,
+      "aas": "ACDEFGHIKMNPQRSTVWY-_"
+    },
+    "comment": "Gp41 L44 (gp 120 L555) is a highly conserved residue . L44M has been associated with reduced susceptibility to enfuvirtide."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env556ACDEFGHIKMNPQRSTVWYdi",
+    "drugClass": "FI",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 556,
+      "aas": "ACDEFGHIKMNPQRSTVWY-_"
+    },
+    "comment": "Gp41 L45 (gp 120 L556) is a highly conserved residue . L45M has been associated with reduced susceptibility to enfuvirtide."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env375ACDEFGHIKLMNPQRTVWYdi",
+    "drugClass": "AI",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 375,
+      "aas": "ACDEFGHIKLMNPQRTVWY-_"
+    },
+    "comment": "Position 375 is encoded by S, H, and T in approximately 74%, 13%, and 9% of group M sequences, respectively. It is involved in CD4 binding. Substitutions other than S occurred in 39% of patients with VF while receiving fostemsavir."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env426L",
+    "drugClass": "AI",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 426,
+      "aas": "L"
+    },
+    "comment": "Position 426 is encoded by M, R, and L in approximately 85%, 8%, and 5% of group M sequences, respectively. It is involved in CD4 binding. M426L has been selected by temsavir in vitro and has been reported in 39% of patients with VF while receiving fostemsavir."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env434I",
+    "drugClass": "AI",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 434,
+      "aas": "I"
+    },
+    "comment": "Position 434 is encoded by M and I in approximately 89% and 10% of group M sequences, respectively. M434I has been reported in 10% of patients with VF while receiving fostemsavir."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env475I",
+    "drugClass": "AI",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 475,
+      "aas": "I"
+    },
+    "comment": "Position 475 is encoded by M and I in approximately 89% and 10% of group M sequences, respectively. It is involved in CD4 binding. M475I has been selected in vitro by fostemsavir and has been reported in 12% of patients with VF while receiving fostemsavir."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env123ACDEFGHIKLMNPQRSVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 123,
+      "aas": "ACDEFGHIKLMNPQRSVWY-_"
+    },
+    "comment": "Position T123 is a highly conserved contact site for PGDM1400."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env127ACDEFGHIKLMNPQRSTWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 127,
+      "aas": "ACDEFGHIKLMNPQRSTWY-_"
+    },
+    "comment": "Position V127 is a highly conserved contact site for PGDM1400. Alanine mutations at this position reduce PGDM susceptibility"
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env128ACDEFGHIKLMNPQRSVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 128,
+      "aas": "ACDEFGHIKLMNPQRSVWY-_"
+    },
+    "comment": "Position T128 is a highly conserved contact site for CAP256.VRC26.25."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env130ACDEFGHIKLMPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 130,
+      "aas": "ACDEFGHIKLMPQRSTVWY-_"
+    },
+    "comment": "Positions 130/132 comprise a PNGS present in approximately 70% of group M isolates. Its glycan is probably  contact site for PGDM1400 and CAP256.VRC26.25. PGDM selected for loss of this PNGS in HIS mice and in one human clinical trial."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env132ACDEFGHIKLMNPQRVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 132,
+      "aas": "ACDEFGHIKLMNPQRVWY-_"
+    },
+    "comment": "Positions 130/132 comprise a PNGS present in approximately 70% of group M isolates. Its glycan is probably  contact site for PGDM1400 and CAP256.VRC26.25. PGDM selected for loss of this PNGS in HIS mice and in one human clinical trial."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env134A",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 134,
+      "aas": "A"
+    },
+    "comment": "Position 134 is a highly polymorphic position. Alanine mutations reduce PGDM susceptibility about 10-fold."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env160ACDEFGHIKLMPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 160,
+      "aas": "ACDEFGHIKLMPQRSTVWY-_"
+    },
+    "comment": "Positions 160/162 comprise a highly conserved PNGS present in more than 90% of group M isolates. Both PGDM1400 and CAP256.VRC26.25 bind to its glycan. Mutations at these positions have been associated with high-level resistance to PGDM1400. They have also been selected for in HIS mice and in human clinical trials."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env162ACDEFGHIKLMNPQRVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 162,
+      "aas": "ACDEFGHIKLMNPQRVWY-_"
+    },
+    "comment": "Positions 160/162 comprise a highly conserved PNGS present in more than 90% of group M isolates. Both PGDM1400 and CAP256.VRC26.25 bind to its glycan. Mutations at these positions have been associated with high-level resistance to PGDM1400. They have also been selected for in HIS mice and in human clinical trials."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env163A",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 163,
+      "aas": "A"
+    },
+    "comment": "Position T163 is a relatively conserved contact site for CAP256.VRC26.25. T163A was responsible for autologous escape and has been associated with reduced CAP256.VRC26.25 susceptibiliity."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env165DE",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 165,
+      "aas": "DE"
+    },
+    "comment": "Position 165 is highly polymorphic. 165DE have been reported in SHIV sequences from non-human primates receiving PGDM1400."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env166AGN",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 166,
+      "aas": "AGN"
+    },
+    "comment": "Position R166 is a contact site for both PGDM1400 and CAP256.VRC26.25. 166AG have been associated with reduced PGDM susceptibility. 166N has been associated with reduced CAP256.VRC26.25 susceptibiliity."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env167AE",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 167,
+      "aas": "AE"
+    },
+    "comment": "Position D167 is a relatively conserved contact site for both PGDM1400 and CAP256.VRC26.25. Alanine mutations at this position cause high-level PGDM1400 resistance. 167E has been reported in SHIV sequences from non-human primates receiving PGDM1400."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env168ACDEFGHILMNPQSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 168,
+      "aas": "ACDEFGHILMNPQSTVWY-_"
+    },
+    "comment": "Position KR168 represents a highly conserved contact site for both PGDM1400 and CAP256.VRC26.25."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env169E",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 169,
+      "aas": "E"
+    },
+    "comment": "Position 169 is a highly polymorphic contact site for both PGDM1400 and CAP256.VRC26.25. 169E has been associated with reduced CAP256.VRC26.25 susceptibiliity."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env170K",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 170,
+      "aas": "K"
+    },
+    "comment": "Position 170 is a highly polymorphic contact site for both PGDM1400 and CAP256.VRC26.25. 170K, which occurs in about 30% of group M isolates, has been associated with reduced CAP256.VRC26.25 susceptibiliity."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env177ACDEFGHIKLMNPQRSTVWdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 177,
+      "aas": "ACDEFGHIKLMNPQRSTVW-_"
+    },
+    "comment": "Position Y177 is a relatively conserved position. Alanine mutations reduce PGDM susceptibility about 6-fold."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env156ACDEFGHIKLMPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 156,
+      "aas": "ACDEFGHIKLMPQRSTVWY-_"
+    },
+    "comment": "Positions 156/158 comprise a highly conserved PNGS present in more than 95% of group M isolates.Both 10-1074 and PGT121 bind to its glycan. In addition, loss of this PNGS has been associated with reduced CAP256.VRC26.25 susceptibility."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env158ACDEFGHIKLMNPQRVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 158,
+      "aas": "ACDEFGHIKLMNPQRVWY-_"
+    },
+    "comment": "Positions 156/158 comprise a highly conserved PNGS present in more than 95% of group M isolates.Both 10-1074 and PGT121 bind to its glycan. In addition, loss of this PNGS has been associated with reduced CAP256.VRC26.25 susceptibility."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env284M",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 284,
+      "aas": "M"
+    },
+    "comment": "Positiion I284 is a highly conserved position. 284M has been reported in SHIV sequences from non-human primates receiving 10-1074."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env301ACDEFGHIKLMPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 301,
+      "aas": "ACDEFGHIKLMPQRSTVWY-_"
+    },
+    "comment": "Positions 301/303 comprise a highly conserved PNGS. Both 10-1074 and PGT121 bind to its glycan."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env303ACDEFGHIKLMNPQRVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 303,
+      "aas": "ACDEFGHIKLMNPQRVWY-_"
+    },
+    "comment": "Positions 301/303 comprise a highly conserved PNGS. Both 10-1074 and PGT121 bind to its glycan."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env323G",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 323,
+      "aas": "G"
+    },
+    "comment": "Position I323 is a relatively conserved PGT121 contact site. 323G is associated with reduced PGT121 susceptibility."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env324R",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 324,
+      "aas": "R"
+    },
+    "comment": "Position 324 is a highly conserved contact site for both 10-1074 and PGT121. G324R emerged in a patient receiving PGT121."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env325ACEFGHIKLMPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 325,
+      "aas": "ACEFGHIKLMPQRSTVWY-_"
+    },
+    "comment": "DN325 is a highly conserved contact site for both 10-1074 and PGT121. 325ES have been associated with reduced susceptibility to 10-1074 and PGT121. 32EK has been selected in patients receiving both 10-1074 and PGT121."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env327ACDEFGHIKLMNPQSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 327,
+      "aas": "ACDEFGHIKLMNPQSTVWY-_"
+    },
+    "comment": "Position R327 is highly conserved contact site for both 10-1074 and PGT121. Alanine substitutions reduce susceptibility to both bNAbs. Variant amino acids are also in vitro escape mutations for both bNAbs."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env330RY",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 330,
+      "aas": "RY"
+    },
+    "comment": "Position HY330 is a contact site for both 10-1074 and PGT121. The HY330Y variant has been selected in two PGT121 clinical trials. The 330R substitution reduces susceptibility to both bNAbs. Variants at this position are in vitro escape mutations for both bnAbs."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env332ACDEFGHIKLMPQRSTVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 332,
+      "aas": "ACDEFGHIKLMPQRSTVWY-_"
+    },
+    "comment": "Positions 332/334 comprise a PNGS present in approximately 75% of group M viruses. Both 10-1074 and PGT121 bind to its glycan. Mutations at positions 332 and/or 334 consistently emerge in clinical trials of both bNAbs and reduce susceptibility to both bNAbs."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env334ACDEFGHIKLMNPQRVWYdi",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 334,
+      "aas": "ACDEFGHIKLMNPQRVWY-_"
+    },
+    "comment": "Positions 332/334 comprise a PNGS present in approximately 75% of group M viruses. Both 10-1074 and PGT121 bind to its glycan. Mutations at positions 332 and/or 334 consistently emerge in clinical trials of both bNAbs and reduce susceptibility to both bNAbs."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env415RY",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 415,
+      "aas": "RY"
+    },
+    "comment": "Position 415 is a polymorphic contact site for PGT121. R and Y are relatively uncommon residues. R has been associated with reduced susceptibility to 10-1074. RY have been associated with reduced  PGT121 susceptibility."
+  },
+  {
+    "strain": "HIV1",
+    "commentName": "env441P",
+    "drugClass": "bNAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 441,
+      "aas": "P"
+    },
+    "comment": "Position G441 is highly conserved. 441P has been shown to reduce susceptibility to PGT121."
   }
 ]

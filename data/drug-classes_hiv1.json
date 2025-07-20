@@ -84,25 +84,13 @@
     ],
     "synonyms": [],
     "mutationTypes": [
-      "Other"
-    ]
-  },
-  {
-    "name": "FI",
-    "ordinal": 7,
-    "abstractGene": "env",
-    "fullName": "Fusion Inhibitor",
-    "strains": [
-      "HIV1"
-    ],
-    "synonyms": [],
-    "mutationTypes": [
+      "bNAb",
       "Other"
     ]
   },
   {
     "name": "AI",
-    "ordinal": 8,
+    "ordinal": 7,
     "abstractGene": "env",
     "fullName": "Attachment Inhibitor",
     "strains": [
@@ -110,6 +98,21 @@
     ],
     "synonyms": [],
     "mutationTypes": [
+      "AI",
+      "Other"
+    ]
+  },
+  {
+    "name": "FI",
+    "ordinal": 8,
+    "abstractGene": "env",
+    "fullName": "Fusion Inhibitor",
+    "strains": [
+      "HIV1"
+    ],
+    "synonyms": [],
+    "mutationTypes": [
+      "FI",
       "Other"
     ]
   }

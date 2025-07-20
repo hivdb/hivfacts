@@ -1,8 +1,8 @@
 # Temporarily disabled because env DRMs are manually updated
 # data/drms_*.csv: scripts/build_drms.py data/drugs.json
 
-data/drms_hiv1.csv: data/algorithms/HIVDB_latest.xml data/drug-classes_hiv1.json data/genes_hiv1.json
-	@pipenv run python scripts/build_drms.py HIV1 data/
+# data/drms_hiv1.csv: data/algorithms/HIVDB_latest.xml data/drug-classes_hiv1.json data/genes_hiv1.json
+# 	@pipenv run python scripts/build_drms.py HIV1 data/
 
 # data/drms_hiv2.csv: data/algorithms/HIVDB-HIV2_9.0.xml data/drug-classes_hiv2.json data/genes_hiv2.json
 # 	@pipenv run python scripts/build_drms.py HIV2 data/

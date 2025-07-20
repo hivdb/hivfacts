@@ -185,6 +185,9 @@
      LNIPRRIRQGFERALL"
   refRanges: [[6225, 8792]]
   mutationTypes:
+    - bNAb
+    - AI
+    - FI
     - Other
   strainModifiers: {}
 - name: HIV1nef

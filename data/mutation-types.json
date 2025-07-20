@@ -8,15 +8,27 @@
     "ordinal": 2
   },
   {
-    "name": "Major",
+    "name": "bNAb",
     "ordinal": 3
   },
   {
-    "name": "Accessory",
+    "name": "AI",
     "ordinal": 4
   },
   {
-    "name": "Other",
+    "name": "FI",
     "ordinal": 5
+  },
+  {
+    "name": "Major",
+    "ordinal": 6
+  },
+  {
+    "name": "Accessory",
+    "ordinal": 7
+  },
+  {
+    "name": "Other",
+    "ordinal": 8
   }
 ]
