@@ -2,15 +2,19 @@
   ordinal: 1
 - name: NNRTI
   ordinal: 2
-- name: bNAb
+- name: CD4_bnAb
   ordinal: 3
-- name: AI
+- name: FTR
   ordinal: 4
-- name: FI
+- name: ENF
   ordinal: 5
-- name: Major
+- name: V2_bnAb
   ordinal: 6
-- name: Accessory
+- name: V3_bnAb
   ordinal: 7
-- name: Other
+- name: Major
   ordinal: 8
+- name: Accessory
+  ordinal: 9
+- name: Other
+  ordinal: 10

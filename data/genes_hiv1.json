@@ -218,9 +218,11 @@
       ]
     ],
     "mutationTypes": [
-      "bNAb",
-      "AI",
-      "FI",
+      "CD4_bnAb",
+      "V2_bnAb",
+      "V3_bnAb",
+      "FTR",
+      "ENF",
       "Other"
     ],
     "strainModifiers": {}

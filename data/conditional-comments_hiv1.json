@@ -3311,7 +3311,7 @@
   {
     "strain": "HIV1",
     "commentName": "env113N",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3322,20 +3322,20 @@
   },
   {
     "strain": "HIV1",
-    "commentName": "env124ACDEFGHIKLMNQRSTVWYdi",
-    "drugClass": "bNAb",
+    "commentName": "env124ACDEFGHIKLMNQRSTVWYdi-CD4_bnAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
       "pos": 124,
       "aas": "ACDEFGHIKLMNQRSTVWY-_"
     },
-    "comment": "P124 is a highly conserved position involved in CD4 binding and is a contact site for N6, PGDM1400 and CAP256.VRC26.25."
+    "comment": "P124 is a highly conserved position involved in CD4 binding and is a contact site for N6."
   },
   {
     "strain": "HIV1",
     "commentName": "env197ACDEFGHIKLMPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3347,7 +3347,7 @@
   {
     "strain": "HIV1",
     "commentName": "env199ACDEFGHIKLMNPQRVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3359,7 +3359,7 @@
   {
     "strain": "HIV1",
     "commentName": "env207ACDEFGHILMNPQSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3371,7 +3371,7 @@
   {
     "strain": "HIV1",
     "commentName": "env262ACDEFGHIKLMPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3383,7 +3383,7 @@
   {
     "strain": "HIV1",
     "commentName": "env274ACDEFGHIKLMNPQRTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3395,7 +3395,7 @@
   {
     "strain": "HIV1",
     "commentName": "env275GKS",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3407,7 +3407,7 @@
   {
     "strain": "HIV1",
     "commentName": "env276ACDEFGHIKLMPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3419,7 +3419,7 @@
   {
     "strain": "HIV1",
     "commentName": "env278ACDEFGHIKLMNPQRVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3431,43 +3431,43 @@
   {
     "strain": "HIV1",
     "commentName": "env279ACEFGHIKLMPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
       "pos": 279,
       "aas": "ACEFGHIKLMPQRSTVWY-_"
     },
-    "comment": "ND279 is involved in CD4 binding and is a contact site for VRC01, 3BNC117, VRC07, and N6. 279A and 279K have been associated with reduced susceptibility to VRC01, 3BNC117, and N6 in alanine mutagenesis studies and in site-directed mutants. 279E has been selected by N6 in NHP. Other substitutions at this position have been associated with reduced susceptibility to each of these bNAbs in neutralization escape studies."
+    "comment": "ND279 is involved in CD4 binding and is a contact site for VRC01, 3BNC117, VRC07, and N6. 279A and 279K have been associated with reduced susceptibility to VRC01, 3BNC117, and N6 in alanine mutagenesis studies and in site-directed mutants. 279E has been selected by N6 in NHP. Other substitutions at this position have been associated with reduced susceptibility to each of these bnAbs in neutralization escape studies."
   },
   {
     "strain": "HIV1",
     "commentName": "env280ACDEFGHIKLMPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
       "pos": 280,
       "aas": "ACDEFGHIKLMPQRSTVWY-_"
     },
-    "comment": "N280 is a highly conserved position involved in CD4 binding and iscontact site for VRC01, 3BNC117, VRC07, and N6. N280S emerged in a patient receiving VRC01. N280Y is associated with reduced susceptibility to VRC01, 3BNC117, and N6 in site-directed mutants. 280S was associated with lack of response to 3BNC117 in one patient. Substitutions at this position have been associated with reduced susceptibility to each of these bNAbs in neutralization escape studies."
+    "comment": "N280 is a highly conserved position involved in CD4 binding and iscontact site for VRC01, 3BNC117, VRC07, and N6. N280S emerged in a patient receiving VRC01. N280Y is associated with reduced susceptibility to VRC01, 3BNC117, and N6 in site-directed mutants. 280S was associated with lack of response to 3BNC117 in one patient. Substitutions at this position have been associated with reduced susceptibility to each of these bnAbs in neutralization escape studies."
   },
   {
     "strain": "HIV1",
     "commentName": "env281DHT",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
       "pos": 281,
       "aas": "DHT"
     },
-    "comment": "AVT281 is involved in CD4 binding and is a contact site for VRC01, 3BNC117, VRC07, and N6. A281T, which occurs in about 11% of group M viruses, emerged in HIS mice and A281D emerged in two patients receiving 3BNC117. A281T is associated with high-level reduced VRC01, 3BNC117, and N6 susceptibility in site-directed mutants. 281HT was associated with lack of response to 3BNC117. Substitutions at this position have been associated with reduced susceptibility to each of these bNAbs in neutralization escape studies."
+    "comment": "AVT281 is involved in CD4 binding and is a contact site for VRC01, 3BNC117, VRC07, and N6. A281T, which occurs in about 11% of group M viruses, emerged in HIS mice and A281D emerged in two patients receiving 3BNC117. A281T is associated with high-level reduced VRC01, 3BNC117, and N6 susceptibility in site-directed mutants. 281HT was associated with lack of response to 3BNC117. Substitutions at this position have been associated with reduced susceptibility to each of these bnAbs in neutralization escape studies."
   },
   {
     "strain": "HIV1",
     "commentName": "env282ACDEFGHILMNPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3479,7 +3479,7 @@
   {
     "strain": "HIV1",
     "commentName": "env283N",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3491,7 +3491,7 @@
   {
     "strain": "HIV1",
     "commentName": "env304ACDEFGHIKLMNPQSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3503,7 +3503,7 @@
   {
     "strain": "HIV1",
     "commentName": "env308ACDEFGIKLMNPQSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3515,7 +3515,7 @@
   {
     "strain": "HIV1",
     "commentName": "env312ACDEFHIKLMNPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3527,7 +3527,7 @@
   {
     "strain": "HIV1",
     "commentName": "env316DEK",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3539,7 +3539,7 @@
   {
     "strain": "HIV1",
     "commentName": "env318ACDEGHIKLMNPQRSTVWdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3550,20 +3550,20 @@
   },
   {
     "strain": "HIV1",
-    "commentName": "env326ACDEFGHKLMNPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "commentName": "env326ACDEFGHKLMNPQRSTVWYdi-CD4_bnAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
       "pos": 326,
       "aas": "ACDEFGHKLMNPQRSTVWY-_"
     },
-    "comment": "I326 is a highly conserved position and a key contact site for VRC01, 3BNC117, 10-1074, and PGT121. Substitutions at this site, including alanine, have been associated with neutralization escape in subtype A pseudoviruses and reduced PGT121 susceptibility."
+    "comment": "I326 is a highly conserved position. Substitutions at this position have been associated with VRC01 and 3BNC117 neutralization escape in subtype A pseudoviruses."
   },
   {
     "strain": "HIV1",
     "commentName": "env365ACDEFGHIKLMNPQRTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3575,7 +3575,7 @@
   {
     "strain": "HIV1",
     "commentName": "env366ACDEFHIKLMNPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3587,7 +3587,7 @@
   {
     "strain": "HIV1",
     "commentName": "env367ACDEFHIKLMNPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3599,7 +3599,7 @@
   {
     "strain": "HIV1",
     "commentName": "env368ACEFGHIKLMNPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3611,7 +3611,7 @@
   {
     "strain": "HIV1",
     "commentName": "env369K",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3623,7 +3623,7 @@
   {
     "strain": "HIV1",
     "commentName": "env370ACDFGHIKLMNPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3635,7 +3635,7 @@
   {
     "strain": "HIV1",
     "commentName": "env371ACDEFGHKLMNPQRSTWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3647,7 +3647,7 @@
   {
     "strain": "HIV1",
     "commentName": "env373K",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3659,7 +3659,7 @@
   {
     "strain": "HIV1",
     "commentName": "env420ACDEFGHKLMNPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3671,7 +3671,7 @@
   {
     "strain": "HIV1",
     "commentName": "env427ACDEFGHIKLMNPQRSTVYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3683,7 +3683,7 @@
   {
     "strain": "HIV1",
     "commentName": "env428ACDEFGHIKLMNPRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3695,7 +3695,7 @@
   {
     "strain": "HIV1",
     "commentName": "env456ACDEFGHIKLMNPQSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3707,7 +3707,7 @@
   {
     "strain": "HIV1",
     "commentName": "env457ACEFGHIKLMNPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3719,7 +3719,7 @@
   {
     "strain": "HIV1",
     "commentName": "env458ACDEFHIKLMNPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3731,7 +3731,7 @@
   {
     "strain": "HIV1",
     "commentName": "env459ACDEFHIKLMNPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3743,7 +3743,7 @@
   {
     "strain": "HIV1",
     "commentName": "env469ACDEFGHIKLMNPQSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3755,7 +3755,7 @@
   {
     "strain": "HIV1",
     "commentName": "env471EI",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3767,7 +3767,7 @@
   {
     "strain": "HIV1",
     "commentName": "env474ACEFGHIKLMPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3923,7 +3923,7 @@
   {
     "strain": "HIV1",
     "commentName": "env123ACDEFGHIKLMNPQRSVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3934,8 +3934,20 @@
   },
   {
     "strain": "HIV1",
+    "commentName": "env124ACDEFGHIKLMNQRSTVWYdi-V2_bnAb",
+    "drugClass": "bnAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 124,
+      "aas": "ACDEFGHIKLMNQRSTVWY-_"
+    },
+    "comment": "Position P124 is a highly conserved contact site for both PGDM1400 and CAP256.VRC26.25."
+  },
+  {
+    "strain": "HIV1",
     "commentName": "env127ACDEFGHIKLMNPQRSTWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3947,7 +3959,7 @@
   {
     "strain": "HIV1",
     "commentName": "env128ACDEFGHIKLMNPQRSVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3959,7 +3971,7 @@
   {
     "strain": "HIV1",
     "commentName": "env130ACDEFGHIKLMPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3971,7 +3983,7 @@
   {
     "strain": "HIV1",
     "commentName": "env132ACDEFGHIKLMNPQRVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3983,7 +3995,7 @@
   {
     "strain": "HIV1",
     "commentName": "env134A",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -3995,7 +4007,7 @@
   {
     "strain": "HIV1",
     "commentName": "env160ACDEFGHIKLMPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -4007,7 +4019,7 @@
   {
     "strain": "HIV1",
     "commentName": "env162ACDEFGHIKLMNPQRVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -4019,7 +4031,7 @@
   {
     "strain": "HIV1",
     "commentName": "env163A",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -4031,7 +4043,7 @@
   {
     "strain": "HIV1",
     "commentName": "env165DE",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -4043,7 +4055,7 @@
   {
     "strain": "HIV1",
     "commentName": "env166AGN",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -4055,7 +4067,7 @@
   {
     "strain": "HIV1",
     "commentName": "env167AE",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -4067,7 +4079,7 @@
   {
     "strain": "HIV1",
     "commentName": "env168ACDEFGHILMNPQSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -4079,7 +4091,7 @@
   {
     "strain": "HIV1",
     "commentName": "env169E",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -4091,7 +4103,7 @@
   {
     "strain": "HIV1",
     "commentName": "env170K",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -4103,7 +4115,7 @@
   {
     "strain": "HIV1",
     "commentName": "env177ACDEFGHIKLMNPQRSTVWdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -4115,7 +4127,7 @@
   {
     "strain": "HIV1",
     "commentName": "env156ACDEFGHIKLMPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -4127,7 +4139,7 @@
   {
     "strain": "HIV1",
     "commentName": "env158ACDEFGHIKLMNPQRVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -4139,7 +4151,7 @@
   {
     "strain": "HIV1",
     "commentName": "env284M",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -4151,7 +4163,7 @@
   {
     "strain": "HIV1",
     "commentName": "env301ACDEFGHIKLMPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -4163,7 +4175,7 @@
   {
     "strain": "HIV1",
     "commentName": "env303ACDEFGHIKLMNPQRVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -4175,7 +4187,7 @@
   {
     "strain": "HIV1",
     "commentName": "env323G",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -4187,7 +4199,7 @@
   {
     "strain": "HIV1",
     "commentName": "env324R",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -4199,7 +4211,7 @@
   {
     "strain": "HIV1",
     "commentName": "env325ACEFGHIKLMPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -4210,56 +4222,68 @@
   },
   {
     "strain": "HIV1",
+    "commentName": "env326ACDEFGHKLMNPQRSTVWYdi-V3_bnAb",
+    "drugClass": "bnAb",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "env",
+      "pos": 326,
+      "aas": "ACDEFGHKLMNPQRSTVWY-_"
+    },
+    "comment": "Position I326 is a highly conserved contact site for both 10-1074 and PGT121. Alanine substitutions reduce PGT121 susceptibility."
+  },
+  {
+    "strain": "HIV1",
     "commentName": "env327ACDEFGHIKLMNPQSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
       "pos": 327,
       "aas": "ACDEFGHIKLMNPQSTVWY-_"
     },
-    "comment": "Position R327 is highly conserved contact site for both 10-1074 and PGT121. Alanine substitutions reduce susceptibility to both bNAbs. Variant amino acids are also in vitro escape mutations for both bNAbs."
+    "comment": "Position R327 is highly conserved contact site for both 10-1074 and PGT121. Alanine substitutions reduce susceptibility to both bnAbs. Variant amino acids are also in vitro escape mutations for both bnAbs."
   },
   {
     "strain": "HIV1",
     "commentName": "env330RY",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
       "pos": 330,
       "aas": "RY"
     },
-    "comment": "Position HY330 is a contact site for both 10-1074 and PGT121. The HY330Y variant has been selected in two PGT121 clinical trials. The 330R substitution reduces susceptibility to both bNAbs. Variants at this position are in vitro escape mutations for both bnAbs."
+    "comment": "Position HY330 is a contact site for both 10-1074 and PGT121. The HY330Y variant has been selected in two PGT121 clinical trials. The 330R substitution reduces susceptibility to both bnAbs. Variants at this position are in vitro escape mutations for both bnAbs."
   },
   {
     "strain": "HIV1",
     "commentName": "env332ACDEFGHIKLMPQRSTVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
       "pos": 332,
       "aas": "ACDEFGHIKLMPQRSTVWY-_"
     },
-    "comment": "Positions 332/334 comprise a PNGS present in approximately 75% of group M viruses. Both 10-1074 and PGT121 bind to its glycan. Mutations at positions 332 and/or 334 consistently emerge in clinical trials of both bNAbs and reduce susceptibility to both bNAbs."
+    "comment": "Positions 332/334 comprise a PNGS present in approximately 75% of group M viruses. Both 10-1074 and PGT121 bind to its glycan. Mutations at positions 332 and/or 334 consistently emerge in clinical trials of both bnAbs and reduce susceptibility to both bnAbs."
   },
   {
     "strain": "HIV1",
     "commentName": "env334ACDEFGHIKLMNPQRVWYdi",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
       "pos": 334,
       "aas": "ACDEFGHIKLMNPQRVWY-_"
     },
-    "comment": "Positions 332/334 comprise a PNGS present in approximately 75% of group M viruses. Both 10-1074 and PGT121 bind to its glycan. Mutations at positions 332 and/or 334 consistently emerge in clinical trials of both bNAbs and reduce susceptibility to both bNAbs."
+    "comment": "Positions 332/334 comprise a PNGS present in approximately 75% of group M viruses. Both 10-1074 and PGT121 bind to its glycan. Mutations at positions 332 and/or 334 consistently emerge in clinical trials of both bnAbs and reduce susceptibility to both bnAbs."
   },
   {
     "strain": "HIV1",
     "commentName": "env415RY",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",
@@ -4271,7 +4295,7 @@
   {
     "strain": "HIV1",
     "commentName": "env441P",
-    "drugClass": "bNAb",
+    "drugClass": "bnAb",
     "conditionType": "MUTATION",
     "conditionValue": {
       "gene": "env",

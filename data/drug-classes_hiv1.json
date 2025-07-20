@@ -75,7 +75,7 @@
     ]
   },
   {
-    "name": "bNAb",
+    "name": "bnAb",
     "ordinal": 6,
     "abstractGene": "env",
     "fullName": "Broadly Neutralizing Antibody",
@@ -84,7 +84,9 @@
     ],
     "synonyms": [],
     "mutationTypes": [
-      "bNAb",
+      "CD4_bnAb",
+      "V2_bnAb",
+      "V3_bnAb",
       "Other"
     ]
   },
@@ -98,7 +100,7 @@
     ],
     "synonyms": [],
     "mutationTypes": [
-      "AI",
+      "FTR",
       "Other"
     ]
   },
@@ -112,7 +114,7 @@
     ],
     "synonyms": [],
     "mutationTypes": [
-      "FI",
+      "ENF",
       "Other"
     ]
   }

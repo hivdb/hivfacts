@@ -171,7 +171,7 @@
     "name": "CD4bs",
     "fullName": "CD4-binding site neutralizing antibodies",
     "displayAbbr": "CD4bs",
-    "drugClass": "bNAb"
+    "drugClass": "bnAb"
   },
   {
     "name": "ENF",
