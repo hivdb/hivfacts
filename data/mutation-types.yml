@@ -2,15 +2,15 @@
   ordinal: 1
 - name: NNRTI
   ordinal: 2
-- name: CD4_bnAb
-  ordinal: 3
-- name: FTR
-  ordinal: 4
-- name: ENF
-  ordinal: 5
-- name: V2_bnAb
-  ordinal: 6
 - name: V3_bnAb
+  ordinal: 3
+- name: CD4_bnAb
+  ordinal: 4
+- name: V2_bnAb
+  ordinal: 5
+- name: FTR
+  ordinal: 6
+- name: ENF
   ordinal: 7
 - name: Major
   ordinal: 8

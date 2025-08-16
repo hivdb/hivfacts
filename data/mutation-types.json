@@ -8,23 +8,23 @@
     "ordinal": 2
   },
   {
-    "name": "CD4_bnAb",
+    "name": "V3_bnAb",
     "ordinal": 3
   },
   {
-    "name": "FTR",
+    "name": "CD4_bnAb",
     "ordinal": 4
   },
   {
-    "name": "ENF",
+    "name": "V2_bnAb",
     "ordinal": 5
   },
   {
-    "name": "V2_bnAb",
+    "name": "FTR",
     "ordinal": 6
   },
   {
-    "name": "V3_bnAb",
+    "name": "ENF",
     "ordinal": 7
   },
   {

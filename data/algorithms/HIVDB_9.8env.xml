@@ -3,7 +3,7 @@
 <ALGORITHM>
   <ALGNAME>HIVDB</ALGNAME>
   <ALGVERSION>9.8env</ALGVERSION>
-  <ALGDATE>2025-07-19</ALGDATE>
+  <ALGDATE>2025-08-16</ALGDATE>
   <DEFINITIONS>
     <GENE_DEFINITION>
       <NAME>CA</NAME>
@@ -1687,22 +1687,106 @@
         <TEXT><![CDATA[Position D113 is highly conserved. D113N has been associated with reduced VRC01 susceptibility and with escape from neutralization in a subtype A pseudovirus.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
-      <COMMENT_STRING id="env124ACDEFGHIKLMNQRSTVWYdi-CD4_bnAb">
+      <COMMENT_STRING id="env123ACDEFGHIKLMNPQRSVWYdi">
         <!--<DATE>2025-07-19</DATE>-->
         <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[P124 is a highly conserved position involved in CD4 binding and is a contact site for N6.]]></TEXT>
+        <TEXT><![CDATA[Position T123 is a highly conserved contact site for PGDM1400.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
-      <COMMENT_STRING id="env197ACDEFGHIKLMPQRSTVWYdi">
+      <COMMENT_STRING id="env124ACDEFGHIKLMNQRSTVWYdi">
+        <!--<DATE>2025-08-10</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[P124 is a highly conserved position involved in CD4 binding. It is a contact site for N6, PGDM1400, and CAP256.VRC26.25.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env127ACDEFGHIKLMNPQRSTWYdi">
         <!--<DATE>2025-07-19</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Position V127 is a highly conserved contact site for PGDM1400. Alanine mutations at this position reduce PGDM susceptibility.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env128ACDEFGHIKLMNPQRSVWYdi">
+        <!--<DATE>2025-07-19</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Position T128 is a highly conserved contact site for CAP256.VRC26.25.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env130notN132notTS">
+        <!--<DATE>2025-08-10</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Positions 130/132 comprise a PNGS present in approximately 70% of group M isolates. Its glycan is probably  contact site for PGDM1400 and CAP256.VRC26.25. PGDM selected for loss of this PNGS in HIS mice and in one human clinical trial.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env134A">
+        <!--<DATE>2025-07-19</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Position 134 is a highly polymorphic position. Alanine mutations reduce PGDM susceptibility about 10-fold.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env156notN158notTS">
+        <!--<DATE>2025-08-10</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Positions 156/158 comprise a highly conserved PNGS present in more than 95% of group M isolates.Both 10-1074 and PGT121 bind to its glycan. In addition, loss of this PNGS has been associated with reduced CAP256.VRC26.25 susceptibility.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env160notN162notTS">
+        <!--<DATE>2025-08-10</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Positions 160/162 comprise a highly conserved PNGS present in more than 90% of group M isolates. Both PGDM1400 and CAP256.VRC26.25 bind to its glycan. Mutations at these positions have been associated with high-level resistance to PGDM1400. They have also been selected for in HIS mice and in human clinical trials.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env163A">
+        <!--<DATE>2025-07-19</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Position T163 is a relatively conserved contact site for CAP256.VRC26.25. T163A was responsible for autologous escape and has been associated with reduced CAP256.VRC26.25 susceptibiliity.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env165DE">
+        <!--<DATE>2025-07-19</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Position 165 is highly polymorphic. 165DE have been reported in SHIV sequences from non-human primates receiving PGDM1400.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env166notKR">
+        <!--<DATE>2025-08-10</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Position R166 is a contact site for both PGDM1400 and CAP256.VRC26.25. 166AG have been associated with reduced PGDM susceptibility. 166N has been associated with reduced CAP256.VRC26.25 susceptibiliity.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env167notDN">
+        <!--<DATE>2025-08-10</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Position D167 is a relatively conserved contact site for both PGDM1400 and CAP256.VRC26.25. Alanine mutations at this position cause high-level PGDM1400 resistance. 167E has been reported in SHIV sequences from non-human primates receiving PGDM1400.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env168ACDEFGHILMNPQSTVWYdi">
+        <!--<DATE>2025-07-19</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Position KR168 represents a highly conserved contact site for both PGDM1400 and CAP256.VRC26.25.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env169E">
+        <!--<DATE>2025-07-19</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Position 169 is a highly polymorphic contact site for both PGDM1400 and CAP256.VRC26.25. 169E has been associated with reduced CAP256.VRC26.25 susceptibiliity.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env170K">
+        <!--<DATE>2025-07-19</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Position 170 is a highly polymorphic contact site for both PGDM1400 and CAP256.VRC26.25. 170K, which occurs in about 30% of group M isolates, has been associated with reduced CAP256.VRC26.25 susceptibiliity.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env177ACDEFGHIKLMNPQRSTVWdi">
+        <!--<DATE>2025-07-19</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Position Y177 is a relatively conserved position. Alanine mutations reduce PGDM susceptibility about 6-fold.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env197notN199notTS">
+        <!--<DATE>2025-08-10</DATE>-->
         <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
         <TEXT><![CDATA[Positions 197/199 comprise a highly conserved PNGS. It is a contact site for VRC01 and 3BNC117. Substitutions at this position have been associated with reduced VRC01 susceptibility and with VRC01 and 3BNC117 neutralization escape in vitro in a subtype A pseudovirus.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env199ACDEFGHIKLMNPQRVWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Positions 197/199 comprise a highly conserved PNGS. It is a contact site for VRC01,  3BNC117, and possibly VRC07-523 and N6. Substitutions at this position have been associated with reduced VRC01 susceptibility and with VRC01 and 3BNC117 neutralization escape in a subtype A pseudovirus.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="env207ACDEFGHILMNPQSTVWYdi">
@@ -1729,14 +1813,8 @@
         <TEXT><![CDATA[275 is a polymorphic VRC01 and 3BNC117 contact site. 275K, a variant present in about 8% of group M sequences, emerged in one patient receiving VRC01 and in one patient receiving 3BNC117. 275SG have been associated with VRC07 neutralization escape in a subtype B virus.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
-      <COMMENT_STRING id="env276ACDEFGHIKLMPQRSTVWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Positions 276/278 comprise a highly conserved PNGS. It is involved in CD4 binding and is a contact site for 3BNC117, VRC07, and N6. N276D emerged in one patient receiving 3BNC117. Loss of PNGS at this position has been associated with VRC07 neutralization escape in vitro in a subtype B virus. Loss of this PNGS has been predicted to reduce VRC01 and VRC07-523 susceptibility.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env278ACDEFGHIKLMNPQRVWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
+      <COMMENT_STRING id="env276notN278notTS">
+        <!--<DATE>2025-08-10</DATE>-->
         <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
         <TEXT><![CDATA[Positions 276/278 comprise a highly conserved PNGS. It is involved in CD4 binding and is a contact site for 3BNC117, VRC07, and N6. N276D emerged in one patient receiving 3BNC117. Loss of PNGS at this position has been associated with VRC07 neutralization escape in vitro in a subtype B virus. Loss of this PNGS has been predicted to reduce VRC01 and VRC07-523 susceptibility.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
@@ -1768,7 +1846,19 @@
       <COMMENT_STRING id="env283N">
         <!--<DATE>2025-07-19</DATE>-->
         <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[T283 is a polymorphic position involved in CD4 binding. T283N, which occurs in about 12% of group M viruses, has been associated with reduced susceptibility to VRC07 in a neutralization escape study]]></TEXT>
+        <TEXT><![CDATA[T283 is a polymorphic position involved in CD4 binding. T283N, which occurs in about 12% of group M viruses, has been associated with reduced susceptibility to VRC07 in a neutralization escape study.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env284M">
+        <!--<DATE>2025-07-19</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Positiion I284 is a highly conserved position. 284M has been reported in SHIV sequences from non-human primates receiving 10-1074.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env301notN303notTS">
+        <!--<DATE>2025-08-10</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Positions 301/303 comprise a highly conserved PNGS. Both 10-1074 and PGT121 bind to its glycan.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="env304ACDEFGHIKLMNPQSTVWYdi">
@@ -1801,10 +1891,46 @@
         <TEXT><![CDATA[Position 318 is a relatively conserved position usually encoded by Y and F. Substituions at this position such as ETDCK have been associated with 3BNC117 neutralization escape in subtype A pseudoviruses.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
-      <COMMENT_STRING id="env326ACDEFGHKLMNPQRSTVWYdi-CD4_bnAb">
+      <COMMENT_STRING id="env323G">
         <!--<DATE>2025-07-19</DATE>-->
         <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[I326 is a highly conserved position. Substitutions at this position have been associated with VRC01 and 3BNC117 neutralization escape in subtype A pseudoviruses.]]></TEXT>
+        <TEXT><![CDATA[Position I323 is a relatively conserved PGT121 contact site. 323G is associated with reduced PGT121 susceptibility.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env324R">
+        <!--<DATE>2025-07-19</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Position 324 is a highly conserved contact site for both 10-1074 and PGT121. G324R emerged in a patient receiving PGT121.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env325ACEFGHIKLMPQRSTVWYdi">
+        <!--<DATE>2025-08-10</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[DN325 is a highly conserved contact site for both 10-1074 and PGT121. 325ES has been associated with reduced susceptibility to 10-1074. 325E has been associated with reduced susceptibility to PGT121. 325K has been selected in patients receiving 10-1074. 325EKN have been selected in patients receiving PGT121.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env326notI">
+        <!--<DATE>2025-08-10</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Position I326 is a highly conserved contact site for both 10-1074 and PGT121. Alanine substitutions reduce PGT121 susceptibility. Substitutions at this position have also been associated with 3BNC117 neutralization escape in a subtype A pseudovirus.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env327ACDEFGHIKLMNPQSTVWYdi">
+        <!--<DATE>2025-07-19</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Position R327 is highly conserved contact site for both 10-1074 and PGT121. Alanine substitutions reduce susceptibility to both bnAbs. Variant amino acids are also in vitro escape mutations for both bnAbs.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env330RY">
+        <!--<DATE>2025-07-19</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Position HY330 is a contact site for both 10-1074 and PGT121. The HY330Y variant has been selected in two PGT121 clinical trials. The 330R substitution reduces susceptibility to both bNAbs. Variants at this position are in vitro escape mutations for both bnAbs.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env332notN334notTS">
+        <!--<DATE>2025-08-10</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Positions 332/334 comprise a PNGS present in approximately 75% of group M viruses. Both 10-1074 and PGT121 bind to its glycan. Mutations at positions 332 and/or 334 consistently emerge in clinical trials of both bNAbs and reduce susceptibility to both bnAbs.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="env365ACDEFGHIKLMNPQRTVWYdi">
@@ -1855,10 +1981,40 @@
         <TEXT><![CDATA[TM373K emerged in a patient receiving 3BNC117.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
+      <COMMENT_STRING id="env375ACDEFGHIKLMNPQRTVWYdi">
+        <!--<DATE>2025-07-19</DATE>-->
+        <!--<DRUGCLASS>AI</DRUGCLASS>-->
+        <TEXT><![CDATA[Position 375 is encoded by S, H, and T in approximately 74%, 13%, and 9% of group M sequences, respectively. It is involved in CD4 binding. Substitutions other than S occurred in 39% of patients with VF while receiving fostemsavir.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env415RY">
+        <!--<DATE>2025-07-19</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Position 415 is a polymorphic contact site for PGT121. R and Y are relatively uncommon residues. R has been associated with reduced susceptibility to 10-1074. RY have been associated with reduced  PGT121 susceptibility.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
       <COMMENT_STRING id="env420ACDEFGHKLMNPQRSTVWYdi">
         <!--<DATE>2025-07-19</DATE>-->
         <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
         <TEXT><![CDATA[I420 is a highly conserved position. Alanine at this position is with approximately 7-fold reduced VRC01 susceptibility.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env425notN">
+        <!--<DATE>2025-08-10</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[N425 is a relatively conserved position involved in CD4 binding. It is an N6 contact site.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env426L">
+        <!--<DATE>2025-07-19</DATE>-->
+        <!--<DRUGCLASS>AI</DRUGCLASS>-->
+        <TEXT><![CDATA[Position 426 is encoded by M, R, and L in approximately 85%, 8%, and 5% of group M sequences, respectively. It is involved in CD4 binding. M426L has been selected by temsavir in vitro and has been reported in 39% of patients with VF while receiving fostemsavir.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env426notM">
+        <!--<DATE>2025-08-10</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[M426 is a relatively conserved position involved in CD4 binding. It is an N6 contact site.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="env427ACDEFGHIKLMNPQRSTVYdi">
@@ -1871,6 +2027,18 @@
         <!--<DATE>2025-07-19</DATE>-->
         <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
         <TEXT><![CDATA[Q428 is a highly conserved position involved in CD4 binding. It is a VRC01 and 3BNC117 binding site.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env434I">
+        <!--<DATE>2025-07-19</DATE>-->
+        <!--<DRUGCLASS>AI</DRUGCLASS>-->
+        <TEXT><![CDATA[Position 434 is encoded by M and I in approximately 89% and 10% of group M sequences, respectively. M434I has been reported in 10% of patients with VF while receiving fostemsavir.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env441P">
+        <!--<DATE>2025-07-19</DATE>-->
+        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
+        <TEXT><![CDATA[Position G441 is highly conserved. 441P has been shown to reduce susceptibility to PGT121.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="env456ACDEFGHIKLMNPQSTVWYdi">
@@ -1906,13 +2074,19 @@
       <COMMENT_STRING id="env471EI">
         <!--<DATE>2025-07-19</DATE>-->
         <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position 471 is a polymorphic position involved in CD4 binding. G471E, which occurs in approximately 5% of group M sequences,  has been reported in a patient receiving 3BNC117. Various substitutions at this position have been associated with escape from 3BNC117 neutralization in a subtype A pseudovirus. An analysis of susceptibility data has suggested that G471E is associated with reduced 3BNC117 susceptibility and G471I is associated with reduced VRC07-523 susceptibility.]]></TEXT>
+        <TEXT><![CDATA[Position 471 is a polymorphic position involved in CD4 binding. G471E, which occurs in approximately 5% of group M sequences,  has been reported in a patient receiving 3BNC117. Various substitutions at this position have been associated with escape from 3BNC117 neutralization in a subtype A pseudovirus. An analysis of susceptibility data has suggested that G471E is associated with reduced 3BNC117 susceptibility and G471I is associated with reduced VRC07-523 susceptibility. ]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="env474ACEFGHIKLMPQRSTVWYdi">
         <!--<DATE>2025-07-19</DATE>-->
         <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
         <TEXT><![CDATA[DN474 is involved in CD4 binding. It is also a contact site for N6. Alanine mutations at this position are associated with approximately 20% binding to VRC01 and 33% binding to N6.]]></TEXT>
+        <SORT_TAG>1</SORT_TAG>
+      </COMMENT_STRING>
+      <COMMENT_STRING id="env475I">
+        <!--<DATE>2025-07-19</DATE>-->
+        <!--<DRUGCLASS>AI</DRUGCLASS>-->
+        <TEXT><![CDATA[Position 475 is encoded by M and I in approximately 89% and 10% of group M sequences, respectively. It is involved in CD4 binding. M475I has been selected in vitro by fostemsavir and has been reported in 12% of patients with VF while receiving fostemsavir.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="env547ACDEFHIKLMNPQRSTVWYdi">
@@ -1954,229 +2128,13 @@
       <COMMENT_STRING id="env555ACDEFGHIKMNPQRSTVWYdi">
         <!--<DATE>2025-07-19</DATE>-->
         <!--<DRUGCLASS>FI</DRUGCLASS>-->
-        <TEXT><![CDATA[Gp41 L44 (gp 120 L555) is a highly conserved residue . L44M has been associated with reduced susceptibility to enfuvirtide.]]></TEXT>
+        <TEXT><![CDATA[Gp41 L44 (gp 120 L555) is a highly conserved residue. L44M has been associated with reduced susceptibility to enfuvirtide.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="env556ACDEFGHIKMNPQRSTVWYdi">
         <!--<DATE>2025-07-19</DATE>-->
         <!--<DRUGCLASS>FI</DRUGCLASS>-->
-        <TEXT><![CDATA[Gp41 L45 (gp 120 L556) is a highly conserved residue . L45M has been associated with reduced susceptibility to enfuvirtide.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env375ACDEFGHIKLMNPQRTVWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>AI</DRUGCLASS>-->
-        <TEXT><![CDATA[Position 375 is encoded by S, H, and T in approximately 74%, 13%, and 9% of group M sequences, respectively. It is involved in CD4 binding. Substitutions other than S occurred in 39% of patients with VF while receiving fostemsavir.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env426L">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>AI</DRUGCLASS>-->
-        <TEXT><![CDATA[Position 426 is encoded by M, R, and L in approximately 85%, 8%, and 5% of group M sequences, respectively. It is involved in CD4 binding. M426L has been selected by temsavir in vitro and has been reported in 39% of patients with VF while receiving fostemsavir.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env434I">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>AI</DRUGCLASS>-->
-        <TEXT><![CDATA[Position 434 is encoded by M and I in approximately 89% and 10% of group M sequences, respectively. M434I has been reported in 10% of patients with VF while receiving fostemsavir.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env475I">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>AI</DRUGCLASS>-->
-        <TEXT><![CDATA[Position 475 is encoded by M and I in approximately 89% and 10% of group M sequences, respectively. It is involved in CD4 binding. M475I has been selected in vitro by fostemsavir and has been reported in 12% of patients with VF while receiving fostemsavir.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env123ACDEFGHIKLMNPQRSVWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position T123 is a highly conserved contact site for PGDM1400.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env124ACDEFGHIKLMNQRSTVWYdi-V2_bnAb">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position P124 is a highly conserved contact site for both PGDM1400 and CAP256.VRC26.25.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env127ACDEFGHIKLMNPQRSTWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position V127 is a highly conserved contact site for PGDM1400. Alanine mutations at this position reduce PGDM susceptibility]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env128ACDEFGHIKLMNPQRSVWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position T128 is a highly conserved contact site for CAP256.VRC26.25.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env130ACDEFGHIKLMPQRSTVWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Positions 130/132 comprise a PNGS present in approximately 70% of group M isolates. Its glycan is probably  contact site for PGDM1400 and CAP256.VRC26.25. PGDM selected for loss of this PNGS in HIS mice and in one human clinical trial.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env132ACDEFGHIKLMNPQRVWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Positions 130/132 comprise a PNGS present in approximately 70% of group M isolates. Its glycan is probably  contact site for PGDM1400 and CAP256.VRC26.25. PGDM selected for loss of this PNGS in HIS mice and in one human clinical trial.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env134A">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position 134 is a highly polymorphic position. Alanine mutations reduce PGDM susceptibility about 10-fold.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env160ACDEFGHIKLMPQRSTVWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Positions 160/162 comprise a highly conserved PNGS present in more than 90% of group M isolates. Both PGDM1400 and CAP256.VRC26.25 bind to its glycan. Mutations at these positions have been associated with high-level resistance to PGDM1400. They have also been selected for in HIS mice and in human clinical trials.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env162ACDEFGHIKLMNPQRVWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Positions 160/162 comprise a highly conserved PNGS present in more than 90% of group M isolates. Both PGDM1400 and CAP256.VRC26.25 bind to its glycan. Mutations at these positions have been associated with high-level resistance to PGDM1400. They have also been selected for in HIS mice and in human clinical trials.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env163A">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position T163 is a relatively conserved contact site for CAP256.VRC26.25. T163A was responsible for autologous escape and has been associated with reduced CAP256.VRC26.25 susceptibiliity.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env165DE">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position 165 is highly polymorphic. 165DE have been reported in SHIV sequences from non-human primates receiving PGDM1400.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env166AGN">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position R166 is a contact site for both PGDM1400 and CAP256.VRC26.25. 166AG have been associated with reduced PGDM susceptibility. 166N has been associated with reduced CAP256.VRC26.25 susceptibiliity.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env167AE">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position D167 is a relatively conserved contact site for both PGDM1400 and CAP256.VRC26.25. Alanine mutations at this position cause high-level PGDM1400 resistance. 167E has been reported in SHIV sequences from non-human primates receiving PGDM1400.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env168ACDEFGHILMNPQSTVWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position KR168 represents a highly conserved contact site for both PGDM1400 and CAP256.VRC26.25.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env169E">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position 169 is a highly polymorphic contact site for both PGDM1400 and CAP256.VRC26.25. 169E has been associated with reduced CAP256.VRC26.25 susceptibiliity.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env170K">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position 170 is a highly polymorphic contact site for both PGDM1400 and CAP256.VRC26.25. 170K, which occurs in about 30% of group M isolates, has been associated with reduced CAP256.VRC26.25 susceptibiliity.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env177ACDEFGHIKLMNPQRSTVWdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position Y177 is a relatively conserved position. Alanine mutations reduce PGDM susceptibility about 6-fold.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env156ACDEFGHIKLMPQRSTVWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Positions 156/158 comprise a highly conserved PNGS present in more than 95% of group M isolates.Both 10-1074 and PGT121 bind to its glycan. In addition, loss of this PNGS has been associated with reduced CAP256.VRC26.25 susceptibility.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env158ACDEFGHIKLMNPQRVWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Positions 156/158 comprise a highly conserved PNGS present in more than 95% of group M isolates.Both 10-1074 and PGT121 bind to its glycan. In addition, loss of this PNGS has been associated with reduced CAP256.VRC26.25 susceptibility.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env284M">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Positiion I284 is a highly conserved position. 284M has been reported in SHIV sequences from non-human primates receiving 10-1074.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env301ACDEFGHIKLMPQRSTVWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Positions 301/303 comprise a highly conserved PNGS. Both 10-1074 and PGT121 bind to its glycan.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env303ACDEFGHIKLMNPQRVWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Positions 301/303 comprise a highly conserved PNGS. Both 10-1074 and PGT121 bind to its glycan.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env323G">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position I323 is a relatively conserved PGT121 contact site. 323G is associated with reduced PGT121 susceptibility.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env324R">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position 324 is a highly conserved contact site for both 10-1074 and PGT121. G324R emerged in a patient receiving PGT121.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env325ACEFGHIKLMPQRSTVWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[DN325 is a highly conserved contact site for both 10-1074 and PGT121. 325ES have been associated with reduced susceptibility to 10-1074 and PGT121. 32EK has been selected in patients receiving both 10-1074 and PGT121.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env326ACDEFGHKLMNPQRSTVWYdi-V3_bnAb">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position I326 is a highly conserved contact site for both 10-1074 and PGT121. Alanine substitutions reduce PGT121 susceptibility.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env327ACDEFGHIKLMNPQSTVWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position R327 is highly conserved contact site for both 10-1074 and PGT121. Alanine substitutions reduce susceptibility to both bnAbs. Variant amino acids are also in vitro escape mutations for both bnAbs.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env330RY">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position HY330 is a contact site for both 10-1074 and PGT121. The HY330Y variant has been selected in two PGT121 clinical trials. The 330R substitution reduces susceptibility to both bnAbs. Variants at this position are in vitro escape mutations for both bnAbs.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env332ACDEFGHIKLMPQRSTVWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Positions 332/334 comprise a PNGS present in approximately 75% of group M viruses. Both 10-1074 and PGT121 bind to its glycan. Mutations at positions 332 and/or 334 consistently emerge in clinical trials of both bnAbs and reduce susceptibility to both bnAbs.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env334ACDEFGHIKLMNPQRVWYdi">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Positions 332/334 comprise a PNGS present in approximately 75% of group M viruses. Both 10-1074 and PGT121 bind to its glycan. Mutations at positions 332 and/or 334 consistently emerge in clinical trials of both bnAbs and reduce susceptibility to both bnAbs.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env415RY">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position 415 is a polymorphic contact site for PGT121. R and Y are relatively uncommon residues. R has been associated with reduced susceptibility to 10-1074. RY have been associated with reduced  PGT121 susceptibility.]]></TEXT>
-        <SORT_TAG>1</SORT_TAG>
-      </COMMENT_STRING>
-      <COMMENT_STRING id="env441P">
-        <!--<DATE>2025-07-19</DATE>-->
-        <!--<DRUGCLASS>bnAb</DRUGCLASS>-->
-        <TEXT><![CDATA[Position G441 is highly conserved. 441P has been shown to reduce susceptibility to PGT121.]]></TEXT>
+        <TEXT><![CDATA[Gp41 L45 (gp 120 L556) is a highly conserved residue. L45M has been associated with reduced susceptibility to enfuvirtide.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
     </COMMENT_DEFINITIONS>
@@ -4821,21 +4779,105 @@
         </ACTIONS>
       </RULE>
       <RULE>
+        <CONDITION>123ACDEFGHIKLMNPQRSVWYdi</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env123ACDEFGHIKLMNPQRSVWYdi"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
         <CONDITION>124ACDEFGHIKLMNQRSTVWYdi</CONDITION>
         <ACTIONS>
-          <COMMENT ref="env124ACDEFGHIKLMNQRSTVWYdi-CD4_bnAb"/>
+          <COMMENT ref="env124ACDEFGHIKLMNQRSTVWYdi"/>
         </ACTIONS>
       </RULE>
       <RULE>
-        <CONDITION>197ACDEFGHIKLMPQRSTVWYdi</CONDITION>
+        <CONDITION>127ACDEFGHIKLMNPQRSTWYdi</CONDITION>
         <ACTIONS>
-          <COMMENT ref="env197ACDEFGHIKLMPQRSTVWYdi"/>
+          <COMMENT ref="env127ACDEFGHIKLMNPQRSTWYdi"/>
         </ACTIONS>
       </RULE>
       <RULE>
-        <CONDITION>199ACDEFGHIKLMNPQRVWYdi</CONDITION>
+        <CONDITION>128ACDEFGHIKLMNPQRSVWYdi</CONDITION>
         <ACTIONS>
-          <COMMENT ref="env199ACDEFGHIKLMNPQRVWYdi"/>
+          <COMMENT ref="env128ACDEFGHIKLMNPQRSVWYdi"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>130ACDEFGHIKLMPQRSTVWYdi OR 132ACDEFGHIKLMNPQRVWYdi</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env130notN132notTS"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>134A</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env134A"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>156ACDEFGHIKLMPQRSTVWYdi OR 158ACDEFGHIKLMNPQRVWYdi</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env156notN158notTS"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>160ACDEFGHIKLMPQRSTVWYdi OR 162ACDEFGHIKLMNPQRVWYdi</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env160notN162notTS"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>163A</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env163A"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>165DE</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env165DE"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>166ACDEFGHILMNPQSTVWYdi</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env166notKR"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>167ACEFGHIKLMPQRSTVWYdi</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env167notDN"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>168ACDEFGHILMNPQSTVWYdi</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env168ACDEFGHILMNPQSTVWYdi"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>169E</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env169E"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>170K</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env170K"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>177ACDEFGHIKLMNPQRSTVWdi</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env177ACDEFGHIKLMNPQRSTVWdi"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>197ACDEFGHIKLMPQRSTVWYdi OR 199ACDEFGHIKLMNPQRVWYdi</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env197notN199notTS"/>
         </ACTIONS>
       </RULE>
       <RULE>
@@ -4863,15 +4905,9 @@
         </ACTIONS>
       </RULE>
       <RULE>
-        <CONDITION>276ACDEFGHIKLMPQRSTVWYdi</CONDITION>
+        <CONDITION>276ACDEFGHIKLMPQRSTVWYdi OR 278ACDEFGHIKLMNPQRVWYdi</CONDITION>
         <ACTIONS>
-          <COMMENT ref="env276ACDEFGHIKLMPQRSTVWYdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>278ACDEFGHIKLMNPQRVWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env278ACDEFGHIKLMNPQRVWYdi"/>
+          <COMMENT ref="env276notN278notTS"/>
         </ACTIONS>
       </RULE>
       <RULE>
@@ -4905,6 +4941,18 @@
         </ACTIONS>
       </RULE>
       <RULE>
+        <CONDITION>284M</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env284M"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>301ACDEFGHIKLMPQRSTVWYdi OR 303ACDEFGHIKLMNPQRVWYdi</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env301notN303notTS"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
         <CONDITION>304ACDEFGHIKLMNPQSTVWYdi</CONDITION>
         <ACTIONS>
           <COMMENT ref="env304ACDEFGHIKLMNPQSTVWYdi"/>
@@ -4935,9 +4983,45 @@
         </ACTIONS>
       </RULE>
       <RULE>
+        <CONDITION>323G</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env323G"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>324R</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env324R"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>325ACEFGHIKLMPQRSTVWYdi</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env325ACEFGHIKLMPQRSTVWYdi"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
         <CONDITION>326ACDEFGHKLMNPQRSTVWYdi</CONDITION>
         <ACTIONS>
-          <COMMENT ref="env326ACDEFGHKLMNPQRSTVWYdi-CD4_bnAb"/>
+          <COMMENT ref="env326notI"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>327ACDEFGHIKLMNPQSTVWYdi</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env327ACDEFGHIKLMNPQSTVWYdi"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>330RY</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env330RY"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>332ACDEFGHIKLMPQRSTVWYdi OR 334ACDEFGHIKLMNPQRVWYdi</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env332notN334notTS"/>
         </ACTIONS>
       </RULE>
       <RULE>
@@ -4989,9 +5073,39 @@
         </ACTIONS>
       </RULE>
       <RULE>
+        <CONDITION>375ACDEFGHIKLMNPQRTVWYdi</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env375ACDEFGHIKLMNPQRTVWYdi"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>415RY</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env415RY"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
         <CONDITION>420ACDEFGHKLMNPQRSTVWYdi</CONDITION>
         <ACTIONS>
           <COMMENT ref="env420ACDEFGHKLMNPQRSTVWYdi"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>425ACDEFGHIKLMPQRSTVWYdi</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env425notN"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>426L</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env426L"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>426ACDEFGHIKLNPQRSTVWYdi</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env426notM"/>
         </ACTIONS>
       </RULE>
       <RULE>
@@ -5004,6 +5118,18 @@
         <CONDITION>428ACDEFGHIKLMNPRSTVWYdi</CONDITION>
         <ACTIONS>
           <COMMENT ref="env428ACDEFGHIKLMNPRSTVWYdi"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>434I</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env434I"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>441P</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env441P"/>
         </ACTIONS>
       </RULE>
       <RULE>
@@ -5046,6 +5172,12 @@
         <CONDITION>474ACEFGHIKLMPQRSTVWYdi</CONDITION>
         <ACTIONS>
           <COMMENT ref="env474ACEFGHIKLMPQRSTVWYdi"/>
+        </ACTIONS>
+      </RULE>
+      <RULE>
+        <CONDITION>475I</CONDITION>
+        <ACTIONS>
+          <COMMENT ref="env475I"/>
         </ACTIONS>
       </RULE>
       <RULE>
@@ -5094,222 +5226,6 @@
         <CONDITION>556ACDEFGHIKMNPQRSTVWYdi</CONDITION>
         <ACTIONS>
           <COMMENT ref="env556ACDEFGHIKMNPQRSTVWYdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>375ACDEFGHIKLMNPQRTVWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env375ACDEFGHIKLMNPQRTVWYdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>426L</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env426L"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>434I</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env434I"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>475I</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env475I"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>123ACDEFGHIKLMNPQRSVWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env123ACDEFGHIKLMNPQRSVWYdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>124ACDEFGHIKLMNQRSTVWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env124ACDEFGHIKLMNQRSTVWYdi-V2_bnAb"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>127ACDEFGHIKLMNPQRSTWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env127ACDEFGHIKLMNPQRSTWYdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>128ACDEFGHIKLMNPQRSVWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env128ACDEFGHIKLMNPQRSVWYdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>130ACDEFGHIKLMPQRSTVWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env130ACDEFGHIKLMPQRSTVWYdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>132ACDEFGHIKLMNPQRVWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env132ACDEFGHIKLMNPQRVWYdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>134A</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env134A"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>160ACDEFGHIKLMPQRSTVWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env160ACDEFGHIKLMPQRSTVWYdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>162ACDEFGHIKLMNPQRVWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env162ACDEFGHIKLMNPQRVWYdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>163A</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env163A"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>165DE</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env165DE"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>166AGN</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env166AGN"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>167AE</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env167AE"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>168ACDEFGHILMNPQSTVWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env168ACDEFGHILMNPQSTVWYdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>169E</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env169E"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>170K</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env170K"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>177ACDEFGHIKLMNPQRSTVWdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env177ACDEFGHIKLMNPQRSTVWdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>156ACDEFGHIKLMPQRSTVWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env156ACDEFGHIKLMPQRSTVWYdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>158ACDEFGHIKLMNPQRVWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env158ACDEFGHIKLMNPQRVWYdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>284M</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env284M"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>301ACDEFGHIKLMPQRSTVWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env301ACDEFGHIKLMPQRSTVWYdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>303ACDEFGHIKLMNPQRVWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env303ACDEFGHIKLMNPQRVWYdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>323G</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env323G"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>324R</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env324R"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>325ACEFGHIKLMPQRSTVWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env325ACEFGHIKLMPQRSTVWYdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>326ACDEFGHKLMNPQRSTVWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env326ACDEFGHKLMNPQRSTVWYdi-V3_bnAb"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>327ACDEFGHIKLMNPQSTVWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env327ACDEFGHIKLMNPQSTVWYdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>330RY</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env330RY"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>332ACDEFGHIKLMPQRSTVWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env332ACDEFGHIKLMPQRSTVWYdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>334ACDEFGHIKLMNPQRVWYdi</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env334ACDEFGHIKLMNPQRVWYdi"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>415RY</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env415RY"/>
-        </ACTIONS>
-      </RULE>
-      <RULE>
-        <CONDITION>441P</CONDITION>
-        <ACTIONS>
-          <COMMENT ref="env441P"/>
         </ACTIONS>
       </RULE>
     </GENE>

@@ -2487,9 +2487,198 @@
     "strain": "HIV1",
     "gene": "env",
     "drugClass": "bnAb",
+    "position": 123,
+    "aas": "ACDEFGHIKLMNPQRSVWY_-",
+    "mutationType": "V2_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
     "position": 124,
     "aas": "ACDEFGHIKLMNQRSTVWY_-",
     "mutationType": "CD4_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 124,
+    "aas": "ACDEFGHIKLMNQRSTVWY_-",
+    "mutationType": "V2_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 127,
+    "aas": "ACDEFGHIKLMNPQRSTWY_-",
+    "mutationType": "V2_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 128,
+    "aas": "ACDEFGHIKLMNPQRSVWY_-",
+    "mutationType": "V2_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 130,
+    "aas": "ACDEFGHIKLMPQRSTVWY_-",
+    "mutationType": "V2_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 132,
+    "aas": "ACDEFGHIKLMNPQRVWY_-",
+    "mutationType": "V2_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 134,
+    "aas": "A",
+    "mutationType": "V2_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 156,
+    "aas": "ACDEFGHIKLMPQRSTVWY_-",
+    "mutationType": "V3_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 156,
+    "aas": "ACDEFGHIKLMPQRSTVWY_-",
+    "mutationType": "V2_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 158,
+    "aas": "ACDEFGHIKLMNPQRVWY_-",
+    "mutationType": "V3_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 158,
+    "aas": "ACDEFGHIKLMNPQRVWY_-",
+    "mutationType": "V2_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 160,
+    "aas": "ACDEFGHIKLMPQRSTVWY_-",
+    "mutationType": "V2_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 162,
+    "aas": "ACDEFGHIKLMNPQRVWY_-",
+    "mutationType": "V2_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 163,
+    "aas": "A",
+    "mutationType": "V2_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 165,
+    "aas": "DE",
+    "mutationType": "V2_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 166,
+    "aas": "ACDEFGHILMNPQSTVWY_-",
+    "mutationType": "V2_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 167,
+    "aas": "ACEFGHIKLMPQRSTVWY_-",
+    "mutationType": "V2_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 168,
+    "aas": "ACDEFGHILMNPQSTVWY_-",
+    "mutationType": "V2_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 169,
+    "aas": "E",
+    "mutationType": "V2_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 170,
+    "aas": "K",
+    "mutationType": "V2_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 177,
+    "aas": "ACDEFGHIKLMNPQRSTVW_-",
+    "mutationType": "V2_bnAb",
     "isUnusual": false
   },
   {
@@ -2613,6 +2802,33 @@
     "strain": "HIV1",
     "gene": "env",
     "drugClass": "bnAb",
+    "position": 284,
+    "aas": "M",
+    "mutationType": "V3_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 301,
+    "aas": "ACDEFGHIKLMPQRSTVWY_-",
+    "mutationType": "V3_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 303,
+    "aas": "ACDEFGHIKLMNPQRVWY_-",
+    "mutationType": "V3_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
     "position": 304,
     "aas": "ACDEFGHIKLMNPQSTVWY_-",
     "mutationType": "CD4_bnAb",
@@ -2658,9 +2874,81 @@
     "strain": "HIV1",
     "gene": "env",
     "drugClass": "bnAb",
+    "position": 323,
+    "aas": "G",
+    "mutationType": "V3_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 324,
+    "aas": "R",
+    "mutationType": "V3_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 325,
+    "aas": "ACEFGHIKLMPQRSTVWY_-",
+    "mutationType": "V3_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 326,
+    "aas": "ACDEFGHKLMNPQRSTVWY_-",
+    "mutationType": "V3_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
     "position": 326,
     "aas": "ACDEFGHKLMNPQRSTVWY_-",
     "mutationType": "CD4_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 327,
+    "aas": "ACDEFGHIKLMNPQSTVWY_-",
+    "mutationType": "V3_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 330,
+    "aas": "RY",
+    "mutationType": "V3_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 332,
+    "aas": "ACDEFGHIKLMPQRSTVWY_-",
+    "mutationType": "V3_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 334,
+    "aas": "ACDEFGHIKLMNPQRVWY_-",
+    "mutationType": "V3_bnAb",
     "isUnusual": false
   },
   {
@@ -2738,9 +3026,54 @@
   {
     "strain": "HIV1",
     "gene": "env",
+    "drugClass": "AI",
+    "position": 375,
+    "aas": "ACDEFGHIKLMNPQRTVWY_-",
+    "mutationType": "FTR",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 415,
+    "aas": "RY",
+    "mutationType": "V3_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
     "drugClass": "bnAb",
     "position": 420,
     "aas": "ACDEFGHKLMNPQRSTVWY_-",
+    "mutationType": "CD4_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 425,
+    "aas": "ACDEFGHIKLMPQRSTVWY_-",
+    "mutationType": "CD4_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "AI",
+    "position": 426,
+    "aas": "L",
+    "mutationType": "FTR",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 426,
+    "aas": "ACDEFGHIKLNPQRSTVWY_-",
     "mutationType": "CD4_bnAb",
     "isUnusual": false
   },
@@ -2760,6 +3093,24 @@
     "position": 428,
     "aas": "ACDEFGHIKLMNPRSTVWY_-",
     "mutationType": "CD4_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "AI",
+    "position": 434,
+    "aas": "I",
+    "mutationType": "FTR",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "bnAb",
+    "position": 441,
+    "aas": "P",
+    "mutationType": "V3_bnAb",
     "isUnusual": false
   },
   {
@@ -2823,6 +3174,15 @@
     "position": 474,
     "aas": "ACEFGHIKLMPQRSTVWY_-",
     "mutationType": "CD4_bnAb",
+    "isUnusual": false
+  },
+  {
+    "strain": "HIV1",
+    "gene": "env",
+    "drugClass": "AI",
+    "position": 475,
+    "aas": "I",
+    "mutationType": "FTR",
     "isUnusual": false
   },
   {
@@ -2895,348 +3255,6 @@
     "position": 556,
     "aas": "ACDEFGHIKMNPQRSTVWY_-",
     "mutationType": "ENF",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "AI",
-    "position": 375,
-    "aas": "ACDEFGHIKLMNPQRTVWY_-",
-    "mutationType": "FTR",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "AI",
-    "position": 426,
-    "aas": "L",
-    "mutationType": "FTR",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "AI",
-    "position": 434,
-    "aas": "I",
-    "mutationType": "FTR",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "AI",
-    "position": 475,
-    "aas": "I",
-    "mutationType": "FTR",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 123,
-    "aas": "ACDEFGHIKLMNPQRSVWY_-",
-    "mutationType": "V2_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 124,
-    "aas": "ACDEFGHIKLMNQRSTVWY_-",
-    "mutationType": "V2_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 127,
-    "aas": "ACDEFGHIKLMNPQRSTWY_-",
-    "mutationType": "V2_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 128,
-    "aas": "ACDEFGHIKLMNPQRSVWY_-",
-    "mutationType": "V2_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 130,
-    "aas": "ACDEFGHIKLMPQRSTVWY_-",
-    "mutationType": "V2_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 132,
-    "aas": "ACDEFGHIKLMNPQRVWY_-",
-    "mutationType": "V2_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 134,
-    "aas": "A",
-    "mutationType": "V2_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 160,
-    "aas": "ACDEFGHIKLMPQRSTVWY_-",
-    "mutationType": "V2_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 162,
-    "aas": "ACDEFGHIKLMNPQRVWY_-",
-    "mutationType": "V2_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 163,
-    "aas": "A",
-    "mutationType": "V2_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 165,
-    "aas": "DE",
-    "mutationType": "V2_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 166,
-    "aas": "AGN",
-    "mutationType": "V2_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 167,
-    "aas": "AE",
-    "mutationType": "V2_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 168,
-    "aas": "ACDEFGHILMNPQSTVWY_-",
-    "mutationType": "V2_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 169,
-    "aas": "E",
-    "mutationType": "V2_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 170,
-    "aas": "K",
-    "mutationType": "V2_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 177,
-    "aas": "ACDEFGHIKLMNPQRSTVW_-",
-    "mutationType": "V2_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 156,
-    "aas": "ACDEFGHIKLMPQRSTVWY_-",
-    "mutationType": "V2_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 158,
-    "aas": "ACDEFGHIKLMNPQRVWY_-",
-    "mutationType": "V2_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 156,
-    "aas": "ACDEFGHIKLMPQRSTVWY_-",
-    "mutationType": "V3_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 158,
-    "aas": "ACDEFGHIKLMNPQRVWY_-",
-    "mutationType": "V3_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 284,
-    "aas": "M",
-    "mutationType": "V3_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 301,
-    "aas": "ACDEFGHIKLMPQRSTVWY_-",
-    "mutationType": "V3_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 303,
-    "aas": "ACDEFGHIKLMNPQRVWY_-",
-    "mutationType": "V3_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 323,
-    "aas": "G",
-    "mutationType": "V3_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 324,
-    "aas": "R",
-    "mutationType": "V3_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 325,
-    "aas": "ACEFGHIKLMPQRSTVWY_-",
-    "mutationType": "V3_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 326,
-    "aas": "ACDEFGHKLMNPQRSTVWY_-",
-    "mutationType": "V3_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 327,
-    "aas": "ACDEFGHIKLMNPQSTVWY_-",
-    "mutationType": "V3_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 330,
-    "aas": "RY",
-    "mutationType": "V3_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 332,
-    "aas": "ACDEFGHIKLMPQRSTVWY_-",
-    "mutationType": "V3_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 334,
-    "aas": "ACDEFGHIKLMNPQRVWY_-",
-    "mutationType": "V3_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 415,
-    "aas": "RY",
-    "mutationType": "V3_bnAb",
-    "isUnusual": false
-  },
-  {
-    "strain": "HIV1",
-    "gene": "env",
-    "drugClass": "bnAb",
-    "position": 441,
-    "aas": "P",
-    "mutationType": "V3_bnAb",
     "isUnusual": false
   }
 ]
