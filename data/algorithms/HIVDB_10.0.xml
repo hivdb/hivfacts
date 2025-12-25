@@ -96,7 +96,7 @@
       <COMMENT_STRING id="CA70NH">
         <!--<DATE>2025-12-19</DATE>-->
         <!--<DRUGCLASS>CAI</DRUGCLASS>-->
-        <TEXT><![CDATA[K70HNRS have been selected in patients receiving LEN. K70H alone is associated with greater than  100-fold reduced LEN susceptibility. K70N alone is associated with about 25-fold reduced LEN susceptibility.]]></TEXT>
+        <TEXT><![CDATA[K70HNRS have been selected in patients receiving LEN. K70H alone is associated with greater than 100-fold reduced LEN susceptibility. K70N alone is associated with about 25-fold reduced LEN susceptibility.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="CA70RS">
@@ -198,7 +198,7 @@
       <COMMENT_STRING id="IN128T">
         <!--<DATE>2025-12-19</DATE>-->
         <!--<DRUGCLASS>INSTI</DRUGCLASS>-->
-        <TEXT><![CDATA[A128T is a relatively nonpolymorphic mutation which occurs In fewer than 0.5% of viruses from untreated persons. It has rarely  been selected in vitro and by RAL and EVG.]]></TEXT>
+        <TEXT><![CDATA[A128T is a relatively nonpolymorphic mutation which occurs In fewer than 0.5% of viruses from untreated persons. It has rarely been selected in vitro and by RAL and EVG.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="IN138CDFGHILMNPQRSVWYid">
@@ -348,7 +348,7 @@
       <COMMENT_STRING id="IN155ACDEFGIKLMPQRVWYid">
         <!--<DATE>2025-12-19</DATE>-->
         <!--<DRUGCLASS>INSTI</DRUGCLASS>-->
-        <TEXT><![CDATA[N155H is a common nonpolymorphic INSTI-resistance mutations. It has been reported in a high proportion of persons developing VF and HIVDR while receiving RAL, EVG, DTG, and CAB. Few data are available for BIC. Alone, it reduces RAL and EVG susceptibility >10-fold while reducing DTG, BIC, and CAB by about 1.5-fold. N155S/T are extremely rare nonpolymorphic mutations that reduce RAL and EVG susceptibility about 5-fold and greater than 30-fold respectively but have little effect on CAB, DTG, and BIC.  $listMutsIn{155(NOT HST)} is an unusual mutation at this position.]]></TEXT>
+        <TEXT><![CDATA[N155H is a common nonpolymorphic INSTI-resistance mutations. It has been reported in a high proportion of persons developing VF and HIVDR while receiving RAL, EVG, DTG, and CAB. Few data are available for BIC. Alone, it reduces RAL and EVG susceptibility >10-fold while reducing DTG, BIC, and CAB by about 1.5-fold. N155S/T are extremely rare nonpolymorphic mutations that reduce RAL and EVG susceptibility about 5-fold and greater than 30-fold respectively but have little effect on CAB, DTG, and BIC. $listMutsIn{155(NOT HST)} is an unusual mutation at this position.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="IN155H">
@@ -432,13 +432,13 @@
       <COMMENT_STRING id="IN66AI">
         <!--<DATE>2025-12-19</DATE>-->
         <!--<DRUGCLASS>INSTI</DRUGCLASS>-->
-        <TEXT><![CDATA[T66A/I are nonpolymorphic mutations selected by DTG usually  in combination with G118R. They were previously selected by RAL and EVG. T66A/I reduce EVG susceptibility 5-10-fold but have minimal effect on other INSTIs.]]></TEXT>
+        <TEXT><![CDATA[T66A/I are nonpolymorphic mutations selected by DTG usually in combination with G118R. They were previously selected by RAL and EVG. T66A/I reduce EVG susceptibility 5-10-fold but have minimal effect on other INSTIs.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="IN66CDEFGHLMNPQRSVWYid">
         <!--<DATE>2025-12-19</DATE>-->
         <!--<DRUGCLASS>INSTI</DRUGCLASS>-->
-        <TEXT><![CDATA[T66A/I are nonpolymorphic mutations selected by DTG usually  in combination with G118R. They were previously selected by RAL and EVG. T66A/I reduce EVG susceptibility 5-10-fold but have minimal effect on other INSTIs. T66K is an uncommon non-polymorphic INSTI-selected mutation. It is associated with high-level EVG resistance, intermediate/high-level RAL resistance, and low-level DTG and CAB resistance. Its effect on BIC is not known. $listMutsIn{66(NOT IAK)} is an unusual mutation at this position.]]></TEXT>
+        <TEXT><![CDATA[T66A/I are nonpolymorphic mutations selected by DTG usually in combination with G118R. They were previously selected by RAL and EVG. T66A/I reduce EVG susceptibility 5-10-fold but have minimal effect on other INSTIs. T66K is an uncommon non-polymorphic INSTI-selected mutation. It is associated with high-level EVG resistance, intermediate/high-level RAL resistance, and low-level DTG and CAB resistance. Its effect on BIC is not known. $listMutsIn{66(NOT IAK)} is an unusual mutation at this position.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="IN66K">
@@ -822,7 +822,7 @@
       <COMMENT_STRING id="PR82DEGHKNPQRWYid">
         <!--<DATE>2022-10-24</DATE>-->
         <!--<DRUGCLASS>PI</DRUGCLASS>-->
-        <TEXT><![CDATA[V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It is associated with reduced susceptibility to LPV and to a lesser extent ATV. It increases DRV susceptibility. V82T/S are nonpolymorphic mutations selected primarily by IDV and LPV. They are associated with reduced susceptibility to LPV and ATV, and increased susceptibility to DRV. V82F is a nonpolymorphic mutation selected primarily by IDV and LPV.  It reduces LPV and DRV susceptibility. V82C is an uncommon nonpolymorphic 2-base-pair PI-selected mutation that occurs in viruses with multiple PI-resistance mutations. Its effect on PI susceptibility has not been well studied. V82M is an uncommon nonpolymorphic PI-selected mutation. Its effect on currently used PIs is not well defined. $listMutsIn{82(NOT ATIFLMSC)} is a highly unusual mutation at this position.]]></TEXT>
+        <TEXT><![CDATA[V82A is a non-polymorphic mutation selected primarily by IDV and LPV. It is associated with reduced susceptibility to LPV and to a lesser extent ATV. It increases DRV susceptibility. V82T/S are nonpolymorphic mutations selected primarily by IDV and LPV. They are associated with reduced susceptibility to LPV and ATV, and increased susceptibility to DRV. V82F is a nonpolymorphic mutation selected primarily by IDV and LPV. It reduces LPV and DRV susceptibility. V82C is an uncommon nonpolymorphic 2-base-pair PI-selected mutation that occurs in viruses with multiple PI-resistance mutations. Its effect on PI susceptibility has not been well studied. V82M is an uncommon nonpolymorphic PI-selected mutation. Its effect on currently used PIs is not well defined. $listMutsIn{82(NOT ATIFLMSC)} is a highly unusual mutation at this position.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="PR82F">
@@ -1626,7 +1626,7 @@
       <COMMENT_STRING id="RT90I">
         <!--<DATE>2025-12-19</DATE>-->
         <!--<DRUGCLASS>NNRTI</DRUGCLASS>-->
-        <TEXT><![CDATA[V90I is a polymorphic accessory mutation  selected primarily by RPV. It is associated with minimal, if any, detectable reduction in NNRTI susceptibility.]]></TEXT>
+        <TEXT><![CDATA[V90I is a polymorphic accessory mutation selected primarily by RPV. It is associated with minimal, if any, detectable reduction in NNRTI susceptibility.]]></TEXT>
         <SORT_TAG>1</SORT_TAG>
       </COMMENT_STRING>
       <COMMENT_STRING id="RT98G">
