@@ -2093,7 +2093,7 @@
     "drugClass": "INSTI",
     "position": 146,
     "aas": "PRLI",
-    "mutationType": "Major",
+    "mutationType": "Accessory",
     "isUnusual": false
   },
   {
