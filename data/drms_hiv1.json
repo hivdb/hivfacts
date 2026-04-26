@@ -601,6 +601,11 @@
     },
     {
       "gene": "RT",
+      "position": 114,
+      "aa": "S"
+    },
+    {
+      "gene": "RT",
       "position": 115,
       "aa": "F"
     },

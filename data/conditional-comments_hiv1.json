@@ -2043,6 +2043,18 @@
   },
   {
     "strain": "HIV1",
+    "commentName": "RT114S",
+    "drugClass": "NRTI",
+    "conditionType": "MUTATION",
+    "conditionValue": {
+      "gene": "RT",
+      "pos": 114,
+      "aas": "S"
+    },
+    "comment": "A114S is an extremely rare mutation which has been selected in vitro by ISL. It is associated with 2-fold reduced ISL susceptibility when it occurs alone. It occurs with significantly higher levels of reduced susceptibility when it occurs with M184V It does not appear to reduce susceptibility to other NRTIs."
+  },
+  {
+    "strain": "HIV1",
     "commentName": "RT115ACDEGHIKLMNPQRSTVWid",
     "drugClass": "NRTI",
     "conditionType": "MUTATION",
@@ -2183,7 +2195,7 @@
       "pos": 151,
       "aas": "ACDEFGHIKNPRSTVWY_-"
     },
-    "comment": "Q151M causes intermediate/high-level resistance to AZT and ABC, and low-level resistance to TDF, 3TC and FTC. In combination with two or more accessory mutations at positions 62, 75, 77, and 116, it confers high-level resistance to AZT and ABC and intermediate resistance to TDF, 3TC and FTC. Q151M increases islatravir susceptibility about 5-fold. Q151L is an extremely rare transitional mutation that may precede the emergence of the Q151M. $listMutsIn{151(NOT ML)} is a highly unusual mutation at this position."
+    "comment": "Q151M causes intermediate/high-level resistance to AZT and ABC, and low-level resistance to TDF, 3TC and FTC. In combination with two or more accessory mutations at positions 62, 75, 77, and 116, it confers high-level resistance to AZT and ABC and intermediate resistance to TDF, 3TC and FTC. Q151M increases ISL susceptibility about 5-fold. Q151L is an extremely rare transitional mutation that may precede the emergence of the Q151M. $listMutsIn{151(NOT ML)} is a highly unusual mutation at this position."
   },
   {
     "strain": "HIV1",
@@ -2207,7 +2219,7 @@
       "pos": 151,
       "aas": "M"
     },
-    "comment": "Q151M causes intermediate/high-level resistance to AZT and ABC, and low-level resistance to TDF, 3TC and FTC. In combination with two or more accessory mutations at positions 62, 75, 77, and 116, it confers high-level resistance to AZT and ABC and intermediate resistance to TDF, 3TC and FTC. Q151M increases islatravir susceptibility about 5-fold."
+    "comment": "Q151M causes intermediate/high-level resistance to AZT and ABC, and low-level resistance to TDF, 3TC and FTC. In combination with two or more accessory mutations at positions 62, 75, 77, and 116, it confers high-level resistance to AZT and ABC and intermediate resistance to TDF, 3TC and FTC. Q151M increases ISL susceptibility about 5-fold."
   },
   {
     "strain": "HIV1",
@@ -2483,7 +2495,7 @@
       "pos": 210,
       "aas": "W"
     },
-    "comment": "L210W is a TAM that usually occurs in combination with M41L and T215Y. The combination of M41, L210W and T215Y causes high-level resistance to AZT and intermediate resistance to ABC and TDF."
+    "comment": "L210W is a TAM that usually occurs in combination with M41L and T215Y. The combination of M41, L210W and T215Y causes high-level resistance to AZT and intermediate resistance to ABC and TDF. The presence of multiple TAMs contribute to reduced ISL susceptibility."
   },
   {
     "strain": "HIV1",
@@ -2519,7 +2531,7 @@
       "pos": 215,
       "aas": "YF"
     },
-    "comment": "T215Y/F are TAMs that causes intermediate/high-level resistance to AZT and potentially low-level resistance to ABC and TDF. The presence of \u22652 TAMs appears to reduce islatravir susceptibility but the impact of individual TAMs is not known."
+    "comment": "T215Y/F are TAMs that causes intermediate/high-level resistance to AZT and potentially low-level resistance to ABC and TDF. The presence of \u22652 TAMs appears to reduce islatravir susceptibility but the impact of individual TAMs is not known. The presence of multiple TAMs contribute to reduced ISL susceptibility."
   },
   {
     "strain": "HIV1",
@@ -2831,7 +2843,7 @@
       "pos": 41,
       "aas": "L"
     },
-    "comment": "M41L is a TAM that usually occurs with T215Y. In combination, M41L plus T215Y confer intermediate / high-level resistance to AZT and contribute to reduced ABC and TDF susceptibility."
+    "comment": "M41L is a TAM that usually occurs with T215Y. In combination, M41L plus T215Y confer intermediate / high-level resistance to AZT and contribute to reduced ABC and TDF susceptibility. The presence of multiple TAMs contribute to reduced ISL susceptibility."
   },
   {
     "strain": "HIV1",
@@ -2903,7 +2915,7 @@
       "pos": 65,
       "aas": "R"
     },
-    "comment": "K65R confers intermediate reductions in susceptibility to TDF, ABC, and 3TC/FTC. Other than M184VI, it is the most common DRM emerging in patients receiving TDF/XTC. In NRTI-experienced, INSTI-na\u00efve patients with K65R, TDF/3TC/DTG is usually highly effective and more effective than AZT/3TC/DTG. However, in patients receiving TDF/3TC/DTG, there is a risk of emergent DTG resistance that does not arise in NRTI-na\u00efve patients receiving TDF/3TC/DTG. K65R increases susceptibility to AZT and islatravir."
+    "comment": "K65R confers intermediate reductions in susceptibility to TDF, ABC, and 3TC/FTC. Other than M184VI, it is the most common DRM emerging in patients receiving TDF/XTC. In NRTI-experienced, INSTI-na\u00efve patients with K65R, TDF/3TC/DTG is usually highly effective and more effective than AZT/3TC/DTG. However, in patients receiving TDF/3TC/DTG, there is a risk of emergent DTG resistance that does not arise in NRTI-na\u00efve patients receiving TDF/3TC/DTG. K65R increases susceptibility to AZT and ISL."
   },
   {
     "strain": "HIV1",
@@ -3042,7 +3054,7 @@
       "pos": 69,
       "aas": "_"
     },
-    "comment": "Amino acid insertions between codons 67 and 70 are by convention assigned to codon 69. Together with TAMs, they are associated with high-level resistance to AZT, ABC, TDF and islatravir, and intermediate resistance to 3TC and FTC."
+    "comment": "Amino acid insertions between codons 67 and 70 are by convention assigned to codon 69. Together with TAMs, they are associated with high-level resistance to AZT, ABC, TDF and ISL, and intermediate resistance to 3TC and FTC."
   },
   {
     "strain": "HIV1",
@@ -3090,7 +3102,7 @@
       "pos": 70,
       "aas": "R"
     },
-    "comment": "K70R is a TAM that confers intermediate resistance to AZT and contributes to reduced ABC and TDF susceptibility in combination with other TAMs."
+    "comment": "K70R is a TAM that confers intermediate resistance to AZT and contributes to reduced ABC and TDF susceptibility in combination with other TAMs. The presence of multiple TAMs contribute to reduced ISL susceptibility."
   },
   {
     "strain": "HIV1",
@@ -3114,7 +3126,7 @@
       "pos": 74,
       "aas": "VI"
     },
-    "comment": "L74V causes intermediate ABC resistance. L74I causes low-level ABC resistance. L74V increases AZT, TFV, and islatravir susceptibility."
+    "comment": "L74V causes intermediate ABC resistance. L74I causes low-level ABC resistance. L74V increases AZT, TFV, and islatravir susceptibility. L74V/I increase ISL susceptibility"
   },
   {
     "strain": "HIV1",

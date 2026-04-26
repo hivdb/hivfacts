@@ -8,8 +8,10 @@ plugins {
 group = 'edu.stanford.hivdb.hivfacts'
 version = '2022.11'
 
-sourceCompatibility = 15
-targetCompatibility = 15
+java {
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
+}
 
 description = 'Amino acid / codon classification data of HIV-1 pol'
 
@@ -39,12 +41,13 @@ jacocoTestReport {
 	}
 }
 
+processResources.dependsOn copyData
 assemble.dependsOn copyData
 test.dependsOn copyData
 
 task sourcesJar(type: Jar) {
 	dependsOn classes
-	classifier 'sources'
+	archiveClassifier = 'sources'
 	from sourceSets.main.allSource
 }
 

@@ -26,6 +26,10 @@
   fullName: tenofovir
   displayAbbr: TDF
   drugClass: NRTI
+- name: ISL
+  fullName: islatravir
+  displayAbbr: ISL
+  drugClass: NRTI
 
 - name: ATV
   fullName: atazanavir/r
