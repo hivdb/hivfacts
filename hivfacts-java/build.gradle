@@ -5,12 +5,24 @@ plugins {
 	id 'maven-publish'
 }
 
+import org.gradle.api.file.DuplicatesStrategy
+
 group = 'edu.stanford.hivdb.hivfacts'
 version = '2022.11'
 
 java {
     sourceCompatibility = JavaVersion.VERSION_25
     targetCompatibility = JavaVersion.VERSION_25
+}
+
+def generatedResourcesDir = layout.buildDirectory.dir("generated/resources/main")
+
+sourceSets {
+	main {
+		resources {
+			setSrcDirs([generatedResourcesDir, 'src/main/resources'])
+		}
+	}
 }
 
 description = 'Amino acid / codon classification data of HIV-1 pol'
@@ -31,7 +43,7 @@ repositories {
 
 task copyData(type: Copy, group: 'build') {
 	from '../data'
-	into 'src/main/resources/'
+	into generatedResourcesDir
 }
 
 jacocoTestReport {
@@ -41,13 +53,17 @@ jacocoTestReport {
 	}
 }
 
+processResources {
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
 processResources.dependsOn copyData
-assemble.dependsOn copyData
 test.dependsOn copyData
 
 task sourcesJar(type: Jar) {
 	dependsOn classes
 	archiveClassifier = 'sources'
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 	from sourceSets.main.allSource
 }
 
