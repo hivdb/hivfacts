@@ -32,6 +32,8 @@ import com.google.common.collect.Lists;
 
 import edu.stanford.hivdb.viruses.Gene;
 import edu.stanford.hivdb.viruses.Strain;
+import edu.stanford.hivdb.genotypes.BoundGenotype;
+import edu.stanford.hivdb.genotypes.GenotypeResult;
 import edu.stanford.hivdb.mutations.Mutation;
 import edu.stanford.hivdb.mutations.FrameShift;
 import edu.stanford.hivdb.mutations.GenePosition;
@@ -68,7 +70,32 @@ public class HIVDefaultSequenceValidator implements SequenceValidator<HIV> {
 		results.addAll(validateNotApobec(alignedSequence, includeGenes));
 		results.addAll(validateNoStopCodons(alignedSequence, includeGenes));
 		results.addAll(validateNoTooManyUnusualMutations(alignedSequence, includeGenes));
+		results.addAll(validateSubtypeDistance(alignedSequence));
 		return results;
+	}
+
+	protected static List<ValidationResult> validateSubtypeDistance(
+		AlignedSequence<HIV> alignedSequence
+	) {
+		GenotypeResult<HIV> subtypeResult = alignedSequence.getSubtypeResult();
+		if (subtypeResult == null) {
+			return Collections.emptyList();
+		}
+		return validateSubtypeDistance(subtypeResult.getFirstMatch());
+	}
+
+	protected static List<ValidationResult> validateSubtypeDistance(
+		BoundGenotype<HIV> closestMatch
+	) {
+		if (closestMatch == null || !closestMatch.isPureSubtypeAboveDistanceUpperLimit()) {
+			return Collections.emptyList();
+		}
+		return Lists.newArrayList(
+			HIV1ValidationMessage.SubtypeDistanceExceedsUpperLimit.format(
+				closestMatch.getDisplayWithoutDistance(),
+				closestMatch.getDistancePcnt()
+			)
+		);
 	}
 
 	/* protected static List<ValidationResult> validateUnsequencedRegion(

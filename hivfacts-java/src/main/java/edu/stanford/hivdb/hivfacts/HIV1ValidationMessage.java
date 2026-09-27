@@ -129,6 +129,13 @@ public enum HIV1ValidationMessage implements ValidationMessage {
 		ValidationLevel.WARNING,
 		"This report was derived from the reverse complement of input sequence."
 	),
+	SubtypeDistanceExceedsUpperLimit(
+		ValidationLevel.WARNING,
+		"The closest reference sequence is subtype %s, but the distance to it (%s) " +
+		"exceeds the maximum distance expected within this subtype. The subtype " +
+		"assignment is therefore uncertain; further analysis using a more " +
+		"sophisticated subtyping program is recommended."
+	),
 	FASTAUnsequencedRegion(
 		ValidationLevel.WARNING,
 		"There are %d %s positions located in unsequenced region(s): %s."
